@@ -11,7 +11,7 @@
  */
 
 module.exports = {
-  pathPrefix: process.env.PATH_PREFIX || '/create-embed-sdk/',
+  pathPrefix: process.env.PATH_PREFIX || '/embed-sdk/',
   siteMetadata: {
     versions: [
       {
