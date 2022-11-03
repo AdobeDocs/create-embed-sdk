@@ -11,149 +11,36 @@
  */
 
 module.exports = {
-  pathPrefix: process.env.PATH_PREFIX || '/embed-sdk/',
   siteMetadata: {
-    versions: [
-      {
-        title: 'v2.0',
-        selected: true
-      },
-      {
-        title: 'v1.4',
-        path: 'https://github.com/AdobeDocs/analytics-1.4-apis'
-      }
-    ],
+    siteTitle: 'Adobe Developers',
+    author: process.env.AUTHOR || 'Adobe I/O — Adobe Developers',
+    creator: process.env.CREATOR || '@adobedevs',
+    siteUrl: process.env.SITE_URL || 'https://developer.adobe.com/',
+    baseUrl: process.env.BASEURL || '',
+    productionDomain: process.env.PRODUCTION_DOMAIN || 'https://www.adobe.io',
+    pageImage: process.env.PAGE_IMAGE || 'dcsdk-main.jpg',
+    docs: {
+      title: 'Get credentials',
+      path: 'https://documentservices.adobe.com/dc-integration-creation-app-cdn/main.html'
+    },
     pages: [
       {
-        title: 'Adobe Analytics',
-        path: '/'
+        title: 'Express Editor',
+        description: 'Express Editor',
+        path: 'express-editor/',
       },
       {
-        title: 'Guides',
-        path: '/guides/'
+        title: 'Express Embed SDK',
+        description: "Express Embed SDK",
+        path: 'express-embed-sdk/'
       },
       {
-        title: 'API Reference',
-        menu: [
-          {
-            title: 'API Reference v2.0',
-            description: 'Adobe Analytics Reporting API',
-            path: '/api/index.md'
-          },
-          {
-            title: 'API Reference v1.4',
-            description: 'API Spec for the Adobe Marketing Cloud',
-            path: '/api/1.4.md'
-          }
-        ]
-      },
-      {
-        title: 'Support',
-        path: '/support/'
+        title: 'Quick Actions',
+        description: "Quick Actions",
+        path: 'quick-action/'
       }
     ],
-    subPages: [
-      {
-        title: 'Get Started',
-        path: '/guides/',
-        pages: [
-          {
-            title: 'Overview',
-            path: '/guides/'
-          },
-          {
-            title: 'Creating an OAuth Client',
-            path: '/guides/creating_oauth_client/'
-          },
-          {
-            title: 'OAuth using cURL',
-            path: '/guides/oauth_using_curl/'
-          },
-          {
-            title: 'OAuth using POSTMAN',
-            path: '/guides/oauth_using_postman/'
-          },
-          {
-            title: 'JWT Authentication',
-            path: '/guides/jwt_authentication/'
-          }
-        ]
-      },
-      {
-        title: 'Reporting API',
-        path: '/guides/reporting_api/',
-        pages: [
-          {
-            title: 'Overview',
-            path: '/guides/reporting_api/'
-          },
-          {
-            title: 'Reporting with breakdowns',
-            path: '/guides/reporting_api/reporting_breakdowns/',
-            pages: [
-              {
-                title: 'Reporting with single breakdowns',
-                path: '/guides/reporting_api/reporting_breakdowns/'
-              },
-              {
-                title: 'Reporting with multiple breakdowns',
-                path: '/guides/reporting_api/reporting_breakdowns/reporting_multiple_breakdowns/'
-              }
-            ]
-          },
-          {
-            title: 'Reporting tips and tricks',
-            path: '/guides/reporting_api/reporting_tips_tricks/'
-          }
-        ]
-      },
-      {
-        title: 'Discovery API',
-        path: '/guides/discovery_api/'
-      },
-      {
-        title: 'Segments API',
-        path: '/guides/segments_api/'
-      },
-      {
-        title: 'Calculated Metrics API',
-        path: '/guides/calculated_metrics_api/'
-      },
-      {
-        title: 'Migrating',
-        path: '/guides/migrating/'
-      },
-      {
-        title: 'Overview',
-        path: '/support/',
-        header: true,
-        pages: [
-          {
-            title: 'Help',
-            path: '/support/'
-          },
-          {
-            title: 'FAQ',
-            path: '/support/FAQ/'
-          },
-          {
-            title: 'How to contribute',
-            path: '/support/contribute/'
-          }
-        ]
-      },
-      {
-        title: 'Community',
-        path: '/support/community/',
-        header: true,
-        pages: [
-          {
-            title: 'Information',
-            path: '/support/community/'
-          }
-        ]
-      }
-    ]
   },
-  plugins: [`@adobe/gatsby-theme-aio`]
+  plugins: [`@adobe/gatsby-theme-aio`],
+  pathPrefix: process.env.PATH_PREFIX || '/embed-sdk-services/'
 };
