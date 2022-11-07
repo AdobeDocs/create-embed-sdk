@@ -40,10 +40,9 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 ![EMPTY_ALT](./images/quickaction.png)
 
+<ResourceCardBlock/>
 
 <WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout resource-card"/>
-
-<ResourceCardBlock/>
 
 <DesignForDeveloper/>
 

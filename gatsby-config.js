@@ -25,20 +25,25 @@ module.exports = {
     },
     pages: [
       {
-        title: 'Express Editor',
-        description: 'Express Editor',
-        path: 'express-editor/',
-      },
-      {
         title: 'Express Embed SDK',
         description: "Express Embed SDK",
         path: 'express-embed-sdk/'
       },
       {
+        title: 'Express Editor',
+        description: 'Express Editor',
+        path: 'express-editor/',
+      },
+      {
         title: 'Quick Actions',
         description: "Quick Actions",
         path: 'quick-action/'
-      }
+      },
+      {
+        title: 'FAQs',
+        description: "FAQ",
+        path: '/faq'
+      },
     ],
   },
   plugins: [`@adobe/gatsby-theme-aio`],

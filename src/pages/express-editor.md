@@ -1,71 +1,63 @@
-
 import "../styles/main.css"
-import ResourceCardBlock from './express-editor/resourceCard.md';
 import AnimationVideo from "./videos/Adobe_DCP_Marquee_Animation.json";
 
-<Hero slots="heading, text,  assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className=" editor-express-hero "/>
+<Hero slots="heading, text,  assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className="express-editor-hero-block"/>
 
-# Shorten time to market with Adobes ready-to-go Express Editor sdk
+# Unlock end users’ creativity with the Adobe Express Editor
 
 Give end users a quick and easy way to start a creative design workflow from within your applications
 
 homeheroAssertImage
 
-<AnnouncementBlock slots="heading, text, button" className="announcement"/>
+<AnnouncementBlock slots="heading, text, button" className="announcement-embed-editor"/>
 
-### Answer Your Customers Creative Demands
+### Satisfy your customers’ creative needs
 
-With the Express Editor users can create Social Post, Banners, Flyers, Ads and More
+With Adobe Express Editor, users can create professional-caliber social posts, ads, banners, flyers, and more. No design experience required.
 
 [Try the demo](https://adobe.io)
 
-<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
+<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow"/>
 
-![EMPTY_ALT](./images/adobe-express-editor.png)
+![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image-1@2x.png)
 
-### Streamline customers ability to get work done
+### Streamline your users’ workflows
 
-Generate an easy one-click method for customers to start creating and edit designs
+With one-click, allow users to start creating and editing creative projects within iframes on your site. All of the tools and content they need are in one place.
 
-- [Learn more](https://adobe.io)
+<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two stremline-workflow"/>
 
-<TextBlock slots="heading,text,buttons,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two streamline_ability"/>
+### Inspire confident creators
 
-### Insipre customer to create with confidence and efficency
+The Express Editor unlocks Adobe’s unparalleled collection of templates, Adobe Stock* images, Adobe Fonts, and an array of creative assets for every need.
 
-Access to Adobe's expansive library of well designed creative assets, including Layout Templates,Fonts and Images
+![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image-2.png)
 
-- [Learn more](https://adobe.io)
+<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow"/>
 
-![EMPTY_ALT](./images/create-confidence.png)
+![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image-3.svg)
 
-<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
+### Forge the path to customer success
 
-![EMPTY_ALT](./images/youtube-thumbnail.png)
+Customize where and how the Express Editor is launched to ensure users get to the right tools and templates.
 
-### Provide the path to customer success
+<AnnouncementBlock slots="text, button" className="announcement-embed-editor"/>
 
-Customize the editor experience to help customers focus on the templates and tools relavent to their use case
+Learn more about using the embedded Express Editor
 
-- [Learn more](https://adobe.io)
+[View Documentation](https://adobe.io)
 
-<TextBlock slots="heading" theme="light" className="see-it-action"/>
+<TextBlock slots="heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow customer-experience"/>
 
-#### See it in Action
+### See it in Action
 
-<WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout"/>
+How is the Express Editor improving customer experience?
 
-<ResourceCardBlock/>
+<SummaryBlock slots=" heading, text, buttons" className="getting-started" />
 
-<TextBlock slots="heading,text,buttons,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"    className=" zigzag-cta-two streamline_ability adobeExpress-sdk"/>
+## Getting Started
 
-### Getting Started
-
-With the Adobe Express Embed SDK, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labour et dolre magna aliquyam erat, sed diam voluptua. at vera eos at accusam et justo
+Embed the Express Editor on your own platform today and see how your users can start enhancing their operations.
 
 - [Get Started](https://adobe.io)
 - [Try the demo](https://adobe.io)
-
-![EMPTY_ALT](./images/5_Devices_Store.png)
-
-

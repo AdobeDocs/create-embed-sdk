@@ -636,11 +636,12 @@ pre:not(.prism-code) div[class^="spectrum"] div:first-child {
 }
 
 .w-45 {
-    width: 40%;
+    width: 35%;
+    max-width: 35% !important;
 }
 
 .w-25 {
-    width: 25%;
+    width: 20%;
 }
 
 .div-flex>div {
@@ -661,10 +662,6 @@ pre:not(.prism-code) div[class^="spectrum"] div:first-child {
 
 .overflow-hidden {
     overflow: hidden;
-}
-
-.editing-content {
-    margin-left: 150px;
 }
 
 .pricing-desc>div {
@@ -3440,8 +3437,8 @@ img[alt=adobe-sales] {
     margin: 0 !important;
 }
 
-.vedio-editor>div>div>div>h3{
-    color:white
+.vedio-editor>div>div>div>h3 {
+    color: white
 }
 
 @media (min-width: 320px) and (max-width:767px) {
@@ -3548,24 +3545,26 @@ img[alt=adobe-sales] {
     }
 
     .quick-action-content>div {
-        width: 300px !important;
+        width: 200px !important;
     }
 
     .small-code-snippet {
         margin-top: 40px !important
     }
-    .sample>div{
+
+    .sample>div {
         flex-wrap: wrap;
     }
+
     .edit-text-block>div>div>div {
         padding-left: 35px !important;
     }
 
-    .image-editing>div>div>div>h3{
+    .image-editing>div>div>div>h3 {
         margin-top: 10px !important;
     }
 
-    .vedio-editor{
+    .vedio-editor {
         display: none;
     }
 }
@@ -3637,7 +3636,7 @@ img[alt=adobe-sales] {
     }
 
     .sample>.css-1o3ows-WrapperComponent {
-        overflow-x: unset !important;
+        overflow: hidden !important;
     }
 
     .w-45 {
@@ -3645,10 +3644,10 @@ img[alt=adobe-sales] {
         width: 40% !important;
     }
 
-    .w-25 {
+    /* .w-25 {
         max-width: 40% !important;
         width: 40% !important;
-    }
+    } */
 
     .Logo-embed-sdk {
         padding-top: 2px !important;
@@ -3693,10 +3692,142 @@ img[alt=adobe-sales] {
         padding-left: 40px !important;
     }
 
-    .quick-action-content>div , .w-25>div{
+    .quick-action-content>div,
+    .w-25>div {
         overflow: hidden !important;
     }
 
-    
+}
 
+.css-of2gsa-O {
+    display: none !important;
+}
+
+.spectrum-Accordion-ChevronIcon {
+    padding: 6px !important;
+    color: #1473e6;
+}
+
+.css-1xft4qy-O {
+    margin: 0px !important;
+}
+
+.faq-editor-page {
+    height: 100px !important;
+}
+
+.css-1ea37mn-WrapperComponent {
+    margin: auto;
+    width: 1000px !important;
+}
+
+.editing-content>div {
+    margin-left: 180px !important;
+}
+
+.quick-action-header>div>div:nth-child(2)>div,
+.editor-express-hero>div>div:nth-child(2)>div {
+    margin-left: 150px !important;
+}
+
+.resource-card>div {
+    width: 1300px !important;
+
+}
+
+/* .tabView div[class^="spectrum"] {
+    width: 500px ;
+}
+
+.spectrum-ActionButton{
+    display: none;
+} */
+
+
+.express-editor-hero-block {
+    background: rgb(250, 105, 85) url('../pages/images/Hero Background Gradient.svg') !important;
+    width: 100% !important;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.announcement-embed-editor>div>div>a,
+.adobeExpress-sdk>div>div>div>div>div>div>a {
+    background-color: white !important;
+    border: 2px solid #5258E4 !important;
+}
+
+.announcement-embed-editor>div>div>a>span>span {
+    color: #5258E4 !important;
+}
+
+.stremline-workflow>div>div>div>p {
+    color: #4B4B4B;
+}
+
+.stremline-workflow>div {
+    top: 811px;
+    left: 310px;
+    width: 1060px;
+    height: 445px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.customer-experience>div>div {
+    justify-content: center;
+}
+
+.customer-experience>div>div>div {
+    text-align: center;
+}
+
+.express-editor-hero-block>div>div:nth-child(2)>div {
+    opacity: 1;
+    top: 194px;
+    left: 310px;
+    width: 380px;
+    height: 139px;
+    text-align: left;
+    font: normal normal bold 36px/47px Adobe Clean;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.express-editor-hero-block>div>div:nth-child(2)>div>p {
+    height: 76px;
+    font: normal normal normal 18px/27px Adobe Clean;
+    color: #FFFFFF;
+}
+
+.getting-started {
+    background: transparent conic-gradient(from 90deg at 0% -24%, #F8F8F8 0.00%, #081D31 100.00%) 0% 0% no-repeat padding-box;
+}
+
+.getting-started>div>h2{
+    color: #000000;
+}
+
+.getting-started>div>p{
+    color: #222222;
+}
+
+.getting-started>div>div>div>div:first-child>a{
+    background-color: #5258E4 !important;
+    border: none;
+}
+
+.getting-started>div>div>div>div:last-child>a>span>span{
+    color: #5258E4 !important;
+}
+
+.getting-started>div>div>div>div:last-child>a{
+    background-color: transparent !important;
+    border: 2px solid #5258E4 !important;
+}
+
+.customer-experience>div{
+    height: 100px !important;
 }

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="510" height="314.328" viewBox="0 0 510 314.328">
+  <defs>
+    <filter id="Rectangle_152034" x="0" y="0" width="510" height="223" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_152033" data-name="Rectangle 152033" width="462" height="176" rx="12" transform="translate(28 380.672)" fill="#f5f9fc"/>
+    </clipPath>
+    <filter id="Background" x="279" y="98.328" width="208.363" height="216" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-2"/>
+      <feFlood flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Express_Editor_Benefits_Blade_-_image_3" data-name="Express Editor Benefits Blade - image 3" transform="translate(-4 -302.672)">
+    <g transform="matrix(1, 0, 0, 1, 4, 302.67)" filter="url(#Rectangle_152034)" style="mix-blend-mode: hard-light;isolation: isolate">
+      <rect id="Rectangle_152034-2" data-name="Rectangle 152034" width="462" height="175" rx="12" transform="translate(24 16)" fill="#fff"/>
+    </g>
+    <g id="Mask_Group_416" data-name="Mask Group 416" transform="translate(0 -62)" clip-path="url(#clip-path)">
+      <g id="Group_162115" data-name="Group 162115" transform="translate(29 7.344)">
+        <g id="Rectangle_149606" data-name="Rectangle 149606" transform="translate(-1 373.328)" fill="#f8f8f8" stroke="#efefef" stroke-width="2">
+          <rect width="462" height="176" rx="12" stroke="none"/>
+          <rect x="1" y="1" width="460" height="174" rx="11" fill="none"/>
+        </g>
+        <text id="_1_2_3_4_5_6_7_8_9_10_11_12_13_14_15_16_17_18_19_20_21" data-name="1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21" transform="translate(19 78.328)" fill="#7f8495" font-size="14" font-family="SourceCodePro-Regular, Source Code Pro" opacity="0.5"><tspan x="10" y="14">1</tspan><tspan x="10" y="36">2</tspan><tspan x="10" y="58">3</tspan><tspan x="10" y="80">4</tspan><tspan x="10" y="102">5</tspan><tspan x="10" y="124">6</tspan><tspan x="10" y="146">7</tspan><tspan x="10" y="168">8</tspan><tspan x="10" y="190">9</tspan><tspan x="2" y="212">10</tspan><tspan x="2" y="234">11</tspan><tspan x="2" y="256">12</tspan><tspan x="2" y="278">13</tspan><tspan x="2" y="300">14</tspan><tspan x="2" y="322">15</tspan><tspan x="2" y="344">16</tspan><tspan x="2" y="366">17</tspan><tspan x="2" y="388">18</tspan><tspan x="2" y="410">19</tspan><tspan x="2" y="432">20</tspan><tspan x="2" y="454">21</tspan></text>
+        <text id="ccEverywhere.createDesign_CreateDesignParams_modalParams:_callbacks:_onCancel:_onError:_err_onLoadStart:_onLoad:_onPublis" data-name="ccEverywhere.createDesign(
+    // CreateDesignParams
+    {
+        modalParams: {},
+        callbacks: {
+            onCancel: () =&gt; {},
+            onError: (err) =&gt; {},
+            onLoadStart: () =&gt; {},
+            onLoad: () =&gt; {},
+            onPublis" transform="translate(58 56.328)" fill="#7f8495" font-size="14" font-family="SourceCodePro-Regular, Source Code Pro"><tspan x="0" y="14">ccEverywhere.</tspan><tspan y="14" fill="#72b7f9">createDesign</tspan><tspan y="14">(</tspan><tspan x="0" y="36" xml:space="preserve">    // CreateDesignParams</tspan><tspan x="0" y="58" xml:space="preserve">    {</tspan><tspan x="0" y="80" xml:space="preserve">        </tspan><tspan y="80" fill="#ca9ffc">modalParams</tspan><tspan y="80" fill="#72b7f9">:</tspan><tspan y="80" xml:space="preserve"> {},</tspan><tspan x="0" y="102" xml:space="preserve">        </tspan><tspan y="102" fill="#ca9ffc">callbacks</tspan><tspan y="102" fill="#72b7f9">:</tspan><tspan y="102" xml:space="preserve"> {</tspan><tspan x="0" y="124" xml:space="preserve">            </tspan><tspan y="124" fill="#72b7f9">onCancel:</tspan><tspan y="124" xml:space="preserve"> () </tspan><tspan y="124" fill="#72b7f9">=&gt;</tspan><tspan y="124" xml:space="preserve"> {},</tspan><tspan x="0" y="146" xml:space="preserve">            </tspan><tspan y="146" fill="#72b7f9">onError:</tspan><tspan y="146" xml:space="preserve"> (err) </tspan><tspan y="146" fill="#72b7f9">=&gt;</tspan><tspan y="146" xml:space="preserve"> {},</tspan><tspan x="0" y="168" xml:space="preserve">            </tspan><tspan y="168" fill="#72b7f9">onLoadStart:</tspan><tspan y="168" xml:space="preserve"> () </tspan><tspan y="168" fill="#72b7f9">=&gt;</tspan><tspan y="168" xml:space="preserve"> {},</tspan><tspan x="0" y="190" xml:space="preserve">            </tspan><tspan y="190" fill="#72b7f9">onLoad:</tspan><tspan y="190" xml:space="preserve"> () </tspan><tspan y="190" fill="#72b7f9">=&gt;</tspan><tspan y="190" xml:space="preserve"> {},</tspan><tspan x="0" y="212" xml:space="preserve">            </tspan><tspan y="212" fill="#72b7f9">onPublishStart:</tspan><tspan y="212" xml:space="preserve"> () </tspan><tspan y="212" fill="#72b7f9">=&gt;</tspan><tspan y="212" xml:space="preserve"> {},</tspan><tspan x="0" y="234" xml:space="preserve">            </tspan><tspan y="234" fill="#72b7f9">onPublish:</tspan><tspan y="234" xml:space="preserve"> (publishParams) </tspan><tspan y="234" fill="#72b7f9">=&gt;</tspan><tspan y="234" xml:space="preserve"> {},</tspan><tspan x="0" y="256" xml:space="preserve">        },</tspan><tspan x="0" y="278" xml:space="preserve">        </tspan><tspan y="278" fill="#ca9ffc">outputParams</tspan><tspan y="278" fill="#72b7f9">:</tspan><tspan y="278" xml:space="preserve"> { </tspan><tspan x="0" y="300" xml:space="preserve">            </tspan><tspan y="300" fill="#ca9ffc">outputType</tspan><tspan y="300" fill="#72b7f9">:</tspan><tspan y="300"> </tspan><tspan y="300" fill="#43c78f">&quot;base64&quot;</tspan><tspan fill="#43c78f"><tspan x="0" y="322"></tspan></tspan><tspan x="0" y="344" xml:space="preserve">        },</tspan><tspan x="0" y="366" xml:space="preserve">        </tspan><tspan y="366" fill="#ca9ffc">inputParams</tspan><tspan y="366" fill="#72b7f9">:</tspan><tspan y="366" xml:space="preserve"> { </tspan><tspan x="0" y="388" xml:space="preserve">            </tspan><tspan y="388" fill="#ca9ffc">canvasAspectId</tspan><tspan y="388" fill="#72b7f9">:</tspan><tspan y="388"> </tspan><tspan y="388" fill="#43c78f">“Instagram”</tspan><tspan y="388">,</tspan><tspan x="0" y="410" xml:space="preserve">            </tspan><tspan y="410" fill="#ca9ffc">templateType</tspan><tspan y="410" fill="#72b7f9">:</tspan><tspan y="410"> </tspan><tspan y="410" fill="#43c78f">&quot;Flyers&quot;</tspan><tspan y="410">,</tspan><tspan x="0" y="432" xml:space="preserve">        }</tspan><tspan x="0" y="454" xml:space="preserve">    }</tspan><tspan x="0" y="476">); </tspan></text>
+        <rect id="Rectangle_152035" data-name="Rectangle 152035" width="52" height="24" rx="4" transform="translate(284 449)" fill="#b5deff"/>
+        <text id="ccEverywhere.createDesign_CreateDesignParams_modalParams:_callbacks:_onCancel:_onError:_err_onLoadStart:_onLoad:_onPublis-2" data-name="ccEverywhere.createDesign(
+    // CreateDesignParams
+    {
+        modalParams: {},
+        callbacks: {
+            onCancel: () =&gt; {},
+            onError: (err) =&gt; {},
+            onLoadStart: () =&gt; {},
+            onLoad: () =&gt; {},
+            onPublis" transform="translate(58 56.328)" fill="#7f8495" font-size="14" font-family="SourceCodePro-Regular, Source Code Pro" style="mix-blend-mode: multiply;isolation: isolate"><tspan x="0" y="14">ccEverywhere.</tspan><tspan y="14" fill="#72b7f9">createDesign</tspan><tspan y="14">(</tspan><tspan x="0" y="36" xml:space="preserve">    // CreateDesignParams</tspan><tspan x="0" y="58" xml:space="preserve">    {</tspan><tspan x="0" y="80" xml:space="preserve">        </tspan><tspan y="80" fill="#ca9ffc">modalParams</tspan><tspan y="80" fill="#72b7f9">:</tspan><tspan y="80" xml:space="preserve"> {},</tspan><tspan x="0" y="102" xml:space="preserve">        </tspan><tspan y="102" fill="#ca9ffc">callbacks</tspan><tspan y="102" fill="#72b7f9">:</tspan><tspan y="102" xml:space="preserve"> {</tspan><tspan x="0" y="124" xml:space="preserve">            </tspan><tspan y="124" fill="#72b7f9">onCancel:</tspan><tspan y="124" xml:space="preserve"> () </tspan><tspan y="124" fill="#72b7f9">=&gt;</tspan><tspan y="124" xml:space="preserve"> {},</tspan><tspan x="0" y="146" xml:space="preserve">            </tspan><tspan y="146" fill="#72b7f9">onError:</tspan><tspan y="146" xml:space="preserve"> (err) </tspan><tspan y="146" fill="#72b7f9">=&gt;</tspan><tspan y="146" xml:space="preserve"> {},</tspan><tspan x="0" y="168" xml:space="preserve">            </tspan><tspan y="168" fill="#72b7f9">onLoadStart:</tspan><tspan y="168" xml:space="preserve"> () </tspan><tspan y="168" fill="#72b7f9">=&gt;</tspan><tspan y="168" xml:space="preserve"> {},</tspan><tspan x="0" y="190" xml:space="preserve">            </tspan><tspan y="190" fill="#72b7f9">onLoad:</tspan><tspan y="190" xml:space="preserve"> () </tspan><tspan y="190" fill="#72b7f9">=&gt;</tspan><tspan y="190" xml:space="preserve"> {},</tspan><tspan x="0" y="212" xml:space="preserve">            </tspan><tspan y="212" fill="#72b7f9">onPublishStart:</tspan><tspan y="212" xml:space="preserve"> () </tspan><tspan y="212" fill="#72b7f9">=&gt;</tspan><tspan y="212" xml:space="preserve"> {},</tspan><tspan x="0" y="234" xml:space="preserve">            </tspan><tspan y="234" fill="#72b7f9">onPublish:</tspan><tspan y="234" xml:space="preserve"> (publishParams) </tspan><tspan y="234" fill="#72b7f9">=&gt;</tspan><tspan y="234" xml:space="preserve"> {},</tspan><tspan x="0" y="256" xml:space="preserve">        },</tspan><tspan x="0" y="278" xml:space="preserve">        </tspan><tspan y="278" fill="#ca9ffc">outputParams</tspan><tspan y="278" fill="#72b7f9">:</tspan><tspan y="278" xml:space="preserve"> { </tspan><tspan x="0" y="300" xml:space="preserve">            </tspan><tspan y="300" fill="#ca9ffc">outputType</tspan><tspan y="300" fill="#72b7f9">:</tspan><tspan y="300"> </tspan><tspan y="300" fill="#43c78f">&quot;base64&quot;</tspan><tspan fill="#43c78f"><tspan x="0" y="322"></tspan></tspan><tspan x="0" y="344" xml:space="preserve">        },</tspan><tspan x="0" y="366" xml:space="preserve">        </tspan><tspan y="366" fill="#ca9ffc">inputParams</tspan><tspan y="366" fill="#72b7f9">:</tspan><tspan y="366" xml:space="preserve"> { </tspan><tspan x="0" y="388" xml:space="preserve">            </tspan><tspan y="388" fill="#ca9ffc">canvasAspectId</tspan><tspan y="388" fill="#72b7f9">:</tspan><tspan y="388"> </tspan><tspan y="388" fill="#43c78f">“Instagram”</tspan><tspan y="388">,</tspan><tspan x="0" y="410" xml:space="preserve">            </tspan><tspan y="410" fill="#ca9ffc">templateType</tspan><tspan y="410" fill="#72b7f9">:</tspan><tspan y="410"> </tspan><tspan y="410" fill="#43c78f">&quot;Flyers&quot;</tspan><tspan y="410">,</tspan><tspan x="0" y="432" xml:space="preserve">        }</tspan><tspan x="0" y="454" xml:space="preserve">    }</tspan><tspan x="0" y="476">); </tspan></text>
+      </g>
+    </g>
+    <g id="Picker_menu" data-name="Picker menu" transform="translate(307 421)">
+      <rect id="Placement_Area" data-name="Placement Area" width="160.363" height="164" fill="red" opacity="0"/>
+      <g transform="matrix(1, 0, 0, 1, -303, -118.33)" filter="url(#Background)">
+        <rect id="Background-2" data-name="Background" width="160.363" height="168" rx="6" transform="translate(303 118.33)" fill="#111a35"/>
+      </g>
+      <rect id="Hover" width="158.363" height="32" transform="translate(1 36)" fill="rgba(255,255,255,0.06)"/>
+      <rect id="Menu_Item" data-name="Menu Item" width="58" height="32" transform="translate(12 4)" fill="rgba(255,0,0,0)"/>
+      <text id="Flyers" transform="translate(12 24)" fill="#fff" font-size="14" font-family="Adobe Clean"><tspan x="0" y="0">Flyers</tspan></text>
+      <rect id="Menu_Item-2" data-name="Menu Item" width="112" height="32" transform="translate(12 36)" fill="rgba(255,0,0,0)"/>
+      <text id="Instagram_Post" transform="translate(12 56)" fill="#fff" font-size="14" font-family="Adobe Clean"><tspan x="0" y="0">Instagram_Post</tspan></text>
+      <rect id="Menu_Item-3" data-name="Menu Item" width="66" height="32" transform="translate(12 68)" fill="rgba(255,0,0,0)"/>
+      <text id="Collage" transform="translate(12 88)" fill="#fff" font-size="14" font-family="Adobe Clean"><tspan x="0" y="0">Collage</tspan></text>
+      <rect id="Menu_Item-4" data-name="Menu Item" width="60" height="32" transform="translate(12 100)" fill="rgba(255,0,0,0)"/>
+      <text id="Poster" transform="translate(12 120)" fill="#fff" font-size="14" font-family="Adobe Clean"><tspan x="0" y="0">Poster</tspan></text>
+      <rect id="Menu_Item-5" data-name="Menu Item" width="152.845" height="32" transform="translate(7.518 132)" fill="rgba(255,0,0,0)"/>
+      <text id="Youtube_Thumbnail" transform="translate(12 152)" fill="#fff" font-size="14" font-family="Adobe Clean"><tspan x="0" y="0">Youtube_Thumbnail</tspan></text>
+      <g id="Checkmark" transform="translate(138.363 14)">
+        <rect id="Frame" width="12" height="12" fill="#fff" opacity="0"/>
+        <path id="Shape" d="M4.5,10a1.023,1.023,0,0,1-.8-.384l-2.488-3A1,1,0,0,1,2.789,5.383L4.5,7.376,9.212,1.385a1,1,0,1,1,1.576,1.23l-5.511,7A.977.977,0,0,1,4.5,10Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

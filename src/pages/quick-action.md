@@ -23,37 +23,36 @@ Fast editing tools that developers can customize and embed to give end users acc
 
 <QuickAction/>
 
-<TextBlock slots="image,heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"    className=" zigzag-cta-two streamline_ability small-code-snippet"/>
+ <TextBlock slots="image,heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"    className=" zigzag-cta-two streamline_ability small-code-snippet"/>
 
 ![EMPTY_ALT](./images/adobe-photoshop.png)
 
 ### Small Code Snippets with Big Impact 
 
-With Quick Actions, customize which component will be loaded into the iframe with the changes of single ID
+With Quick Actions, customize which component will be loaded into the iframe with the changes of single ID 
 
-<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
+ <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
 ![EMPTY_ALT](./images/resize-image.png)
 
 ### Resize Image
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor ey dolore magna aliquyam erat, set diam voluptua. At vero eos et accusam et justo duo dolores et
+Make resiging images easy thanks to a wide array of standard and custom social media post images sizes to choose form.
 
-- [Learn more](https://adobe.io)
 
-<TextBlock slots="heading,text,buttons,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two streamline_ability"/>
+<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two streamline_ability"/>
 
-### Insipre customer to create with confidence and efficency
+### Remove Background
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor ey dolore magna aliquyam erat, set diam voluptua. At vero eos et accusam et justo duo dolores et
-
-- [Learn more](https://adobe.io)
+Powered by Adobe Photoshop, enables users to remove backgrounds and create dynamic images in one simple click.
 
 ![EMPTY_ALT](./images/remove-background.png)
 
-<TextBlock slots="heading" theme="light" className="see-it-action quick-action-see"/>
+<AnnouncementBlock slots=" text, button" className="announcement "/>
 
-#### See it in Action
+Learn more about using embedded Quick Actions
+
+[View Documentation](https://adobe.io)
 
 <WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout"/>
 
@@ -68,4 +67,4 @@ With the Adobe Express Embed SDK, lorem ipsum dolor sit amet, consetetur sadipsc
 - [Get Started](https://adobe.io)
 - [Try the demo](https://adobe.io)
 
-![EMPTY_ALT](./images/5_Devices_Store.png)
+![EMPTY_ALT](./images/5_Devices_Store.png) 
