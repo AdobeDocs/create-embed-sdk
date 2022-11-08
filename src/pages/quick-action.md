@@ -19,7 +19,7 @@ Adobe Quick Actions are powerful tools developers can customize and embed within
 
 [Try the demo](https://adobe.io)
 
-<WrapperComponent slots="content" theme="light" className="editing-content" />
+<WrapperComponent slots="content" theme="lightest" className="editing-content" />
 
 <QuickAction/>
 
@@ -39,7 +39,7 @@ Easily customize which Quick Action is loaded into your iframe by changing a sin
 
 Make resizing images easy thanks to a wide array of standard and custom social media post image sizes to choose from.
 
-<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two stremline-workflow remove-bg"/>
+<TextBlock slots="heading,text,image" theme="light" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two stremline-workflow remove-bg"/>
 
 ### Remove Background
 
@@ -47,19 +47,19 @@ Powered by Adobe Photoshop, enable users to remove backgrounds and create dynami
 
 ![EMPTY_ALT](./images/Background-Remover_PosterImage.png)
 
-<AnnouncementBlock slots="text, button" className="announcement-embed-editor quick-action"/>
+<AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor quick-action"/>
 
 Learn more about using embedded Quick Actions
 
 [View Documentation](https://adobe.io)
 
-<TextBlock slots="heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow customer-experience"/>
+<TextBlock slots="heading,text" theme="light" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow customer-experience"/>
 
 ### Quick Action Deployments
 
 How are Quick Actions enabling users to work dynamically within their applications?
 
-<WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout QuickActionSDKDevelop "/>
+<WrapperComponent slots="content" repeat="1" theme="light" className="acrobat letter breakout QuickActionSDKDevelop "/>
 
 <QuickActionSDKDevelop/>
 

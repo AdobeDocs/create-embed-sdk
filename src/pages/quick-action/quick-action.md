@@ -1,6 +1,6 @@
 
 import QuickActionContent from './quick-action-content.md'
 
-<WrapperComponent slots="content" theme="light" className="quick-content"/>
+<WrapperComponent slots="content" theme="lightest" className="quick-content"/>
 
 <QuickActionContent/>

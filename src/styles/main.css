@@ -3938,3 +3938,11 @@ img[alt=adobe-sales] {
 .edit-text-block>.css-frjwgj-TextBlock{
     width: 56% !important;
 }
+
+.image-editing>div>div>div>h3 , .wrapper-comp-editing>div>div>div>h3{
+    margin-bottom: 30px !important;
+}
+
+.deployment>div>p{
+    height:170px !important
+}
