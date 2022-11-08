@@ -40,6 +40,11 @@ module.exports = {
         path: 'quick-action/'
       },
       {
+        title: 'Sample',
+        description: "Quick Actions",
+        path: 'sample/'
+      },
+      {
         title: 'FAQs',
         description: "FAQ",
         path: '/faq'
