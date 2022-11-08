@@ -9,25 +9,25 @@ title: Image Editing
 
 <TextBlock slots="image , text" className="edit-text-block p-25"/>
 
-![Convert to MP4](../images/convert-to-mp4.png)
+![Convert to MP4](../images/S_AniChangeSpeed.png)
 
 Convert to MP4
 
 <TextBlock slots="image , text" className="edit-text-block"/>
 
-![Convert to MP$](../images/convert-mp4.png)
+![Convert to MP$](../images/S_AniConvertToMP4.png)
 
 Convert to MP4
 
 <TextBlock slots="image , text" className="edit-text-block"/>
 
-![reverse-video](../images/reverse-video.png)
+![reverse-video](../images/S_AniRevertVideo.png)
 
 Reverse Video
 
 <TextBlock slots="image , text" className="edit-text-block"/>
 
-![Crop Video](../images/crop-image.png)
+![Crop Video](../images/S_AniCrop.png)
 
 Crop Video
 

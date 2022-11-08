@@ -641,7 +641,7 @@ pre:not(.prism-code) div[class^="spectrum"] div:first-child {
 }
 
 .w-25 {
-    width: 20%;
+    max-width: 30% !important;
 }
 
 .div-flex>div {
@@ -3345,6 +3345,8 @@ img[alt=adobe-sales] {
 
 .edit-text-block>div>div>div {
     padding: 0px !important;
+    width: 56% !important;
+    max-width: 56% !important;
 }
 
 @media (min-width: 320px) and (max-width:768px) {
@@ -3429,7 +3431,7 @@ img[alt=adobe-sales] {
     width: 20% !important;
 }
 
-.sample>div {
+.quick-content>div {
     display: flex;
     flex: 1;
     width: 100% !important;
@@ -3552,7 +3554,7 @@ img[alt=adobe-sales] {
         margin-top: 40px !important
     }
 
-    .sample>div {
+    .quick-content>div {
         flex-wrap: wrap;
     }
 
@@ -3623,11 +3625,11 @@ img[alt=adobe-sales] {
         max-width: 100% !important;
     }
 
-    .sample {
+    .quick-content {
         max-width: 100% !important;
     }
 
-    .sample>div {
+    .quick-content>div {
         display: flex;
         flex: 1;
         width: 100% !important;
@@ -3635,7 +3637,7 @@ img[alt=adobe-sales] {
         margin: 0 !important;
     }
 
-    .sample>.css-1o3ows-WrapperComponent {
+    .quick-content>.css-1o3ows-WrapperComponent {
         overflow: hidden !important;
     }
 
@@ -3752,6 +3754,10 @@ img[alt=adobe-sales] {
     background-size: cover;
 }
 
+.announcement-embed-editor>div>p {
+    width: 630px;
+}
+
 .announcement-embed-editor>div>div>a,
 .adobeExpress-sdk>div>div>div>div>div>div>a {
     background-color: white !important;
@@ -3772,7 +3778,6 @@ img[alt=adobe-sales] {
     width: 1060px;
     height: 445px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
 }
 
 .customer-experience>div>div {
@@ -3789,7 +3794,6 @@ img[alt=adobe-sales] {
     width: 380px;
     height: 139px;
     text-align: left;
-    font: normal normal bold 36px/47px Adobe Clean;
     color: #FFFFFF;
 }
 
@@ -3828,7 +3832,7 @@ img[alt=adobe-sales] {
     height: 100px !important;
 }
 
-.customer-experience>div>div>div{
+.customer-experience>div>div>div {
     width: 100% !important;
 }
 
@@ -3845,7 +3849,7 @@ img[alt=adobe-sales] {
     opacity: 1;
 }
 
-.big-impact>div:first-child>div:first-child>div:first-child{
+.big-impact>div:first-child>div:first-child>div:first-child {
     top: 1655px;
     left: 310px;
     width: 380px;
@@ -3853,6 +3857,84 @@ img[alt=adobe-sales] {
     color: #FFFFFF;
 }
 
-.remove-bg>div>div>p>span>img{
+.remove-bg>div>div>p>span>img {
     height: 300px !important;
+}
+
+.deployment-action>a>div:nth-child(2)>div {
+    display: inline !important;
+}
+
+.deployment-action>a>div:nth-child(2)>div>div,
+.deployment-action>a>div:nth-child(2)>div:nth-child(2)>div>p {
+    text-align: center !important;
+}
+
+.QuickActionSDKDevelop>div {
+    width: 100% !important;
+}
+
+.big-impact>div>div>div>h3 {
+    font-size: 37px;
+    color: #fff;
+    width: 380px;
+    left: 307px;
+}
+
+.big-impact>div>div>div {
+    width: 40% !important;
+}
+
+
+.big-impact>div>div>div>p {
+    color: #fff;
+    width: 358px;
+    height: 49px;
+}
+
+.big-impact>div>div>p {
+    background-image: url("../pages/images/Background-image.png");
+    background-repeat: none;
+    width: 47% !important;
+}
+
+
+.big-impact>div>div>p>span>picture>img {
+    height: 80% !important;
+    top: 50px !important;
+    left: -20px !important;
+}
+
+.big-impact>div>div>p>span>picture {
+    top: 1556px;
+    left: 736px;
+    width: 330px;
+    height: 146px;
+    background: transparent url("../pages/images/Foreground-Code.svg") 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.editing-content>div {
+    top: 811px;
+    left: 342px;
+    width: 996px;
+    height: 675px;
+    margin-left: 20% !important;
+}
+
+.editing-content{
+    margin-top: 100px !important;
+}
+
+.edit-text-block>div>div>div:first-child{
+    width: 56% !important;
+}
+
+.w-30{
+    max-width: 30% !important;
+    width: 30% !important;
+}
+
+.edit-text-block>.css-frjwgj-TextBlock{
+    width: 56% !important;
 }

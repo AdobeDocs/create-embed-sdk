@@ -1,21 +1,21 @@
 import "../styles/main.css"
-import ResourceCardBlock from './quick-action/resourceCard.md'; 
 import AnimationVideo from "./videos/Adobe_DCP_Marquee_Animation.json";
+import QuickActionSDKDevelop from "./quick-action/quick-action-sdk-develop.md";
 import QuickAction from './quick-action/quick-action.md'
 
-<Hero slots="heading, text,  assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className=" editor-express-hero quick-action-header"/>
+<Hero slots="heading, text,  assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className="express-editor-hero-block"/>
 
-# Embed Quick Actions to edit images and vedios
+# Make image and video editing a snap with Quick Actions
 
-Harness the creative power of Adobe's flagship products
+Quick actions, powered by Adobe Photoshop and Premiere, make short work of multi-step editing tasks.
 
 homeheroAssertImage
 
-<AnnouncementBlock slots="heading, text, button" className="announcement "/>
+<AnnouncementBlock slots="heading, text, button" className="announcement-embed-editor quick-action"/>
 
-### What are Quick Actions ? 
+### What are Quick Actions?
 
-Fast editing tools that developers can customize and embed to give end users access to the tools within their own applications
+Adobe Quick Actions are powerful tools developers can customize and embed within their applications so end users can create confidently.
 
 [Try the demo](https://adobe.io)
 
@@ -23,48 +23,51 @@ Fast editing tools that developers can customize and embed to give end users acc
 
 <QuickAction/>
 
- <TextBlock slots="image,heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"    className=" zigzag-cta-two streamline_ability small-code-snippet"/>
+<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two big-impact"/>
 
-![EMPTY_ALT](./images/adobe-photoshop.png)
+### Small Code Snippets, Big Impact
 
-### Small Code Snippets with Big Impact 
+Easily customize which Quick Action is loaded into your iframe by changing a single ID.
 
-With Quick Actions, customize which component will be loaded into the iframe with the changes of single ID 
+![EMPTY_ALT](./images/Modal-image-1-resize-image.png)
 
- <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
+<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow"/>
 
-![EMPTY_ALT](./images/resize-image.png)
+![EMPTY_ALT](./images/Resize-Image-Main_PosterImage.png)
 
 ### Resize Image
 
-Make resiging images easy thanks to a wide array of standard and custom social media post images sizes to choose form.
+Make resizing images easy thanks to a wide array of standard and custom social media post image sizes to choose from.
 
-
-<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two streamline_ability"/>
+<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two stremline-workflow remove-bg"/>
 
 ### Remove Background
 
-Powered by Adobe Photoshop, enables users to remove backgrounds and create dynamic images in one simple click.
+Powered by Adobe Photoshop, enable users to remove backgrounds and create dynamic images in one simple click.
 
-![EMPTY_ALT](./images/remove-background.png)
+![EMPTY_ALT](./images/Background-Remover_PosterImage.png)
 
-<AnnouncementBlock slots=" text, button" className="announcement "/>
+<AnnouncementBlock slots="text, button" className="announcement-embed-editor quick-action"/>
 
 Learn more about using embedded Quick Actions
 
 [View Documentation](https://adobe.io)
 
-<WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout"/>
+<TextBlock slots="heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow customer-experience"/>
 
-<ResourceCardBlock/>
+### Quick Action Deployments
 
-<TextBlock slots="heading,text,buttons,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" className=" zigzag-cta-two streamline_ability adobeExpress-sdk"/>
+How are Quick Actions enabling users to work dynamically within their applications?
 
-### Getting Started
+<WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout QuickActionSDKDevelop "/>
 
-With the Adobe Express Embed SDK, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labour et dolre magna aliquyam erat, sed diam voluptua. at vera eos at accusam et justo
+<QuickActionSDKDevelop/>
+
+<SummaryBlock slots=" heading, text, buttons" className="getting-started" />
+
+## Getting Started
+
+Embed the Express Editor on your own platform today and see how your users can start enhancing their operations.
 
 - [Get Started](https://adobe.io)
 - [Try the demo](https://adobe.io)
-
-![EMPTY_ALT](./images/5_Devices_Store.png) 

@@ -10,7 +10,7 @@ import VideoEditingCol from "./video-editing-col.md"
 
 <ImageEditing/>
 
-<WrapperComponent slots="content" theme="light" className="w-25"/>
+<WrapperComponent slots="content" theme="light" className="w-30"/>
 
 <VedioEditing/>
 
