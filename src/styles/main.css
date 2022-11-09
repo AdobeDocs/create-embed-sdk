@@ -3369,6 +3369,7 @@ img[alt=adobe-sales] {
 
 .tryForFree {
     background-color: black !important;
+    height: 27px;
 }
 
 .tryForFree>div>div:nth-child(2)>div>div>div>a {
@@ -3385,7 +3386,7 @@ img[alt=adobe-sales] {
 
 .embed-adobe {
     height: 400px !important;
-    background: rgb(250, 105, 85) url('../pages/images/1_Marquee_Background-Desktop-Sign.png') !important;
+    background: url('../pages/images/Hero-Background-Gradient-image.png') !important;
     width: 100% !important;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3402,9 +3403,11 @@ img[alt=adobe-sales] {
 .embed-adobe>div>div>h1 {
     color: white;
     font-size: 41px;
+    width: 400px;
 }
 
-.embed-adobe>div>div>p {
+.embed-adobe>div>div>p.css-4sa777-css-Paragraph {
+    width: 400px;
     color: white !important;
 }
 
@@ -3733,7 +3736,7 @@ img[alt=adobe-sales] {
 }
 
 .resource-card>div {
-    width: 1300px !important;
+    width: 1349px !important;
 
 }
 
@@ -3922,27 +3925,125 @@ img[alt=adobe-sales] {
     margin-left: 20% !important;
 }
 
-.editing-content{
+.editing-content {
     margin-top: 100px !important;
 }
 
-.edit-text-block>div>div>div:first-child{
+.edit-text-block>div>div>div:first-child {
     width: 56% !important;
 }
 
-.w-30{
+.w-30 {
     max-width: 30% !important;
     width: 30% !important;
 }
 
-.edit-text-block>.css-frjwgj-TextBlock{
+.edit-text-block>.css-frjwgj-TextBlock {
     width: 56% !important;
 }
 
-.image-editing>div>div>div>h3 , .wrapper-comp-editing>div>div>div>h3{
+.image-editing>div>div>div>h3,
+.wrapper-comp-editing>div>div>div>h3 {
     margin-bottom: 30px !important;
 }
 
-.deployment>div>p{
-    height:170px !important
+.quick-action-block>div>p {
+    height: 170px !important
+}
+
+.design-features-code-block {
+    padding-left: 13% !important;
+}
+
+.service-code-block {
+    padding: 9%;
+}
+
+.service-code-block>div>div>div>div>div.css-186w82q-TabsBlock {
+    padding: 6% !important;
+    margin-bottom: 15px !important;
+}
+
+.service-code-block>div>div>div.css-1wza8o2-TabsBlock {
+    max-width: 70% !important;
+}
+
+.getting-started {
+    height: 300px !important
+}
+
+.getting-started>p>span>img {
+    opacity: 0.7 !important;
+    height: 100%;
+}
+
+.getting-started>p>span {
+    width: 326px !important;
+    margin-right: 80px;
+}
+
+.getting-started>.css-76qosi-css-Paragraph .gatsby-resp-image-wrapper {
+    width: 385px !important;
+}
+
+.getting-started>div>p {
+    font-size: 16px;
+}
+
+.getting-started>div {
+    padding-left: 14%;
+    width: 769px;
+}
+
+.service-code-block>div>div>div>div>div:nth-child(2)>pre>div>div>button {
+    display: none !important;
+}
+
+.design-features-code-block>div {
+    margin-top: 50px !important;
+}
+
+.embed-adobe>div>div:first-child {
+    padding-left: 100px;
+    margin-right: 0px !important;
+}
+
+.embed-adobe>div>div:nth-child(2)>p>span>picture>img {
+    margin-left: 300px !important;
+    height: 300px !important;
+    width: 176px !important;
+
+    position: absolute;
+    overflow: visible;
+    z-index: auto;
+    opacity: 1;
+    transition: opacity 0.5s ease 0s;
+    color: inherit;
+    top: -29px;
+}
+
+.embed-adobe>div>div:nth-child(2)>p>span {
+    height: 350px;
+    opacity: 1;
+    width: 312px;
+    background-repeat: no-repeat, no-repeat;
+    margin-right: 50px !important;
+    background: url("../pages/images/Quick-action-icon-3.svg") no-repeat padding-box ,
+        url("../pages/images/Quick-action-icon-3.svg") 0% 0% no-repeat padding-box,
+        url("../pages/images/Crop-objects.svg") 0% 0% no-repeat padding-box,
+        url("../pages/images/Video-Crop-still-frame.png") 0% 0% no-repeat padding-box;
+        background-position: right 0px center, right 156px top 13px, right 16px top;
+}
+
+
+.embed-adobe>div>div:nth-child(2)>p {
+    top: 160px;
+    left: 1191px;
+    height: 361px;
+    background:
+        url("../pages/images/Quick-action-icon-2.svg") 0% 0% no-repeat padding-box,
+        url("../pages/images/Quick-action-icon-2.svg") 0% 0% no-repeat padding-box,
+        url('../pages/images/background-remove-layer-pexels-thyrone-paas-transparent.png') 0% 0% no-repeat padding-box,
+        url("../pages/images/background-remove-layer-2-pexels-thyrone.png") 0% 0% no-repeat padding-box;
+    background-position: left 105px bottom 26px, top 96px left 5px , right 263px center, left 4px center
 }

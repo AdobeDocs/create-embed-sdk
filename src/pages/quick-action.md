@@ -63,11 +63,13 @@ How are Quick Actions enabling users to work dynamically within their applicatio
 
 <QuickActionSDKDevelop/>
 
-<SummaryBlock slots=" heading, text, buttons" className="getting-started" />
+<SummaryBlock slots=" image , heading, text, buttons" className="getting-started" />
+
+![Getting Started](./images/Summary-Block-image.svg)
 
 ## Getting Started
 
-Embed the Express Editor on your own platform today and see how your users can start enhancing their operations.
+Ready to embed Adobe Express Quick Actions on your platform? Our team can connect with you on your use case, just fill out our form
 
 - [Get Started](https://adobe.io)
 - [Try the demo](https://adobe.io)

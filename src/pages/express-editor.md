@@ -19,7 +19,7 @@ With Adobe Express Editor, users can create professional-caliber social posts, a
 
 <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow"/>
 
-![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image-1@2x.png)
+![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image.png)
 
 ### Streamline your users’ workflows
 
@@ -31,7 +31,7 @@ With one-click, allow users to start creating and editing creative projects with
 
 The Express Editor unlocks Adobe’s unparalleled collection of templates, Adobe Stock* images, Adobe Fonts, and an array of creative assets for every need.
 
-![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image-2.png)
+![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image-two.png)
 
 <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow"/>
 
@@ -53,7 +53,9 @@ Learn more about using the embedded Express Editor
 
 How is the Express Editor improving customer experience?
 
-<SummaryBlock slots=" heading, text, buttons" className="getting-started" />
+<SummaryBlock slots=" image , heading, text, buttons" className="getting-started" />
+
+![Getting Started](./images/Summary-Block-image.svg)
 
 ## Getting Started
 

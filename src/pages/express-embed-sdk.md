@@ -1,61 +1,63 @@
-
 import "../styles/main.css"
-import ResourceCardBlock from './embed-express-sdk/why-express-embed-sdk.md';
 import AnimationVideo from "./videos/Adobe_DCP_Marquee_Animation.json";
-import DesignForDeveloper from './embed-express-sdk/design-for-developer.md';
+import WhyIntegrateSDK from "./embed-express-sdk/why-integrate-express-embed-sdk.md";
+import DesignForDeveloper from "./embed-express-sdk/design-for-develop.md"
 
 <Hero slots="image, icon, heading, text" variant="halfwidth"  className="embed-adobe "/>
 
-![Adobe Express](./images/1_Marquee_Device_enterprise_mob.png)
+![Adobe Express](./images/Code-asset.svg)
 
 ![Adobe Express](./images/adobeEmbed.jpg)
 
-# Embed Adobe's world class creative tools
+# Embed Adobe’s world class creative tools
 
-Put the right creative tools and templates in the hands of your users where and where you need  
+Put the right creative tools and content in the hands of your users with the Adobe Express Embed SDK.
 
 <DCSummaryBlock slots="text, buttons" theme="dark"  buttonPositionRight btnVariant="cta" className="How-to-get-started  ms-pa-page hero-below-compo ms-pa-summary-blade tryForFree" />
 
-The Easy-to-integrate,customizable,all-in-one Javascript library that brings Adobe Express capabilities to all applications
+Bring powerful Adobe Express capabilities to any application with Express Embed SDK, a customizable JavaScript library.
 
 - [Try the demo](https://documentservices.adobe.com/dc-integration-creation-app-cdn/main.html?api=pdf-services-api&source=pa#&sdid=6S3T74M5&mv=affiliate)
 
-<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability express-editor"/>
+<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability stremline-workflow express-editor"/>
 
-![EMPTY_ALT](./images/expressEditor.png)
+![EMPTY_ALT](./images/Product-blade-block-one-image.png)
 
-### Express Editor
+### Enhance your site with Adobe Express
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.At vero eos et accusam et justo duo dolores et
-
-- [Learn more](https://adobe.io)
-
-<TextBlock slots="heading,text,buttons,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two streamline_ability"/>
-
-### Quick Actions
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.At vero eos et accusam et justo duo dolores et
+Allow your users to create standout content with beautiful templates and assets for social media content, logos, and more. It only takes a few lines of code.
 
 - [Learn more](https://adobe.io)
 
-![EMPTY_ALT](./images/quickaction.png)
+<TextBlock slots="heading,text,buttons,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two stremline-workflow streamline_ability"/>
 
-<ResourceCardBlock/>
+### Quick Actions speed up users
+
+Powered by Adobe Photoshop and Adobe Premiere, Quick Actions combine complex operations into one or two clicks, making resizing images, removing backgrounds, and merging videos easy.
+
+- [Learn more](https://adobe.io)
+
+![EMPTY_ALT](./images/Product-block-two-video-PosterImage.png)
+
+<TitleBlock slots="heading" theme="light" />
+
+Why integrate the Express Embed SDK?
+
+<WrapperComponent slots="content" repeat="1" theme="light" className="acrobat letter breakout QuickActionSDKDevelop "/>
+
+<WhyIntegrateSDK/>
 
 <WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout resource-card"/>
 
 <DesignForDeveloper/>
 
-<TextBlock slots="heading,text,buttons,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" className="zigzag-cta-two streamline_ability adobeExpress-sdk"/>
+<SummaryBlock slots=" image , heading, text, buttons" className="getting-started" />
 
-### Getting Started
+![Getting Started](./images/Summary-Block-image.svg)
 
-With the Adobe Express Embed SDK, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labour et dolre magna aliquyam erat, sed diam voluptua. at vera eos at accusam et justo
+## Getting Started
+
+Unlock Adobe Express editing capabilities for your users by embedding the SDK on your own platform. Read our developer quickstart guide or try the demo to get started.
 
 - [Get Started](https://adobe.io)
 - [Try the demo](https://adobe.io)
-
-![EMPTY_ALT](./images/5_Devices_Store.png)
-
-
-
