@@ -5,9 +5,9 @@ import DesignForDeveloper from "./embed-express-sdk/design-for-develop.md"
 
 <Hero slots="image, icon, heading, text" variant="halfwidth"  className="embed-adobe "/>
 
-![Adobe Express](./images/Code-asset.svg)
+![Adobe Express](./images/background-remove-layer-1-pexels-thyrone-paas-transparent.png)
 
-![Adobe Express](./images/adobeEmbed.jpg)
+![Adobe Express](./images/Adobe-Express-logo-RGB.png)
 
 # Embed Adobe’s world class creative tools
 

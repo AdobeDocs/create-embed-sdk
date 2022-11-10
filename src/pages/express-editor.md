@@ -17,7 +17,7 @@ With Adobe Express Editor, users can create professional-caliber social posts, a
 
 [Try the demo](https://adobe.io)
 
-<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow"/>
+ <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
 ![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image.png)
 
@@ -25,7 +25,8 @@ With Adobe Express Editor, users can create professional-caliber social posts, a
 
 With one-click, allow users to start creating and editing creative projects within iframes on your site. All of the tools and content they need are in one place.
 
-<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two stremline-workflow"/>
+
+<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two streamline_ability"/>
 
 ### Inspire confident creators
 
@@ -33,21 +34,21 @@ The Express Editor unlocks Adobe’s unparalleled collection of templates, Adobe
 
 ![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image-two.png)
 
-<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow"/>
+<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
 ![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image-3.svg)
 
 ### Forge the path to customer success
 
-Customize where and how the Express Editor is launched to ensure users get to the right tools and templates.
+Customize where and how the Express Editor is launched to ensure users get to the right tools and templates. 
 
-<AnnouncementBlock slots="text, button" className="announcement-embed-editor"/>
+ <AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor"/>
 
 Learn more about using the embedded Express Editor
 
 [View Documentation](https://adobe.io)
 
-<TextBlock slots="heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow customer-experience"/>
+<TextBlock slots="heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability customer-experience"/>
 
 ### See it in Action
 
@@ -62,4 +63,4 @@ How is the Express Editor improving customer experience?
 Embed the Express Editor on your own platform today and see how your users can start enhancing their operations.
 
 - [Get Started](https://adobe.io)
-- [Try the demo](https://adobe.io)
+- [Try the demo](https://adobe.io) 

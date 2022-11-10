@@ -3265,6 +3265,11 @@ img[alt=adobe-sales] {
     border-color: gray !important;
 }
 
+.streamline_ability>div>div>div>p{
+    width: 82%;
+    color: #4B4B4B;
+}
+
 .streamline_ability>div>div>div>div>div>div>a>span>span {
     color: gray !important;
 }
@@ -4010,16 +4015,18 @@ img[alt=adobe-sales] {
 
 .embed-adobe>div>div:nth-child(2)>p>span>picture>img {
     margin-left: 300px !important;
-    height: 300px !important;
-    width: 176px !important;
-
+    width: 204px !important;
+    height: 358px !important;
+    left: 71px !important;
     position: absolute;
-    overflow: visible;
-    z-index: auto;
-    opacity: 1;
-    transition: opacity 0.5s ease 0s;
-    color: inherit;
+    display: none !important;
     top: -29px;
+}
+
+.embed-adobe>div>div:nth-child(2)>p>span>img {
+    margin-left: 371px !important;
+    width: 203px !important;
+    height: 359px !important;
 }
 
 .embed-adobe>div>div:nth-child(2)>p>span {
@@ -4028,11 +4035,12 @@ img[alt=adobe-sales] {
     width: 312px;
     background-repeat: no-repeat, no-repeat;
     margin-right: 50px !important;
-    background: url("../pages/images/Quick-action-icon-3.svg") no-repeat padding-box ,
+    background: url("../pages/images/Quick-action-icon-3.svg") no-repeat padding-box,
         url("../pages/images/Quick-action-icon-3.svg") 0% 0% no-repeat padding-box,
         url("../pages/images/Crop-objects.svg") 0% 0% no-repeat padding-box,
         url("../pages/images/Video-Crop-still-frame.png") 0% 0% no-repeat padding-box;
-        background-position: right 0px center, right 156px top 13px, right 16px top;
+    background-position: right 0px center, right 156px top 13px, right 0px top;
+
 }
 
 
@@ -4043,7 +4051,52 @@ img[alt=adobe-sales] {
     background:
         url("../pages/images/Quick-action-icon-2.svg") 0% 0% no-repeat padding-box,
         url("../pages/images/Quick-action-icon-2.svg") 0% 0% no-repeat padding-box,
-        url('../pages/images/background-remove-layer-pexels-thyrone-paas-transparent.png') 0% 0% no-repeat padding-box,
-        url("../pages/images/background-remove-layer-2-pexels-thyrone.png") 0% 0% no-repeat padding-box;
-    background-position: left 105px bottom 26px, top 96px left 5px , right 263px center, left 4px center
+        url("../pages/images/background-remove-layer-2-pexels-thyrone.png") 0% 0% no-repeat padding-box,
+        url("../pages/images/Code-asset.svg") 0% 0% no-repeat padding-box;
+    background-position: left 124px bottom 30px, left 0px center, top 58px left 5px, left 4px center;
+}
+
+.embed-adobe>div>div:nth-child(2) {
+    margin-top: 60px !important
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+    .getting-started>p>span>img{
+        display: none;
+    }
+    .getting-started>div {
+        padding-left: 5%;
+        width: 663px;
+    }
+    .getting-started>div>p {
+        font-size: 18px;
+    }
+
+    .streamline_ability>div>div>p>span>picture>img{
+        width: 100% !important;
+    }
+    .streamline_ability>div>div>p>span>span{
+        padding-bottom: 59.75% !important;
+    }
+
+    .streamline_ability>div>div>div>p {
+        width: 100%;
+    }
+    
+    .express-editor-hero-block>div>div:nth-child(2)>div:nth-child(2)>div{
+        margin-top: 87px !important;
+    }
+
+    .announcement-embed-editor{
+        padding: 40px 0px !important;     
+    }
+}
+
+@media (min-width: 320px) and (max-width:787px){
+    .express-editor-hero-block{
+        padding: 40px 20px !important;
+    }
+    .express-editor-hero-block>div>div:nth-child(2)>div {
+        height: fit-content !important;
+    }
 }
