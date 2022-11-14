@@ -1,7 +1,11 @@
 import "../styles/main.css"
 import AnimationVideo from "./videos/Adobe_DCP_Marquee_Animation.json";
 import QuickActionSDKDevelop from "./quick-action/quick-action-sdk-develop.md";
-import QuickAction from './quick-action/quick-action.md'
+import QuickAction from './quick-action/quick-action.md';
+import img1 from './images/Modal-image-1-resize-image.png'
+import img2 from './images/Modal-image-2-remove-background.png'
+import img3 from './images/Modal-image-3-convert-to-png.png'
+import {AnimationTextBlock} from "../components/AnimationTextBlock"
 
 <Hero slots="heading, text,  assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className="express-editor-hero-block"/>
 
@@ -23,7 +27,7 @@ Adobe Quick Actions are powerful tools developers can customize and embed within
 
 <QuickAction/>
 
-<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two big-impact"/>
+<AnimationTextBlock slots="heading,text,image" heading="Small Code Snippets, Big Impact" textcontent="Easily customize which Quick Action is loaded into your iframe by changing a single ID." image={img1} theme="lightest"  variantsTypePrimary="secondary" variantStyleFill = "outline" imagearray={[img1, img2, img3]}  homeZigZag className="zigzag-cta-two big-impact"/>
 
 ### Small Code Snippets, Big Impact
 

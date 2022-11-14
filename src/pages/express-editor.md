@@ -1,5 +1,5 @@
 import "../styles/main.css"
-import AnimationVideo from "./videos/Adobe_DCP_Marquee_Animation.json";
+import AnimationVideo from "./videos/Adobe_full_seq.json";
 
 <Hero slots="heading, text,  assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className="express-editor-hero-block"/>
 

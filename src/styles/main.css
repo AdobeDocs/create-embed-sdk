@@ -3891,6 +3891,7 @@ img[alt=adobe-sales] {
 
 .big-impact>div>div>div {
     width: 40% !important;
+    margin-right: 15%;
 }
 
 
@@ -3903,21 +3904,15 @@ img[alt=adobe-sales] {
 .big-impact>div>div>p {
     background-image: url("../pages/images/Background-image.png");
     background-repeat: none;
-    width: 47% !important;
+    width: 53% !important;
 }
 
-
-.big-impact>div>div>p>span>picture>img {
+.big-impact > .animationImgLoad > img {
     height: 80% !important;
-    top: 50px !important;
-    left: -20px !important;
+    top: 47px !important;
 }
 
 .big-impact>div>div>p>span>picture {
-    top: 1556px;
-    left: 736px;
-    width: 330px;
-    height: 146px;
     background: transparent url("../pages/images/Foreground-Code.svg") 0% 0% no-repeat padding-box;
     opacity: 1;
 }
