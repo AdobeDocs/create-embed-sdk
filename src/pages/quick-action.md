@@ -7,7 +7,7 @@ import img2 from './images/Modal-image-2-remove-background.png'
 import img3 from './images/Modal-image-3-convert-to-png.png'
 import {AnimationTextBlock} from "../components/AnimationTextBlock"
 
-<Hero slots="heading, text,  assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className="express-editor-hero-block"/>
+<Hero slots="heading, text, assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className=" express-editor-hero-block  Hero-Banner"/>
 
 # Make image and video editing a snap with Quick Actions
 
@@ -29,13 +29,7 @@ Adobe Quick Actions are powerful tools developers can customize and embed within
 
 <AnimationTextBlock slots="heading,text,image" heading="Small Code Snippets, Big Impact" textcontent="Easily customize which Quick Action is loaded into your iframe by changing a single ID." image={img1} theme="lightest"  variantsTypePrimary="secondary" variantStyleFill = "outline" imagearray={[img1, img2, img3]}  homeZigZag className="zigzag-cta-two big-impact"/>
 
-### Small Code Snippets, Big Impact
-
-Easily customize which Quick Action is loaded into your iframe by changing a single ID.
-
-![EMPTY_ALT](./images/Modal-image-1-resize-image.png)
-
-<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow"/>
+<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
 ![EMPTY_ALT](./images/Resize-Image-Main_PosterImage.png)
 
@@ -43,7 +37,7 @@ Easily customize which Quick Action is loaded into your iframe by changing a sin
 
 Make resizing images easy thanks to a wide array of standard and custom social media post image sizes to choose from.
 
-<TextBlock slots="heading,text,image" theme="light" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two stremline-workflow remove-bg"/>
+<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two streamline_ability remove-bg"/>
 
 ### Remove Background
 
@@ -51,13 +45,13 @@ Powered by Adobe Photoshop, enable users to remove backgrounds and create dynami
 
 ![EMPTY_ALT](./images/Background-Remover_PosterImage.png)
 
-<AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor quick-action"/>
+<AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor quick-action learn-more-action"/>
 
 Learn more about using embedded Quick Actions
 
 [View Documentation](https://adobe.io)
 
-<TextBlock slots="heading,text" theme="light" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="stremline-workflow customer-experience"/>
+<TextBlock slots="heading,text" theme="light" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability customer-experience"/>
 
 ### Quick Action Deployments
 

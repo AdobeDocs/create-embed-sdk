@@ -1,15 +1,13 @@
 import "../styles/main.css"
 import AnimationVideo from "./videos/Adobe_full_seq.json";
 
-<Hero slots="heading, text,  assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className="express-editor-hero-block"/>
+<Hero slots="heading, text" customLayout variant="video" animationVideo={AnimationVideo} className="express-editor-hero-block"/>
 
 # Unlock end users’ creativity with the Adobe Express Editor
 
 Give end users a quick and easy way to start a creative design workflow from within your applications
 
-homeheroAssertImage
-
-<AnnouncementBlock slots="heading, text, button" className="announcement-embed-editor"/>
+<AnnouncementBlock slots="heading, text, button" className="announcement-embed-editor customer-need"/>
 
 ### Satisfy your customers’ creative needs
 
@@ -54,7 +52,7 @@ Learn more about using the embedded Express Editor
 
 How is the Express Editor improving customer experience?
 
-<SummaryBlock slots=" image , heading, text, buttons" className="getting-started" />
+<SummaryBlock slots=" image , heading, text, buttons" className="getting-started summary-block" />
 
 ![Getting Started](./images/Summary-Block-image.svg)
 

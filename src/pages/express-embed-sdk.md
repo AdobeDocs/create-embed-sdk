@@ -19,17 +19,17 @@ Bring powerful Adobe Express capabilities to any application with Express Embed 
 
 - [Try the demo](https://documentservices.adobe.com/dc-integration-creation-app-cdn/main.html?api=pdf-services-api&source=pa#&sdid=6S3T74M5&mv=affiliate)
 
-<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability stremline-workflow express-editor"/>
+<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability  express-editor"/>
 
 ![EMPTY_ALT](./images/Product-blade-block-one-image.png)
-
+    
 ### Enhance your site with Adobe Express
 
 Allow your users to create standout content with beautiful templates and assets for social media content, logos, and more. It only takes a few lines of code.
 
 - [Learn more](https://adobe.io)
 
-<TextBlock slots="heading,text,buttons,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two stremline-workflow streamline_ability"/>
+<TextBlock slots="heading,text,buttons,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two  streamline_ability"/>
 
 ### Quick Actions speed up users
 
@@ -39,7 +39,7 @@ Powered by Adobe Photoshop and Adobe Premiere, Quick Actions combine complex ope
 
 ![EMPTY_ALT](./images/Product-block-two-video-PosterImage.png)
 
-<TitleBlock slots="heading" theme="light" />
+<TitleBlock slots="heading" theme="lightest" />
 
 Why integrate the Express Embed SDK?
 
@@ -47,11 +47,11 @@ Why integrate the Express Embed SDK?
 
 <WhyIntegrateSDK/>
 
-<WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout resource-card"/>
+<WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout resource-card design-developer"/>
 
 <DesignForDeveloper/>
 
-<SummaryBlock slots=" image , heading, text, buttons" className="getting-started" />
+<SummaryBlock slots=" image , heading, text, buttons" className="getting-started sdk-getting-block" />
 
 ![Getting Started](./images/Summary-Block-image.svg)
 
