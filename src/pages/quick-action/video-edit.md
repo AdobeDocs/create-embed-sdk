@@ -10,19 +10,19 @@ title: Video Editing
 
 ![Trim Video](../images/S_AniTrimVideo.png)
 
-Trim Video
+Trim video
 
 <TextBlock slots="image , text" theme="lightest" className="edit-text-block"/>
 
 ![Resize Video](../images/S_AniResizeVedio.png)
 
-Resize Video
+Resize video
 
 <TextBlock slots="image , text" theme="lightest" className="edit-text-block"/>
 
 ![Merge Vedio](../images/S_AniMergeVideo.png)
 
-Merge Video
+Merge video
 
 <TextBlock slots="image , text" theme="lightest" className="edit-text-block"/>
 

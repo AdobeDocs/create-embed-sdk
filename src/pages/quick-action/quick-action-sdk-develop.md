@@ -11,7 +11,7 @@ Users can customize images inline with the image resize and remove background Qu
 
 ![Creative Cloud Desktop](../images/Quick-Actions-Deployments-image-2.png)
 
-### Creative Cloud Desktop
+### Creative Cloud on Desktop
 
 Experience the full complement of image and video editing Quick Actions for use in any Adobe application with Creative Cloud on desktop.
 

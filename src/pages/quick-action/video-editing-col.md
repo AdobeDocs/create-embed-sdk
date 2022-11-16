@@ -1,5 +1,5 @@
 ---
-title: Image Editing
+title: Video Editing
 ---
  
  
@@ -23,13 +23,13 @@ Convert to MP4
 
 ![reverse-video](../images/S_AniRevertVideo.png)
 
-Reverse Video
+Reverse video
 
 <TextBlock slots="image , text" theme="lightest" className="edit-text-block"/>
 
 ![Crop Video](../images/S_AniCrop.png)
 
-Crop Video
+Crop video
 
 
 

@@ -67,7 +67,7 @@ How are Quick Actions enabling users to work dynamically within their applicatio
 
 ## Getting Started
 
-Ready to embed Adobe Express Quick Actions on your platform? Our team can connect with you on your use case, just fill out our form
+Ready to embed Adobe Express Quick Actions on your platform? Our team can connect with you on your use case, just fill out our form. 
 
 - [Get Started](https://adobe.io)
 - [Try the demo](https://adobe.io)

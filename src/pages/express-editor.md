@@ -23,7 +23,6 @@ With Adobe Express Editor, users can create professional-caliber social posts, a
 
 With one-click, allow users to start creating and editing creative projects within iframes on your site. All of the tools and content they need are in one place.
 
-
 <TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two streamline_ability"/>
 
 ### Inspire confident creators
@@ -38,7 +37,7 @@ The Express Editor unlocks Adobe’s unparalleled collection of templates, Adobe
 
 ### Forge the path to customer success
 
-Customize where and how the Express Editor is launched to ensure users get to the right tools and templates. 
+Customize where and how the Express Editor is launched to ensure users get to the right tools and templates.
 
  <AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor"/>
 

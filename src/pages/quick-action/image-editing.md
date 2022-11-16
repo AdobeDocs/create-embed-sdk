@@ -20,9 +20,9 @@ Remove background
 
 <TextBlock slots="image , text" theme="lightest"  className="edit-text-block"/>
 
-![Convert to PDF](../images/S_AniConvertToJPG.png)
+![Convert to JPG](../images/S_AniConvertToJPG.png)
 
-Convert to PDF
+Convert to JPG
 
 <TextBlock slots="image , text" theme="lightest"  className="edit-text-block"/>
 
@@ -34,7 +34,7 @@ Convert to PNG
 
 ![Crop Image](../images/S_AniCrop.png)
 
-Crop Image
+Crop image
 
 
 

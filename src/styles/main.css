@@ -3775,13 +3775,6 @@ img[alt=adobe-sales] {
     opacity: 1;
 }
 
-.big-impact>div:first-child>div:first-child>div:first-child {
-    top: 1655px;
-    left: 310px;
-    width: 380px;
-    height: 92px;
-    color: #FFFFFF;
-}
 
 .QuickActionSDKDevelop>div {
     width: 100% !important;
@@ -3800,8 +3793,7 @@ img[alt=adobe-sales] {
 
 .big-impact>div>div>div>p {
     color: #fff;
-    width: 358px;
-    height: 49px;
+    width: 55%;
 }
 
 .big-impact>div>div>p {
@@ -3813,7 +3805,6 @@ img[alt=adobe-sales] {
 
 .big-impact>div>div>p>span>picture>img {
     height: 80% !important;
-    top: 50px !important;
     left: -20px !important;
 }
 
@@ -3921,7 +3912,7 @@ img[alt=adobe-sales] {
 
 .design-features-code-block>div {
     max-width: 73%;
-    margin-top: 50px !important;
+    margin-top: 4% !important;
 }
 
 .embed-adobe>div>div:first-child {
@@ -3944,13 +3935,13 @@ img[alt=adobe-sales] {
     width: 100% !important;
 }
 
-/* .embed-adobe>div>div:nth-child(2)>p>span>img {
+.embed-adobe>div>div:nth-child(2)>p>span>img {
     margin-left: 371px !important;
     width: 203px !important;
     height: 359px !important;
-} */
+}
 
-/* .embed-adobe>div>div:nth-child(2)>p>span {
+.embed-adobe>div>div:nth-child(2)>p>span {
     height: 350px;
     opacity: 1;
     width: 312px;
@@ -3962,10 +3953,10 @@ img[alt=adobe-sales] {
         url("../pages/images/Video-Crop-still-frame.png") 0% 0% no-repeat padding-box;
     background-position: right 0px center, right 156px top 13px, right 0px top;
 
-} */
+}
 
 
-/* .embed-adobe>div>div:nth-child(2)>p {
+.embed-adobe>div>div:nth-child(2)>p {
     top: 160px;
     left: 1191px;
     height: 361px;
@@ -3975,7 +3966,7 @@ img[alt=adobe-sales] {
         url("../pages/images/background-remove-layer-2-pexels-thyrone.png") 0% 0% no-repeat padding-box,
         url("../pages/images/Code-asset.svg") 0% 0% no-repeat padding-box;
     background-position: left 124px bottom 30px, left 0px center, top 58px left 5px, left 4px center;
-} */
+}
 
 .embed-adobe>div>div:nth-child(2) {
     margin-top: 10% !important
