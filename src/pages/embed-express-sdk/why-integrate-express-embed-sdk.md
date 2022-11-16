@@ -1,5 +1,5 @@
 
-<TextBlock slots="image, heading, text" theme="lightest"  width="33%" className="deployment" />
+<TextBlock slots="image, heading, text" theme="lightest"  width="33%" className="deployment why-integrate-sdk" />
 
 ![Help your users shine creatively](../images/Benefits-blade-image-1.svg)
 
@@ -7,7 +7,7 @@
 
 Inspire users of all skills levels with templates, content, and suggestions to help them create confidently.
 
-<TextBlock slots="image, heading, text" theme="lightest"  width="33%" className="deployment"/>
+<TextBlock slots="image, heading, text" theme="lightest"  width="33%" className="deployment why-integrate-sdk"/>
 
 ![Make your site a one-stop shop](../images/Benefits-blade-image-2.svg)
 
@@ -15,7 +15,7 @@ Inspire users of all skills levels with templates, content, and suggestions to h
 
 Create an engaged and satisfied userbase by helping users complete their creative tasks easily directly on your platform.
 
-<TextBlock slots="image, heading, text" theme="lightest"  width="33%" className="deployment"/>
+<TextBlock slots="image, heading, text" theme="lightest"  width="33%" className="deployment why-integrate-sdk"/>
 
 ![Letter](../images/Benefits-blade-image-3.svg)
 

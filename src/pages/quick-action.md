@@ -13,7 +13,7 @@ import AnimationVideo from "./videos/cropeed_full_seq.json";
 
 Quick actions, powered by Adobe Photoshop and Premiere, make short work of multi-step editing tasks.
 
-homeheroAssertImage
+homeheroquickAction
 
 <AnnouncementBlock slots="heading, text, button" className="announcement-embed-editor quick-action"/>
 
@@ -31,7 +31,7 @@ Adobe Quick Actions are powerful tools developers can customize and embed within
 
 <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
-![EMPTY_ALT](./images/Resize-Image-Main_PosterImage.png)
+![Resize Image](./images/Resize-Image-Main_PosterImage.png)
 
 ### Resize Image
 
@@ -43,7 +43,7 @@ Make resizing images easy thanks to a wide array of standard and custom social m
 
 Powered by Adobe Photoshop, enable users to remove backgrounds and create dynamic images in one simple click.
 
-![EMPTY_ALT](./images/Background-Remover_PosterImage.png)
+![Remove Background](./images/Background-Remover_PosterImage.png)
 
 <AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor quick-action learn-more-action"/>
 

@@ -1,11 +1,13 @@
 import "../styles/main.css"
 import AnimationVideo from "./videos/Adobe_full_seq.json";
 
-<Hero slots="heading, text" customLayout variant="video" animationVideo={AnimationVideo} className="express-editor-hero-block"/>
+<Hero slots="heading, text ,assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className="express-editor-hero-block"/>
 
 # Unlock end users’ creativity with the Adobe Express Editor
 
 Give end users a quick and easy way to start a creative design workflow from within your applications
+
+homeheroAssertExpressImage
 
 <AnnouncementBlock slots="heading, text, button" className="announcement-embed-editor customer-need"/>
 
@@ -17,7 +19,7 @@ With Adobe Express Editor, users can create professional-caliber social posts, a
 
  <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
-![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image.png)
+![Streamline your users’ workflows](./images/Express-Editor-Benefits-Blade-image.png)
 
 ### Streamline your users’ workflows
 
@@ -29,11 +31,11 @@ With one-click, allow users to start creating and editing creative projects with
 
 The Express Editor unlocks Adobe’s unparalleled collection of templates, Adobe Stock* images, Adobe Fonts, and an array of creative assets for every need.
 
-![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image-two.png)
+![Inspire confident creators](./images/Express-Editor-Benefits-Blade-image-two.png)
 
 <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
-![EMPTY_ALT](./images/Express-Editor-Benefits-Blade-image-3.svg)
+![Forge the path to customer success](./images/Express-Editor-Benefits-Blade-image-3.svg)
 
 ### Forge the path to customer success
 
