@@ -1,11 +1,11 @@
 import "../styles/main.css"
-import AnimationVideo from "./videos/Adobe_DCP_Marquee_Animation.json";
 import QuickActionSDKDevelop from "./quick-action/quick-action-sdk-develop.md";
 import QuickAction from './quick-action/quick-action.md';
 import img1 from './images/Modal-image-1-resize-image.png'
 import img2 from './images/Modal-image-2-remove-background.png'
 import img3 from './images/Modal-image-3-convert-to-png.png'
 import {AnimationTextBlock} from "../components/AnimationTextBlock"
+import AnimationVideo from "./videos/cropeed_full_seq.json";
 
 <Hero slots="heading, text, assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className=" express-editor-hero-block  Hero-Banner"/>
 

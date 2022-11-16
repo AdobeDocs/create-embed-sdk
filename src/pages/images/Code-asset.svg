@@ -1,6 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="420.334" height="518.455" viewBox="0 0 420.334 518.455">
+  <style>
+    #Code_lines
+      background-color: red
+  </style>
+    <defs>
+    <style type="text/css"><![CDATA[
+      .animated {
+        animation: animateCode 5s infinite;
+      }
+
+      @keyframes animateCode {
+        0% { transform: translateY(-0); }
+        10% { transform: translateY(-10px); }
+        25% { transform: translateY(-25px); }
+        50% { transform: translateY(-50px); }
+        75% { transform: translateY(-75px); }
+        100% { transform: translateY(-100px); }
+      }
+    ]]></style>
+  </defs>
   <g id="Code_asset" data-name="Code asset" transform="translate(0 0.001)">
-    <g id="Code_lines" data-name="Code lines" transform="translate(14.162 0.003)" opacity="0.24">
+    <g id="Code_lines" data-name="Code lines" transform="translate(14.162 0.003)" opacity="0.24" class='animated'>
       <rect id="Rectangle_151726" data-name="Rectangle 151726" width="35.617" height="4.721" transform="translate(0 0)" fill="#fff"/>
       <rect id="Rectangle_151727" data-name="Rectangle 151727" width="64.96" height="4.721" transform="translate(44.416 0)" fill="#fff"/>
       <rect id="Rectangle_151728" data-name="Rectangle 151728" width="88.76" height="4.721" transform="translate(0 13.887)" fill="#fff"/>
@@ -68,7 +88,7 @@
       <rect id="Rectangle_152056" data-name="Rectangle 152056" width="61.775" height="4.721" transform="translate(344.396 499.845)" fill="#fff"/>
       <rect id="Rectangle_152055" data-name="Rectangle 152055" width="20.453" height="4.721" transform="translate(17.806 513.731)" fill="#fff"/>
     </g>
-    <g id="Code_row_dots" data-name="Code row dots" opacity="0.24">
+    <g id="Code_row_dots" data-name="Code row dots" opacity="0.24"  class='animated'>
       <path id="Path_103672" data-name="Path 103672" d="M347.88,90.42h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,90.42Z" transform="translate(-345.53 178.397)" fill="#fff"/>
       <path id="Path_103673" data-name="Path 103673" d="M347.88,134.5h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,134.5Z" transform="translate(-345.53 148.148)" fill="#fff"/>
       <path id="Path_103674" data-name="Path 103674" d="M347.88,178.57h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,178.57Z" transform="translate(-345.53 117.905)" fill="#fff"/>

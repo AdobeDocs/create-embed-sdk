@@ -1,0 +1,14 @@
+.bg {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: opacity;
+}
+
+.image-bg {
+    width: 450px;
+    height: 250px;
+    background-repeat: no-repeat;
+    margin-left: 21px;
+    margin-top: 61px;
+}
