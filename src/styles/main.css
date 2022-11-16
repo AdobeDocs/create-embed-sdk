@@ -2579,6 +2579,12 @@ img[alt=adobe-sales] {
     filter: drop-shadow(0 0.1rem 0.25rem red);
 }
 
+.spectrum-Accordion-itemHeader {
+    color: var(--spectrum-listitem-m-text-color-hover, var(--spectrum-alias-text-color));
+    font-size: var(--spectrum-global-dimension-size-200);
+    font-weight: var(--spectrum-global-font-weight-bold);
+}
+
 .spectrum-Accordion {
     padding-bottom: var(--spectrum-global-dimension-size-600);
 }
@@ -3773,7 +3779,7 @@ img[alt=adobe-sales] {
 }
 
 .big-impact>div>div>div {
-    width: 90% !important;
+    width: 40% !important;
 }
 
 
@@ -3784,8 +3790,9 @@ img[alt=adobe-sales] {
 
 .big-impact>div>div>p {
     background-image: url("../pages/images/Background-image.png");
-    background-repeat: none;
-    width: 47% !important;
+    background-repeat: no-repeat;
+    width: 40%;
+    scale: 0.9;
 }
 
 
@@ -3896,22 +3903,56 @@ img[alt=adobe-sales] {
         url("../pages/images/Quick-action-icon-3.svg") 0% 0% no-repeat padding-box,
         url("../pages/images/Crop-objects.svg") 0% 0% no-repeat padding-box,
         url("../pages/images/Video-Crop-still-frame.png") 0% 0% no-repeat padding-box;
-    background-position: right 0px center, right 55% top 9%, right 0px top;
+    background-position: left 100% center, right 25% top 25%, right 0% top 50%, right 0% center;
+    animation: image 4s;
+    right: 22%;
+    bottom: 7%;
+}
 
+@keyframes image {
+    0%   { right:0%; }
+    100%  { right:22%; }
+}
+
+@media (min-width: 1440px) {
+    .embed-adobe>div>div:nth-child(2)>p>span {
+        opacity: 1;
+        background-repeat: no-repeat, no-repeat;
+        background: url("../pages/images/Quick-action-icon-3.svg") no-repeat padding-box,
+            url("../pages/images/Quick-action-icon-3.svg") 0% 0% no-repeat padding-box,
+            url("../pages/images/Crop-objects.svg") 0% 0% no-repeat padding-box,
+            url("../pages/images/Video-Crop-still-frame.png") 0% 0% no-repeat padding-box;
+        background-position: left 100% center, right 32% top 25%, right 0% top 50%, right 0% center;
+        animation: image 4s 1500ms;
+        right: 10%;
+        bottom: 7%;
+    }
+
+    @keyframes image {
+        0%   { right:0%; }
+        100%  { right:10%; }
+    }
 }
 
 .embed-adobe>div>div:nth-child(2)>p {
-    height: 83%;
+    width: 100%;
     background:
         url("../pages/images/Quick-action-icon-2.svg") 0% 0% no-repeat padding-box,
         url("../pages/images/Quick-action-icon-2.svg") 0% 0% no-repeat padding-box,
         url("../pages/images/background-remove-layer-2-pexels-thyrone.png") 0% 0% no-repeat padding-box,
         url("../pages/images/Code-asset.svg") 0% 0% no-repeat padding-box;
-    background-position: left 124px bottom 30px, left 0px center, top 58px left 5px, left 4px center;
+    background-position: left 20% bottom 30%, left 3% center, top 45% left 12%, left 0% center;
+    animation: back 3s 1500ms;
+}
+
+@keyframes back {
+    0%   {background-position: left 0% bottom 30%, left 0% center, top 45% left 0%, left 0% center;}
+    100%  {background-position: left 20% bottom 30%, left 3% center, top 45% left 12%, left 0% center;}
 }
 
 .embed-adobe>div>div:nth-child(2) {
-    margin-top: 10% !important
+    margin-top: 5% !important;
+    height: 95%;
 }
 
 .edit-text-block>div>div {
@@ -3950,6 +3991,16 @@ img[alt=adobe-sales] {
     margin-top: 35% !important;
 }
 @media (min-width: 768px) and (max-width:1024px) {
+    .embed-adobe>div>div:nth-child(2)>p>span {
+        background-position: left 100% center, right 27% top 18%, right 0% top 50%, right 0% center;
+        right: 20%;
+        bottom: 7%;
+    }
+
+    @keyframes image {
+        0%   { right:0%; }
+        100%  { right:20%; }
+    }
 
    
     .How-to-get-started {
@@ -4359,7 +4410,12 @@ img[alt=adobe-sales] {
     .deployment>div>h3 {
         margin-top: 0% !important;
     }
+          
 
+}
 
+.css-gno8zk-AnimationTextBlock {
+    width: 100% !important;
+    padding: 0% !important;
 }
 

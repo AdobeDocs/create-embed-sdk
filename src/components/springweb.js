@@ -33,12 +33,12 @@ export default function SpringImage({slides}) {
   const isViewed = useIsInViewport(imageRef)
 
   return (
-    <div className="flex fill center bg">
+    <div className="flex fill center" style={{position: 'absolute'}}>
         {isViewed &&
             <AnimatedImageFrame count={count} setCount={setCount} imageRef={imageRef} slides={slides} />
         }
-        <img src='' alt='animeImages' ref={imageRef} className='image-bg'/>
-        <div style={{position: "absolute",right: "325px",top: "120px"}}>
+        <img src='' alt='animeImages' ref={imageRef} className='image-bg' style={{width: '100%', backgroundRepeat: 'no-repeat', marginLeft: '0', marginTop: '7%'}} />
+        <div style={{position: 'absolute',right: "75%",top: "9%"}}>
           <CodeSnippetSVG name={ Math.round(count) === 0 ? 'image-resize' : Math.round(count) === 1 ? 'remove-background' : 'convert-to-png'}  />
         </div>
     </div>
