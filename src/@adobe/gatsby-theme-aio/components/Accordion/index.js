@@ -11,6 +11,7 @@
  */
 
 import React, { useEffect, useState } from 'react';
+import "../../../../../src/styles/main.css"
 import { css } from '@emotion/react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
