@@ -6,8 +6,9 @@ import img2 from './images/Modal-image-2-remove-background.png'
 import img3 from './images/Modal-image-3-convert-to-png.png'
 import {AnimationTextBlock} from "../components/AnimationTextBlock"
 import AnimationVideo from "./videos/cropeed_full_seq.json";
+import quickAction from './videos/quickAction_Crop_Video.mp4'
 
-<Hero slots="heading, text, assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className=" express-editor-hero-block  Hero-Banner"/>
+<Hero slots="heading, text, assetsImg" variant="fullwidth" videoSrcUrl={quickAction}    className="express-editor-hero-block  Hero-Banner" isQuickAction/>
 
 # Make image and video editing a snap with Quick Actions
 

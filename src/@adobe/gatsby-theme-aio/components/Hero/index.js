@@ -11,7 +11,7 @@
  * governing permissions and limitations under the License.
  */
 
-import React, { cloneElement, Children, useContext,useEffect } from "react";
+import React, { cloneElement, Children, useContext,useEffect, useState } from "react";
 import { withPrefix } from "gatsby";
 import { css } from "@emotion/react";
 import { AnchorButton } from "@adobe/gatsby-theme-aio/src/components/AnchorButton";
@@ -84,10 +84,11 @@ const HeroButtons = ({ buttons, styles = ['fill', 'outline'], variants = ['accen
     </div>
   ) : null;
 
-const HeroImage = ({ image, styles }) =>
+const HeroImage = ({ image, styles, className }) =>
   image
     ? cloneElement(image, {
       children: cloneChildren(image.props.children, setImageLoading),
+      className: className,
       css: css`
           display: flex;
           align-items: center;
@@ -170,17 +171,23 @@ const Hero = ({
   variantsTypePrimary='accent',
   variantsTypeSecondary='secondary',
   animationVideo="",
+  videoSrcUrl="",
+  svgEmbded="",
+  isQuickAction=false,
   ...props
 }) => {
   const { siteMetadata, location } = useContext(Context);
-
+  const [showVideo, setShowVideo] = useState(false);
   
+
+  console.log('svgEmbed', svgEmbded)
   useEffect(()=>{
+    
     if ( animationVideo ) {
       var anim = lottie.loadAnimation({
         container: document.querySelector("#svgContainer"), 
         renderer: "svg",
-        loop: false,
+        loop: true,
         autoplay: true,
         animationData: animationVideo
       });
@@ -191,7 +198,38 @@ const Hero = ({
       //       }
       // });
     }
+
+    if( videoSrcUrl ) {
+      let timer1 = setTimeout(() => {
+        setShowVideo(true)
+      } ,  4000);
+
+      // this will clear Timeout
+      // when component unmount like in willComponentUnmount
+      // and show will not change to true
+      return () => {
+        clearTimeout(timer1);
+      };
+    }
   },[])
+  useEffect(() => {
+    
+    const videoPlayer = document.getElementById("playAnimatedVideo");
+    if (!videoPlayer) return
+    if( showVideo) {
+      videoPlayer.play()
+      setTimeout(() => {
+        setShowVideo(false)
+      } ,  21000);
+    }
+    else {
+      videoPlayer.pause()
+      setTimeout(() => {
+        setShowVideo(true)
+      } ,  4000);
+    }
+
+  }, [showVideo])
 
 
   if (!variant || variant === 'default') {
@@ -445,8 +483,8 @@ const Hero = ({
 
                   <HeroButtons
                     buttons={buttons}
-                    styles={['outline']}
-                    variants={['staticWhite']}
+                    quiets={[false]}
+                    variants={["primary", "overBackground"]}
                     css={css`
                       margin-top: var(--spectrum-global-dimension-size-400);
                     `}
@@ -554,6 +592,8 @@ const Hero = ({
                 `
               })}
 
+              
+
                 {heading && (
                   <HeroHeading
                     heading={heading}
@@ -573,13 +613,11 @@ const Hero = ({
                 style={["outine"]}
               />
             </div>
-            <div>
-              <div className={assetsImg?.props?.children}/>
             </div>
-          </div>
+          
         </section>
       );
-    } else if (variant === 'fullwidth') {
+    } else if (variant === 'fullwidth' && !videoSrcUrl) {
       return (
         <section
           className={classNames(className, `spectrum--${theme}`)}
@@ -601,8 +639,6 @@ const Hero = ({
               }
             }
           `}>
-          <HeroImage image={image} />
-
           <div
             css={css`
               height: 100%;
@@ -693,7 +729,7 @@ const Hero = ({
                     }
                   `
                 })}
-
+             
               <HeroHeading heading={heading} isVariant />
 
               <HeroTexts texts={props} />
@@ -718,6 +754,242 @@ const Hero = ({
           </div>
         </section>
       );
+    } else if ( variant === 'fullwidth' && videoSrcUrl && !isQuickAction) {
+      return (
+        <section
+          className={classNames(className, `spectrum--${theme}`)}
+          css={css`
+            background: ${background ?? 'var(--spectrum-global-color-gray-50)'};
+            width: 100%;
+            overflow: hidden;
+            height: auto;
+            @media screen and (max-width: ${TABLET_SCREEN_WIDTH}) {
+              height: auto;
+              padding: var(--spectrum-global-dimension-size-400);
+              box-sizing: border-box;
+            }
+            @media screen and (max-width: ${MOBILE_SCREEN_WIDTH}) {
+              height: auto;
+              padding: var(--spectrum-global-dimension-size-225);
+              box-sizing: border-box;
+            }
+        `}>
+          <div css={css`
+            @media screen and (min-width: ${DESKTOP_SCREEN_WIDTH}) {
+              display: flex;
+              justify-content: space-between;
+              position: relative;
+              max-width:${DESKTOP_SCREEN_WIDTH};
+              margin:auto;
+            }
+          `}>            
+            <div
+              css={css`
+                display: flex;
+                flex-direction: column;
+                justify-content: center !important;
+                // position: absolute;
+                padding: 0;
+                top: 0;
+                text-align: left;
+                width: 36%;
+                align-item:center;
+                bottom: 0;
+                box-sizing: border-box;
+
+                @media screen and (max-width: ${MOBILE_SCREEN_WIDTH}) {
+                  padding: 0 !important;
+                  width: 100% !important;
+                  position: initial !important;
+                }
+
+                @media screen and (max-width: ${TABLET_SCREEN_WIDTH}) {
+                  padding: 0 var(--spectrum-global-dimension-size-100);
+                  width:100% !important;
+                  top: 20px !important;
+                  position: initial !important;
+                  h1 {
+                    padding: 0 var(--spectrum-global-dimension-size-200) 0 var(--spectrum-global-dimension-size-0) !important;
+                    font-size: var(--spectrum-heading-l-text-size, var(--spectrum-alias-heading-l-text-size))
+                  }
+                }
+            `}>                    
+            {icon &&
+              cloneElement(icon, {
+                children: cloneChildren(icon.props.children, setImageLoading),
+                css: css`
+                  height: var(--spectrum-global-dimension-size-400);
+                  width: var(--spectrum-global-dimension-size-3600);
+                  margin-top: 0 !important;
+                  margin-bottom: var(--spectrum-global-dimension-size-300) !important;
+                  @media screen and (max-width: ${MOBILE_SCREEN_WIDTH}) {
+                    width: var(--spectrum-global-dimension-size-3000) !important;
+                  }
+                  .gatsby-resp-image-wrapper {
+                    max-width: none !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                  }
+
+                  .gatsby-resp-image-image {
+                    height: 100%;
+                    object-fit: contain;
+                  }
+                `
+              })}
+
+              
+
+                {heading && (
+                  <HeroHeading
+                    heading={heading}
+                    variant={variant}
+                    customLayout={customLayout}
+                  />
+                )}
+
+              <HeroTexts texts={props} />
+
+              <HeroButtons
+                buttons={buttons}
+                css={css`
+                  margin-top: var(--spectrum-global-dimension-size-400);
+                `}
+                variants={[variantsTypePrimary, variantsTypeSecondary]}
+                style={["outine"]}
+              />
+            </div>
+            {
+                videoSrcUrl && 
+                <div>
+                 
+                  <div className="video" style={showVideo ? {opacity:0.4} :  {opacity:1} } >
+                  </div>
+                 
+                  <video className="autoPlayVideo" id="playAnimatedVideo" style={!showVideo ? {opacity:0} :  {opacity:1} } name="media" muted="true">
+                      <source src={videoSrcUrl} type="video/mp4" />
+                  </video>
+                  {  !showVideo && svgEmbded}
+                </div>
+              }
+
+            </div>
+          
+        </section>
+      );
+    }  else if ( variant === 'fullwidth' && videoSrcUrl && isQuickAction ) {
+      return (
+        <section
+          className={classNames(className, `spectrum--${theme}`)}
+          css={css`
+            background: ${background ?? 'var(--spectrum-global-color-gray-50)'};
+            width: 100%;
+            overflow: hidden;
+            height: auto;
+            @media screen and (max-width: ${TABLET_SCREEN_WIDTH}) {
+              height: auto;
+              padding: var(--spectrum-global-dimension-size-400);
+              box-sizing: border-box;
+            }
+            @media screen and (max-width: ${MOBILE_SCREEN_WIDTH}) {
+              height: auto;
+              padding: var(--spectrum-global-dimension-size-225);
+              box-sizing: border-box;
+            }
+        `}>
+          <div css={css`
+            @media screen and (min-width: ${DESKTOP_SCREEN_WIDTH}) {
+              display: flex;
+              justify-content: space-between;
+              position: relative;
+              max-width:${DESKTOP_SCREEN_WIDTH};
+              margin:auto;
+            }
+          `}>            
+            <div
+              css={css`
+                display: flex;
+                flex-direction: column;
+                justify-content: center !important;
+                // position: absolute;
+                padding: 0;
+                top: 0;
+                text-align: left;
+                width: 36%;
+                align-item:center;
+                bottom: 0;
+                box-sizing: border-box;
+
+                @media screen and (max-width: ${MOBILE_SCREEN_WIDTH}) {
+                  padding: 0 !important;
+                  width: 100% !important;
+                  position: initial !important;
+                }
+
+                @media screen and (max-width: ${TABLET_SCREEN_WIDTH}) {
+                  padding: 0 var(--spectrum-global-dimension-size-100);
+                  width:100% !important;
+                  top: 20px !important;
+                  position: initial !important;
+                  h1 {
+                    padding: 0 var(--spectrum-global-dimension-size-200) 0 var(--spectrum-global-dimension-size-0) !important;
+                    font-size: var(--spectrum-heading-l-text-size, var(--spectrum-alias-heading-l-text-size))
+                  }
+                }
+            `}>                    
+            {icon &&
+              cloneElement(icon, {
+                children: cloneChildren(icon.props.children, setImageLoading),
+                css: css`
+                  height: var(--spectrum-global-dimension-size-400);
+                  width: var(--spectrum-global-dimension-size-3600);
+                  margin-top: 0 !important;
+                  margin-bottom: var(--spectrum-global-dimension-size-300) !important;
+                  @media screen and (max-width: ${MOBILE_SCREEN_WIDTH}) {
+                    width: var(--spectrum-global-dimension-size-3000) !important;
+                  }
+                  .gatsby-resp-image-wrapper {
+                    max-width: none !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                  }
+
+                  .gatsby-resp-image-image {
+                    height: 100%;
+                    object-fit: contain;
+                  }
+                `
+              })}
+
+              
+
+                {heading && (
+                  <HeroHeading
+                    heading={heading}
+                    variant={variant}
+                    customLayout={customLayout}
+                  />
+                )}
+
+              <HeroTexts texts={props} />
+
+              <HeroButtons
+                buttons={buttons}
+                css={css`
+                  margin-top: var(--spectrum-global-dimension-size-400);
+                `}
+                variants={[variantsTypePrimary, variantsTypeSecondary]}
+                style={["outine"]}
+              />
+            </div>
+                  
+            <video className="autoQuickPlayVideo" id="playAnimatedVideo" name="media2" muted="true" autoPlay>
+                <source src={videoSrcUrl} type="video/mp4" />
+            </video>
+            </div>
+          
+        </section>
+      );
     }
   }
 };
@@ -734,7 +1006,10 @@ Hero.propTypes = {
   theme: PropTypes.string,
   customLayout: PropTypes.bool,
   assetsImg:PropTypes.element,
-  animationVideo: PropTypes.element
+  animationVideo: PropTypes.element,
+  videoSrcUrl: PropTypes.element,
+  svgEmbded: PropTypes.element,
+  isQuickAction: PropTypes.bool
 };
 
 HeroButtons.propTypes = {

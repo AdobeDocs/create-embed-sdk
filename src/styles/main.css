@@ -4,15 +4,6 @@
     background-size: cover;
 }
 
-.express-editor-hero-block>div>div:nth-child(2)>div {
-    top: 30%;
-    left: 16%;
-    width: 23%;
-    height: 20%;
-    text-align: left;
-    color: #FFFFFF;
-}
-
 .express-editor-hero-block>div>div:nth-child(2)>div>p {
     color: #FFFFFF;
 }
@@ -123,8 +114,7 @@
 
 .embed-adobe>div>div>h1 {
     color: white;
-    font-size: 41px;
-    width: 50%;
+    width: 70%;
 }
 
 .embed-adobe>div>div:first-child>p:last-child {
@@ -502,6 +492,67 @@
     width: 50%;
     height: 50%;
 }
+
+.express-editor-hero-block .autoPlayVideo {
+    height: 500px;
+    width: 500px;
+    transform: translateX(35px) translateY(0px);
+    /* left: 200px; */
+}
+
+.editorBgImg .gatsby-resp-image-image{
+    width: 60% !important;
+    height: 60% !important;
+    top: 10% !important;
+    left: 20% !important;
+}
+
+.video {
+    background: url('../pages/images/express_editor_bg.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: center;
+    position: absolute;
+    /* opacity: 0.4; */
+    width: 100%;
+    height: 100%;
+}
+
+.express-editor-hero-block  video {
+    opacity: 1;
+}
+.express-editor-hero-block>div:first-child {
+    display: flex;
+}
+
+.express-editor-hero-block>div>div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.express-editor-hero-block>div>div:first-child>p, .express-editor-hero-block>div>div:first-child>h1  {
+    width: 70%;
+}
+
+.express-editor-hero-block .animated {
+    animation: animateCode 3s infinite 1000ms;
+}
+
+  @keyframes animateCode {
+    50% { transform: translateX(75px); opacity: 1;}
+    75% { transform: translateX(75px), translateY(-10px); opacity: 1; }
+    90% { transform: translateX(280px), translateY(-35px); opacity: 1; }
+    100% { transform: translateX(280px) translateY(-35px); opacity: 0.5; } 
+  }
+
+  .autoQuickPlayVideo{
+    width: 300px;
+  }
+
+
+
+
 
 @media (min-width: 320px) and (max-width:767px) {
     .express-editor-hero-block {

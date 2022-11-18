@@ -1,13 +1,16 @@
 import "../styles/main.css"
 import AnimationVideo from "./videos/Adobe_full_seq.json";
+import fullSeq from './videos/Full_Sequence.mp4'
+import { ArrowCodeSnippetSVG } from '../components/arrow_asset.js'
 
-<Hero slots="heading, text ,assetsImg" customLayout variant="video" animationVideo={AnimationVideo} className="express-editor-hero-block"/>
+
+<Hero slots="heading, text, image" variant="fullwidth"  videoSrcUrl={fullSeq}   className="express-editor-hero-block" svgEmbded= <ArrowCodeSnippetSVG /> />
 
 # Unlock end users’ creativity with the Adobe Express Editor
 
 Give end users a quick and easy way to start a creative design workflow from within your applications
 
-homeheroAssertExpressImage
+![EMPTY_ALT](./images/express_editor_bg.png)
 
 <AnnouncementBlock slots="heading, text, button" className="announcement-embed-editor customer-need"/>
 
