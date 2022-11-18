@@ -132,64 +132,13 @@
     color: white !important;
 }
 
-.embed-adobe>div>div:first-child {
-    padding-left: 13%;
-    margin-right: 0px !important;
-}
-
 .embed-adobe>div>div:nth-child(2)>p>span>picture>img {
     position: absolute;
     display: none !important;
     width: 90% !important;
 }
 
-.embed-adobe>div>div:nth-child(2)>p>span {
-    background-repeat: no-repeat, no-repeat;
-    background: url("../pages/images/Quick-action-icon-3.svg") no-repeat padding-box,
-        url("../pages/images/Quick-action-icon-3.svg") 0% 0% no-repeat padding-box,
-        url("../pages/images/Crop-objects.svg") 0% 0% no-repeat padding-box,
-        url("../pages/images/Video-Crop-still-frame.png") 0% 0% no-repeat padding-box;
-    background-position: left 100% center, right 25% top 25%, right 0% top 50%, right 0% center;
-    animation: image 4s;
-    right: 22%;
-    bottom: 7%;
-}
 
-@keyframes image {
-    0% {
-        right: 0%;
-    }
-
-    100% {
-        right: 22%;
-    }
-}
-
-.embed-adobe>div>div:nth-child(2)>p {
-    width: 100%;
-    background:
-        url("../pages/images/Quick-action-icon-2.svg") 0% 0% no-repeat padding-box,
-        url("../pages/images/Quick-action-icon-2.svg") 0% 0% no-repeat padding-box,
-        url("../pages/images/background-remove-layer-2-pexels-thyrone.png") 0% 0% no-repeat padding-box,
-        url("../pages/images/Code-asset.svg") 0% 0% no-repeat padding-box;
-    background-position: left 20% bottom 30%, left 3% center, top 45% left 12%, left 0% center;
-    animation: back 3s 1500ms;
-}
-
-@keyframes back {
-    0% {
-        background-position: left 0% bottom 30%, left 0% center, top 45% left 0%, left 0% center;
-    }
-
-    100% {
-        background-position: left 20% bottom 30%, left 3% center, top 45% left 12%, left 0% center;
-    }
-}
-
-.embed-adobe>div>div:nth-child(2) {
-    margin-top: 5% !important;
-    height: 95%;
-}
 
 .ms-pa-page>div>div>p {
     margin-bottom: var(--spectrum-global-dimension-size-0) !important;
@@ -488,6 +437,72 @@
     margin-top: 6%;
 }
 
+.embed-adobe>div {
+    width: 100%;
+}
+
+.embed-adobe>div>div:first-child {
+    width: 50%;
+    margin: unset;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.embed-adobe>div>div:first-child>p, .embed-adobe>div>div:first-child>h1 {
+    padding-left: 25% !important;
+}
+
+.embed-adobe>div>div:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.embed-adobe>div>div:nth-child(2)>p>span {
+    background: url("../pages/images/Quick-action-icon-3.svg") no-repeat padding-box,
+        url("../pages/images/Quick-action-icon-3.svg") 0% 0% no-repeat padding-box,
+        url("../pages/images/Crop-objects.svg") 0% 0% no-repeat padding-box,
+        url("../pages/images/Video-Crop-still-frame.png") 0% 0% no-repeat padding-box;
+    background-position: right 17% top 55%, right 37% top 31%, right 22% center, right 22%  center;
+    background-size: 7%, 6%, 20%, 20%;
+    animation: image 4s 1500ms;
+}
+
+@keyframes image {
+    0%   { 
+        background-position: right 0% top 55%, right 19% top 31%, right 2% center, right 2%  center;
+    }
+    100%  { 
+        background-position: right 17% top 55%, right 37% top 31%, right 22% center, right 22%  center; 
+    }
+}
+
+.embed-adobe>div>div:nth-child(2)>p {
+    background:
+        url("../pages/images/Quick-action-icon-2.svg") no-repeat padding-box,
+        url("../pages/images/Quick-action-icon-2.svg") no-repeat padding-box,
+        url("../pages/images/background-remove-layer-2-pexels-thyrone.png") no-repeat padding-box,
+        url("../pages/images/Code-asset.svg") no-repeat padding-box;
+    background-position: center 69%, 33% center, center, center;
+    background-size: 6%, 7%, 30%, 41%;
+    animation: back 3s 1500ms;
+}
+
+@keyframes back {
+    0%   {background-position: 25% 68%, 8% center, 15% center, center;}
+    100%  {background-position: center 69%, 33% center, center, center;}
+}
+
+.embed-adobe>div>div:nth-child(2) {
+    display: flex;
+}
+
+.embed-adobe>div>div>div:first-child {
+    display: flex;
+    width: 50%;
+    height: 50%;
+}
+
 @media (min-width: 320px) and (max-width:767px) {
     .express-editor-hero-block {
         padding: 40px 20px !important;
@@ -587,28 +602,6 @@
 
     .embed-adobe>div>div:first-child {
         padding-left: 0px;
-    }
-
-    .embed-adobe>div>div>p:last-child,
-    .embed-adobe>div>div>h1,
-    .service-code-block>div {
-        width: 90% !important;
-    }
-
-    .embed-adobe>div>div:nth-child(2)>p>span {
-        background-position: right 0px center, right 55% top 9%, right 1px top 50%;
-        right: 20%;
-        bottom: 7%;
-    }
-
-    @keyframes image {
-        0% {
-            right: 0%;
-        }
-
-        100% {
-            right: 20%;
-        }
     }
 
     .embed-adobe>div>div:first-child,
@@ -799,10 +792,6 @@
         width: 90% !important;
     }
 
-    .embed-adobe>div>div:nth-child(2)>p {
-        background-position: left 20% bottom 27%, left 0px top 31%, top 58px left 5px, left 4px center;
-    }
-
     .How-to-get-started {
         padding: 40px 25px !important;
     }
@@ -990,40 +979,10 @@
         flex-direction: column !important;
     }
 
-    .embed-adobe>div>div:nth-child(2) {
-        display: block !important;
-        margin-top: 20px;
-    }
-
     .code-block-sdk>div>div>div:nth-child(2)>div {
         margin-right: 0px !important;
     }
 
-}
-
-@media (min-width: 1440px) {
-    .embed-adobe>div>div:nth-child(2)>p>span {
-        opacity: 1;
-        background-repeat: no-repeat, no-repeat;
-        background: url("../pages/images/Quick-action-icon-3.svg") no-repeat padding-box,
-            url("../pages/images/Quick-action-icon-3.svg") 0% 0% no-repeat padding-box,
-            url("../pages/images/Crop-objects.svg") 0% 0% no-repeat padding-box,
-            url("../pages/images/Video-Crop-still-frame.png") 0% 0% no-repeat padding-box;
-        background-position: left 100% center, right 32% top 25%, right 0% top 50%, right 0% center;
-        animation: image 4s 1500ms;
-        right: 10%;
-        bottom: 7%;
-    }
-
-    @keyframes image {
-        0% {
-            right: 0%;
-        }
-
-        100% {
-            right: 10%;
-        }
-    }
 }
 
 @media (min-width:1025px) {
@@ -1073,5 +1032,77 @@
 @media screen and (max-width:768px) {
     .spectrum-Accordion-itemContent>p {
         padding-left: 27px;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1300px) {
+    .embed-adobe>div>div:nth-child(2)>p {
+        background-position: center 59%, 33% center, center, center;
+    }
+
+    @keyframes back {
+        0%   {background-position: 25% 62%, 8% center, 15% center, center;}
+        100%  {background-position: center 59%, 33% center, center, center;}
+    }
+
+    .embed-adobe>div>div:nth-child(2)>p>span {
+        background-position: right 17% top 55%, right 37% top 39%, right 22% center, right 22%  center;
+    }
+
+    @keyframes image {
+        0%   { 
+            background-position: right 0% top 55%, right 19% top 39%, right 2% center, right 2%  center;
+        }
+        100%  { 
+            background-position: right 17% top 55%, right 37% top 39%, right 22% center, right 22%  center; 
+        }
+    }
+}
+
+@media screen and (min-width:1300px) and (max-width:1500px) {
+    .embed-adobe>div>div:nth-child(2)>p {
+        background-position: center 62%, 33% center, center, center;
+    }
+
+    @keyframes back {
+        0%   {background-position: 25% 62%, 8% center, 15% center, center;}
+        100%  {background-position: center 62%, 33% center, center, center;}
+    }
+
+    .embed-adobe>div>div:nth-child(2)>p>span {
+        background-position: right 17% top 55%, right 37% top 36%, right 22% center, right 22%  center;
+    }
+
+    @keyframes image {
+        0%   { 
+            background-position: right 0% top 55%, right 19% top 36%, right 2% center, right 2%  center;
+        }
+        100%  { 
+            background-position: right 17% top 55%, right 37% top 36%, right 22% center, right 22%  center; 
+        }
+    }
+}
+
+@media screen and (min-width:1500px) and (max-width:1750px) {
+    .embed-adobe>div>div:nth-child(2)>p {
+        background-position: center 65%, 33% center, center, center;
+    }
+
+    @keyframes back {
+        0%   {background-position: 25% 65%, 8% center, 15% center, center;}
+        100%  {background-position: center 65%, 33% center, center, center;}
+    }
+
+    .embed-adobe>div>div:nth-child(2)>p>span {
+        background-position: right 17% top 55%, right 37% top 33%, right 22% center, right 22%  center;
+    }
+
+    @keyframes image {
+        0%   { 
+            background-position: right 0% top 55%, right 19% top 33%, right 2% center, right 2%  center;
+        }
+        100%  { 
+            background-position: right 17% top 55%, right 37% top 33%, right 22% center, right 22%  center; 
+        }
     }
 }
