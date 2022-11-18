@@ -2,6 +2,7 @@ import "../styles/main.css"
 import AnimationVideo from "./videos/Adobe_DCP_Marquee_Animation.json";
 import WhyIntegrateSDK from "./embed-express-sdk/why-integrate-express-embed-sdk.md";
 import DesignForDeveloper from "./embed-express-sdk/design-for-develop.md"
+import VideoCrop from './videos/home_page_text_crop.mp4'
 
 <Hero slots="image, icon, heading, text" variant="halfwidth"  className="embed-adobe "/>
 
@@ -29,7 +30,7 @@ Allow your users to create standout content with beautiful templates and assets 
 
 - [Learn more](https://adobe.io)
 
-<TextBlock slots="heading,text,buttons,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two  streamline_ability"/>
+<TextBlock slots="heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' videoSrcUrl={VideoCrop} variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two  streamline_ability"/>
 
 ### Quick Actions speed up users
 
@@ -37,7 +38,7 @@ Powered by Adobe Photoshop and Adobe Premiere, Quick Actions combine complex ope
 
 - [Learn more](https://adobe.io)
 
-![EMPTY_ALT](./images/Product-block-two-video-PosterImage.png)
+
 
 <TitleBlock slots="heading" theme="lightest" />
 
