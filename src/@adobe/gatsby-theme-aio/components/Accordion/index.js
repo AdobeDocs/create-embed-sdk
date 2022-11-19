@@ -27,15 +27,6 @@ const Accordion = ({ children, ...props }) => (
 const AccordionItem = ({ header, slot_id, isOpen = false, children, isChevronIcon = false, isEmbedSDk=false ,...props }) => {
   const [open, setOpen] = useState(isOpen);
   const onClick = () => {
-    const list = document.querySelectorAll('.spectrum-Accordion-item')
-
-    function activeLink(e) {
-      list.forEach((item) => {
-        item.classList.remove('is-open')
-      })
-      e.classList.add('is-open')
-    }
-    {isEmbedSDk && list.forEach(item => item.addEventListener('click', () => activeLink(item)))}
     setOpen((open) => !open);
   };
 
