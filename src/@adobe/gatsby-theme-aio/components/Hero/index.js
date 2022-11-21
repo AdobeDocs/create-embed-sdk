@@ -982,12 +982,12 @@ const Hero = ({
                 style={["outine"]}
               />
             </div>
-                  
-            <video className="autoQuickPlayVideo" id="playAnimatedVideo" name="media2" muted="true" autoPlay>
-                <source src={videoSrcUrl} type="video/mp4" />
-            </video>
+            <div className="quickActionVideo">  
+              <video className="autoQuickPlayVideo" id="playAnimatedVideo" name="media2" muted="true" autoPlay>
+                  <source src={videoSrcUrl} type="video/mp4" />
+              </video>
             </div>
-          
+          </div>
         </section>
       );
     }
