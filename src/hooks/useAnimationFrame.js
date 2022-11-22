@@ -23,9 +23,8 @@ export default function AnimatedImageFrame({ count, setCount, imageRef, slides }
     }
 
     useEffect(() => {
-        // imageRef.current.style.backgroundImage = `url(./${slides[Math.round(count)]})`
         imageRef.current.src = slides[Math.round(count)]
-      }, [count])
+      }, [count, imageRef, slides])
 
     const Images = () => {
         useAnimationFrame(deltaTime => {

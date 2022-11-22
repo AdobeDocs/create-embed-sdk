@@ -32,7 +32,7 @@ const AccordionItem = ({ header, slot_id, isOpen = false, children, isChevronIco
 
   useEffect(() => {
     setOpen(window.location.href.endsWith(slot_id))
-  }, [])
+  }, [slot_id])
 
   return (
     <div className={classNames(['spectrum-Accordion-item', { 'is-open': open }])} role="presentation" {...props}>
@@ -43,15 +43,16 @@ const AccordionItem = ({ header, slot_id, isOpen = false, children, isChevronIco
           type="button"
           aria-expanded={open}
           onClick={onClick}
+          onKeyDown={onClick}
           css={css`
             text-transform: none;
           `}>
-          {isChevronIcon && <span className={`spectrum-Accordion-ChevronIcon`} onClick={onClick}>{open ? <ChevronDown /> : <ChevronRight />}</span>}
+          {isChevronIcon && <span className={`spectrum-Accordion-ChevronIcon`} aria-hidden="true" onClick={onClick}>{open ? <ChevronDown /> : <ChevronRight />}</span>}
 
           {header}
         </button>
         {/* <ChevronRight className="spectrum-Accordion-itemIndicator" /> */}
-        {!isChevronIcon && <span className="spectrum-Accordion-itemIndicator" onClick={onClick}>{open ? "-" : "+"}</span>}
+        {!isChevronIcon && <span className="spectrum-Accordion-itemIndicator" aria-hidden="true" onClick={onClick}>{open ? "-" : "+"}</span>}
       </h3>
       <div className="spectrum-Accordion-itemContent" role="region">
         {children}

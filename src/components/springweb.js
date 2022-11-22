@@ -1,7 +1,6 @@
 import React, { useState, useRef, useMemo, useEffect } from 'react'
 import { CodeSnippetSVG } from './IconsSvg'
 import AnimatedImageFrame from '../hooks/useAnimationFrame'
-// import './style.css'
 
 // to start animated image frame is in view port
 function useIsInViewport(ref) {
@@ -27,7 +26,6 @@ function useIsInViewport(ref) {
 }
 
 export default function SpringImage({slides}) {
-  const [index, set] = useState(0)
   const [count, setCount] = useState(0)
   const imageRef = useRef()
   const isViewed = useIsInViewport(imageRef)

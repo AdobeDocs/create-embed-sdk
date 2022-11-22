@@ -10,7 +10,7 @@
  * governing permissions and limitations under the License.
  */
 
-import React, { cloneElement, useEffect, useState, useMemo, useRef } from "react";
+import React, { cloneElement, useEffect, useState } from "react";
 import { css } from "@emotion/react";
 import { HeroButtons } from "../Hero";
 import { Media } from "@adobe/gatsby-theme-aio/src/components/Media";

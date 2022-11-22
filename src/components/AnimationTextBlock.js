@@ -31,7 +31,6 @@ const counter = {
 };
 
 const MIN_TABLET_SCREEN_WIDTH = '1023px'
-const alignMapping = ["margin-left: 0;", "margin-right: 0;"];
 
 const mediaCSS = css`
   & {
@@ -84,11 +83,6 @@ const Icons = ({ icons, isCentered }) =>
         `,
       })
     : null;
-
-const Texts = ({ texts }) => {
-  const textKeys = Object.keys(texts).filter((key) => key.startsWith("text"));
-  return textKeys.map((textKey) => texts[textKey]);
-};
 
 const Links = ({ links, isCentered, isLinksGroups=false }) =>
   links
@@ -280,10 +274,10 @@ const AnimationTextBlock = ({
             `}
           >
             {imagearray.length &&
-            <p class="spectrum-Body spectrum-Body--sizeM css-1wz4ws2-css-Paragraph"><span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 451px;">
-            <span class="gatsby-resp-image-background-image" style="padding-bottom: 61.1321%; position: relative; bottom: 0px; left: 0px; display: block; transition: opacity 0.5s ease 0.5s; pointer-events: none; opacity: 0;"></span>
+            <p className="spectrum-Body spectrum-Body--sizeM css-1wz4ws2-css-Paragraph"><span className="gatsby-resp-image-wrapper" >
+            <span className="gatsby-resp-image-background-image quickActionCodeSnippetBGImg" ></span>
                 <picture style={{display:"none"}}>
-                  <img class="gatsby-resp-image-image" src={image} alt="EMPTY_ALT" title="EMPTY_ALT" loading="lazy" style="width: 100%; height: 100%; margin: 0px; vertical-align: middle; position: absolute; opacity: 1; transition: opacity 0.5s ease 0s; color: inherit; top: 0px; left: 0px;" />
+                  <img className="gatsby-resp-image-image" src={image} alt="EMPTY_ALT" title="EMPTY_ALT" loading="lazy"  />
                 </picture>
               </span>
                 <SpringImage slides={imagearray} />

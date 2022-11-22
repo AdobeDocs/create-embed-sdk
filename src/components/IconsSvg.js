@@ -13,7 +13,7 @@ export const CodeSnippetSVG = ({ name }) =>
           </filter>
         </defs>
         <g id="Foreground_Code" data-name="Foreground Code" transform="translate(-722 -703)">
-          <g transform="matrix(1, 0, 0, 1, 722, 703)" filter="url(#Rectangle_152034)" style="mix-blend-mode: hard-light;isolation: isolate">
+          <g transform="matrix(1, 0, 0, 1, 722, 703)" filter="url(#Rectangle_152034)" style={{"mix-blend-mode": "hard-light", "isolation": "isolate"}}>
             <rect id="Rectangle_152034-2" data-name="Rectangle 152034" width="310" height="126" rx="12" transform="translate(24 16)" fill="#fff"/>
           </g>
           <g id="Foreground_Code-2" data-name="Foreground Code" transform="translate(736 709.332)">
@@ -30,7 +30,7 @@ export const CodeSnippetSVG = ({ name }) =>
           {
               id: 'image-resize'
           }
-      )" transform="translate(50 19.668)" fill="#7f8495" font-size="14" font-family="SourceCodePro-Regular, Source Code Pro" style="mix-blend-mode: multiply;isolation: isolate"><tspan x="0" y="14">ccEverywhere.</tspan><tspan y="14" fill="#72b7f9">openQuickAction</tspan><tspan y="14">(</tspan><tspan x="0" y="36"></tspan><tspan x="0" y="58">        </tspan><tspan y="58" fill="#ca9ffc">id</tspan><tspan y="58" fill="#72b7f9">:</tspan><tspan y="58" fill="#43c78f">'{name}'<animate attributeName="dx" from="0" to="20" dur="3s" begin="0s" repeatCount="indefinite"/></tspan><tspan x="0" y="80"></tspan><tspan x="0" y="102">)</tspan> </text>
+      )" transform="translate(50 19.668)" fill="#7f8495" font-size="14" font-family="SourceCodePro-Regular, Source Code Pro" style={{"mix-blend-mode": "multiply","isolation": "isolate"}}><tspan x="0" y="14">ccEverywhere.</tspan><tspan y="14" fill="#72b7f9">openQuickAction</tspan><tspan y="14">(</tspan><tspan x="0" y="36"></tspan><tspan x="0" y="58">        </tspan><tspan y="58" fill="#ca9ffc">id</tspan><tspan y="58" fill="#72b7f9">:</tspan><tspan y="58" fill="#43c78f">'{name}'<animate attributeName="dx" from="0" to="20" dur="3s" begin="0s" repeatCount="indefinite"/></tspan><tspan x="0" y="80"></tspan><tspan x="0" y="102">)</tspan> </text>
           </g>
         </g>
     </svg>     

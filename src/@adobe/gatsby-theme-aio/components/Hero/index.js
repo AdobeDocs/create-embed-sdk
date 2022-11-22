@@ -184,7 +184,7 @@ const Hero = ({
   useEffect(()=>{
     
     if ( animationVideo ) {
-      var anim = lottie.loadAnimation({
+      lottie.loadAnimation({
         container: document.querySelector("#svgContainer"), 
         renderer: "svg",
         loop: true,
@@ -211,7 +211,7 @@ const Hero = ({
         clearTimeout(timer1);
       };
     }
-  },[])
+  },[animationVideo, videoSrcUrl])
   useEffect(() => {
     
     const videoPlayer = document.getElementById("playAnimatedVideo");

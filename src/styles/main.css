@@ -647,6 +647,16 @@
     padding: 4% 0% 4% 0%;
 }
 
+.quickActionCodeSnippetBGImg{
+
+    padding-bottom: 61.1321%; 
+    position: relative; 
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    transition: opacity 0.5s ease 0.5s; pointer-events: none; opacity: 0;
+}
+
 @media (min-width: 320px) and (max-width:767px) {
     .express-editor-hero-block {
         padding: 40px 20px !important;
