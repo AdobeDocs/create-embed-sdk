@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1680" height="496" viewBox="0 0 1680 496">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_103695" data-name="Path 103695" d="M1680,0H0V496H1680Z" transform="translate(0 63)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7c84f3"/>
+      <stop offset="0.207" stop-color="#ff4dd2"/>
+      <stop offset="0.389" stop-color="#ff993b"/>
+      <stop offset="0.532" stop-color="#ff4dd2"/>
+      <stop offset="0.729" stop-color="#7c84f3"/>
+      <stop offset="0.862" stop-color="#ff4dd2"/>
+      <stop offset="1" stop-color="#ff993b"/>
+    </linearGradient>
+  </defs>
+  <g id="Hero_Background_Gradient" data-name="Hero Background Gradient" transform="translate(0 -63)" clip-path="url(#clip-path)">
+    <path id="Path_103696" data-name="Path 103696" d="M1796.44,0H0V5206.7H1796.44Z" transform="translate(-1255.009 -843.674) rotate(-40)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
