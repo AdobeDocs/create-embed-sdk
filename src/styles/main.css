@@ -1,4 +1,5 @@
-.express-editor-hero-block {
+.express-editor-hero-block,
+.quick-action-hero-block {
     background: url('../pages/images/Hero-Background-Gradient-Editor.svg') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -41,9 +42,18 @@
     width: 100% !important;
 }
 
+.QuickActionSDKDevelop>div {
+    overflow: hidden;
+}
+
 .getting-started {
     height: 8% !important;
     background: transparent conic-gradient(from 90deg at 0% -24%, #F8F8F8 0.00%, #081D31 100.00%) 0% 0% no-repeat padding-box;
+}
+
+.quick-action-getting{
+    height: 10% !important;
+    margin-bottom: 15%;
 }
 
 .getting-started>div>h2 {
@@ -72,6 +82,11 @@
 
 .getting-started>p:first-child>span:first-child {
     width: 22% !important;
+    margin-right: 12%;
+}
+
+.quick-action-getting>p:first-child>span:first-child {
+    width: 24% !important;
     margin-right: 12%;
 }
 
@@ -119,7 +134,7 @@
 }
 
 .ms-pa-summary-blade>div>div {
-    margin-right: 35px !important;
+    margin-right: 5% !important;
 }
 
 .tryForFree {
@@ -193,24 +208,15 @@
 }
 
 .deployment>div>p:first-child>span {
-    height: 20vw !important;
+    padding: 10% 0;
 }
 
 .deployment>div>h3 {
-    margin-top: 77% !important
-}
-
-.why-integrate-sdk>div>p:first-child>span {
-    height: 13vh !important
+    margin-top: 25% !important
 }
 
 .why-integrate-sdk>div>h3 {
     margin-top: 20% !important;
-}
-
-.quick-action-block>div>p:first-child,
-.faq-editor-page {
-    height: 3cm !important;
 }
 
 .quick-action>div>p {
@@ -293,7 +299,7 @@
     display: flex !important;
     flex-direction: row !important;
     width: fit-content !important;
-    width: 20% !important;
+    width: 30% !important;
 }
 
 .edit-text-block>div>div>p>span>picture>img {
@@ -312,7 +318,7 @@
 }
 
 .edit-text-block>div {
-    height: 9vh !important;
+    margin-bottom: 2% !important;
     padding: 0px !important;
 }
 
@@ -323,7 +329,11 @@
 
 .edit-text-block>div>div>div>p {
     font-size: 20px !important;
-    width: 45vw;
+}
+
+.edit-text-block>div>div>div{
+    width: 70% !important;
+    padding: 0 !important;
 }
 
 .w-45 {
@@ -362,7 +372,7 @@
 
 .div-p-0>div,
 .streamline_ability>div {
-    padding: 0px !important;
+    padding: 0 !important;
 }
 
 .image-editing>div>div>div>h3,
@@ -419,7 +429,6 @@
     margin: unset;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .embed-adobe>div>div:first-child>p,
@@ -489,7 +498,6 @@
     height: 500px;
     width: 500px;
     transform: translateX(35px) translateY(0px);
-    /* left: 200px; */
 }
 
 .editorBgImg .gatsby-resp-image-image {
@@ -564,12 +572,6 @@
     height: 500px;
 }
 
-.quick-action-hero-block {
-    background: url('../pages/images/Hero-Background-Gradient-2x.jpg') !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .quick-action-hero-block>div:first-child {
     max-width: unset;
     justify-content: flex-start;
@@ -577,18 +579,17 @@
 }
 
 .quick-action-hero-block>div>div:first-child {
-    width: 44%;
+    width: 50%;
     display: flex;
     align-items: center;
 }
 
 .quick-action-hero-block>div>div:first-child>h1 {
-    width: 60%;
+    width: 50%;
 }
 
 .quick-action-hero-block>div>div:first-child>p {
-    width: 50%;
-    padding-right: 11%;
+    width: 48%;
 }
 
 .quick-action-hero-block .autoQuickPlayVideo {
@@ -625,6 +626,13 @@
     opacity: 0;
 }
 
+.faq-editor-page{
+    height: 10% !important;
+}
+
+.faq-editor-page>div>div{
+    position: relative !important;
+}
 
 @media (min-width: 320px) and (max-width:1024px) {
 
@@ -633,7 +641,7 @@
     }
 
     .embed-adobe>div>div>p:nth-child(2) {
-        padding-left: 0px !important;
+        padding-left: 0 !important;
     }
 
     .embed-adobe>div>div>h1 {
@@ -647,7 +655,7 @@
     }
 
     .code-block-sdk>div>div>div:nth-child(2)>div {
-        margin-right: 0px !important;
+        margin-right: 0 !important;
     }
 
     .quick-action-hero-block>div {
@@ -658,10 +666,6 @@
         padding-bottom: unset !important;
     }
 
-    .quick-action-hero-block>div>div:first-child {
-        width: 100%;
-    }
-
     .quick-action-hero-block>div:first-child {
         align-items: center;
     }
@@ -670,16 +674,11 @@
         align-items: flex-start;
     }
 
-    .quick-action-hero-block>div>div:first-child>h1 {
-        width: 64%;
-    }
-
-    .quick-action-hero-block>div>div:first-child>p {
-        width: 85%;
-    }
-
-    .quick-action-hero-block .quickActionVideo {
-        width: 100%;
+    .quick-action-hero-block>div>div:first-child>h1,
+    .quick-action-hero-block>div>div:first-child>p,
+    .quick-action-hero-block .quickActionVideo,
+    .quick-action-hero-block>div>div:first-child {
+        width: 100% !important;
     }
 
     .quick-action-hero-block .quickActionVideo {
@@ -701,14 +700,6 @@
 @media (min-width:1025px) {
     .design-features-code-block {
         padding-left: 13% !important;
-    }
-
-    .service-code-block>div>div>div>div>div:nth-child(1)>span,
-    .service-code-block>div>div>div>div>div:nth-child(3)>span,
-    .service-code-block>div>div>div>div>div:nth-child(5)>span {
-        display: flex !important;
-        align-items: center;
-        height: 1.2vw !important;
     }
 }
 
@@ -907,7 +898,7 @@
     }
 
     .announcement-embed-editor {
-        padding: 40px 0px !important;
+        padding: 5% 0 !important;
     }
 
     .streamline_ability>div>div>p>span>picture>img,
@@ -923,7 +914,15 @@
 
     .getting-started {
         margin-bottom: 50%;
-        height: 8% !important
+        height: 25% !important
+    }
+
+    .summary-block{
+        height: 13% !important
+    }
+
+    .sdk-getting-block{
+        height: 10% !important;
     }
 
     .getting-started>div {
@@ -970,16 +969,12 @@
         font-size: 18px;
     }
 
-    .why-integrate-sdk>div>p:first-child>span {
-        height: 15vh !important;
-    }
-
     .express-editor-hero-block .autoPlayVideo {
         height: 50vh;
         width: 60vh;
     }
 
-    .deployment {
+    .deployment ,.why-integrate-sdk>div>p:first-child>span {
         padding: 5% 0% !important;
     }
 
@@ -992,17 +987,25 @@
     }
 
     .service-code-block>div>div>div:nth-child(2) {
-        width: 50vw !important;
+        width: 95% !important;
     }
 
     .service-code-block>div>div {
         width: 100% !important;
     }
+
+    .quick-action-block>div>h3 {
+        margin-top: 10% !important;
+    }
+
+    .deployment>div>p:first-child>span {
+        padding: 2% 0;
+    }
 }
 
 @media screen and (min-width:375px) and (max-width:767px) {
 
-    .streamline_ability .homeAutoCropVideo{
+    .streamline_ability .homeAutoCropVideo {
         width: 100% !important;
         height: 100% !important;
     }
@@ -1025,12 +1028,12 @@
     .announcement-embed-editor,
     .announcement-embed-editor>div:first-child {
         margin: auto !important;
-        padding: 0px !important;
+        padding: 0 !important;
         align-items: center !important;
     }
 
     .announcement-embed-editor>div:first-child>h3 {
-        margin: 30px !important;
+        margin: 5% 17% !important;
     }
 
     .announcement-embed-editor>div:first-child>p {
@@ -1039,11 +1042,11 @@
     }
 
     .announcement-embed-editor>div:first-child>div>a {
-        margin-bottom: 50px !important;
+        margin-bottom: 15% !important;
     }
 
     .streamline_ability>div>div {
-        margin-right: 20px;
+        margin-right: 5%;
     }
 
     .streamline_ability>div>div>div>p {
@@ -1076,8 +1079,8 @@
         display: none;
     }
 
-    .getting-started {
-        height: 65vh !important;
+    .getting-started{
+        height: 8% !important;
     }
 
     .getting-started>div {
@@ -1094,10 +1097,6 @@
     .getting-started>p>span,
     .ms-pa-summary-blade>div>div {
         margin-right: 0px !important;
-    }
-
-    .summary-block {
-        height: 50vh !important;
     }
 
     .embed-adobe>div>div:first-child>p:first-child,
@@ -1117,11 +1116,6 @@
 
     .deployment>div {
         padding: 2% 10%;
-    }
-
-    .deployment>div>p:first-child {
-        width: 100%;
-        height: 100%;
     }
 
     .service-code-block>div>div>div>div>div:nth-child(2)>div,
@@ -1163,25 +1157,18 @@
         height: 3vh !important;
     }
 
-    .why-integrate-sdk>div>p,
-    .why-integrate-sdk>div>h3 {
-        margin: 0px !important;
+    .why-integrate-sdk>div>p {
+        margin: 0 !important;
     }
 
+
+
     .why-integrate-sdk {
-        padding: 0 0 2cm 0 !important;
+        padding: 0 0 10% 0 !important;
     }
 
     .why-integrate-sdk>div>p:first-child>span {
-        height: 15vh !important;
-    }
-
-    .getting-started {
-        height: 55vh !important;
-    }
-
-    .summary-block {
-        height: 50vh !important;
+       padding: 10% 0 !important;
     }
 
     .tryForFree>div>div {
@@ -1200,6 +1187,22 @@
     .video {
         background-size: 80% !important;
         width: 29vh;
+    }
+
+    .quick-action-block {
+        padding: 10% 0 !important;
+    }
+
+    .quick-action>div>p {
+        padding-left: 0 !important;
+    }
+
+    .quick-action-block>div>h3 {
+        margin-top: 30% !important;
+    }
+
+    .deployment>div>p:first-child>span {
+        padding: 10% 0;
     }
 
 }

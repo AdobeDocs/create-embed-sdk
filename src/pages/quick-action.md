@@ -38,7 +38,7 @@ Adobe Quick Actions are powerful tools developers can customize and embed within
 
 Make resizing images easy thanks to a wide array of standard and custom social media post image sizes to choose from.
 
-<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two streamline_ability remove-bg"/>
+<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two streamline_ability "/>
 
 ### Remove Background
 
@@ -62,7 +62,7 @@ How are Quick Actions enabling users to work dynamically within their applicatio
 
 <QuickActionSDKDevelop/>
 
-<SummaryBlock slots=" image , heading, text, buttons" className="getting-started" />
+<SummaryBlock slots=" image , heading, text, buttons" className="getting-started quick-action-getting" />
 
 ![Getting Started](./images/Summary-Block-image.svg)
 

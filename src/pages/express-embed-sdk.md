@@ -46,7 +46,7 @@ Why integrate the Express Embed SDK?
 
 <WhyIntegrateSDK/>
 
-<WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout resource-card design-developer"/>
+<WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout resource-card "/>
 
 <DesignForDeveloper/>
 
