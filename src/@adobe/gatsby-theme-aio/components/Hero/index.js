@@ -182,6 +182,7 @@ const Hero = ({
   const [showVideo, setShowVideo] = useState(false);
   
 
+
   useEffect(()=>{
     
     if ( animationVideo ) {
@@ -195,9 +196,10 @@ const Hero = ({
     }
 
     if( videoSrcUrl ) {
+    
       let timer1 = setTimeout(() => {
         setShowVideo(true)
-      } ,  4000);
+      } ,  4200);
 
       // this will clear Timeout
       // when component unmount like in willComponentUnmount
@@ -221,7 +223,7 @@ const Hero = ({
       videoPlayer.pause()
       setTimeout(() => {
         setShowVideo(true)
-      } ,  4000);
+      } ,  3500);
     }
 
   }, [showVideo])
@@ -946,9 +948,11 @@ const Hero = ({
             {videoSrcUrl && 
               <div>
                 <div className="video" style={showVideo ? {opacity:0.4} :  {opacity:1} } >
-                  <div className="arrow" style={showVideo ? {opacity:0} :  {opacity:1} }>
-                    {svgEmbded}
+                  <div className="arrow" >
+                    { !showVideo && svgEmbded}
+                    { showVideo && <div style={{opacity:0}}>{svgEmbded}</div>}
                   </div>
+
                 </div>
                 <video className="autoPlayVideo" id="playAnimatedVideo" style={!showVideo ? {opacity:0} :  {opacity:1} } name="media" muted="true">
                     <source src={videoSrcUrl} type="video/mp4" />
