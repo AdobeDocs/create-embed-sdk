@@ -444,7 +444,6 @@
 .embed-adobe>div>div:nth-child(2)>p>span {
     background: url("../pages/images/Quick-action-icon-3.svg") no-repeat padding-box,
         url("../pages/images/Quick-action-icon-3.svg") 0% 0% no-repeat padding-box,
-        url("../pages/images/Crop-objects.svg") 0% 0% no-repeat padding-box,
         url("../pages/images/Video-Crop-still-frame.png") 0% 0% no-repeat padding-box;
     background-position: right 17% top 55%, right 37% top 31%, right 22% center, right 22% center;
     background-size: 7%, 6%, 20%, 20%;
@@ -465,8 +464,7 @@
     background:
         url("../pages/images/Quick-action-icon-2.svg") no-repeat padding-box,
         url("../pages/images/Quick-action-icon-2.svg") no-repeat padding-box,
-        url("../pages/images/background-remove-layer-2-pexels-thyrone.png") no-repeat padding-box,
-        url("../pages/images/Code-asset.svg") no-repeat padding-box;
+        url("../pages/images/background-remove-layer-2-pexels-thyrone.png") no-repeat padding-box;
     background-position: center 69%, 33% center, center, center;
     background-size: 6%, 7%, 30%, 41%;
     animation: back 3s 1500ms;
@@ -479,6 +477,63 @@
 
     100% {
         background-position: center 69%, 33% center, center, center;
+    }
+}
+
+.imgRemoveLayer1{
+    background: url("../pages/images/background-remove-layer-1-pexels-thyrone-paas-transparent.png") no-repeat padding-box,
+    url("../pages/images/background-remove-layer-3-Transparency-grid.png") no-repeat padding-box;
+    background-position: 0% 0%, 50% 60%;
+    height: 38% !important;
+    width: 45% !important;
+    border-radius: 30px;
+}
+
+.imgRemoveLayer2{
+    height: 100% !important;
+    left: 0px;
+    overflow: hidden;
+    top: 0px;
+    width: 100% ;
+    animation: backGrndMoveAnimation 5s infinite;
+    border-radius: 30px;
+}
+
+.bgCodeAssetAnima{
+    background: url("../pages/images/Code-asset.svg") no-repeat padding-box;
+    background-position-x: left;
+    background-position-y: bottom;
+}
+
+.resizeCropImage{
+    background: url("../pages/images/Video-Crop-still-frame.png") no-repeat padding-box;
+    width: 50%;
+    height: 58%;
+    background-position-x: 20%;
+    animation: cropedAnimation 5s infinite;
+}
+
+@keyframes cropedAnimation {
+    50% {
+        background: url("../pages/images/Video-Crop-still-frame.png") no-repeat padding-box, 
+        url("../pages/images/Crop-objects.svg") no-repeat padding-box;
+        background-position-x: 40%, 40%;
+        background-position-y: 60%, 100%;
+    }
+    100% {
+        background: url("../pages/images/Crop-objects.svg") no-repeat padding-box, url("../pages/images/Video-Crop-still-frame.png") no-repeat padding-box;
+        background-position-x: 0%, 0%;
+        background-position-y: 30%, 50%;
+    }
+}
+
+@keyframes backGrndMoveAnimation {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 50%;
     }
 }
 

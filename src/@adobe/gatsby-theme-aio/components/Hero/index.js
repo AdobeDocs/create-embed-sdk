@@ -174,13 +174,14 @@ const Hero = ({
   videoSrcUrl="",
   svgEmbded="",
   isQuickAction=false,
+  imagearray=[],
+  isCustomAnimation=false,
   ...props
 }) => {
   const { siteMetadata, location } = useContext(Context);
   const [showVideo, setShowVideo] = useState(false);
   
 
-  console.log('svgEmbed', svgEmbded)
   useEffect(()=>{
     
     if ( animationVideo ) {
@@ -191,12 +192,6 @@ const Hero = ({
         autoplay: true,
         animationData: animationVideo
       });
-  
-      // anim.addEventListener("enterFrame", function (animation) {
-      //       if (animation.currentTime > (anim.totalFrames - 25)) {
-      //         anim.pause();
-      //       }
-      // });
     }
 
     if( videoSrcUrl ) {
@@ -672,6 +667,95 @@ const Hero = ({
           </div>
         </section>
       );    
+    } else if (variant === 'halfwidth' && isCustomAnimation) {
+      return (
+        <section
+          className={classNames(className, `spectrum--lightest`)}
+          css={css`
+            background: ${background ?? 'var(--spectrum-global-color-gray-50)'};
+            width: 100%;
+            height: ${height};
+            overflow: hidden;
+
+            @media screen and (max-width: ${TABLET_SCREEN_WIDTH}) {
+              height: auto;
+              padding: var(--spectrum-global-dimension-size-400);
+              box-sizing: border-box;
+            }
+          `}>
+          <div
+            css={css`
+              display: flex;
+              height: 100%;
+              justify-content: center;
+            `}>
+            <div
+              css={css`
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: calc(5 * 100% / 12);
+                margin-left: var(--spectrum-global-dimension-size-800);
+                margin-right: var(--spectrum-global-dimension-size-400);
+
+                @media screen and (max-width: ${TABLET_SCREEN_WIDTH}) {
+                  width: 100%;
+                  margin: 0;
+                }
+              `}>
+              {icon &&
+                cloneElement(icon, {
+                  children: cloneChildren(icon.props.children, setImageLoading),
+                  css: css`
+                    height: var(--spectrum-global-dimension-size-600);
+                    width: var(--spectrum-global-dimension-size-600);
+                    margin-top: 0 !important;
+                    margin-bottom: var(--spectrum-global-dimension-size-300) !important;
+
+                    .gatsby-resp-image-wrapper {
+                      max-width: none !important;
+                      width: 100% !important;
+                      height: 100% !important;
+                    }
+
+                    .gatsby-resp-image-image {
+                      height: 100%;
+                      object-fit: contain;
+                    }
+                  `
+                })}
+             
+              <HeroHeading heading={heading} isVariant />
+
+              <HeroTexts texts={props} />
+
+              <HeroButtons
+                buttons={buttons}
+                css={css`
+                  margin-top: var(--spectrum-global-dimension-size-400);
+                `}
+              />
+            </div>
+            <div
+              css={css`
+                flex: 1;
+
+                @media screen and (max-width: ${TABLET_SCREEN_WIDTH}) {
+                  display: none;
+                }
+              `} className="bgCodeAssetAnima">
+              <div className="imgRemoveLayer1">
+                <div className="imgRemoveLayer2">
+                  <img alt="imgnotfound" src={imagearray[0]}></img>
+                </div>
+              </div>
+              <div className="resizeCropImage">
+
+              </div>
+            </div>
+          </div>
+        </section>
+      );
     } else if (variant === 'halfwidth') {
       return (
         <section
@@ -1009,7 +1093,9 @@ Hero.propTypes = {
   animationVideo: PropTypes.element,
   videoSrcUrl: PropTypes.element,
   svgEmbded: PropTypes.element,
-  isQuickAction: PropTypes.bool
+  isQuickAction: PropTypes.bool,
+  imagearray: PropTypes.array,
+  isCustomAnimation:  PropTypes.bool
 };
 
 HeroButtons.propTypes = {

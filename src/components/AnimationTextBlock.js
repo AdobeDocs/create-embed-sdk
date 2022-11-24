@@ -407,6 +407,7 @@ AnimationTextBlock.propTypes = {
   imgWidth: PropTypes.string,
   homeZigZag: PropTypes.bool,
   isbuttonGroups: PropTypes.bool,
+  imagearray: PropTypes.array
 };
 
 export { AnimationTextBlock };

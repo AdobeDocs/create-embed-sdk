@@ -3,8 +3,9 @@ import AnimationVideo from "./videos/Adobe_DCP_Marquee_Animation.json";
 import WhyIntegrateSDK from "./embed-express-sdk/why-integrate-express-embed-sdk.md";
 import DesignForDeveloper from "./embed-express-sdk/design-for-develop.md"
 import VideoCrop from './videos/home_page_text_crop.mp4'
+import img1 from './images/background-remove-layer-2-pexels-thyrone.png'
 
-<Hero slots="image, icon, heading, text" variant="halfwidth"  className="embed-adobe "/>
+<Hero slots="image, icon, heading, text" variant="halfwidth" imagearray={[img1]} isCustomAnimation className="embed-adobe "/>
 
 ![Adobe Express](./images/background-remove-layer-1-pexels-thyrone-paas-transparent.png)
 
