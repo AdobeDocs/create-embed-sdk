@@ -943,22 +943,19 @@ const Hero = ({
                 style={["outine"]}
               />
             </div>
-            {
-                videoSrcUrl && 
-                <div>
-                 
-                  <div className="video" style={showVideo ? {opacity:0.4} :  {opacity:1} } >
+            {videoSrcUrl && 
+              <div>
+                <div className="video" style={showVideo ? {opacity:0.4} :  {opacity:1} } >
+                  <div className="arrow" style={showVideo ? {opacity:0} :  {opacity:1} }>
+                    {svgEmbded}
                   </div>
-                 
-                  <video className="autoPlayVideo" id="playAnimatedVideo" style={!showVideo ? {opacity:0} :  {opacity:1} } name="media" muted="true">
-                      <source src={videoSrcUrl} type="video/mp4" />
-                  </video>
-                  {  !showVideo && svgEmbded}
                 </div>
-              }
-
+                <video className="autoPlayVideo" id="playAnimatedVideo" style={!showVideo ? {opacity:0} :  {opacity:1} } name="media" muted="true">
+                    <source src={videoSrcUrl} type="video/mp4" />
+                </video>
+              </div>
+            }
             </div>
-          
         </section>
       );
     }  else if ( variant === 'fullwidth' && videoSrcUrl && isQuickAction ) {

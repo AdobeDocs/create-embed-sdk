@@ -537,8 +537,7 @@
     }
 }
 
-.embed-adobe>div>div:nth-child(2),
-.express-editor-hero-block>div:first-child {
+.embed-adobe>div>div:nth-child(2) {
     display: flex;
 }
 
@@ -550,9 +549,11 @@
 }
 
 .express-editor-hero-block .autoPlayVideo {
-    height: 500px;
-    width: 500px;
-    transform: translateX(35px) translateY(0px);
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 7%;
 }
 
 .editorBgImg .gatsby-resp-image-image {
@@ -562,14 +563,33 @@
     left: 20% !important;
 }
 
+
+.express-editor-hero-block>div:first-child {
+    display: flex;
+    max-width: unset;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.express-editor-hero-block>div>div:last-child {
+    position: relative;
+    width: 50%;
+}
+
+.arrow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .video {
+    display: flex;
+    align-items: center;
     background: url('../pages/images/express_editor_bg.png');
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 90%;
     background-position-y: center;
-    position: absolute;
-    /* opacity: 0.4; */
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
 
@@ -582,6 +602,7 @@
     justify-content: center;
     align-items: center;
     width: 50%;
+    padding: 2% 0% 2% 0%;
 }
 
 .express-editor-hero-block>div>div:first-child>h1 {
@@ -598,22 +619,19 @@
 
 @keyframes animateCode {
     50% {
-        transform: translateX(75px);
-        opacity: 1;
+        transform: translateX(85%) translateY(49%);
     }
 
     75% {
-        transform: translateX(75px), translateY(-10px);
-        opacity: 1;
+        transform: translateX(80%), translateY(38%);
     }
 
     90% {
-        transform: translateX(280px), translateY(-35px);
-        opacity: 1;
+        transform: translateX(95%), translateY(27%);
     }
 
     100% {
-        transform: translateX(280px) translateY(-35px);
+        transform: translateX(95%) translateY(24%);
         opacity: 0.5;
     }
 }
@@ -749,6 +767,10 @@
     .streamline_ability>div>div>p:first-child>span {
         width: 75% !important;
         height: 75% !important;
+    }
+
+    .express-editor-hero-block>div {
+        align-items: center;
     }
 }
 
@@ -924,12 +946,6 @@
         flex-direction: column !important;
     }
 
-    .express-editor-hero-block>div>div:nth-child(2) {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-
     .express-editor-hero-block>div>div:first-child>h1,
     .express-editor-hero-block>div>div:first-child>p {
         width: 96%;
@@ -937,11 +953,6 @@
 
     .express-editor-hero-block>div>div:first-child {
         gap: 1vh;
-    }
-
-    .video {
-        background-size: 90% !important;
-        width: 60vh !important;
     }
 
     .getting-started>p>span>img {
@@ -1024,11 +1035,6 @@
         font-size: 18px;
     }
 
-    .express-editor-hero-block .autoPlayVideo {
-        height: 50vh;
-        width: 60vh;
-    }
-
     .deployment ,.why-integrate-sdk>div>p:first-child>span {
         padding: 5% 0% !important;
     }
@@ -1072,12 +1078,6 @@
 
     .express-editor-hero-block>div {
         flex-direction: column !important;
-    }
-
-    .express-editor-hero-block>div>div:nth-child(2) {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
     }
 
     .announcement-embed-editor,
@@ -1234,16 +1234,6 @@
         align-self: center !important;
     }
 
-    .express-editor-hero-block .autoPlayVideo {
-        height: 30vh;
-        width: 28vh;
-    }
-
-    .video {
-        background-size: 80% !important;
-        width: 29vh;
-    }
-
     .quick-action-block {
         padding: 10% 0 !important;
     }
@@ -1260,46 +1250,6 @@
         padding: 10% 0;
     }
 
-}
-
-@media screen and (min-width:1025px) and (max-width:1200px) {
-    .express-editor-hero-block .video {
-        width: 100vw;
-        height: 52vh;
-    }
-
-    .express-editor-hero-block .autoPlayVideo {
-        height: 52vh;
-        width: 44vw;
-    }
-
-    .express-editor-hero-block>div {
-        width: 90% !important;
-    }
-}
-
-@media screen and (min-width:420px) and (max-width:599px) {
-    .video {
-        background-size: 100% !important;
-        width: 30vh;
-    }
-
-    .express-editor-hero-block .autoPlayVideo {
-        height: 40vh;
-        width: 33vh;
-    }
-}
-
-@media screen and (min-width:600px) and (max-width:767px) {
-    .video {
-        background-size: 75% !important;
-        width: 75vw !important;
-    }
-
-    .express-editor-hero-block .autoPlayVideo {
-        height: 50vh !important;
-        width: 45vh !important;
-    }
 }
 
 @media screen and (min-width:1240px) and (max-width:1600px) {
