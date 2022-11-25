@@ -679,7 +679,12 @@
     width: 300px;
 }
 
-.homeAutoCropVideo {
+.reizeQuickActionVideo{
+    width: 50%;
+    height: 50%;
+}
+
+.homeAutoCropVideo, .reizeQuickActionVideo video{
     width: 500px;
     height: 500px;
 }

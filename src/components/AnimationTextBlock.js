@@ -203,12 +203,12 @@ const AnimationTextBlock = ({
   hasCodeBlock = false,
   homeZigZag = false,
   isbuttonGroups = false,
-  imagearray,
+  imagearray=[],
+  videoSrcUrl="",
+  isVideoReversed=false,
   ...props
 }) => {
-  console.log('imagearray', imagearray)
   const Element = headerElementType;
-  console.log('image', image)
 
   let initColumns = 100 / parseFloat(width);
 
@@ -233,7 +233,7 @@ const AnimationTextBlock = ({
 
   
     const isReversed =
-      props.slots.endsWith("image") || props.slots.endsWith("video");
+      props.slots.endsWith("image") || props.slots.endsWith("video") || isVideoReversed;
     return (
       <section
         className={classNames(className, `spectrum--${theme}`)}
@@ -273,7 +273,7 @@ const AnimationTextBlock = ({
               }
             `}
           >
-            {imagearray.length &&
+            {imagearray.length >0  &&
             <p className="spectrum-Body spectrum-Body--sizeM css-1wz4ws2-css-Paragraph"><span className="gatsby-resp-image-wrapper" >
             <span className="gatsby-resp-image-background-image quickActionCodeSnippetBGImg" ></span>
                 <picture style={{display:"none"}}>
@@ -283,11 +283,16 @@ const AnimationTextBlock = ({
                 <SpringImage slides={imagearray} />
               </p>
               }
-             <span className=""></span>
-             {assetImg &&
-                <div className={assetImg?.props?.children}/>}
-
-            <Media css={mediaCSS} video={video} />
+             
+            { video && <Media css={mediaCSS} video={video} /> }
+            
+            { videoSrcUrl !== "" && 
+            <div className="reizeQuickActionVideo">
+              <video name="media_resize" id="resize_Quick_Action_Id" loop className="resizeQuickActionViedo" type="video/mp4" preload="auto" autoPlay muted>
+                <source src={videoSrcUrl} type="video/mp4" />
+              </video>
+            </div>
+            }
             {!imageOnly && <div
               css={css`
                 ${hasCodeBlock ?`width: 70%;` : `width: 50%;`}
@@ -407,7 +412,9 @@ AnimationTextBlock.propTypes = {
   imgWidth: PropTypes.string,
   homeZigZag: PropTypes.bool,
   isbuttonGroups: PropTypes.bool,
-  imagearray: PropTypes.array
+  imagearray: PropTypes.array,
+  videoSrcUrl: PropTypes.element,
+  isVideoReversed: PropTypes.bool
 };
 
 export { AnimationTextBlock };

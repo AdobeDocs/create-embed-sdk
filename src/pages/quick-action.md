@@ -7,6 +7,9 @@ import img3 from './images/Modal-image-3-convert-to-png.png'
 import {AnimationTextBlock} from "../components/AnimationTextBlock"
 import AnimationVideo from "./videos/cropeed_full_seq.json";
 import quickAction from './videos/quickAction_Crop_Video.mp4'
+import quick_Action_Image_resize from './videos/quick_Action_Image_resize.mp4'
+import quick_Action_Background_Remover from './videos/Background_Remover.mp4'
+
 
 <Hero slots="heading, text, assetsImg" variant="fullwidth" videoSrcUrl={quickAction}    className="quick-action-hero-block  Hero-Banner" isQuickAction/>
 
@@ -30,21 +33,10 @@ Adobe Quick Actions are powerful tools developers can customize and embed within
 
 <AnimationTextBlock slots="heading,text,image" heading="Small Code Snippets, Big Impact" textcontent="Easily customize which Quick Action is loaded into your iframe by changing a single ID." image={img1} theme="lightest"  variantsTypePrimary="secondary" variantStyleFill = "outline" imagearray={[img1, img2, img3]}  homeZigZag className="zigzag-cta-two big-impact"/>
 
-<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
+<AnimationTextBlock slots="heading,text" heading="Resize Image" theme="lightest" headerElementType="h2" textcontent="Make resizing images easy thanks to a wide array of standard and custom social media post image sizes to choose from." variantsTypePrimary='secondary' videoSrcUrl={quick_Action_Image_resize} variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
-![Resize Image](./images/Resize-Image-Main_PosterImage.png)
 
-### Resize Image
-
-Make resizing images easy thanks to a wide array of standard and custom social media post image sizes to choose from.
-
-<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two streamline_ability "/>
-
-### Remove Background
-
-Powered by Adobe Photoshop, enable users to remove backgrounds and create dynamic images in one simple click.
-
-![Remove Background](./images/Background-Remover_PosterImage.png)
+<AnimationTextBlock slots="heading,text" heading="Remove Background"  theme="lightest" headerElementType="h2" textcontent="Powered by Adobe Photoshop, enable users to remove backgrounds and create dynamic images in one simple click."  variantsTypePrimary='secondary' variantStyleFill = "outline" videoSrcUrl={quick_Action_Background_Remover} isVideoReversed  homeZigZag className=" zigzag-cta-two streamline_ability "/>
 
 <AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor quick-action learn-more-action"/>
 
