@@ -4,8 +4,14 @@ import WhyIntegrateSDK from "./embed-express-sdk/why-integrate-express-embed-sdk
 import DesignForDeveloper from "./embed-express-sdk/design-for-develop.md"
 import VideoCrop from './videos/home_page_text_crop.mp4'
 import img1 from './images/background-remove-layer-2-pexels-thyrone.png'
+import img2 from './images/Quick action icon 1.svg'
+import img3 from './images/Quick action icon 2.svg'
+import img4 from './images/Video-Crop-still-frame.png'
+import img5 from './images/Crop-objects.svg'
+import img6 from './images/Quick action icon 3.svg'
+import img7 from './images/Quick action icon 4.svg'
 
-<Hero slots="image, icon, heading, text" variant="halfwidth" imagearray={[img1]} isCustomAnimation className="embed-adobe "/>
+<Hero slots="image, icon, heading, text" variant="halfwidth" imagearray={[img1, img2, img3, img4, img5, img6, img7]} isCustomAnimation className="embed-adobe "/>
 
 ![Adobe Express](./images/background-remove-layer-1-pexels-thyrone-paas-transparent.png)
 

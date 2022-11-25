@@ -750,12 +750,35 @@ const Hero = ({
                 <div className="imgRemoveLayer2">
                   <img alt="imgnotfound" src={imagearray[0]}></img>
                 </div>
+                <div className="quickActionImage1">
+                  <img alt="imgnotfound" src={imagearray[2]}></img>
+                </div>
+                <div className="quickActionImage2">
+                  <img alt="imgnotfound" src={imagearray[6]}></img>
+                </div>
               </div>
               <div className="resizeCropImage">
-
+                <div style={{opacity: 0}}>
+                  <img alt="imgnotfound" src={imagearray[3]}></img>
+                </div>
+                <div style={{opacity: 0}}>
+                    <img alt="imgnotfound" src={imagearray[3]}></img>
+                </div>
+                <div>
+                  <img alt="imgnotfound" src={imagearray[3]}></img>
+                </div>
+                <div>
+                  <img class="cropImg" alt="imgnotfound" src={imagearray[4]}></img>
+                  <div className="quickActionImage3">
+                      <img alt="imgnotfound" src={imagearray[1]}></img>
+                    </div>
+                    <div className="quickActionImage4">
+                      <img alt="imgnotfound" src={imagearray[5]}></img>
+                  </div>
+                </div>
+              </div>
               </div>
             </div>
-          </div>
         </section>
       );
     } else if (variant === 'halfwidth') {
