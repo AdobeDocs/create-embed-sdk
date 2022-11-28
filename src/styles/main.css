@@ -184,8 +184,7 @@
 }
 
 .bgBlue pre.prism-code span:first-child,
-.express-editor-hero-block>div>div:nth-child(2)>div>p,
-.vedio-editor>div>div>div>h3 {
+.express-editor-hero-block>div>div:nth-child(2)>div>p {
     color: #ffffff;
 }
 
@@ -271,6 +270,9 @@
     background-position: center;
     background-size: 72%;
     height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .big-impact>div>div>p>span,
@@ -287,8 +289,7 @@
     height: 100%;
 }
 
-.snippet-img svg,
-.edit-text-block>div>div>p>span>picture>img {
+.snippet-img svg {
     width: 100%;
     height: 100%;
 }
@@ -304,72 +305,8 @@
     padding: 0% !important;
 }
 
-.edit-text-block>div>div {
-    flex-direction: row !important;
-    width: fit-content !important;
-    width: 30% !important;
-}
-
-.edit-text-block>div>div>p>span>span:first-child {
-    padding-bottom: 0% !important;
-}
-
-.edit-text-block>div>div>p:first-child {
-    height: 57px !important;
-    padding: 0px !important;
-    width: 30% !important;
-}
-
-.edit-text-block>div {
-    margin-bottom: 2% !important;
-    padding: 0px !important;
-}
-
-.edit-text-block>div>div>div>p {
-    font-size: 20px !important;
-}
-
-.edit-text-block>div>div>div {
-    width: 70% !important;
-    padding: 0 !important;
-}
-
-.w-45 {
-    max-width: 45% !important;
-}
-
-.w-30 {
-    max-width: 30% !important;
-}
-
-.w-25 {
-    max-width: 35% !important;
-}
-
-.quick-content>div {
-    display: flex;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-}
-
-.py-0 {
-    padding-top: var(--spectrum-global-dimension-size-0) !important;
-    padding-bottom: var(--spectrum-global-dimension-size-0) !important;
-}
-
-.text-align-left {
-    text-align: left;
-}
-
-.div-p-0>div,
 .streamline_ability>div {
     padding: 0 !important;
-}
-
-.image-editing>div>div>div>h3,
-.wrapper-comp-editing>div>div>div>h3 {
-    margin-bottom: 30px !important;
 }
 
 .spectrum-Accordion-ChevronIcon {
@@ -402,10 +339,6 @@
     font-size: 16px;
 }
 
-.image-editing>div>div>div {
-    border: none !important;
-}
-
 .editing-content {
     margin-top: 6%;
 }
@@ -414,7 +347,7 @@
 .QuickActionSDKDevelop>div,
 .resource-card>div,
 .service-code-block>div>div {
-    width: 100%;
+    width: 100% !important;
 }
 
 .embed-adobe>div>div:first-child {
@@ -720,7 +653,7 @@
     padding: 4% 0;
 }
 
-.design-features-code-block{
+.design-features-code-block {
     padding: 5% 0 2% 2% !important;
 }
 
@@ -729,9 +662,82 @@
     padding-left: 19%;
 }
 
+.image-video-editing>div {
+    width: 100% !important;
+}
+
+table {
+    width: 80% !important;
+    margin: 6% 0 0% 17%;
+}
+
+.show {
+    display: block;
+}
+
+th {
+    text-transform: none !important;
+    font-size: 25px !important;
+    letter-spacing: 0px !important;
+}
+
+td {
+    border: none !important;
+}
+
+td>div {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 2%;
+}
+
+td>div:hover {
+    border: 1px solid #5258E4;
+}
+
+td>div>span {
+    margin-left: unset !important;
+    margin-right: unset !important;
+}
+
+td>div>p {
+    margin: 0 0 0 10px !important;
+}
+
+td>div>span>picture>img {
+    height: auto !important;
+    width: auto !important;
+    position: unset !important;
+}
+
+td>div>span>span {
+    display: none !important;
+}
+
+.mobile-view-content>div>div>table {
+    display: none !important;
+}
+
+
 @media screen and (min-width:375px) and (max-width:767px) {
 
-    .homeAutoCropVideo, .reizeQuickActionVideo video{
+    .mobile-view-content>div>div>table {
+        margin: 6% 0 0% 10%;
+        display: block !important;
+    }
+
+    .mobile-view-content>div>div>table>tbody>tr:nth-child(6)>td {
+        font-size: 30px !important;
+        font-weight: bold !important;
+    }
+
+    .image-video-editing>div>div>table {
+        display: none !important;
+    }
+
+    .homeAutoCropVideo,
+    .reizeQuickActionVideo video {
         height: 100%;
         width: 100%;
     }
@@ -768,27 +774,10 @@
         width: 89%;
     }
 
-    .quick-content>div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center !important;
-    }
-
-    .edit-text-block>div>div>div {
-        margin: 5% 0 !important;
-    }
-
-    .edit-text-block>div,
     .why-integrate-sdk>div>p {
         margin: 0 !important;
     }
 
-    .w-45,
-    .w-30,
-    .w-25,
-    .quick-action-content>div,
-    .edit-text-block>div>div,
-    .quick-content,
     .editing-content>div,
     .getting-started>p:first-child>span>:first-child,
     .bgBlue .tabView0>div>div,
@@ -890,8 +879,7 @@
     }
 
     .bgBlue .mobileTabView,
-    .getting-started>p,
-    .vedio-editor {
+    .getting-started>p {
         display: none;
     }
 
@@ -901,7 +889,7 @@
     }
 
     .code-block-sdk>div {
-        width: 90% !important;
+        width: 100% !important;
     }
 
     .service-code-block {
@@ -1076,6 +1064,11 @@
 
 @media screen and (min-width:768px) and (max-width:1024px) {
 
+    table {
+        width: 90% !important;
+        margin: 6% 0 0% 5%;
+    }
+
     .quick-action>div>p {
         width: 87%;
         padding-left: 7%;
@@ -1093,13 +1086,6 @@
     .summary-block,
     .sdk-getting-block {
         height: 10% !important
-    }
-
-    .w-45,
-    .w-30,
-    .w-25 {
-        max-width: 33% !important;
-        width: 33% !important;
     }
 
     .express-editor-hero-block {
@@ -1194,12 +1180,10 @@
     .design-features-code-block>div,
     .big-impact>div>div>div>h3,
     .editing-content>div,
-    .quick-content,
     .bgBlue,
     .embed-adobe>div>div,
     .embed-adobe>div>div>p:last-child,
-    .service-code-block>div>div>div:nth-child(2),
-    .edit-text-block>div>div {
+    .service-code-block>div>div>div:nth-child(2) {
         max-width: 100%;
         width: 100% !important;
     }
