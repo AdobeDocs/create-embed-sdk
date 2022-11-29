@@ -380,7 +380,8 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    animation: backGrndMoveAnimation 5s infinite;
+    animation: backGrndMoveAnimation 5s;
+    animation-fill-mode: forwards;
     border-radius: 30px;
 }
 
@@ -435,17 +436,20 @@
 .resizeCropImage>:nth-child(3) {
     position: absolute;
     top: 0%;
-    animation: cropedMe 5s infinite;
+    animation: cropedMe 5s;
+    animation-fill-mode: forwards;
 }
 
 .resizeCropImage>div:last-child {
     position: absolute;
     top: 0%;
-    animation: cropedAnimation 5s infinite 10ms;
+    animation: cropedAnimation 5s 10ms;
+    animation-fill-mode: forwards;
 }
 
 .resizeCropImage>div:last-child>img {
-    animation: cropOpacity 5s infinite;
+    animation: cropOpacity 5s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes cropOpacity {
@@ -464,7 +468,7 @@
     }
 
     100% {
-        right: 60%;
+        right: 65%;
     }
 }
 
@@ -474,7 +478,7 @@
     }
 
     100% {
-        right: 60%;
+        right: 65%;
     }
 }
 

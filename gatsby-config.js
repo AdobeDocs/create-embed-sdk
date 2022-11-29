@@ -27,7 +27,7 @@ module.exports = {
       {
         title: 'Express Embed SDK',
         description: "Express Embed SDK",
-        path: 'express-embed-sdk/'
+        path: '/'
       },
       {
         title: 'Express Editor',

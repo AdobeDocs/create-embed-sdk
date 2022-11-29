@@ -1,84 +1,69 @@
----
-title: Overview - Adobe Analytics
-description: This is the overview page of Adobe Analytics
-contributors:
-  - https://github.com/icaraps 
----
+import "../styles/main.css"
+import AnimationVideo from "./videos/Adobe_DCP_Marquee_Animation.json";
+import WhyIntegrateSDK from "./embed-express-sdk/why-integrate-express-embed-sdk.md";
+import DesignForDeveloper from "./embed-express-sdk/design-for-develop.md"
+import VideoCrop from './videos/home_page_text_crop.mp4'
+import img1 from './images/background-remove-layer-2-pexels-thyrone.png'
+import img2 from './images/Quick action icon 1.svg'
+import img3 from './images/Quick action icon 2.svg'
+import img4 from './images/Video-Crop-still-frame.png'
+import img5 from './images/Crop-objects.svg'
+import img6 from './images/Quick action icon 3.svg'
+import img7 from './images/Quick action icon 4.svg'
 
-<Hero slots="heading, text"/> 
+<Hero slots="image, icon, heading, text" variant="halfwidth" imagearray={[img1, img2, img3, img4, img5, img6, img7]} isCustomAnimation className="embed-adobe "/>
 
-# Adobe Analytics API
+![Adobe Express](./images/background-remove-layer-1-pexels-thyrone-paas-transparent.png)
 
-Adobe Product API offers limitless ways to integrate your most important customer data into key business processes. Adobe Product API offer limitless ways.
+![Adobe Express](./images/Adobe-Express-logo-RGB.png)
 
-<Resources slots="heading, links"/>
+# Embed Adobe’s world class creative tools
 
-#### Resources
+Put the right creative tools and content in the hands of your users with the Adobe Express Embed SDK.
 
-* [Quickstart Guide](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
-* [Adobe Analytics Github Repo](https://github.com/AdobeDocs/analytics-2.0-apis)
+<DCSummaryBlock slots="text, buttons" theme="dark"  buttonPositionRight btnVariant="cta" className="How-to-get-started  ms-pa-page hero-below-compo ms-pa-summary-blade tryForFree" />
 
-## Overview
+Bring powerful Adobe Express capabilities to any application with Express Embed SDK, a customizable JavaScript library.
 
-This documentation provides instructions for Adobe Analytics 2.0 APIs. For working with Analytics 1.4 APIs, see [Analytics 1.4 API Documentation](https://github.com/AdobeDocs/analytics-1.4-apis).
+- [Try the demo](https://documentservices.adobe.com/dc-integration-creation-app-cdn/main.html?api=pdf-services-api&source=pa#&sdid=6S3T74M5&mv=affiliate)
 
-The Adobe Analytics APIs are a collection of APIs that power Adobe Analytics products like Analysis Workspace. 
-The APIs allow for the creation of data rich user interfaces that you can use to manipulate and integrate data.
-You can also create reports to explore, get insights, or answer important questions about your data.
+<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability  express-editor"/>
 
-## Discover 
-
-<DiscoverBlock width="100%" slots="heading, link, text"/>
-
-### Get Started
-
-[Quickstart Guide](guides/)
+![EMPTY_ALT](./images/Product-blade-block-one-image.png)
     
-Get started with the Adobe Analytics APIs.
+### Enhance your site with Adobe Express
 
-<DiscoverBlock slots="heading, link, text"/> 
+Allow your users to create standout content with beautiful templates and assets for social media content, logos, and more. It only takes a few lines of code.
 
-### Guides
+- [Learn more](https://adobe.io)
 
-[Calculated Metrics API](guides/calculated_metrics_api/) 
-     
-Returns information on the user's company that is necessary for making other Adobe Analytics API calls.
+<TextBlock slots="heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' videoSrcUrl={VideoCrop} variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two  streamline_ability"/>
 
-<DiscoverBlock slots="link, text"/>
+### Quick Actions speed up users
 
-[Segments API](guides/segments_api/) 
+Powered by Adobe Photoshop and Adobe Premiere, Quick Actions combine complex operations into one or two clicks, making resizing images, removing backgrounds, and merging videos easy.
 
-Provides configuration guidance and best practices for the /segments endpoint.
+- [Learn more](https://adobe.io)
 
-<DiscoverBlock slots="link, text"/>
+<TitleBlock slots="heading" theme="lightest" />
 
-[Reporting Guide API](guides/reporting_api/)
+Why integrate the Express Embed SDK?
 
-Provides configuration guidance and best practices for the /reports endpoint.
+<WrapperComponent slots="content" repeat="1" theme="light" className="acrobat letter breakout QuickActionSDKDevelop "/>
 
-<DiscoverBlock slots="link, text"/>
+<WhyIntegrateSDK/>
 
-[Migrating from 1.4 to 2.0](guides/migrating/)
+<WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout resource-card "/>
 
-For help migrating from the 1.4 versions of the Analytics API to the newer and more capable /reports API.   
+<DesignForDeveloper/>
 
-<DiscoverBlock width="100%" slots="heading, link, text"/>
+<SummaryBlock slots=" image , heading, text, buttons" className="getting-started sdk-getting-block" />
 
-### API References
+![Getting Started](./images/Summary-Block-image.svg)
 
-[Try the API](api/) 
+## Getting Started
 
-Try the Analytics API with Swagger UI. Explore, make calls, with full endpoint descriptions.
+Unlock Adobe Express editing capabilities for your users by embedding the SDK on your own platform. Read our developer quickstart guide or try the demo to get started.
 
-## Contributing 
-
-We encourage you to participate in our open documentation initiative, if you have suggestions, corrections, additions 
-or deletions for this documentation, check out the source from [this github repo](https://github.com/adobe/gatsby-theme-spectrum-example), and submit a pull 
-request with your contribution. For more information, refer to the [contributing page](support/contribute/).
-
-## API Requests & Rate Limits
-
-The timeout for API requests through adobe.io is currently *60 seconds*.
-
-The default rate limit for an Adobe Analytics Company is *120 requests per minute*. (The limit is enforced as *12 requests every 6 seconds*).
-When rate limiting is being enforced you will get `429` HTTP response codes with the following response body: `{"error_code":"429050","message":"Too many requests"}`    
+- [Get Started](https://adobe.io)
+- [Try the demo](https://adobe.io)
