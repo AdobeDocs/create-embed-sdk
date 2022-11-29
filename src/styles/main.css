@@ -595,13 +595,10 @@
 }
 
 .quick-action-hero-block>div>div:first-child>h1,
-.express-editor-hero-block>div>div:first-child>h1 {
-    width: 50%;
-}
-
+.express-editor-hero-block>div>div:first-child>h1,
 .quick-action-hero-block>div>div:first-child>p,
 .express-editor-hero-block>div>div:first-child>p {
-    width: 48%;
+    width: 45%;
 }
 
 .quick-action-hero-block .autoQuickPlayVideo {
@@ -659,7 +656,7 @@
 
 .design-features-code-block>div {
     max-width: 100% !important;
-    padding-left: 19%;
+    padding-left: 15%;
 }
 
 .image-video-editing>div {
@@ -683,6 +680,7 @@ th {
 
 td {
     border: none !important;
+    padding: 0 !important;
 }
 
 td>div {
@@ -690,10 +688,12 @@ td>div {
     align-items: center;
     width: fit-content;
     padding: 2%;
+    white-space: nowrap;
+    border: 1px solid white;
 }
 
 td>div:hover {
-    border: 1px solid #5258E4;
+    border-color: #5258E4;
 }
 
 td>div>span {
@@ -711,14 +711,23 @@ td>div>span>picture>img {
     position: unset !important;
 }
 
-td>div>span>span {
+td>div>span>span ,.mobile-view-content>div>div>table{
     display: none !important;
 }
 
-.mobile-view-content>div>div>table {
-    display: none !important;
+h1,
+p {
+    font-family: 'adobe-clean' !important;
 }
 
+.bgBlue>div {
+    width: 70% !important;
+}
+
+.customer-need>div>p{
+    padding-left: 15%;
+    width: 70%;
+}
 
 @media screen and (min-width:375px) and (max-width:767px) {
 
@@ -1063,6 +1072,18 @@ td>div>span>span {
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
+
+    .embed-adobe>div>div:first-child>p:last-child {
+        width: 80% !important;
+    }
+
+    .embed-adobe {
+        padding: unset !important;
+    }
+
+    .embed-adobe>div>div {
+        padding: 3% !important;
+    }
 
     table {
         width: 90% !important;
