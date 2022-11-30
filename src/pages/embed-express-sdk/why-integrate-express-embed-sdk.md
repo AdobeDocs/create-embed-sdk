@@ -19,6 +19,6 @@ Create an engaged and satisfied userbase by helping users complete their creativ
 
 ![Letter](../images/Benefits-blade-image-3.svg)
 
-### Go to market fast, without custom development   
+### Go to market fast, without custom development
 
 Take control and avoid bottlenecks by integrating proven tools and benefiting from continued enhancements and new Adobe features.

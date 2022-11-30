@@ -12,13 +12,11 @@ import ImageVideoEditingBlock from "./quick-action/image-video-editing.md";
 import ImageVideoContent from "./quick-action/image-video-mobile-content.md"
 
 
-<Hero slots="heading, text, assetsImg" variant="fullwidth" videoSrcUrl={quickAction}    className="quick-action-hero-block  Hero-Banner" isQuickAction/>
+<Hero slots="heading, text" variant="fullwidth" videoSrcUrl={quickAction}    className="quick-action-hero-block  Hero-Banner" isQuickAction/>
 
 # Make image and video editing a snap with Quick Actions
 
 Quick actions, powered by Adobe Photoshop and Premiere, make short work of multi-step editing tasks.
-
-homeheroquickAction
 
 <AnnouncementBlock slots="heading, text, button" className="announcement-embed-editor quick-action"/>
 

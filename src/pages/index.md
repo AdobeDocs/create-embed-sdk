@@ -45,7 +45,7 @@ Powered by Adobe Photoshop and Adobe Premiere, Quick Actions combine complex ope
 
 - [Learn more](https://adobe.io)
 
-<TitleBlock slots="heading" theme="lightest" />
+<TitleBlock slots="heading" theme="lightest" className="sdk-title-block"/>
 
 Why integrate the Express Embed SDK?
 

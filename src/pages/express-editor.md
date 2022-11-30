@@ -20,7 +20,7 @@ With Adobe Express Editor, users can create professional-caliber social posts, a
 
 [Try the demo](https://adobe.io)
 
- <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
+<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
 ![Streamline your users’ workflows](./images/Express-Editor-Benefits-Blade-image.png)
 
@@ -44,7 +44,7 @@ The Express Editor unlocks Adobe’s unparalleled collection of templates, Adobe
 
 Customize where and how the Express Editor is launched to ensure users get to the right tools and templates.
 
- <AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor"/>
+<AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor"/>
 
 Learn more about using the embedded Express Editor
 
