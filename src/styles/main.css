@@ -138,7 +138,7 @@
 
 .tryForFree {
     margin-bottom: 5%;
-    background-color: black !important;
+    background-color: #000B1D !important;
 }
 
 .tryForFree>div>div:nth-child(2)>div>div>div>a {
@@ -172,7 +172,7 @@
 }
 
 .bgBlue pre.prism-code {
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #111a35 !important;
 }
 
@@ -385,18 +385,13 @@ td>div>span>span,
     background-position-x: left;
     background-position-y: bottom;
     padding: 2%;
-    opacity: 0;
-    animation: fadeIn 2s linear 2000ms;
-    animation-fill-mode: forwards;
+    opacity: 1;
+    animation: fade 2s linear;
 }
 
-@keyframes fadeIn {
+@keyframes fade {
     0% {
         opacity: 0;
-    }
-
-    50% {
-        opacity: 0.5;
     }
 
     100% {
@@ -743,9 +738,13 @@ p {
     padding-top: 4% !important;
 }
 
-.streamline_ability>div>div>p>span>picture>img{
+.streamline_ability>div>div>p>span>picture>img {
     box-shadow: 0px 9px 15px 5px #ebebeb;
     border-radius: 10px;
+}
+
+.prism-code {
+    overflow: hidden !important;
 }
 
 @media screen and (min-width:375px) and (max-width:767px) {
@@ -917,11 +916,11 @@ p {
         width: 85%;
     }
 
-    .express-editor-hero-block>div>div:first-child>p{
+    .express-editor-hero-block>div>div:first-child>p {
         width: 90%;
     }
 
-    .ms-pa-page>div{
+    .ms-pa-page>div {
         gap: 20px;
     }
 
@@ -1030,7 +1029,7 @@ p {
         padding: 10% 0 !important;
     }
 
-    .why-integrate-sdk>div>p:first-child>span{
+    .why-integrate-sdk>div>p:first-child>span {
         padding: 5% 0 !important;
     }
 
@@ -1067,6 +1066,15 @@ p {
 }
 
 @media screen and (min-width: 375px) and (max-width:1024px) {
+
+    .streamline_ability>div>div>p:first-child>span {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .prism-code {
+        overflow: auto !important;
+    }
 
     .big-impact>div>div {
         flex-direction: column-reverse;
@@ -1133,11 +1141,6 @@ p {
         margin-bottom: 7%;
     }
 
-    .streamline_ability>div>div>p:first-child>span {
-        width: 75% !important;
-        height: 75% !important;
-    }
-
     .express-editor-hero-block>div>div:nth-child(2) {
         display: flex;
         justify-content: center !important;
@@ -1192,6 +1195,7 @@ p {
 
 @media screen and (min-width:768px) and (max-width:1024px) {
 
+    
     .design-features-code-block>div {
         padding: 0;
     }
@@ -1296,7 +1300,7 @@ p {
     }
 
     .big-impact>div>div>p {
-        width: 75% !important;
+        width: 70% !important;
     }
 
     .getting-started>div>p {
@@ -1341,7 +1345,7 @@ p {
     }
 
     .design-features-code-block {
-        padding: 6% 4% 2% 8%!important;
+        padding: 6% 4% 0% 8% !important;
     }
 
     .streamline_ability>div>div>p>span>picture>img,
