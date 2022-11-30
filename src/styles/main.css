@@ -385,13 +385,18 @@ td>div>span>span,
     background-position-x: left;
     background-position-y: bottom;
     padding: 2%;
-    opacity: 1;
-    animation: fade 2s linear;
+    opacity: 0;
+    animation: fadeIn 2s linear 2000ms;
+    animation-fill-mode: forwards;
 }
 
-@keyframes fade {
+@keyframes fadeIn {
     0% {
         opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
     }
 
     100% {
