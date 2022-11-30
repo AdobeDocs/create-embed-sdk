@@ -47,7 +47,7 @@ const AccordionItem = ({ header, slot_id, isOpen = false, children, isChevronIco
           css={css`
             text-transform: none;
           `}>
-          {isChevronIcon && <span className={`spectrum-Accordion-ChevronIcon`} aria-hidden="true" onClick={onClick}>{open ? <ChevronDown /> : <ChevronRight />}</span>}
+          {isChevronIcon && <span className={`spectrum-Accordion-ChevronIcon`} aria-hidden="true" >{open ? <ChevronDown /> : <ChevronRight />}</span>}
 
           {header}
         </button>
