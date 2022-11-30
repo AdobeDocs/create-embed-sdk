@@ -45,6 +45,25 @@ module.exports = {
         path: '/faq'
       },
     ],
+    subMenuPages: [{
+      title: '',
+      path: '',
+      icon:'',
+      pages: [
+        {
+          title: '',
+          path: ''
+        }
+      ]
+    }],
+    salesFAQMenus: [{
+      title: '',
+      path: '',
+    }],
+    techSupportFAQMenus: [{
+        title: '',
+        path: '',
+    }]
   },
   plugins: [`@adobe/gatsby-theme-aio`],
   pathPrefix: process.env.PATH_PREFIX || '/embed-sdk-services/'
