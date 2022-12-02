@@ -8,7 +8,7 @@
 }
 
 .announcement-embed-editor>div>div>a {
-    background-color: white !important;
+    background-color: #FFFFFF !important;
     border: 2px solid #5258E4 !important;
 }
 
@@ -18,21 +18,17 @@
 }
 
 .streamline_ability>div>div>div>div>div>div>a {
-    background-color: white !important;
-    border-color: gray !important;
+    background-color: #FFFFFF !important;
+    border-color: #747474 !important;
 }
 
 .streamline_ability>div>div>div>p {
     width: 100%;
-    color: #4B4B4B;
+    color: #747474;
 }
 
 .streamline_ability>div>div>div>div>div>div>a>span>span {
-    color: gray !important;
-}
-
-.customer-experience {
-    background-color: #f8f8f8 !important;
+    color: #747474 !important;
 }
 
 .customer-experience>div>div>div {
@@ -42,7 +38,8 @@
     width: 100% !important;
 }
 
-.QuickActionSDKDevelop>div {
+.QuickActionSDKDevelop>div,
+.prism-code {
     overflow: hidden;
 }
 
@@ -95,7 +92,7 @@
 }
 
 .summary-block {
-    height: 17% !important
+    height: 13% !important
 }
 
 .embed-adobe {
@@ -109,13 +106,13 @@
 }
 
 .embed-adobe>div>div>h1 {
-    color: white;
+    color: #FFFFFF;
     width: 50%;
 }
 
 .embed-adobe>div>div:first-child>p:last-child {
     width: 40%;
-    color: white !important;
+    color: #FFFFFF !important;
 }
 
 .embed-adobe>div>div:nth-child(2)>p>span>picture>img {
@@ -129,7 +126,7 @@
 }
 
 .ms-pa-summary-blade>div {
-    justify-content: center !important;
+    justify-content: center;
 }
 
 .ms-pa-summary-blade>div>div {
@@ -146,7 +143,7 @@
 }
 
 .tryForFree>div>div:nth-child(2)>div>div>div>a>span>span {
-    color: black !important;
+    color: #000000 !important;
 }
 
 .tryForFree>div>div>p {
@@ -162,6 +159,7 @@
 }
 
 .bgBlue {
+    padding: 0 11% 6% 0 !important;
     background-color: #202947 !important;
 }
 
@@ -183,9 +181,16 @@
     background-color: #202947;
 }
 
-.bgBlue pre.prism-code span:first-child,
+.prism-code>div:first-child>span:nth-child(2)>span {
+    color: #CA9FFC !important;
+}
+
+.bgBlue pre.prism-code span:first-child {
+    color: #7F8495;
+}
+
 .express-editor-hero-block>div>div:nth-child(2)>div>p {
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .bgBlue h3 {
@@ -206,11 +211,8 @@
 .bgBlue #tabItem_0,
 .bgBlue #tabItem_1,
 .bgBlue #tabItem_2 {
+    border-radius: 10px;
     padding: 2% !important;
-}
-
-.service-code-block {
-    padding: 0 11% 5% 0;
 }
 
 .deployment>div>p:first-child>span {
@@ -254,12 +256,12 @@
 
 .big-impact>div>div>div>h3 {
     font-size: 37px;
-    color: #fff;
+    color: #FFFFFF;
     width: 60%;
 }
 
 .big-impact>div>div>div>p {
-    color: #fff;
+    color: #FFFFFF;
     width: 55%;
 }
 
@@ -369,24 +371,37 @@ td>div>span>span,
     background-position: 0% 0%, 0% 100.3%;
     background-repeat: no-repeat;
     border-radius: 30px;
+    transform: translateX(30%);
+    animation: imagelayerOne 3s 1500ms;
+}
+
+@keyframes imagelayerOne {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(30%);
+    }
 }
 
 .imgRemoveLayer2 {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    animation: backGrndMoveAnimation 5s;
+    animation: backGrndMoveAnimation 5s 1500ms;
     animation-fill-mode: forwards;
     border-radius: 30px;
 }
 
+
 .bgCodeAssetAnima {
     background: url("../pages/images/Code-asset.svg") no-repeat padding-box;
-    background-position-x: left;
-    background-position-y: bottom;
+    background-position-x: 25%;
+    background-position-y: center;
     padding: 2%;
     opacity: 0;
-    animation: fadeIn 3s linear 2000ms;
+    animation: fadeIn 3s linear 1500ms;
     animation-fill-mode: forwards;
 }
 
@@ -402,9 +417,11 @@ td>div>span>span,
     50% {
         opacity: 0.5;
     }
+
     75% {
         opacity: 0.75;
     }
+
     100% {
         opacity: 1;
     }
@@ -415,24 +432,76 @@ td>div>span>span,
     position: absolute;
     top: 25%;
     left: -8%;
+    animation: actionImageOne 3s 1500ms;
+}
+
+@keyframes actionImageOne {
+    0% {
+        top: 16%;
+        left: -15%;
+    }
+
+    100% {
+        top: 25%;
+        left: -8%;
+    }
 }
 
 .quickActionImage2 {
     position: absolute;
     bottom: -15%;
     left: 40%;
+    animation: actionImageTwo 3s 1500ms;
+}
+
+@keyframes actionImageTwo {
+    0% {
+        bottom: -22%;
+        left: 30%;
+    }
+
+    100% {
+        bottom: -15%;
+        left: 40%;
+    }
 }
 
 .quickActionImage3 {
     position: absolute;
     top: 7%;
     left: -14%;
+    animation: actionImageThree 3s 1500ms;
+}
+
+@keyframes actionImageThree {
+    0% {
+        top: 2%;
+        left: 5%;
+    }
+
+    100% {
+        top: 7%;
+        left: -14%;
+    }
 }
 
 .quickActionImage4 {
     position: absolute;
     top: 48%;
     right: -22%;
+    animation: actionImageFour 3s 1500ms;
+}
+
+@keyframes actionImageFour {
+    0% {
+        top: 55%;
+        right: -35%;
+    }
+
+    100% {
+        top: 48%;
+        right: -22%;
+    }
 }
 
 .quickActionImage1 img,
@@ -483,21 +552,23 @@ td>div>span>span,
 
 @keyframes cropedMe {
     0% {
-        right: 20%;
+        right: 10%;
     }
 
     100% {
-        right: 62%;
+        right: 37%;
     }
 }
 
 @keyframes cropedAnimation {
     0% {
-        right: 20%;
+        scale: 1.2;
+        right: 10%;
     }
 
     100% {
-        right: 62%;
+        scale: 1;
+        right: 37%;
     }
 }
 
@@ -668,19 +739,20 @@ td>div>span>span,
 }
 
 .design-features-code-block {
-    padding: 5% 0 2% 2% !important;
+    padding: 5% 0 2% 2%;
 }
 
 .design-features-code-block>div {
     max-width: 100% !important;
-    padding-left: 15%;
+    padding: 5% 5% 0% 15%;
 }
 
 .image-video-editing>div,
 .embed-adobe>div,
 .QuickActionSDKDevelop>div,
 .resource-card>div,
-.service-code-block>div>div {
+.service-code-block>div>div,
+.customer-need>div>h3 {
     width: 100% !important;
 }
 
@@ -710,7 +782,8 @@ td>div {
     width: fit-content;
     padding: 2%;
     white-space: nowrap;
-    border: 1px solid white;
+    border: 1px solid #FFFFFF;
+    border-radius: 3%;
 }
 
 td>div:hover {
@@ -718,8 +791,7 @@ td>div:hover {
 }
 
 td>div>span {
-    margin-left: unset !important;
-    margin-right: unset !important;
+    margin: unset !important;
 }
 
 td>div>p {
@@ -738,7 +810,7 @@ p {
 }
 
 .bgBlue>div {
-    width: 70% !important;
+    width: 70%;
 }
 
 .customer-need>div>p {
@@ -755,11 +827,65 @@ p {
     border-radius: 10px;
 }
 
-.prism-code {
-    overflow: hidden !important;
+.mb-15 {
+    margin-bottom: 10% !important;
+}
+
+.customer-experience>div>div>div>h2 {
+    font-size: 30px;
+}
+
+.customer-experience>div>div>div>p {
+    color: #222222;
+}
+
+.why-integrate-sdk>div>p:last-child {
+    color: #4B4B4B;
+}
+
+.carousel>div>div>div>div>div>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel>div>div>div>div>div>div:nth-child(2)>div>p {
+    font-size: 19px;
+    width: 75%;
+    margin-top: 3%;
+}
+
+.swiper-slide>div {
+    gap: 5%;
+}
+
+.customer-need>div>h3 {
+    font-size: 31px;
+}
+
+.quick-action {
+    height: 6%;
+}
+
+.quick-action>div>h3 {
+    font-size: 25px;
 }
 
 @media screen and (min-width:375px) and (max-width:767px) {
+
+    .carousel>div>div>div>div>div>div:nth-child(2)>div>p {
+        font-size: 19px;
+        width: 100%;
+    }
+
+    .swiper-slide>div>div:nth-child(2)>h3 {
+        font-size: 25px !important;
+    }
+
+    .quick-action>div>h3,
+    .customer-experience>div>div>div>h2 {
+        font-size: 34px;
+    }
 
     .snippet-img {
         right: 30%;
@@ -786,7 +912,7 @@ p {
     }
 
     .go-to>div>h3 {
-        margin: 20% 10% 5% 10% !important;
+        margin: 20% 10% 5% 10%;
     }
 
     .customer-need>div>p {
@@ -805,7 +931,7 @@ p {
         }
 
         100% {
-            right: 50%;
+            right: 20%;
         }
     }
 
@@ -815,7 +941,7 @@ p {
         }
 
         100% {
-            right: 50%;
+            right: 20%;
         }
     }
 
@@ -824,8 +950,21 @@ p {
         height: 50% !important;
     }
 
-    .quickActionImage4 {
-        right: -60%;
+    .quickActionImage4{
+        top: 44%;
+        right: -62%;
+    }
+
+    @keyframes actionImageFour{
+        0% {
+            top:55%;
+            right: -85%;
+        }
+
+        100% {
+            top: 44%;
+            right: -62%;
+        }
     }
 
     .quickActionImage1>img,
@@ -840,11 +979,13 @@ p {
         padding-top: 15%;
         width: 200px !important;
         padding-left: 10%;
+        background-size: 85%;
     }
 
     .imgRemoveLayer1 {
         background-position: 0% 0%, 0% 0%;
         background-size: 190px 125px !important;
+        margin-left: -25%;
     }
 
     .imgRemoveLayer2>img {
@@ -858,21 +999,21 @@ p {
     }
 
     .mobile-view-content>div>div>table>tbody>tr:nth-child(6)>td {
-        font-size: 30px !important;
-        font-weight: bold !important;
+        font-size: 30px;
+        font-weight: bold;
     }
 
     .getting-started {
-        height: 20% !important;
+        height: 20%;
     }
 
     .quick-action-getting {
-        height: 10% !important;
-        margin-bottom: 40% !important;
+        height: 9%;
+        margin-bottom: 40%;
     }
 
     .getting-started>div {
-        padding: 10% 17% 20% 12% !important;
+        padding: 10% 17% 20% 12%;
         position: relative !important;
     }
 
@@ -882,7 +1023,7 @@ p {
     }
 
     .big-impact {
-        height: 10% !important;
+        height: 10%;
     }
 
     .big-impact>div>div>div>h3 {
@@ -890,12 +1031,13 @@ p {
         width: 100%;
     }
 
-    .big-impact>div>div>div>p {
-        width: 89%;
+    .big-impact>div>div>div>p,
+    .quick-action>div>h3 {
+        width: 90%;
     }
 
     .why-integrate-sdk>div>p {
-        margin: 2% !important;
+        margin: 2%;
     }
 
     .editing-content>div,
@@ -943,30 +1085,13 @@ p {
 
     .announcement-embed-editor,
     .announcement-embed-editor>div:first-child {
-        margin: auto !important;
-        padding: 0 !important;
-        align-items: center !important;
-    }
-
-    .announcement-embed-editor>div:first-child>h3 {
-        margin: 5% 17% !important;
+        margin: auto;
+        padding: 0;
+        align-items: center;
     }
 
     .announcement-embed-editor>div:first-child>p {
-        margin: 0 11%;
-        width: fit-content !important;
-    }
-
-    .quick-action>div:first-child>p {
-        margin: 0 11%;
-    }
-
-    .learn-more-action>div:first-child>p {
-        margin: 0 15%;
-    }
-
-    .announcement-embed-editor>div:first-child>div>a {
-        margin-bottom: 15% !important;
+        width: fit-content;
     }
 
     .streamline_ability>div>div {
@@ -975,12 +1100,12 @@ p {
 
     .streamline_ability>div>div>div>p {
         font-size: 17px;
-        width: 99% !important;
+        width: 99%;
     }
 
     .streamline_ability>div>div>div {
-        width: 90% !important;
-        padding-right: 4% !important;
+        width: 90%;
+        padding-right: 4%;
     }
 
     .getting-started>div {
@@ -1000,8 +1125,9 @@ p {
     }
 
     .embed-adobe>div>div:first-child>p:first-child,
-    .embed-adobe>div>div:first-child>p:last-child {
-        padding-left: 0px !important;
+    .embed-adobe>div>div:first-child>p:last-child,
+    .quick-action>div>p {
+        padding-left: 0 !important;
     }
 
     .embed-adobe>div>div:first-child>h1 {
@@ -1020,12 +1146,12 @@ p {
     }
 
     .code-block-sdk>div>div {
-        text-align: center !important;
+        text-align: center;
         grid-template-columns: repeat(1, 1fr);
     }
 
     .service-code-block {
-        padding: 3% !important;
+        padding: 3%;
     }
 
     .design-features-code-block {
@@ -1053,10 +1179,6 @@ p {
         align-self: center !important;
     }
 
-    .quick-action>div>p {
-        padding-left: 0 !important;
-    }
-
     .quick-action-block>div>h3 {
         margin-top: 30% !important;
     }
@@ -1079,11 +1201,6 @@ p {
 
 @media screen and (min-width: 375px) and (max-width:1024px) {
 
-    .streamline_ability>div>div>p:first-child>span {
-        width: 100% !important;
-        height: 100% !important;
-    }
-
     .prism-code {
         overflow: auto !important;
     }
@@ -1101,7 +1218,7 @@ p {
     }
 
     .embed-adobe>div>div>h1 {
-        color: white;
+        color: #FFFFFF;
         font-size: 37px !important;
     }
 
@@ -1207,28 +1324,43 @@ p {
 
 @media screen and (min-width:768px) and (max-width:1024px) {
 
-    
+    .customer-need>div>h3 {
+        font-size: 35px;
+    }
+
+    .swiper-slide>div>div:nth-child(2)>h3 {
+        font-size: 32px !important;
+    }
+
+    .carousel>div>div>div>div>div>div:nth-child(2)>div>p {
+        width: 100%;
+        font-size: 17px;
+        margin: 2% 0;
+    }
+
+    .ms-pa-page {
+        margin: 0 !important;
+    }
+
+    .why-integrate-sdk>div>h3 {
+        margin-top: 10% !important;
+    }
+
     .design-features-code-block>div {
         padding: 0;
     }
 
-    .bgBlue>div {
-        width: 90% !important;
-    }
-
-    .why-integrate-sdk>div>p:last-child {
-        padding: 0 25% !important;
-    }
-
+    .why-integrate-sdk>div>p:last-child,
     .quick-action-block>div>p:last-child {
-        padding: 0 24%;
+        padding: 0 24% !important;
     }
 
     .quick-action-hero-block>div>div>p {
         font-size: 22px;
     }
 
-    .embed-adobe>div>div:first-child>p:last-child {
+    .embed-adobe>div>div:first-child>p:last-child,
+    .bgBlue>div {
         width: 90% !important;
     }
 
@@ -1238,7 +1370,7 @@ p {
 
     .embed-adobe>div>div:nth-child(2) {
         background-position: 13% 0%, 0% 0%;
-        padding: 3% 15% !important;
+        padding: 3%  !important;
     }
 
     .embed-adobe>div>div:first-child {
@@ -1283,7 +1415,7 @@ p {
     }
 
     .express-editor-hero-block>div>div:first-child {
-        gap: 1vh;
+        gap: 20px;
     }
 
     .getting-started>p {
@@ -1321,7 +1453,7 @@ p {
 
     .customer-need>div>p {
         width: 85% !important;
-        padding: 0 8% !important;
+        padding: 0 7% !important;
     }
 
     .embed-adobe>div>div:first-child>p,
@@ -1340,7 +1472,7 @@ p {
     }
 
     .go-to>div>h3 {
-        padding: 0px 25%;
+        padding: 0 25%;
         margin-top: 10% !important;
     }
 
@@ -1348,16 +1480,12 @@ p {
         margin-top: 10% !important;
     }
 
-    .key-features-code-block {
-        padding: 0 !important;
-    }
-
     .deployment>div>p:first-child>span {
         padding: 2% 0;
     }
 
     .design-features-code-block {
-        padding: 6% 4% 0% 8% !important;
+        padding: 7% 4% 5% 8% !important;
     }
 
     .streamline_ability>div>div>p>span>picture>img,
@@ -1380,4 +1508,5 @@ p {
         align-self: flex-start;
         padding-left: 5%;
     }
+
 }

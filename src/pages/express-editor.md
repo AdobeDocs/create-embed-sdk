@@ -3,7 +3,6 @@ import AnimationVideo from "./videos/Adobe_full_seq.json";
 import fullSeq from './videos/Full_Sequence.mp4'
 import { ArrowCodeSnippetSVG } from '../components/arrow_asset.js'
 
-
 <Hero slots="heading, text, image" variant="fullwidth"  videoSrcUrl={fullSeq}   className="express-editor-hero-block" svgEmbded= <ArrowCodeSnippetSVG /> />
 
 # Unlock end users’ creativity with the Adobe Express Editor
@@ -50,11 +49,31 @@ Learn more about using the embedded Express Editor
 
 [View Documentation](https://adobe.io)
 
-<TextBlock slots="heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability customer-experience"/>
+<TextBlock slots="heading,text" theme="light" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability customer-experience"/>
 
 ### See it in Action
 
 How is the Express Editor improving customer experience?
+
+<Carousel slots="image,heading, text" repeat="3"  theme="light" className="carousel" />
+
+![Acrobat on Web and Desktop](./images/triangle.png)
+
+#### Acrobat on Web and Desktop
+
+The Express Editor allows users to edit images and quickly create eye-catching cover and divider pages within Acrobat.
+
+![Letter](./images/triangle.png)
+
+#### Letter
+
+Letter has used the Adobe Express editing features to further uplevel existing editing tools
+
+![Breakout EDU](./images/triangle.png)
+
+### Breakout EDU
+
+Game Designwith Breakout EDU + Adobe Express
 
 <SummaryBlock slots=" image , heading, text, buttons" className="getting-started summary-block" />
 
