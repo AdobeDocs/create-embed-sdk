@@ -1,4 +1,4 @@
-import React, { useState, useRef, useMemo, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { CodeSnippetSVG } from './IconsSvg'
 import AnimatedImageFrame from '../hooks/useAnimationFrame'
 
@@ -6,21 +6,18 @@ import AnimatedImageFrame from '../hooks/useAnimationFrame'
 function useIsInViewport(ref) {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
-  const observer = useMemo(
-    () =>
-      new IntersectionObserver(([entry]) =>
-        setIsIntersecting(entry.isIntersecting),
-      ),
-    [],
-  )
-
   useEffect(() => {
-    observer.observe(ref.current)
 
-    return () => {
-      observer.disconnect()
-    };
-  }, [ref, observer])
+    if ( window ) {
+      const observer = new IntersectionObserver(([entry]) =>
+          setIsIntersecting(entry.isIntersecting)
+        )
+      observer.observe(ref.current)
+      return () => {
+        observer.disconnect()
+      };
+    }
+  }, [ref])
 
   return isIntersecting
 }
