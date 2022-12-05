@@ -279,7 +279,7 @@
 
 .big-impact>div>div>p>span,
 .bgBlue .tabView div[class^="spectrum"]>div:first-child,
-.service-code-block>div>div>div>div>div:nth-child(2)>pre>div>div>button,
+.bgBlue>div>div>div>div>div:nth-child(2)>pre>div>div>button,
 td>div>span>span,
 .mobile-view-content>div>div>table {
     display: none !important;
@@ -751,7 +751,7 @@ td>div>span>span,
 .embed-adobe>div,
 .QuickActionSDKDevelop>div,
 .resource-card>div,
-.service-code-block>div>div,
+.bgBlue>div>div,
 .customer-need>div>h3 {
     width: 100% !important;
 }
@@ -1033,7 +1033,7 @@ p {
 
     .big-impact>div>div>div>p,
     .quick-action>div>h3 {
-        width: 90%;
+        width: 100%;
     }
 
     .why-integrate-sdk>div>p {
@@ -1045,14 +1045,14 @@ p {
     .bgBlue .tabView0>div>div,
     .bgBlue .tabView0>div>div:nth-child(2),
     .bgBlue .tabView0>div>div:nth-child(2)>pre>div,
-    .code-block-sdk>div>div>div:nth-child(2),
+    .bgBlue>div>div>div:nth-child(2),
     .big-impact>div>div>div,
     .embed-adobe>div>div:first-child,
     .embed-adobe>div>div:first-child>p:last-child,
     .bgBlue .tabItem_0,
     .bgBlue .tabItem_1,
     .bgBlue .tabItem_3,
-    .code-block-sdk>div {
+    .bgBlue>div {
         width: 100% !important;
         max-width: 100% !important;
     }
@@ -1068,10 +1068,12 @@ p {
 
     .express-editor-hero-block>div>div:first-child>h1 {
         width: 85%;
+        padding: 0 !important;
     }
 
     .express-editor-hero-block>div>div:first-child>p {
         width: 90%;
+        padding: 0 !important;
     }
 
     .ms-pa-page>div {
@@ -1125,9 +1127,12 @@ p {
     }
 
     .embed-adobe>div>div:first-child>p:first-child,
-    .embed-adobe>div>div:first-child>p:last-child,
     .quick-action>div>p {
         padding-left: 0 !important;
+    }
+    
+    .embed-adobe>div>div:first-child>p:last-child{
+        padding: 0 !important;
     }
 
     .embed-adobe>div>div:first-child>h1 {
@@ -1145,13 +1150,13 @@ p {
         display: none;
     }
 
-    .code-block-sdk>div>div {
+    .bgBlue>div>div {
         text-align: center;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .service-code-block {
-        padding: 3%;
+    .bgBlue {
+        padding: 0 !important;
     }
 
     .design-features-code-block {
@@ -1497,7 +1502,7 @@ p {
     .bgBlue,
     .embed-adobe>div>div,
     .embed-adobe>div>div>p:last-child,
-    .service-code-block>div>div>div:nth-child(2) {
+    .bgBlue>div>div>div:nth-child(2) {
         max-width: 100%;
         width: 100% !important;
     }

@@ -29,7 +29,7 @@ Bring powerful Adobe Express capabilities to any application with Express Embed 
 
 <TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability  express-editor"/>
 
-![EMPTY_ALT](./images/Product-blade-block-one-image.png)
+![Enhance your site with Adobe Express](./images/Product-blade-block-one-image.png)
     
 ### Enhance your site with Adobe Express
 
@@ -49,11 +49,11 @@ Powered by Adobe Photoshop and Adobe Premiere, Quick Actions combine complex ope
 
 Why integrate the Express Embed SDK?
 
-<WrapperComponent slots="content" repeat="1" theme="light" className="acrobat letter breakout QuickActionSDKDevelop "/>
+<WrapperComponent slots="content" repeat="1" theme="light" className="QuickActionSDKDevelop "/>
 
 <WhyIntegrateSDK/>
 
-<WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout resource-card "/>
+<WrapperComponent slots="content" repeat="1" theme="lightest" className="resource-card "/>
 
 <DesignForDeveloper/>
 

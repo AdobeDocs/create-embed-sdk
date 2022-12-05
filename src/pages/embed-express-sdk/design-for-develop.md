@@ -7,7 +7,7 @@ import InitialSDK from './initial-sdk.md';
 
 The Adobe Express Embed SDK integrates Adobe Express editing capabilities and content in your application with just a few lines of code.
 
-<TabsBlock orientation="vertical" slots="heading, image, content" repeat="3"  theme="dark" className='bgBlue code-block-0 key-features-code-block code-block-sdk service-code-block' />
+<TabsBlock orientation="vertical" slots="heading, image, content" repeat="3"  theme="dark" className='bgBlue ' />
 
 ### Initialize SDK
 

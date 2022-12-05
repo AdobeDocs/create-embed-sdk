@@ -12,7 +12,7 @@ import ImageVideoEditingBlock from "./quick-action/image-video-editing.md";
 import ImageVideoContent from "./quick-action/image-video-mobile-content.md"
 
 
-<Hero slots="heading, text" variant="fullwidth" videoSrcUrl={quickAction}    className="quick-action-hero-block  Hero-Banner" isQuickAction/>
+<Hero slots="heading, text" variant="fullwidth" videoSrcUrl={quickAction} className="quick-action-hero-block " isQuickAction/>
 
 # Make image and video editing a snap with Quick Actions
 
@@ -26,11 +26,11 @@ Adobe Quick Actions are powerful tools developers can customize and embed within
 
 [Try the demo](https://adobe.io)
 
-<WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout image-video-editing"/>
+<WrapperComponent slots="content" repeat="1" theme="lightest" className="image-video-editing"/>
 
 <ImageVideoEditingBlock/>
 
-<WrapperComponent slots="content" repeat="1" theme="lightest" className="acrobat letter breakout mobile-view-content"/>
+<WrapperComponent slots="content" repeat="1" theme="lightest" className="mobile-view-content"/>
 
 <ImageVideoContent/>
 
@@ -52,7 +52,7 @@ Learn more about using embedded Quick Actions
 
 How are Quick Actions enabling users to work dynamically within their applications?
 
-<WrapperComponent slots="content" repeat="1" theme="light" className="acrobat letter breakout QuickActionSDKDevelop "/>
+<WrapperComponent slots="content" repeat="1" theme="light" className="QuickActionSDKDevelop "/>
 
 <QuickActionSDKDevelop/>
 
