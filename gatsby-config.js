@@ -66,5 +66,5 @@ module.exports = {
     }]
   },
   plugins: [`@adobe/gatsby-theme-aio`],
-  pathPrefix: process.env.PATH_PREFIX || '/embed-sdk-services/'
+  pathPrefix: process.env.PATH_PREFIX || '/embed-sdk/'
 };

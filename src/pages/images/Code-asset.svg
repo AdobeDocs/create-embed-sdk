@@ -6,7 +6,7 @@
     <defs>
     <style type="text/css"><![CDATA[
       .animated {
-        animation: animateCode 5s 1500ms;
+        animation: animateCode 5s infinite 1500ms;
       }
 
       @keyframes animateCode {
