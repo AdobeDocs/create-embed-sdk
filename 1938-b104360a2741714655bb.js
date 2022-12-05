@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdev_site_documentation_template=self.webpackChunkdev_site_documentation_template||[]).push([[1938],{71938:function(e,t,a){a.r(t),t.default=a.p+"static/Benefits-blade-image-1-42653c168a5ce85a6423588f63c0fe1d.svg"}}]);
+//# sourceMappingURL=1938-b104360a2741714655bb.js.map
