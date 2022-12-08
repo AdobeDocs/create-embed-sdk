@@ -97,7 +97,7 @@
 
 .summary-block {
     height: 13% !important;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .embed-adobe {
@@ -773,7 +773,7 @@ td>div>span>span,
 
 .design-features-code-block>div {
     max-width: 100% !important;
-    padding: 5% 5% 0% 15%;
+    padding: 3% 5% 0% 15%;
 }
 
 .design-features-code-block>div>div:first-child {
@@ -926,7 +926,109 @@ p {
     font-size: 28px;
 }
 
+.quick-action-getting code {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-family: 'adobe-clean' !important;
+}
+
+.video-text-block>div>div>div:nth-child(2)>div>a>button {
+    border-color: #747474 !important;
+}
+
+.video-text-block>div>div>div:nth-child(2)>div>a>button>span {
+    color: #747474 !important;
+}
+
+.video-text-block>div>div>div:nth-child(2)>div>a>button:hover {
+    background: white !important;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .dynamic-txts {
+    margin-left: 15px;
+    padding: 0;
+    margin: .5% 5%;
+    height: 20px;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: #44b57d;
+    position: relative;
+    top: 0;
+    animation: slide 14.3s steps(3) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -65px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    font-size: 13px;
+    margin: 5px 0;
+    line-height: 18px;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-left: 2px solid #44b57d;
+    animation: typing 4.7s steps(10) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100%);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
 @media screen and (min-width:375px) and (max-width:767px) {
+
+    .id-p25 {
+        padding-left: 45px !important;
+    }
+
+    .wrapper li span {
+        font-size: 8px !important;
+    }
+
+    .snippet-img>div>div {
+        top: 25px;
+        width: 85%;
+        left: 0% !important;
+        padding: 18% 0%;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .learn-more-action {
+        height: 4% !important;
+        padding: 0 14% !important;
+    }
+
+    .big-impact>div>div>div>p {
+        font-size: 22px !important;
+    }
 
     .customer-need {
         height: 11% !important;
@@ -948,7 +1050,7 @@ p {
 
     .snippet-img {
         right: 30%;
-        bottom: 75%;
+        bottom: 80%;
     }
 
     .quick-action-hero-block>div>div:first-child>p {
@@ -1251,6 +1353,10 @@ p {
     .embed-adobe {
         padding: 8% !important;
     }
+
+    .quick-action-getting code {
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width:1025px) and (max-width:1500px) {
@@ -1266,6 +1372,11 @@ p {
 
 @media screen and (min-width: 375px) and (max-width:1024px) {
 
+    .swiper video {
+        width: 100%;
+        height: 100%;
+    }
+
     .quick-action>div>h3 {
         font-size: 34px;
     }
@@ -1279,11 +1390,11 @@ p {
     }
 
     .announcement-embed-editor>div>p {
-        font-size: 22px;
+        font-size: 22px !important;
     }
 
     .customer-need>div>p {
-        font-size: 19px;
+        font-size: 19px !important;
     }
 
     .customer-need>div>h3 {
@@ -1427,7 +1538,7 @@ p {
 @media screen and (min-width:768px) and (max-width:1024px) {
 
     .customer-need>div>p {
-        width: 85% !important;
+        width: 82% !important;
         padding: 0px 9% !important;
     }
 
@@ -1492,18 +1603,24 @@ p {
     .quick-action>div>p {
         width: 87%;
         padding-left: 7%;
+        font-size: 22px !important;
     }
 
     .quick-action-getting {
         padding: 0% 0% 30% 5% !important;
         height: 5% !important;
+        margin-bottom: 30% !important;
+    }
+
+    .quick-action-getting code {
+        font-size: 21px;
     }
 
     .sdk-getting-block {
         height: 8% !important
     }
 
-    .summary-block{
+    .summary-block {
         height: 7% !important;
     }
 
@@ -1556,15 +1673,13 @@ p {
     }
 
     .big-impact>div>div>p {
-        width: 70% !important;
+        width: 100% !important;
+        background-size: 75%;
+        margin-left: 20%;
     }
 
     .customer-experience>div>div>div>h2 {
         font-size: 34px;
-    }
-
-    .announcement-embed-editor>div>p {
-        font-size: 22px !important;
     }
 
     .embed-adobe>div>div:first-child>p,
@@ -1649,5 +1764,20 @@ p {
             top: 44%;
             right: -50%;
         }
+    }
+}
+
+@media screen and (min-width:1441px) {
+    .dynamic-txts li span {
+        font-size: 16px !important;
+    }
+
+    .snippet-img>div>div {
+        top: 50px !important;
+        font-size: 16px !important;
+    }
+
+    .id-p25{
+        padding-left: 85px !important;
     }
 }
