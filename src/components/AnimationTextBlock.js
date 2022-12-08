@@ -49,7 +49,7 @@ const mediaCSS = css`
 const Icons = ({ icons, isCentered }) =>
   icons
     ? cloneElement(icons, {
-        css: css`
+      css: css`
           list-style: none;
           padding: 0;
           margin-bottom: var(--spectrum-global-dimension-size-400) !important;
@@ -81,60 +81,60 @@ const Icons = ({ icons, isCentered }) =>
             object-fit: contain;
           }
         `,
-      })
+    })
     : null;
 
-const Links = ({ links, isCentered, isLinksGroups=false }) =>
+const Links = ({ links, isCentered, isLinksGroups = false }) =>
   links
     ? cloneElement(links, {
-        css: css`
+      css: css`
           list-style: none;
           padding: 0;
           display: flex;
           justify-content: ${isCentered ? "center" : "flex-start"};
-          ${!isLinksGroups? "" : "flex-wrap: wrap;"}
+          ${!isLinksGroups ? "" : "flex-wrap: wrap;"}
           margin-top: ${isCentered || isLinksGroups
-            ? "var(--spectrum-global-dimension-size-200) !important;"
-            : "var(--spectrum-global-dimension-size-600) !important;"};
+          ? "var(--spectrum-global-dimension-size-200) !important;"
+          : "var(--spectrum-global-dimension-size-600) !important;"};
           & li {
             display: flex;
             align-items: center;
-            ${isLinksGroups 
-              ? `border-radius: 10px; 
+            ${isLinksGroups
+          ? `border-radius: 10px; 
                 border:solid 1.8px;
                 margin-right: var(--spectrum-global-dimension-size-200);
                 height: var(--spectrum-global-dimension-size-300);
                 margin-top: var(--spectrum-global-dimension-size-100);
                 background-color: #F7F7F7;
                 `
-              : "height: var(--spectrum-global-dimension-size-400)"};
+          : "height: var(--spectrum-global-dimension-size-400)"};
           }
 
           & li a {
             white-space: nowrap;           
-            ${isLinksGroups 
-              ? `margin: var(--spectrum-global-dimension-size-100); 
+            ${isLinksGroups
+          ? `margin: var(--spectrum-global-dimension-size-100); 
               color: currentColor;
               text-decoration: none;
-              font-size: var(--spectrum-global-dimension-size-175);` 
-              : "margin-right: var(--spectrum-global-dimension-size-600);"};
+              font-size: var(--spectrum-global-dimension-size-175);`
+          : "margin-right: var(--spectrum-global-dimension-size-600);"};
           }
 
           & li:last-of-type a {
-            margin-right: ${isLinksGroups ? "var(--spectrum-global-dimension-size-100)": "0"}
+            margin-right: ${isLinksGroups ? "var(--spectrum-global-dimension-size-100)" : "0"}
           }
 
           & li:hover{
-            ${isLinksGroups  ?
-            `background-color: var(--spectrum-button-primary-m-background-color-hover, var(--spectrum-global-color-gray-800));
+            ${isLinksGroups ?
+          `background-color: var(--spectrum-button-primary-m-background-color-hover, var(--spectrum-global-color-gray-800));
             border-color: var(--spectrum-button-primary-m-border-color-hover, var(--spectrum-global-color-gray-800));            color: var(--spectrum-button-primary-m-text-color-hover, var(--spectrum-global-color-gray-50));`
-            : ""}
+          : ""}
           }        
           & li:hover a{
-            ${isLinksGroups  ? `
+            ${isLinksGroups ? `
             color: var(--spectrum-button-primary-m-text-color-hover, var(--spectrum-global-color-gray-50));
             text-decoration: none;`
-            : ""}
+          : ""}
           }
 
           .gatsby-resp-image-wrapper {
@@ -162,18 +162,18 @@ const Links = ({ links, isCentered, isLinksGroups=false }) =>
             }
 
             li a {
-              ${isLinksGroups  
-                ? "font-size: var(--spectrum-global-dimension-size-130);` " 
-                : `margin-right: 0;`
-              }
+              ${isLinksGroups
+          ? "font-size: var(--spectrum-global-dimension-size-130);` "
+          : `margin-right: 0;`
+        }
             }
           }
 
           @media screen and (max-width: 767px) {
-            ${isLinksGroups  ? `width: min-content` : "" }
+            ${isLinksGroups ? `width: min-content` : ""}
           }
         `,
-      })
+    })
     : null;
 
 const AnimationTextBlock = ({
@@ -183,6 +183,7 @@ const AnimationTextBlock = ({
   textcontent,
   links,
   buttons,
+  buttonArray,
   linksGroups,
   icons,
   image,
@@ -195,17 +196,17 @@ const AnimationTextBlock = ({
   headerElementType = "h3",
   imageOnly = false,
   imgWidth = "50%",
-  isPrimaryBtn=false,
-  variantsTypePrimary='accent',
-  variantsTypeSecondary='secondary',
+  isPrimaryBtn = false,
+  variantsTypePrimary = 'accent',
+  variantsTypeSecondary = 'secondary',
   variantStyleFill = "fill",
   variantStyleOutline = "outline",
   hasCodeBlock = false,
   homeZigZag = false,
   isbuttonGroups = false,
-  imagearray=[],
-  videoSrcUrl="",
-  isVideoReversed=false,
+  imagearray = [],
+  videoSrcUrl = "",
+  isVideoReversed = false,
   ...props
 }) => {
   const Element = headerElementType;
@@ -227,23 +228,22 @@ const AnimationTextBlock = ({
     };
   }, [columns]);
 
-    if (width !== "100%") {
-      isCentered = true;
-    }
+  if (width !== "100%") {
+    isCentered = true;
+  }
 
-  
-    const isReversed =
-      props.slots.endsWith("image") || props.slots.endsWith("video") || isVideoReversed;
-    return (
-      <section
-        className={classNames(className, `spectrum--${theme}`)}
-        css={css`
+  const isReversed =
+    props.slots.endsWith("image") || props.slots.endsWith("video") || isVideoReversed;
+  return (
+    <section
+      className={classNames(className, `spectrum--${theme}`)}
+      css={css`
           width: 100%;
           background: var(--spectrum-global-color-gray-100);
         `}
-      >
-        <div
-          css={css`
+    >
+      <div
+        css={css`
             width: ${DESKTOP_SCREEN_WIDTH};
             box-sizing: border-box;
             margin: auto;
@@ -257,14 +257,14 @@ const AnimationTextBlock = ({
               // }
             }
           `}
-        >
-          <div
-            css={css`
+      >
+        <div
+          css={css`
               display: flex;
               align-items: center;
               flex-direction: ${imageOnly
-                ? "column"
-                : isReversed
+              ? "column"
+              : isReversed
                 ? "row-reverse"
                 : "row"};
 
@@ -272,30 +272,30 @@ const AnimationTextBlock = ({
                 flex-direction: column;
               }
             `}
-          >
-            {imagearray.length >0  &&
+        >
+          {imagearray.length > 0 &&
             <p className="spectrum-Body spectrum-Body--sizeM css-1wz4ws2-css-Paragraph"><span className="gatsby-resp-image-wrapper" >
-            <span className="gatsby-resp-image-background-image quickActionCodeSnippetBGImg" ></span>
-                <picture style={{display:"none"}}>
-                  <img className="gatsby-resp-image-image" src={image} alt="EMPTY_ALT" title="EMPTY_ALT" loading="lazy"  />
-                </picture>
-              </span>
-                <SpringImage slides={imagearray} />
-              </p>
-              }
-             
-            { video && <Media css={mediaCSS} video={video} /> }
-            
-            { videoSrcUrl !== "" && 
+              <span className="gatsby-resp-image-background-image quickActionCodeSnippetBGImg" ></span>
+              <picture style={{ display: "none" }}>
+                <img className="gatsby-resp-image-image" src={image} alt="EMPTY_ALT" title="EMPTY_ALT" loading="lazy" />
+              </picture>
+            </span>
+              <SpringImage slides={imagearray} />
+            </p>
+          }
+
+          {video && <Media css={mediaCSS} video={video} />}
+
+          {videoSrcUrl !== "" &&
             <div className="reizeQuickActionVideo">
               <video name="media_resize" id="resize_Quick_Action_Id" loop className="resizeQuickActionViedo" type="video/mp4" preload="auto" autoPlay muted>
                 <source src={videoSrcUrl} type="video/mp4" />
               </video>
             </div>
-            }
-            {!imageOnly && <div
-              css={css`
-                ${hasCodeBlock ?`width: 70%;` : `width: 50%;`}
+          }
+          {!imageOnly && <div
+            css={css`
+                ${hasCodeBlock ? `width: 70%;` : `width: 50%;`}
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -308,13 +308,13 @@ const AnimationTextBlock = ({
                   margin: var(--spectrum-global-dimension-size-400) 0;
                 }
               `}
-            >
-              <Icons icons={icons} isCentered={isCentered} />
+          >
+            <Icons icons={icons} isCentered={isCentered} />
 
-              {heading && (
-                <Element
-                  className="spectrum-Heading spectrum-Heading--sizeM"
-                  css={css`
+            {heading && (
+              <Element
+                className="spectrum-Heading spectrum-Heading--sizeM"
+                css={css`
                     margin-top: 0 !important;
                     margin-bottom: var(
                       --spectrum-global-dimension-size-200
@@ -324,13 +324,13 @@ const AnimationTextBlock = ({
                       margin-top: 0 !important;
                     }
                   `}
-                >
-                  {heading}
-                </Element>
-              )}
-              {subHeading && !linksGroups && (
+              >
+                {heading}
+              </Element>
+            )}
+            {subHeading && !linksGroups && (
               <h3
-              className="spectrum-Heading spectrum-Heading--sizeM"
+                className="spectrum-Heading spectrum-Heading--sizeM"
                 css={css`
                 font-size: var(
                   --spectrum-global-dimension-size-225
@@ -348,12 +348,30 @@ const AnimationTextBlock = ({
                 {subHeading}
               </h3>
             )}
-              <p class="spectrum-Body spectrum-Body--sizeM css-tq6n67-Paragraph">{textcontent}</p>
-              
+            <p class="spectrum-Body spectrum-Body--sizeM css-tq6n67-Paragraph">{textcontent}</p>
 
-              {subHeading && linksGroups && (
+            <div css={css`
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            box-sizing: border-box;
+            padding:5% 0;
+            gap:5%;
+          `}>
+              {buttonArray?.map((data) => {
+                return (
+                  <a href="https://adobe.io" target="_blank" style={{ textDecoration: "none" }}>
+                    <button class="spectrum-Button spectrum-Button--sizeM spectrum-Button--outline spectrum-Button--accent" >
+                      <span class="spectrum-Button-label">{data.label}</span>
+                    </button>
+                  </a>
+                )
+              })}
+            </div>
+
+            {subHeading && linksGroups && (
               <h3
-              className="spectrum-Heading spectrum-Heading--sizeM"
+                className="spectrum-Heading spectrum-Heading--sizeM"
                 css={css`
                   font-size: var(
                     --spectrum-global-dimension-size-225
@@ -372,27 +390,27 @@ const AnimationTextBlock = ({
               </h3>
             )}
 
-              {linksGroups && (
-                <Links links={linksGroups} isCentered={isCentered} isLinksGroups />
-              )}
+            {linksGroups && (
+              <Links links={linksGroups} isCentered={isCentered} isLinksGroups />
+            )}
 
-              <HeroButtons
-                buttons={buttons}
-                styles={[variantStyleFill, variantStyleOutline]}
-                variants={[variantsTypePrimary,variantsTypeSecondary]}
-                heading={homeZigZag ? heading?.props?.children : ''}
-                css={css`
+            <HeroButtons
+              buttons={buttons}
+              styles={[variantStyleFill, variantStyleOutline]}
+              variants={[variantsTypePrimary, variantsTypeSecondary]}
+              heading={homeZigZag ? heading?.props?.children : ''}
+              css={css`
                   margin-top: var(--spectrum-global-dimension-size-200);
                 `}
-              />
+            />
 
-              <Links links={links} isCentered={isCentered} />
-            </div> }
-          </div>
+            <Links links={links} isCentered={isCentered} />
+          </div>}
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
+}
 
 AnimationTextBlock.propTypes = {
   heading: PropTypes.string,
@@ -401,6 +419,7 @@ AnimationTextBlock.propTypes = {
   buttons: PropTypes.element,
   linksGroups: PropTypes.element,
   image: PropTypes.string,
+  buttonArray: PropTypes.element,
   video: PropTypes.element,
   theme: PropTypes.string,
   width: PropTypes.oneOf(["100%", "50%", "33%", "25%"]),

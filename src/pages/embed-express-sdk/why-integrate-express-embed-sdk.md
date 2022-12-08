@@ -13,12 +13,12 @@ Inspire users of all skills levels with templates, content, and suggestions to h
 
 ### Make your site a one-stop shop
 
-Create an engaged and satisfied userbase by helping users complete their creative tasks easily directly on your platform.
+Create an engaged and satisfied userbase by enabling users to complete their creative tasks directly on your platform.
 
 <TextBlock slots="image, heading, text" theme="lightest"  width="33%" className="deployment why-integrate-sdk go-to"/>
 
 ![Letter](../images/Benefits-blade-image-3.svg)
 
-### Go to market fast, without custom development
+### Go to market faster, without custom development
 
 Take control and avoid bottlenecks by integrating proven tools and benefiting from continued enhancements and new Adobe features.

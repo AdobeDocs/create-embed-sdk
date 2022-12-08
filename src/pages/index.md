@@ -1,5 +1,6 @@
 import "../styles/main.css"
 import AnimationVideo from "./videos/Adobe_DCP_Marquee_Animation.json";
+import {AnimationTextBlock} from "../components/AnimationTextBlock"
 import WhyIntegrateSDK from "./embed-express-sdk/why-integrate-express-embed-sdk.md";
 import DesignForDeveloper from "./embed-express-sdk/design-for-develop.md"
 import VideoCrop from './videos/home_page_text_crop.mp4'
@@ -23,7 +24,7 @@ Put the right creative tools and content in the hands of your users with the Ado
 
 <DCSummaryBlock slots="text, buttons" theme="dark"  buttonPositionRight btnVariant="cta" className="How-to-get-started  ms-pa-page hero-below-compo ms-pa-summary-blade tryForFree" />
 
-Bring powerful Adobe Express capabilities to any application with Express Embed SDK, a customizable JavaScript library.
+Bring powerful Adobe Express capabilities to any application with the Adobe Express Embed SDK, a customizable JavaScript library.
 
 - [Try the demo](https://documentservices.adobe.com/dc-integration-creation-app-cdn/main.html?api=pdf-services-api&source=pa#&sdid=6S3T74M5&mv=affiliate)
 
@@ -35,19 +36,13 @@ Bring powerful Adobe Express capabilities to any application with Express Embed 
 
 Allow your users to create standout content with beautiful templates and assets for social media content, logos, and more. It only takes a few lines of code.
 
-- [Learn more](https://adobe.io)
+- [Learn more](/express-editor)
 
-<TextBlock slots="heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' videoSrcUrl={VideoCrop} variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two  streamline_ability"/>
-
-### Quick Actions speed up users
-
-Powered by Adobe Photoshop and Adobe Premiere, Quick Actions combine complex operations into one or two clicks, making resizing images, removing backgrounds, and merging videos easy.
-
-- [Learn more](https://adobe.io)
+<AnimationTextBlock slots="heading,text" heading="Quick Actions speed up users"  theme="lightest"  headerElementType="h2" buttonArray={[{ label:"Learn more" , link:"/quick-action"}]} textcontent="Powered by Adobe Photoshop and Adobe Premiere , Quick Actions combine complex operations into one or two clicks, making resizing images, removing backgrounds, and merging videos easy."  variantsTypePrimary='secondary' variantStyleFill = "outline" videoSrcUrl={VideoCrop} isVideoReversed  homeZigZag className="zigzag-cta-two streamline_ability video-text-block"/>
 
 <TitleBlock slots="heading" theme="lightest" className="sdk-title-block"/>
 
-Why integrate the Express Embed SDK?
+Why integrate the Adobe Express Embed SDK?
 
 <WrapperComponent slots="content" repeat="1" theme="light" className="QuickActionSDKDevelop "/>
 
@@ -61,9 +56,9 @@ Why integrate the Express Embed SDK?
 
 ![Getting Started](./images/Summary-Block-image.svg)
 
-## Getting Started
+## Getting started
 
 Unlock Adobe Express editing capabilities for your users by embedding the SDK on your own platform. Read our developer quickstart guide or try the demo to get started.
 
-- [Get Started](https://adobe.io)
+- [Get started](https://adobe.io)
 - [Try the demo](https://adobe.io)

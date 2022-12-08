@@ -2,12 +2,14 @@ import "../styles/main.css"
 import AnimationVideo from "./videos/Adobe_full_seq.json";
 import fullSeq from './videos/Full_Sequence.mp4'
 import { ArrowCodeSnippetSVG } from '../components/arrow_asset.js'
+import video1 from './videos/Adobe-Acrobat-animation-v2.mp4'
+import video2 from "./videos/Breakout-EDU-Animation v2.mp4"
 
 <Hero slots="heading, text, image" variant="fullwidth"  videoSrcUrl={fullSeq}   className="express-editor-hero-block" svgEmbded= <ArrowCodeSnippetSVG /> />
 
-# Unlock end users’ creativity with the Adobe Express Editor
+# Unlock yourend users’ creativity with the Integrate Adobe Express Editor
 
-Give end users a quick and easy way to start a creative design workflow from within your applications
+Give users everything they need to create standout content quickly and easily, without having to leave your site.
 
 ![EMPTY_ALT](./images/express_editor_bg.png)
 
@@ -31,7 +33,7 @@ With one-click, allow users to start creating and editing creative projects with
 
 ### Inspire confident creators
 
-The Express Editor unlocks Adobe’s unparalleled collection of templates, Adobe Stock* images, Adobe Fonts, and an array of creative assets for every need.
+The Adobe Express Editor unlocks Adobe’s unparalleled collection of templates, Adobe Stock* images, Adobe Fonts, and an array of creative assets for every need.
 
 ![Inspire confident creators](./images/Express-Editor-Benefits-Blade-image-two.png)
 
@@ -41,7 +43,7 @@ The Express Editor unlocks Adobe’s unparalleled collection of templates, Adobe
 
 ### Forge the path to customer success
 
-Customize where and how the Express Editor is launched to ensure users get to the right tools and templates.
+Customize where and how the Adobe Express Editor is launched to ensure users get to the right tools and templates.
 
 <AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor"/>
 
@@ -51,37 +53,37 @@ Learn more about using the embedded Express Editor
 
 <TextBlock slots="heading,text" theme="light" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability customer-experience"/>
 
-### See it in Action
+### See it in action
 
-How is the Express Editor improving customer experience?
+How is the Adobe Express Editor improving customer experience?
 
-<Carousel slots="image,heading, text" repeat="3"  theme="light" className="carousel" />
+<Carousel slots="image,heading, text" repeat="3" delay="26000" theme="light" className="carousel" videoArr={[video1,video2,video1]}/>
 
-![Acrobat on Web and Desktop](./images/triangle.png)
+![Forge the path to customer success](./images/Express-Editor-Benefits-Blade-image-3.svg)
 
-#### Acrobat on Web and Desktop
+#### Acrobat on web and desktop
 
-The Express Editor allows users to edit images and quickly create eye-catching cover and divider pages within Acrobat.
+The Adobe Express Editor allows users to edit images and quickly create eye-catching cover and divider pages within Acrobat.
 
-![Letter](./images/triangle.png)
+![Forge the path to customer success](./images/Express-Editor-Benefits-Blade-image-3.svg)
 
-#### Letter
+#### Breakout EDU
 
-Letter has used the Adobe Express editing features to further uplevel existing editing tools
+Breakout EDU is an educational game platform for teachers and students that enables users to bring more creativity to virtual games with the Adobe Express Editor.
 
-![Breakout EDU](./images/triangle.png)
+![Forge the path to customer success](./images/Express-Editor-Benefits-Blade-image-3.svg)
 
-### Breakout EDU
+### Letter
 
-Game Designwith Breakout EDU + Adobe Express
+Letter is an email newsletter tool made for content creators, designers, and developers that helps users make standout communications with help from the Adobe Express Editor.
 
 <SummaryBlock slots=" image , heading, text, buttons" className="getting-started summary-block" />
 
-![Getting Started](./images/Summary-Block-image.svg)
+![Getting started](./images/Summary-Block-image.svg)
 
-## Getting Started
+## Getting started
 
-Embed the Express Editor on your own platform today and see how your users can start enhancing their operations.
+Embed the Adobe Express Editor on your own platform today and see how your users can start enhancing their operations.
 
-- [Get Started](https://adobe.io)
+- [Get Started](/quick-action)
 - [Try the demo](https://adobe.io) 
