@@ -1,0 +1,1022 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420.334" height="518.455" viewBox="0 0 420.334 518.455">
+  <style>
+    #Code_lines
+      background-color: red
+  </style>
+    <defs>
+    <style type="text/css"><![CDATA[
+      .animated {
+        animation: animateCode 5s infinite 1500ms;
+      }
+
+      @keyframes animateCode {
+        0% { transform: translateY(-0); }
+        10% { transform: translateY(-10px); }
+        25% { transform: translateY(-25px); }
+        50% { transform: translateY(-50px); }
+        75% { transform: translateY(-75px); }
+        100% { transform: translateY(-100px); }
+      }
+
+      .animated>rect:nth-child(12) {
+          animation: zoom-in-zoom-out 2s ease;
+          scale: (1);
+      }
+
+      .animated>rect:nth-child(20) {
+          animation: zoom-in-zoom-out 2s ease 1000ms;
+          scale: (1);
+      }
+
+      .animated>rect:nth-child(29) {
+          animation: zoom-in-zoom-out 2s ease 1500ms;
+          scale: (1);
+      }
+
+      .animated>rect:nth-child(36),
+      .animated>rect:nth-child(37) {
+          animation: zoom-in-zoom-out 2s ease 2000ms;
+          scale: (1);
+      }
+
+      .animated>rect:nth-child(45) {
+          animation: zoom-in-zoom-out 2s ease 2500ms;
+          scale: (1);
+      }
+  
+      .animated>rect:nth-child(29),
+      .animated>rect:nth-child(36),
+      .animated>rect:nth-child(37),
+      .animated>rect:nth-child(45) {
+          fill: #9cf45d;
+      }
+
+      @keyframes zoom-in-zoom-out {
+          0% {
+              scale: 2;
+          }
+          100% {
+              scale: 1;
+          }
+      }
+
+        #Rectangle_151727{
+            transform: translate(0, 12px);
+            animation: Rectangle_151727 2s 1500ms;
+        }
+        @keyframes Rectangle_151727{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, 12px);
+            }
+        }
+
+        #Rectangle_151728{
+            transform: translate(0, 24px);
+            animation: Rectangle_151728 2s 1500ms;
+        }
+        @keyframes Rectangle_151728{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, 24px);
+            }
+        }
+
+        #Rectangle_151729{
+            transform: translate(97.562px, 24px);
+            animation: Rectangle_151729 2s 1500ms;
+        }
+        @keyframes Rectangle_151729{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(97.562px, 24px);
+            }
+        }
+
+        #Rectangle_151730{
+            transform: translate(0, 36px);
+            animation: Rectangle_151730 2s 1500ms;
+        }
+        @keyframes Rectangle_151730{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, 36px);
+            }
+        }
+
+        #Rectangle_151731{
+            transform: translate(0, 48px);
+            animation: Rectangle_151731 2s 1500ms;
+        }
+        @keyframes Rectangle_151731{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, 48px);
+            }
+        }
+
+        #Rectangle_151732{
+            transform: translate(30px, 48px);
+            animation: Rectangle_151732 2s 1500ms;
+        }
+        @keyframes Rectangle_151732{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(30px, 48px);
+            }
+        }
+        #Rectangle_151733{
+            transform: translate(18px, 60px);
+            animation: Rectangle_151733 2s 1500ms;
+        }
+        @keyframes Rectangle_151733{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 60px);
+            }
+        }
+
+        #Rectangle_151734{
+            transform: translate(62.222px, 60px);
+            animation: Rectangle_151734 2s 1500ms;
+        }
+
+        @keyframes Rectangle_151734{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(62.222px, 60px);
+            }
+        }
+
+		#Rectangle_151735{
+			transform: translate(18px, 72px);
+			animation: Rectangle_151735 2s 1500ms;
+		}
+        @keyframes Rectangle_151735{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 72px);
+            }
+        }
+	
+		#Rectangle_151737{
+			transform: translate(295.574px, 72px);
+			animation: Rectangle_151737 2s 1500ms;
+		}
+        @keyframes Rectangle_151737{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(295.574px, 72px);
+            }
+        }
+
+		#Rectangle_151738{
+			transform: translate(50px, 84px);
+			animation: Rectangle_151738 2s 1500ms;
+		}
+        @keyframes Rectangle_151738{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(38.26px, 84px);
+            }
+        }
+
+		#Rectangle_151739{
+			transform: translate(38.26px, 96px);
+			animation: Rectangle_151739 2s 1500ms;
+		}
+        @keyframes Rectangle_151739{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(38.26px, 96px);
+            }
+        }
+
+		#Rectangle_151740{
+			transform: translate(269.839px, 96px);
+			animation: Rectangle_151740 2s 1500ms;
+		}
+        @keyframes Rectangle_151740{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(269.839px, 96px);
+            }
+        }
+	
+		#Rectangle_151741{
+			transform: translate(18px, 108px);
+			animation: Rectangle_151741 2s 1500ms;
+		}
+		@keyframes Rectangle_151741{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 108px);
+            }
+        }
+
+		#Rectangle_151742{
+			transform: translate(18px, 120px);
+			animation: Rectangle_151742 2s 1500ms;
+		}
+		@keyframes Rectangle_151742{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 120px);
+            }
+        }
+	
+		#Rectangle_151743{
+			transform: translate(62.222px, 120px);
+			animation: Rectangle_151743 2s 1500ms;
+		}
+		@keyframes Rectangle_151743{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(62.222px, 120px);
+            }
+        }
+
+		#Rectangle_151744{
+			transform: translate(18px, 132px);
+			animation: Rectangle_151744 2s 1500ms;
+		}
+		@keyframes Rectangle_151744{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 132px);
+            }
+        }
+
+		#Rectangle_151746{
+			transform: translate(295.574px, 132px);
+			animation: Rectangle_151746 2s 1500ms;
+		}
+		@keyframes Rectangle_151746{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(295.574px, 132px);
+            }
+        }
+
+		#Rectangle_151747{
+			transform: translate(50px, 144px);
+			animation: Rectangle_151747 2s 1500ms;
+		}
+		@keyframes Rectangle_151747{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(38px, 144px);
+            }
+        }
+
+		#Rectangle_151748{
+			transform: translate(38px, 156px);
+			animation: Rectangle_151748 2s 1500ms;
+		}
+		@keyframes Rectangle_151748{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(38px, 156px);
+            }
+        }
+
+		#Rectangle_151749{
+			transform: translate(116px, 156px);
+			animation: Rectangle_151749 2s 1500ms;
+		}
+		@keyframes Rectangle_151749{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(116px, 156px);
+            }
+        }
+
+		#Rectangle_151750{
+			transform: translate(269.839px, 156px);
+			animation: Rectangle_151750 2s 1500ms;
+		}
+		@keyframes Rectangle_151750{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(269.839px, 156px);
+            }
+        }
+
+		#Rectangle_151751{
+			transform: translate(18px, 168px);
+			animation: Rectangle_151751 2s 1500ms;
+		}
+		@keyframes Rectangle_151751{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 168px);
+            }
+        }
+
+		#Rectangle_151752{
+			transform: translate(18px, 180px);
+			animation: Rectangle_151752 2s 1500ms;
+		}
+		@keyframes Rectangle_151752{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 180px);
+            }
+        }
+		#Rectangle_151753{
+			transform: translate(62.222px, 180px);
+			animation: Rectangle_151753 2s 1500ms;
+		}
+		@keyframes Rectangle_151753{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(62.222px, 180px);
+            }
+        }
+
+		#Rectangle_151754{
+			transform: translate(18px, 192px);
+			animation: Rectangle_151754 2s 1500ms;
+		}
+		@keyframes Rectangle_151754{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 192px);
+            }
+        }
+
+		#Rectangle_151756{
+			transform: translate(295.574px, 192px);
+			animation: Rectangle_151756 2s 1500ms;
+		}
+		@keyframes Rectangle_151756{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(295.574px, 192px);
+            }
+        }
+	
+		#Rectangle_151757{
+			transform: translate(85px, 204px);
+			animation: Rectangle_151757 2s 1500ms;
+		}
+		@keyframes Rectangle_151757{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(38px, 204px);
+            }
+        }
+
+		#Rectangle_151758{
+			transform: translate(38px, 216px);
+			animation: Rectangle_151758 2s 1500ms;
+		}
+		@keyframes Rectangle_151758{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(38px, 216px);
+            }
+        }
+
+		#Rectangle_151759{
+			transform: translate(269.839px, 216px);
+			animation: Rectangle_151759 2s 1500ms;
+		}
+		@keyframes Rectangle_151759{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(269.839px, 216px);
+            }
+        }
+
+		#Rectangle_151760{
+			transform: translate(344.396px, 216px);
+			animation: Rectangle_151760 2s 1500ms;
+		}
+		@keyframes Rectangle_151760{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(344.396px, 216px);
+            }
+        }
+
+		#Rectangle_151761{
+			transform: translate(18px, 228px);
+			animation: Rectangle_151761 2s 1500ms;
+		}
+		@keyframes Rectangle_151761{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 228px);
+            }
+        }
+
+		#Rectangle_152087{
+			transform: translate(18px, 240px);
+			animation: Rectangle_152087 2s 1500ms;
+		}
+		@keyframes Rectangle_152087{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 240px);
+            }
+        }
+
+		#Rectangle_152086{
+			transform: translate(44.416px, 240px);
+			animation: Rectangle_152086 2s 1500ms;
+		}
+		@keyframes Rectangle_152086{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(44.416px, 240px);
+            }
+        }
+
+        #Rectangle_152085{
+			transform: translate(171.839px, 252px);
+			animation: Rectangle_152085 2s 1500ms;
+		}
+		@keyframes Rectangle_152085{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(171.839px, 252px);
+            }
+        }
+
+		#Rectangle_152084{
+			transform: translate(269.839px, 252px);
+			animation: Rectangle_152084 2s 1500ms;
+		}
+		@keyframes Rectangle_152084{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(269.839px, 252px);
+            }
+        }
+
+        #Rectangle_152083{
+			transform: translate(116px, 252px);
+			animation: Rectangle_152083 2s 1500ms;
+		}
+		@keyframes Rectangle_152083{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(116px, 252px);
+            }
+        }
+
+        
+		#Rectangle_152082{
+			transform: translate(69px, 268px);
+			animation: Rectangle_152082 2s 1500ms;
+		}
+		@keyframes Rectangle_152082{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(69px, 268px);
+            }
+        }
+
+		#Rectangle_152081{
+			transform: translate(0, 268px);
+			animation: Rectangle_152081 2s 1500ms;
+		}
+		@keyframes Rectangle_152081{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, 268px);
+            }
+        }
+
+		#Rectangle_152080{
+			transform: translate(0, 280px);
+			animation: Rectangle_152080 2s 1500ms;
+		}
+		@keyframes Rectangle_152080{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, 280px);
+            }
+        }
+
+		#Rectangle_152079{
+			transform: translate(48px, 280px);
+			animation: Rectangle_152079 2s 1500ms;
+		}
+		@keyframes Rectangle_152079{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(48px, 280px);
+            }
+        }
+
+		#Rectangle_152078{
+			transform: translate(18px, 300px);
+			animation: Rectangle_152078 2s 1500ms;
+		}
+		@keyframes Rectangle_152078{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 300px);
+            }
+        }
+	
+		#Rectangle_152077{
+			transform: translate(295.574px, 300px);
+			animation: Rectangle_152077 2s 1500ms;
+		}
+		@keyframes Rectangle_152077{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(295.574px, 300px);
+            }
+        }
+
+		#Rectangle_152076{
+			transform: translate(85px, 312px);
+			animation: Rectangle_152076 2s 1500ms;
+		}
+		@keyframes Rectangle_152076{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(38.259px, 312px);
+            }
+        }
+
+		#Rectangle_152075{
+			transform: translate(38.259px, 324px);
+			animation: Rectangle_152075 2s 1500ms;
+		}
+		@keyframes Rectangle_152075{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(38.259px, 324px);
+            }
+        }
+
+		#Rectangle_152074{
+			transform: translate(269.839px, 324px);
+			animation: Rectangle_152074 2s 1500ms;
+		}
+		@keyframes Rectangle_152074{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(269.839px, 324px);
+            }
+        }
+	
+		#Rectangle_152073{
+			transform: translate(18px, 336px);
+			animation: Rectangle_152073 2s 1500ms;
+		}
+		@keyframes Rectangle_152073{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 336px);
+            }
+        }
+
+		#Rectangle_152072{
+			transform: translate(18px, 348px);
+			animation: Rectangle_152072 2s 1500ms;
+		}
+		@keyframes Rectangle_152072{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 348px);
+            }
+        }
+
+		#Rectangle_152071{
+			transform: translate(62.222px, 348px);
+			animation: Rectangle_152071 2s 1500ms;
+		}
+		@keyframes Rectangle_152071{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(62.222px, 348px);
+            }
+        }
+
+		#Rectangle_152070{
+			transform: translate(18px, 360px);
+			animation: Rectangle_152070 2s 1500ms;
+		}
+		@keyframes Rectangle_152070{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 360px);
+            }
+        }
+	
+		#Rectangle_152069{
+			transform: translate(295.574px, 360px);
+			animation: Rectangle_152069 2s 1500ms;
+		}
+		@keyframes Rectangle_152069{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(295.574px, 360px);
+            }
+        }
+
+
+		#Rectangle_152068{
+			transform: translate(38.259px, 372px);
+			animation: Rectangle_152068 2s 1500ms;
+		}
+		@keyframes Rectangle_152068{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(38.259px, 372px);
+            }
+        }
+
+		#Rectangle_152067{
+			transform: translate(38.259px, 384px);
+			animation: Rectangle_152067 2s 1500ms;
+		}
+		@keyframes Rectangle_152067{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(38.259px, 384px);
+            }
+        }
+
+		#Rectangle_152066{
+			transform: translate(116.167px, 396px);
+			animation: Rectangle_152066 2s 1500ms;
+		}
+		@keyframes Rectangle_152066{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(116.167px, 396px);
+            }
+        }
+
+		#Rectangle_152065{
+			transform: translate(269.839px, 396px);
+			animation: Rectangle_152065 2s 1500ms;
+		}
+		@keyframes Rectangle_152065{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(269.839px, 396px);
+            }
+        }
+	
+		#Rectangle_152064{
+			transform: translate(18px, 408px);
+			animation: Rectangle_152064 2s 1500ms;
+		}
+		@keyframes Rectangle_152064{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 408px);
+            }
+        }
+
+		#Rectangle_152063{
+			transform: translate(18px, 420px);
+			animation: Rectangle_152063 2s 1500ms;
+		}
+		@keyframes Rectangle_152063{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 420px);
+            }
+        }
+
+		#Rectangle_152062 {
+			transform: translate(62.222px, 420px);
+			animation: Rectangle_152062 2s 1500ms;
+		}
+		@keyframes Rectangle_152062{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(62.222px, 420px);
+            }
+        }
+
+		#Rectangle_152061{
+			transform: translate(18px, 434px);
+			animation: Rectangle_152061 2s 1500ms;
+		}
+		@keyframes Rectangle_152061{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 432px);
+            }
+        }
+
+		#Rectangle_152060{
+			transform: translate(295.574px, 432px);
+			animation: Rectangle_152060 2s 1500ms;
+		}
+		@keyframes Rectangle_152060{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(295.574px, 432px);
+            }
+        }
+	
+		#Rectangle_152059{
+			transform: translate(38.259px, 444px);
+			animation: Rectangle_152059 2s 1500ms;
+		}
+		@keyframes Rectangle_152059{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(38.259px, 444px);
+            }
+        }
+
+		#Rectangle_152058{
+			transform: translate(38.259px, 456px);
+			animation: Rectangle_152058 2s 1500ms;
+		}
+		@keyframes Rectangle_152058{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(38.259px, 456px);
+            }
+        }
+
+		#Rectangle_152057{
+			transform: translate(269.839px, 456px);
+			animation: Rectangle_151727 2s 1500ms;
+		}
+		@keyframes Rectangle_152057{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(269.839px, 456px);
+            }
+        }
+
+		#Rectangle_152056{
+			transform: translate(344.396px, 456px);
+			animation: Rectangle_152056 2s 1500ms;
+		}
+		@keyframes Rectangle_152056{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(344.396px, 456px);
+            }
+        }
+
+		#Rectangle_152055{
+			transform: translate(18px, 468px);
+			animation: Rectangle_152055 2s 1500ms;
+		}
+		@keyframes Rectangle_152055{
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(18px, 468px);
+            }
+        }
+
+
+    ]]></style>
+  </defs>
+  <g id="Code_asset" data-name="Code asset" transform="translate(0 0.001)">
+    <g id="Code_lines" data-name="Code lines" transform="translate(14.162 0.003)" opacity="0.8" class='animated'>
+      <rect id="Rectangle_151726" data-name="Rectangle 151726" width="35.617" height="4.721" transform="translate(0 0)" fill="#f978ff"/>
+      <rect id="Rectangle_151727" data-name="Rectangle 151727" width="64.96" height="4.721" transform="translate(44.416 0)" fill="#d92fe1"/>
+      <rect id="Rectangle_151728" data-name="Rectangle 151728" width="88.76" height="4.721" transform="translate(0 13.887)" fill="#bc14c5"/>
+      <rect id="Rectangle_151729" data-name="Rectangle 151729" width="156.607" height="4.721" transform="translate(97.562 13.887)" fill="#d629d8"/>
+      <rect id="Rectangle_151730" data-name="Rectangle 151730" width="35.617" height="4.721" transform="translate(0 27.775)" fill="#f978ff"/>
+      <rect id="Rectangle_151731" data-name="Rectangle 151731" width="20.611" height="4.721" transform="translate(0 41.666)" fill="#d92fe1"/>
+      <rect id="Rectangle_151732" data-name="Rectangle 151732" width="59.35" height="4.721" transform="translate(29.41 41.666)" fill="#c012c2"/>
+      <rect id="Rectangle_151733" data-name="Rectangle 151733" width="35.617" height="4.721" transform="translate(17.806 55.553)" fill="#bc14c5"/>
+      <rect id="Rectangle_151734" data-name="Rectangle 151734" width="78.379" height="4.721" transform="translate(62.222 55.553)" fill="#d629d8"/>
+      <rect id="Rectangle_151735" data-name="Rectangle 151735" width="266.963" height="4.721" transform="translate(17.806 69.44)" fill="#f978ff"/>
+      <rect id="Rectangle_151737" data-name="Rectangle 151737" width="36.044" height="4.721" transform="translate(295.574 69.046)" fill="#f978ff"/>
+      <rect id="Rectangle_151738" data-name="Rectangle 151738" width="367.908" height="4.721" transform="translate(38.26 83.328)" fill="#f978ff"/>
+      <rect id="Rectangle_151739" data-name="Rectangle 151739" width="222.101" height="4.721" transform="translate(38.26 97.215)" fill="#d52ad8"/>
+      <rect id="Rectangle_151740" data-name="Rectangle 151740" width="61.775" height="4.721" transform="translate(269.839 97.215)" fill="#fe76ff"/>
+      <rect id="Rectangle_151741" data-name="Rectangle 151741" width="20.453" height="4.721" transform="translate(17.806 111.106)" fill="#ce34e7"/>
+      <rect id="Rectangle_151742" data-name="Rectangle 151742" width="35.617" height="4.721" transform="translate(17.806 124.811)" fill="#af19cc"/>
+      <rect id="Rectangle_151743" data-name="Rectangle 151743" width="78.379" height="4.721" transform="translate(62.222 124.811)" fill="#af19cc"/>
+      <rect id="Rectangle_151744" data-name="Rectangle 151744" width="266.963" height="4.721" transform="translate(17.806 138.698)" fill="#e881ff"/>
+      <rect id="Rectangle_151746" data-name="Rectangle 151746" width="36.044" height="4.721" transform="translate(295.574 138.304)" fill="#b018cc"/>
+      <rect id="Rectangle_151747" data-name="Rectangle 151747" width="367.908" height="4.721" transform="translate(38.26 152.585)" fill="#fe76ff"/>
+      <rect id="Rectangle_151748" data-name="Rectangle 151748" width="66.285" height="4.721" transform="translate(38.26 166.473)" fill="#bc14c5"/>
+      <rect id="Rectangle_151749" data-name="Rectangle 151749" width="144.193" height="4.721" transform="translate(116.168 166.473)" fill="#af19cc"/>
+      <rect id="Rectangle_151750" data-name="Rectangle 151750" width="61.775" height="4.721" transform="translate(269.839 166.473)" fill="#d629d8"/>
+      <rect id="Rectangle_151751" data-name="Rectangle 151751" width="20.453" height="4.721" transform="translate(17.806 180.36)" fill="#ce34e7"/>
+      <rect id="Rectangle_151752" data-name="Rectangle 151752" width="35.617" height="4.721" transform="translate(17.806 194.068)" fill="#c012c2"/>
+      <rect id="Rectangle_151753" data-name="Rectangle 151753" width="78.379" height="4.721" transform="translate(62.222 194.068)" fill="#bc14c5"/>
+      <rect id="Rectangle_151754" data-name="Rectangle 151754" width="266.963" height="4.721" transform="translate(17.806 207.955)" fill="#f978ff"/>
+      <rect id="Rectangle_151756" data-name="Rectangle 151756" width="36.044" height="4.721" transform="translate(295.574 207.561)" fill="#f978ff"/>
+      <rect id="Rectangle_151757" data-name="Rectangle 151757" width="367.908" height="4.721" transform="translate(38.26 221.843)" fill="#fc77ff"/>
+      <rect id="Rectangle_151758" data-name="Rectangle 151758" width="222.101" height="4.721" transform="translate(38.26 235.73)" fill="#bc14c5"/>
+      <rect id="Rectangle_151759" data-name="Rectangle 151759" width="61.775" height="4.721" transform="translate(269.839 235.73)" fill="#af19cc"/>
+      <rect id="Rectangle_151760" data-name="Rectangle 151760" width="61.775" height="4.721" transform="translate(344.396 235.73)" fill="#d629d8"/>
+      <rect id="Rectangle_151761" data-name="Rectangle 151761" width="20.453" height="4.721" transform="translate(17.806 249.618)" fill="#983ce5"/>
+      <rect id="Rectangle_152087" data-name="Rectangle 152087" width="35.617" height="4.721" transform="translate(0 264.114)" fill="#963de4"/>
+      <rect id="Rectangle_152086" data-name="Rectangle 152086" width="64.96" height="4.721" transform="translate(44.416 264.114)" fill="#a14df3"/>
+      <rect id="Rectangle_152085" data-name="Rectangle 152085" width="88.76" height="4.721" transform="translate(0 278.001)" fill="#822fd3"/>
+      <rect id="Rectangle_152084" data-name="Rectangle 152084" width="156.607" height="4.721" transform="translate(97.562 278.001)" fill="#7f30d4"/>
+      <rect id="Rectangle_152083" data-name="Rectangle 152083" width="35.617" height="4.721" transform="translate(0 291.889)" fill="#c394ff"/>
+      <rect id="Rectangle_152082" data-name="Rectangle 152082" width="20.611" height="4.721" transform="translate(0 305.779)" fill="#8c4bea"/>
+      <rect id="Rectangle_152081" data-name="Rectangle 152081" width="59.35" height="4.721" transform="translate(29.41 305.779)" fill="#983ce5"/>
+      <rect id="Rectangle_152080" data-name="Rectangle 152080" width="35.617" height="4.721" transform="translate(17.806 319.667)" fill="#933ee4"/>
+      <rect id="Rectangle_152079" data-name="Rectangle 152079" width="78.379" height="4.721" transform="translate(62.222 319.667)" fill="#9e4af0"/>
+      <rect id="Rectangle_152078" data-name="Rectangle 152078" width="266.963" height="4.721" transform="translate(17.806 333.554)" fill="#8b37db"/>
+      <rect id="Rectangle_152077" data-name="Rectangle 152077" width="36.044" height="4.721" transform="translate(295.574 333.16)" fill="#c394ff"/>
+      <rect id="Rectangle_152076" data-name="Rectangle 152076" width="367.908" height="4.721" transform="translate(38.259 347.441)" fill="#b4a6ff"/>
+      <rect id="Rectangle_152075" data-name="Rectangle 152075" width="222.101" height="4.721" transform="translate(38.259 361.329)" fill="#8a55f1"/>
+      <rect id="Rectangle_152074" data-name="Rectangle 152074" width="61.775" height="4.721" transform="translate(269.839 361.329)" fill="#c69dff"/>
+      <rect id="Rectangle_152073" data-name="Rectangle 152073" width="20.453" height="4.721" transform="translate(17.806 375.22)" fill="#b4a6ff"/>
+      <rect id="Rectangle_152072" data-name="Rectangle 152072" width="35.617" height="4.721" transform="translate(17.806 388.925)" fill="#8a55f1"/>
+      <rect id="Rectangle_152071" data-name="Rectangle 152071" width="78.379" height="4.721" transform="translate(62.222 388.925)" fill="#6a3ad4"/>
+      <rect id="Rectangle_152070" data-name="Rectangle 152070" width="266.963" height="4.721" transform="translate(17.806 402.812)" fill="#bd97ff"/>
+      <rect id="Rectangle_152069" data-name="Rectangle 152069" width="36.044" height="4.721" transform="translate(295.574 402.418)" fill="#c69dff"/>
+      <rect id="Rectangle_152068" data-name="Rectangle 152068" width="367.908" height="4.721" transform="translate(38.259 416.699)" fill="#864fea"/>
+      <rect id="Rectangle_152067" data-name="Rectangle 152067" width="66.285" height="4.721" transform="translate(38.259 430.586)" fill="#6b3bd0"/>
+      <rect id="Rectangle_152066" data-name="Rectangle 152066" width="144.193" height="4.721" transform="translate(116.167 430.586)" fill="#c69dff"/>
+      <rect id="Rectangle_152065" data-name="Rectangle 152065" width="61.775" height="4.721" transform="translate(269.839 430.586)" fill="#c69dff"/>
+      <rect id="Rectangle_152064" data-name="Rectangle 152064" width="20.453" height="4.721" transform="translate(17.806 444.474)" fill="#7f30d4"/>
+      <rect id="Rectangle_152063" data-name="Rectangle 152063" width="35.617" height="4.721" transform="translate(17.806 458.182)" fill="#6c3ad3"/>
+      <rect id="Rectangle_152062" data-name="Rectangle 152062" width="78.379" height="4.721" transform="translate(62.222 458.182)" fill="#8c56f2"/>
+      <rect id="Rectangle_152061" data-name="Rectangle 152061" width="266.963" height="4.721" transform="translate(17.806 472.069)" fill="#c69dff"/>
+      <rect id="Rectangle_152060" data-name="Rectangle 152060" width="36.044" height="4.721" transform="translate(295.574 471.675)" fill="#c69dff"/>
+      <rect id="Rectangle_152059" data-name="Rectangle 152059" width="367.908" height="4.721" transform="translate(38.259 485.957)" fill="#8d55ea"/>
+      <rect id="Rectangle_152058" data-name="Rectangle 152058" width="222.101" height="4.721" transform="translate(38.259 499.845)" fill="#8c56f2"/>
+      <rect id="Rectangle_152057" data-name="Rectangle 152057" width="61.775" height="4.721" transform="translate(269.839 499.845)" fill="#6c3ad3"/>
+      <rect id="Rectangle_152056" data-name="Rectangle 152056" width="61.775" height="4.721" transform="translate(344.396 499.845)" fill="#8317ff"/>
+      <rect id="Rectangle_152055" data-name="Rectangle 152055" width="20.453" height="4.721" transform="translate(17.806 513.731)" fill="#b4a6ff"/>
+    </g>
+    <g id="Code_row_dots" data-name="Code row dots" opacity="0.24" class='animated'>
+      <path id="Path_103672" data-name="Path 103672" d="M347.88,90.42h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,90.42Z" transform="translate(-345.53 178.397)" fill="#fff"/>
+      <path id="Path_103673" data-name="Path 103673" d="M347.88,134.5h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,134.5Z" transform="translate(-345.53 148.148)" fill="#fff"/>
+      <path id="Path_103674" data-name="Path 103674" d="M347.88,178.57h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,178.57Z" transform="translate(-345.53 117.905)" fill="#fff"/>
+      <path id="Path_103675" data-name="Path 103675" d="M347.88,222.64h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,222.64Z" transform="translate(-345.53 87.663)" fill="#fff"/>
+      <path id="Path_103676" data-name="Path 103676" d="M347.88,266.71h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,266.71Z" transform="translate(-345.53 57.42)" fill="#fff"/>
+      <path id="Path_103677" data-name="Path 103677" d="M347.88,310.78h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,310.78Z" transform="translate(-345.53 27.178)" fill="#fff"/>
+      <path id="Path_103678" data-name="Path 103678" d="M347.88,354.86h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,354.86Z" transform="translate(-345.53 -3.072)" fill="#fff"/>
+      <path id="Path_103679" data-name="Path 103679" d="M347.88,398.93h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,398.93Z" transform="translate(-345.53 -33.314)" fill="#fff"/>
+      <path id="Path_103680" data-name="Path 103680" d="M347.88,443h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,443Z" transform="translate(-345.53 -63.558)" fill="#fff"/>
+      <path id="Path_103681" data-name="Path 103681" d="M347.88,486.49h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,486.49Z" transform="translate(-345.53 -93.402)" fill="#fff"/>
+      <path id="Path_103682" data-name="Path 103682" d="M347.88,530.56h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,530.56Z" transform="translate(-345.53 -123.645)" fill="#fff"/>
+      <path id="Path_103683" data-name="Path 103683" d="M347.88,574.64h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,574.64Z" transform="translate(-345.53 -153.895)" fill="#fff"/>
+      <path id="Path_103684" data-name="Path 103684" d="M347.88,618.71h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,618.71Z" transform="translate(-345.53 -184.137)" fill="#fff"/>
+      <path id="Path_103685" data-name="Path 103685" d="M347.88,662.78h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,662.78Z" transform="translate(-345.53 -214.38)" fill="#fff"/>
+      <path id="Path_103686" data-name="Path 103686" d="M347.88,706.27h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,706.27Z" transform="translate(-345.53 -244.225)" fill="#fff"/>
+      <path id="Path_103687" data-name="Path 103687" d="M347.88,750.34h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,750.34Z" transform="translate(-345.53 -274.468)" fill="#fff"/>
+      <!-- <path id="Path_103688" data-name="Path 103688" d="M347.88,794.42h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,794.42Z" transform="translate(-345.53 -304.717)" fill="#fff"/>
+      <path id="Path_103689" data-name="Path 103689" d="M347.88,838.49h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,838.49Z" transform="translate(-345.53 -334.96)" fill="#fff"/>
+      <path id="Path_103690" data-name="Path 103690" d="M347.88,882.56h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,882.56Z" transform="translate(-345.53 -365.202)" fill="#fff"/> -->
+      <path id="Path_103672-2" data-name="Path 103672" d="M347.88,90.42h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,90.42Z" transform="translate(-345.53 -85.721)" fill="#fff"/>
+      <path id="Path_103673-2" data-name="Path 103673" d="M347.88,134.5h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,134.5Z" transform="translate(-345.53 -115.969)" fill="#fff"/>
+      <path id="Path_103674-2" data-name="Path 103674" d="M347.88,178.57h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,178.57Z" transform="translate(-345.53 -146.212)" fill="#fff"/>
+      <path id="Path_103675-2" data-name="Path 103675" d="M347.88,222.64h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,222.64Z" transform="translate(-345.53 -176.455)" fill="#fff"/>
+      <path id="Path_103676-2" data-name="Path 103676" d="M347.88,266.71h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,266.71Z" transform="translate(-345.53 -206.698)" fill="#fff"/>
+      <path id="Path_103677-2" data-name="Path 103677" d="M347.88,310.78h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,310.78Z" transform="translate(-345.53 -236.94)" fill="#fff"/>
+      <path id="Path_103678-2" data-name="Path 103678" d="M347.88,354.86h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,354.86Z" transform="translate(-345.53 -267.19)" fill="#fff"/>
+      <path id="Path_103679-2" data-name="Path 103679" d="M347.88,398.93h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,398.93Z" transform="translate(-345.53 -297.433)" fill="#fff"/>
+      <path id="Path_103680-2" data-name="Path 103680" d="M347.88,443h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,443Z" transform="translate(-345.53 -327.676)" fill="#fff"/>
+      <path id="Path_103681-2" data-name="Path 103681" d="M347.88,486.49h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,486.49Z" transform="translate(-345.53 -357.521)" fill="#fff"/>
+      <path id="Path_103682-2" data-name="Path 103682" d="M347.88,530.56h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,530.56Z" transform="translate(-345.53 -387.763)" fill="#fff"/>
+      <path id="Path_103683-2" data-name="Path 103683" d="M347.88,574.64h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,574.64Z" transform="translate(-345.53 -418.013)" fill="#fff"/>
+      <path id="Path_103684-2" data-name="Path 103684" d="M347.88,618.71h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,618.71Z" transform="translate(-345.53 -448.255)" fill="#fff"/>
+      <path id="Path_103685-2" data-name="Path 103685" d="M347.88,662.78h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,662.78Z" transform="translate(-345.53 -478.498)" fill="#fff"/>
+      <path id="Path_103686-2" data-name="Path 103686" d="M347.88,706.27h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,706.27Z" transform="translate(-345.53 -508.343)" fill="#fff"/>
+      <path id="Path_103687-2" data-name="Path 103687" d="M347.88,750.34h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,750.34Z" transform="translate(-345.53 -538.586)" fill="#fff"/>
+      <path id="Path_103688-2" data-name="Path 103688" d="M347.88,794.42h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,794.42Z" transform="translate(-345.53 -568.835)" fill="#fff"/>
+      <path id="Path_103689-2" data-name="Path 103689" d="M347.88,838.49h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,838.49Z" transform="translate(-345.53 -599.078)" fill="#fff"/>
+      <path id="Path_103690-2" data-name="Path 103690" d="M347.88,882.56h0a2.349,2.349,0,0,1-2.35-2.35h0a2.349,2.349,0,0,1,2.35-2.35h0a2.349,2.349,0,0,1,2.35,2.35h0A2.349,2.349,0,0,1,347.88,882.56Z" transform="translate(-345.53 -629.32)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
