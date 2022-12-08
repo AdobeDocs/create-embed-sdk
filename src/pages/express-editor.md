@@ -57,7 +57,7 @@ Learn more about using the embedded Express Editor
 
 How is the Adobe Express Editor improving customer experience?
 
-<Carousel slots="image,heading, text" repeat="3"  theme="light" className="carousel" videoArr={[video1,video2,video1]}/>
+<Carousel slots="image,heading, text" repeat="3" delay="26000" theme="light" className="carousel" videoArr={[video1,video2,video1]}/>
 
 ![Forge the path to customer success](./images/Express-Editor-Benefits-Blade-image-3.svg)
 

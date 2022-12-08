@@ -34,7 +34,7 @@ export default function SpringImage({ slides }) {
       }
       <img src='' alt='animeImages' ref={imageRef} className='image-bg' style={{ width: '100%', backgroundRepeat: 'no-repeat', marginLeft: '0', marginBottom: '1%' }} />
       <div className='snippet-img'>
-        <CodeSnippetSVG /* name={ Math.round(count) === 0 ? 'image-resize' : Math.round(count) === 1 ? 'remove-background' : 'convert-to-png'}  */ />
+        <CodeSnippetSVG name={ Math.round(count) === 0 ? 'image-resize' : Math.round(count) === 1 ? 'remove-background' : 'convert-to-png'}  />
       </div>
     </div>
   )

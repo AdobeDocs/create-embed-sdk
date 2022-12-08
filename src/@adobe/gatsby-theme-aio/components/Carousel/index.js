@@ -59,7 +59,6 @@ const SwiperContent = ({
   isCenter,
   videoArr,
 }) => {
-  console.log('videoArr', videoArr.length)
   return (
     <div
       className={classNames(`spectrum--${slideTheme ? slideTheme : theme}`)}

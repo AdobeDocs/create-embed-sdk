@@ -963,7 +963,7 @@ p {
     color: #44b57d;
     position: relative;
     top: 0;
-    animation: slide 14.3s steps(3) infinite;
+    /* animation: slide 14.3s steps(3) infinite; */
 }
 
 @keyframes slide {
@@ -987,18 +987,33 @@ p {
     width: 100%;
     background: #fff;
     border-left: 2px solid #44b57d;
-    animation: typing 4.7s steps(10) infinite;
+    animation: typing 5s steps(20) infinite;
 }
 
 @keyframes typing {
-
-    40%,
+   
     60% {
         left: calc(100%);
     }
+    
+    70% {
+        left: calc(50%);
+    }
+
+    80% {
+        left: calc(40%);
+    }
+
+    90% {
+        left: calc(20%);
+    }
+
+    95% {
+        left: calc(10%);
+    }
 
     100% {
-        left: 0;
+        left:  calc(0%);
     }
 }
 

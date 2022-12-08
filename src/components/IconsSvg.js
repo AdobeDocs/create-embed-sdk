@@ -1,17 +1,17 @@
 import React from 'react';
 import { css } from "@emotion/react";
 
-export const CodeSnippetSVG = () =>
+export const CodeSnippetSVG = ({name}) =>
 (
-  <>
-    <div>
+  <div css={css`height:70%`} >
+    <div css={css`height:70%`}>
       <div css={css`
                     top: 40px;
-                    width: 80%;
+                    width: 100%;
                     box-sizing: border-box;
                     margin: auto;
                     background: white;
-                    left: 8%!important;
+                    left: 0% !important;
                     padding: 15% 0%;
                     border-radius: 10px;
                     position: relative;
@@ -44,9 +44,7 @@ export const CodeSnippetSVG = () =>
               <span css={css`color:#72b7f9`}>{`:`}</span>
             </div>
             <ul className='dynamic-txts'>
-              <li><span>{`'image-resize'`}</span></li>
-              <li><span>{`'remove-background'`}</span></li>
-              <li><span>{`'convert-to-png'`}</span></li>
+              <li><span>{`'${name}'`}</span></li>
             </ul>
           </div>
           <div>
@@ -61,6 +59,6 @@ export const CodeSnippetSVG = () =>
 
       </div>
     </div>
-  </>
+  </div>
 
 )
