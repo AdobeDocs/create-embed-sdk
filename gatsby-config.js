@@ -25,17 +25,17 @@ module.exports = {
     },
     pages: [
       {
-        title: 'Express Embed SDK',
+        title: 'Adobe Express Embed SDK',
         description: "Express Embed SDK",
         path: '/'
       },
       {
-        title: 'Express Editor',
+        title: 'Embedded Adobe Express editor',
         description: 'Express Editor',
         path: 'express-editor/',
       },
       {
-        title: 'Quick Actions',
+        title: 'Embedded Quick Actions',
         description: "Quick Actions",
         path: 'quick-action/'
       },

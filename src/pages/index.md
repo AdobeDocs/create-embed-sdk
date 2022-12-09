@@ -38,7 +38,7 @@ Allow your users to create standout content with beautiful templates and assets 
 
 - [Learn more](/express-editor)
 
-<AnimationTextBlock slots="heading,text" heading="Quick Actions speed up users"  theme="lightest"  headerElementType="h2" buttonArray={[{ label:"Learn more" , link:"/quick-action"}]} textcontent="Powered by Adobe Photoshop and Adobe Premiere , Quick Actions combine complex operations into one or two clicks, making resizing images, removing backgrounds, and merging videos easy."  variantsTypePrimary='secondary' variantStyleFill = "outline" videoSrcUrl={VideoCrop} isVideoReversed  homeZigZag className="zigzag-cta-two streamline_ability video-text-block"/>
+<AnimationTextBlock slots="heading,text" heading="Quick Actions speed up users"  theme="lightest"  headerElementType="h2" buttonArray={[{ label:"Learn more" , link:"/quick-action"}]} textcontent="Powered by Adobe Photoshop and Adobe Premiere, Quick Actions combine complex operations into one or two clicks, making resizing images, removing backgrounds, and merging videos easy."  variantsTypePrimary='secondary' variantStyleFill = "outline" videoSrcUrl={VideoCrop} isVideoReversed  homeZigZag className="zigzag-cta-two streamline_ability video-text-block"/>
 
 <TitleBlock slots="heading" theme="lightest" className="sdk-title-block"/>
 

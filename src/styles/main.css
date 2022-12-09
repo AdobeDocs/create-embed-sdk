@@ -52,7 +52,6 @@
 }
 
 .quick-action-getting {
-    height: 10% !important;
     margin-bottom: 20%;
 }
 
@@ -987,15 +986,19 @@ p {
     width: 100%;
     background: #fff;
     border-left: 2px solid #44b57d;
-    animation: typing 5s steps(20) infinite;
+    animation: typing 3s steps(10) infinite;
+}
+
+.codeSnippetAlignment {
+    position: relative;
+    display: flex;
+    width: 55%;
 }
 
 @keyframes typing {
-   
-    60% {
+    0% {
         left: calc(100%);
     }
-    
     70% {
         left: calc(50%);
     }
@@ -1024,16 +1027,23 @@ p {
     }
 
     .wrapper li span {
-        font-size: 8px !important;
+        font-size: 12px !important;
     }
-
+    .snippet-img>div {
+        height: 60%;
+    }
     .snippet-img>div>div {
         top: 25px;
         width: 85%;
+        height: 100%;
         left: 0% !important;
         padding: 18% 0%;
         font-size: 8px;
         letter-spacing: 1px;
+    }
+
+    .snippet-img>div>div>div {
+        height: 110px;
     }
 
     .learn-more-action {
@@ -1064,8 +1074,8 @@ p {
     }
 
     .snippet-img {
-        right: 30%;
-        bottom: 80%;
+        right: 0%;
+        bottom: 120%;
     }
 
     .quick-action-hero-block>div>div:first-child>p {
@@ -1371,6 +1381,9 @@ p {
 
     .quick-action-getting code {
         font-size: 20px;
+    }
+    .codeSnippetAlignment {
+        width: 75% !important;
     }
 }
 
@@ -1743,6 +1756,14 @@ p {
     .bgBlue>div>div>div:nth-child(4) {
         max-width: 100%;
         width: 100% !important;
+    }
+
+    .snippet-img {
+        position: absolute;
+        right: 75%;
+        bottom: 30%;
+        width: 80%;
+        height: 100%;
     }
 }
 

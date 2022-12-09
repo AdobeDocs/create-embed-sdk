@@ -26,7 +26,7 @@ import {
   HeroImage,
 } from "../Hero";
 import classNames from "classnames";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -196,6 +196,8 @@ const Carousel = ({
   navigationNext = "swiper-button-next",
   isCenter = false,
   videoArr = [],
+  isVideoCarusel = false,
+  videosLenArr = [],
   ...props
 }) => {
   const propKeys = Object.keys(props);
@@ -270,7 +272,7 @@ const Carousel = ({
           >
             {carouselProps.map((data, index) => {
               return (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={index} { ... (isVideoCarusel && videosLenArr[index] ? {"data-swiper-autoplay":`${ videosLenArr[index]}`} :"" )}>
                   <SwiperContent
                     textKeys={textKeys}
                     heading={data.heading}
@@ -404,6 +406,8 @@ Carousel.propTypes = {
   isCenter: PropTypes.bool,
   varient: PropTypes.string,
   videoArr: PropTypes.array,
+  isVideoCarusel : PropTypes.bool,
+  videosLenArr : PropTypes.array,
 };
 
 export { Carousel };

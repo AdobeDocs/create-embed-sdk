@@ -4,10 +4,12 @@ import fullSeq from './videos/Full_Sequence.mp4'
 import { ArrowCodeSnippetSVG } from '../components/arrow_asset.js'
 import video1 from './videos/Adobe-Acrobat-animation-v2.mp4'
 import video2 from "./videos/Breakout-EDU-Animation v2.mp4"
+import video3 from "./videos/Letter-Animation-v3.mp4"
+
 
 <Hero slots="heading, text, image" variant="fullwidth"  videoSrcUrl={fullSeq}   className="express-editor-hero-block" svgEmbded= <ArrowCodeSnippetSVG /> />
 
-# Unlock yourend users’ creativity with the Integrate Adobe Express Editor
+# Unlock end users’ creativity with the Adobe Express Editor
 
 Give users everything they need to create standout content quickly and easily, without having to leave your site.
 
@@ -57,7 +59,7 @@ Learn more about using the embedded Express Editor
 
 How is the Adobe Express Editor improving customer experience?
 
-<Carousel slots="image,heading, text" repeat="3" delay="26000" theme="light" className="carousel" videoArr={[video1,video2,video1]}/>
+<Carousel slots="image,heading, text" repeat="3" delay="26000" theme="light" className="carousel" videoArr={[video1,video2,video3]} videosLenArr={[26000, 25000, 31000 ]} isVideoCarusel/>
 
 ![Forge the path to customer success](./images/Express-Editor-Benefits-Blade-image-3.svg)
 

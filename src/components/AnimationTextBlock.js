@@ -360,7 +360,7 @@ const AnimationTextBlock = ({
           `}>
               {buttonArray?.map((data) => {
                 return (
-                  <a href="https://adobe.io" target="_blank" style={{ textDecoration: "none" }}>
+                  <a href="https://adobe.io" rel="noreferrer" target="_blank" style={{ textDecoration: "none" }}>
                     <button class="spectrum-Button spectrum-Button--sizeM spectrum-Button--outline spectrum-Button--accent" >
                       <span class="spectrum-Button-label">{data.label}</span>
                     </button>
@@ -419,7 +419,7 @@ AnimationTextBlock.propTypes = {
   buttons: PropTypes.element,
   linksGroups: PropTypes.element,
   image: PropTypes.string,
-  buttonArray: PropTypes.element,
+  buttonArray: PropTypes.array,
   video: PropTypes.element,
   theme: PropTypes.string,
   width: PropTypes.oneOf(["100%", "50%", "33%", "25%"]),
@@ -432,7 +432,7 @@ AnimationTextBlock.propTypes = {
   homeZigZag: PropTypes.bool,
   isbuttonGroups: PropTypes.bool,
   imagearray: PropTypes.array,
-  videoSrcUrl: PropTypes.element,
+  videoSrcUrl: PropTypes.string,
   isVideoReversed: PropTypes.bool
 };
 
