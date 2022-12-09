@@ -28,7 +28,7 @@ export default function SpringImage({ slides }) {
   const isViewed = useIsInViewport(imageRef)
 
   return (
-    <div className="flex fill center" style={{ position: 'relative', display: 'flex', width: '55%' }}>
+    <div className="flex fill center codeSnippetAlignment" style={{ position: 'relative', display: 'flex', width: '55%' }}>
       {isViewed &&
         <AnimatedImageFrame count={count} setCount={setCount} imageRef={imageRef} slides={slides} />
       }

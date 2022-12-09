@@ -46,7 +46,7 @@ Its an embeddable iframe in your website that unlocks creation and editing tools
 
 </Accordion>
 
-## Using the SDK
+## Implementing the SDK
 
 <Accordion>
 
