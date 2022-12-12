@@ -23,7 +23,7 @@ export default function AnimatedImageFrame({ count, setCount, imageRef, slides }
     }
 
     useEffect(() => {
-        imageRef.current.src = slides[Math.round(count)]
+        imageRef.current.src = slides[Math.floor(count)]
       }, [count, imageRef, slides])
 
     const Images = () => {
@@ -31,7 +31,7 @@ export default function AnimatedImageFrame({ count, setCount, imageRef, slides }
             // Pass on a function to the setter of the state
             // to make sure we always have the latest state
             setCount(prevCount => {
-                return (prevCount + deltaTime * 0.0005) % 2
+                return (prevCount + deltaTime * 0.0005) % 3
             })
         })
     }
