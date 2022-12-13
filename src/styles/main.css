@@ -22,17 +22,27 @@
     color: #5258E4 !important;
 }
 
-.streamline_ability>div>div>div>div>div>div>a {
+.carousel{
+    padding: 0;
+}
+
+.streamline_ability{
+    padding: 2% 0;
+}
+
+.streamline_ability>div>div{
+    gap:5%
+}
+
+.streamline_ability>div>div>div>div>div>div>a,
+.video-text-block>div>div>div:nth-child(2)>div>a>button {
     background-color: #FFFFFF !important;
     border-color: #747474 !important;
 }
 
-.streamline_ability>div>div>div>p {
-    width: 100%;
-    color: #747474;
-}
-
-.streamline_ability>div>div>div>div>div>div>a>span>span {
+.streamline_ability>div>div>div>div>div>div>a>span,
+.streamline_ability>div>div>div>p,
+.video-text-block>div>div>div:nth-child(2)>div>a>button>span {
     color: #747474 !important;
 }
 
@@ -53,11 +63,8 @@
 }
 
 .quick-action-getting {
-    margin-bottom: 20%;
-}
-
-.getting-started>div>h2 {
-    color: #000000;
+    margin-bottom: 25%;
+    height: 9%;
 }
 
 .getting-started>div>p {
@@ -96,7 +103,7 @@
 }
 
 .summary-block {
-    height: 13% !important;
+    height: 11% !important;
     margin-bottom: 3%;
 }
 
@@ -152,7 +159,8 @@
     background-color: #e6e7e9 !important;
 }
 
-.tryForFree>div>div:nth-child(2)>div>div>div>a>span>span {
+.tryForFree>div>div:nth-child(2)>div>div>div>a>span>span,
+.getting-started>div>h2 {
     color: #000000 !important;
 }
 
@@ -284,10 +292,6 @@
     width: 65%;
 }
 
-.quick-action-block>div:first-child>p:last-child {
-    color: #4B4B4B !important;
-}
-
 .big-impact>div>div>p {
     background-image: url("../pages/images/Background-image.png");
     background-repeat: no-repeat;
@@ -304,7 +308,8 @@
 .bgBlue .tabView div[class^="spectrum"]>div:first-child,
 .bgBlue>div>div>div>div>div:nth-child(2)>pre>div>div>button,
 td>div>span>span,
-.mobile-view-content>div>div>table {
+.mobile-view-content>div>div>table,
+.wrapper {
     display: none !important;
 }
 
@@ -417,7 +422,6 @@ td>div>span>span,
     border-radius: 30px;
 }
 
-
 .bgCodeAssetAnima {
     background: url("../pages/images/Code-asset.svg") no-repeat padding-box;
     background-position-x: 25%;
@@ -449,7 +453,6 @@ td>div>span>span,
         opacity: 1;
     }
 }
-
 
 .quickActionImage1 {
     position: absolute;
@@ -877,17 +880,13 @@ p {
     margin-bottom: 10% !important;
 }
 
-.customer-experience>div>div>div>h2 {
-    font-size: 28px;
-}
-
 .customer-experience>div>div>div>p {
     font-size: 18px;
     color: #222222;
 }
 
-.why-integrate-sdk>div>p:last-child {
-    color: #4B4B4B;
+.why-integrate-sdk>div>p:last-child,.quick-action-block>div:first-child>p:last-child  {
+    color: #4B4B4B !important;
 }
 
 .carousel>div>div>div>div>div>div:nth-child(2) {
@@ -911,10 +910,6 @@ p {
     gap: 5%;
 }
 
-.customer-need>div>h3 {
-    font-size: 28px;
-}
-
 .customer-need {
     height: 8% !important;
 }
@@ -923,7 +918,9 @@ p {
     height: 6% !important;
 }
 
-.quick-action>div>h3 {
+.quick-action>div>h3,
+.customer-need>div>h3,
+.customer-experience>div>div>div>h2 {
     font-size: 28px;
 }
 
@@ -934,39 +931,16 @@ p {
     font-family: 'adobe-clean' !important;
 }
 
-.video-text-block>div>div>div:nth-child(2)>div>a>button {
-    border-color: #747474 !important;
-}
-
-.video-text-block>div>div>div:nth-child(2)>div>a>button>span {
-    color: #747474 !important;
-}
-
-.video-text-block>div>div>div:nth-child(2)>div>a>button:hover {
-    background: white !important;
-}
-
-.wrapper {
-    display: none;
-}
-
 .anim-typewriter {
     width: 100% !important;
     margin: 0 !important;
 }
 
-.count-0.image-resize {
-    display: flex;
-}
-
-.count-1.remove-background {
-    display: flex;
-}
-
+.count-0.image-resize,
+.count-1.remove-background,
 .count-2.convert-png {
-    display: flex;
+    display: flex !important;
 }
-
 
 .line-1 span {
     overflow: hidden;
@@ -1036,11 +1010,10 @@ p {
     width: 55%;
 }
 
-
 @media screen and (min-width:375px) and (max-width:767px) {
 
     .carousel {
-        padding: 5% 0;
+        padding: 5% 0 !important;
     }
 
     .id-p25 {
@@ -1051,8 +1024,8 @@ p {
         font-size: 12px !important;
     }
 
-    .snippet-img>div>div>div>div{
-        margin:1% 2%;
+    .snippet-img>div>div>div>div {
+        margin: 1% 2%;
     }
 
     .snippet-img>div>div>div {
@@ -1061,15 +1034,13 @@ p {
         box-sizing: border-box;
         margin: auto;
         background: white;
-        left: 0%!important;
+        left: 0% !important;
         padding: 18% 0%;
         border-radius: 10px;
         position: relative;
         font-size: 12px;
         letter-spacing: 1.2px;
     }
-
-
 
     .learn-more-action {
         height: 4% !important;
@@ -1105,6 +1076,7 @@ p {
 
     .quick-action-hero-block>div>div:first-child>p {
         font-size: 24px;
+        width: 90% !important;
     }
 
     .tabView {
@@ -1114,16 +1086,12 @@ p {
     }
 
     .design-features-code-block>div {
-        max-width: 80% !important;
+        max-width: 85% !important;
         padding-left: 0%;
     }
 
     .go-to>div>h3 {
         margin: 20% 10% 5% 10%;
-    }
-
-    .customer-need>div>p {
-        padding: 0 !important;
     }
 
     .cropImg,
@@ -1211,16 +1179,18 @@ p {
     }
 
     .getting-started {
-        height: 20%;
+        height: 20% !important;
     }
 
     .quick-action-getting {
-        height: 9%;
-        margin-bottom: 60%;
+        height: fit-content !important;
+        margin-bottom: 35%;
     }
 
     .getting-started>div {
-        padding: 10% 17% 20% 12%;
+        width: 100%;
+        height: fit-content;
+        padding: 10% 10% 20% 12%;;
         position: relative !important;
     }
 
@@ -1238,15 +1208,12 @@ p {
         width: 100%;
     }
 
-    .big-impact>div>div>div>p,
-    .quick-action>div>h3 {
-        width: 100%;
-    }
-
     .why-integrate-sdk>div>p {
         margin: 2%;
     }
 
+    .big-impact>div>div>div>p,
+    .quick-action>div>h3,
     .editing-content>div,
     .getting-started>p:first-child>span>:first-child,
     .bgBlue .tabView0>div>div,
@@ -1313,18 +1280,12 @@ p {
 
     .streamline_ability>div>div>div>p {
         font-size: 19px;
-        width: 99%;
+        width: 98%;
     }
 
     .streamline_ability>div>div>div {
-        width: 90%;
-        padding-right: 4%;
-    }
-
-    .getting-started>div {
-        padding-left: 11%;
         width: 100%;
-        height: fit-content;
+        padding-right: 4%;
     }
 
     .tryForFree>div>div>p {
@@ -1333,7 +1294,7 @@ p {
 
     .getting-started>p>span,
     .ms-pa-summary-blade>div>div {
-        margin-right: 0px !important;
+        margin-right: 0 !important;
     }
 
     .embed-adobe>div>div:first-child>p:first-child,
@@ -1353,7 +1314,7 @@ p {
     }
 
     .deployment>div {
-        padding: 2% 10%;
+        padding: 2% 8%;
     }
 
     .bgBlue .mobileTabView,
@@ -1367,7 +1328,7 @@ p {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .bgBlue {
+    .bgBlue ,.customer-need>div>p{
         padding: 0 !important;
     }
 
@@ -1430,23 +1391,23 @@ p {
         0% {
             left: calc(10%);
         }
-    
+
         20% {
             left: calc(25%);
         }
-    
+
         40% {
             left: calc(50%);
         }
-    
+
         60% {
             left: calc(60%);
         }
-    
+
         80% {
             left: calc(75%);
         }
-    
+
         100% {
             left: calc(100%);
             width: 10%;
@@ -1618,7 +1579,7 @@ p {
 
 @media screen and (min-width:768px) and (max-width:1024px) {
 
-    .quick-action{
+    .quick-action {
         height: fit-content !important;
     }
 
@@ -1639,10 +1600,6 @@ p {
 
     .ms-pa-page {
         margin: 0 !important;
-    }
-
-    .why-integrate-sdk>div>h3 {
-        margin-top: 10% !important;
     }
 
     .design-features-code-block>div {
@@ -1692,9 +1649,9 @@ p {
     }
 
     .quick-action-getting {
-        padding: 0% 0% 30% 5% !important;
+        padding: 2% 0% 8% 5% !important;
         height: 5% !important;
-        margin-bottom: 30% !important;
+        margin-bottom: 20% !important;
     }
 
     .quick-action-getting code {
@@ -1706,7 +1663,8 @@ p {
     }
 
     .summary-block {
-        height: 7% !important;
+        height: 8% !important;
+        margin-bottom: 10%;
     }
 
     .express-editor-hero-block {
@@ -1757,7 +1715,7 @@ p {
         font-size: 22px;
     }
 
-    .snippet-img>div>div>div{
+    .snippet-img>div>div>div {
         padding: 18% 0%;
     }
 
@@ -1791,7 +1749,7 @@ p {
         margin-top: 10% !important;
     }
 
-    .quick-action-block>div>h3 {
+    .quick-action-block>div>h3,.why-integrate-sdk>div>h3{
         margin-top: 10% !important;
     }
 

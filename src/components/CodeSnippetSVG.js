@@ -39,28 +39,28 @@ export const CodeSnippetSVG = ({ count }) => {
               <span css={css`padding-left: 17%`}>{`{`}</span>
             </div>
             <div class={`wrapper image-resize count-${Math.floor(count)}`} >
-              <div className="static-txt">
+              <div>
                 <span css={css`color:#d2d3d9`}>3</span>
-                <span css={css`color:#ca9ffc;padding-left: 50px;font-size:15px`} className="id-p25">id</span>
+                <span css={css`color:#ca9ffc;padding-left: 100px;font-size:15px`} className="id-p25">id</span>
                 <span css={css`color:#72b7f9`}>{`:`}</span>
               </div>
               <p class="line-1 anim-typewriter"><span>'image-resize'</span></p>
             </div>
             <div class={`wrapper remove-background count-${Math.floor(count)}`}>
-              <div className="static-txt">
+              <div>
                 <span css={css`color:#d2d3d9`}>3</span>
-                <span css={css`color:#ca9ffc;padding-left: 50px;font-size:15px`} className="id-p25">id</span>
+                <span css={css`color:#ca9ffc;padding-left:100px;font-size:15px`} className="id-p25">id</span>
                 <span css={css`color:#72b7f9`}>{`:`}</span>
               </div>
-              <p class="line-1 anim-typewriter"><span >'remove-background'</span></p>
+              <p class="line-1 anim-typewriter"><span>'remove-background'</span></p>
             </div>
             <div class={`wrapper convert-png count-${Math.floor(count)} `}>
-              <div className="static-txt">
+              <div>
                 <span css={css`color:#d2d3d9`}>3</span>
-                <span css={css`color:#ca9ffc;padding-left: 50px;font-size:15px`} className="id-p25">id</span>
+                <span css={css`color:#ca9ffc;padding-left:100px;font-size:15px`} className="id-p25">id</span>
                 <span css={css`color:#72b7f9`}>{`:`}</span>
               </div>
-              <p class="line-1 anim-typewriter"><span >'convert-to-png'</span></p>
+              <p class="line-1 anim-typewriter"><span>'convert-to-png'</span></p>
             </div>
             <div>
               <span css={css`color:#d2d3d9`}>4</span>
