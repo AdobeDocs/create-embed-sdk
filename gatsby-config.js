@@ -33,7 +33,7 @@ module.exports = {
         title: 'Components',
         menu: [
           {
-            title: 'Adobe Express Editor',
+            title: 'Full Editor',
             description: 'Express Editor',
             path: 'components/express-editor/',
           },

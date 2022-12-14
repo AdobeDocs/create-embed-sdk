@@ -23,7 +23,7 @@ Adobe Express Quick Actions turn multi-step image and video editing tasks into o
 
 Frequently used design workflows, such as remove background or resize image, are turned into one-click Quick Actions powered by Adobe Photoshop and Adobe Premiere Pro.  
 
-[Try the demo](https://developer-stage.adobe.com/embed-sdk/docs/guides/quick_actions/)
+[Learn more](https://developer-stage.adobe.com/embed-sdk/docs/guides/quick_actions/)
 
 <AnimationTextBlock slots="heading,text" heading="Resize image" theme="lightest" headerElementType="h2" textcontent="Resizing images is easy thanks to a wide array of standard and custom social media image size to choose form." variantsTypePrimary='secondary' videoSrcUrl={quick_Action_Image_resize} variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
@@ -33,7 +33,7 @@ Frequently used design workflows, such as remove background or resize image, are
 
 Learn more about using embedded Quick Actions
 
-[View Documentation](/quick-action)
+[View Documentation](https://developer.adobe.com/embed-sdk/docs/guides/quick_actions/)
 
 <WrapperComponent slots="content" repeat="1" theme="lightest" className="image-video-editing"/>
 
