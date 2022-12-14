@@ -26,7 +26,7 @@ Put the right creative tools and content in the hands of your users with the Ado
 
 Bring powerful Adobe Express capabilities to any application with the Adobe Express Embed SDK, a customizable JavaScript library.
 
-- [Get started](https://developer-stage.adobe.com/embed-sdk/docs/)
+- [Read More](https://developer-stage.adobe.com/embed-sdk/docs/)
 
 <TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability  express-editor"/>
 
