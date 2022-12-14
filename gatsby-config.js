@@ -20,8 +20,8 @@ module.exports = {
     productionDomain: process.env.PRODUCTION_DOMAIN || 'https://www.adobe.io',
     pageImage: process.env.PAGE_IMAGE || 'dcsdk-main.jpg',
     docs: {
-      title: 'Get credentials',
-      path: 'https://documentservices.adobe.com/dc-integration-creation-app-cdn/main.html'
+      title: 'Get started',
+      path: 'https://developer-stage.adobe.com/embed-sdk/docs/guides/'
     },
     pages: [
       {
@@ -30,14 +30,24 @@ module.exports = {
         path: '/'
       },
       {
-        title: 'Embedded Adobe Express editor',
-        description: 'Express Editor',
-        path: 'express-editor/',
+        title: 'Components',
+        menu: [
+          {
+            title: 'Adobe Express Editor',
+            description: 'Express Editor',
+            path: 'components/express-editor/',
+          },
+          {
+            title: 'Quick Actions',
+            description: "Quick Actions",
+            path: 'components/quick-action/'
+          },
+        ]
       },
       {
-        title: 'Embedded Quick Actions',
-        description: "Quick Actions",
-        path: 'quick-action/'
+        title: 'Documentation',
+        description: "Docs",
+        path: 'https://developer-stage.adobe.com/embed-sdk/docs/'
       },
       {
         title: 'FAQs',

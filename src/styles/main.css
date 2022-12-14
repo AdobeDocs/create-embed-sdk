@@ -23,11 +23,11 @@
 }
 
 .carousel{
-    padding: 0;
+    padding: 2% 0!important;
 }
 
 .streamline_ability{
-    padding: 2% 0;
+    padding: 2% 0 0 0;
 }
 
 .streamline_ability>div>div{
@@ -711,14 +711,14 @@ td>div>span>span,
 
 .quick-action-hero-block>div>div:first-child>p,
 .express-editor-hero-block>div>div:first-child>p {
-    width: 39%;
+    width: 32%;
     font-weight: lighter;
     font-size: 18px;
 }
 
 .quick-action-hero-block>div>div:first-child>h1,
 .express-editor-hero-block>div>div:first-child>h1 {
-    width: 40%;
+    width: 33%;
     font-size: 36px;
 }
 
@@ -882,7 +882,7 @@ p {
 
 .customer-experience>div>div>div>p {
     font-size: 18px;
-    color: #222222;
+    color: #222222 !important;
 }
 
 .why-integrate-sdk>div>p:last-child,.quick-action-block>div:first-child>p:last-child  {
@@ -915,6 +915,10 @@ p {
 }
 
 .quick-action {
+    height: 3% !important;
+}
+
+.snap{
     height: 6% !important;
 }
 
@@ -1012,6 +1016,18 @@ p {
 
 @media screen and (min-width:375px) and (max-width:767px) {
 
+    .snap{
+        height: 7% !important;
+    }
+
+    .customer-experience>div>div>div>p{
+        width: 100% !important;
+    }
+
+    .swiper-slide>div{
+        padding: 0 !important;
+    }
+
     .carousel {
         padding: 0 0 5% 0 !important;
     }
@@ -1043,7 +1059,7 @@ p {
     }
 
     .learn-more-action {
-        height: 4% !important;
+        height: 3% !important;
         padding: 0 14% !important;
     }
 
@@ -1184,7 +1200,7 @@ p {
 
     .quick-action-getting {
         height: fit-content !important;
-        margin-bottom: 35%;
+        margin-bottom: 70%;
     }
 
     .getting-started>div {
@@ -1244,13 +1260,13 @@ p {
 
     .express-editor-hero-block>div>div:first-child>h1 {
         font-size: 34px;
-        width: 85%;
+        width: 90%;
         padding: 0 !important;
     }
 
     .express-editor-hero-block>div>div:first-child>p {
         font-size: 22px;
-        width: 85%;
+        width: 90%;
         padding: 0 !important;
     }
 
@@ -1387,6 +1403,10 @@ p {
 
 @media screen and (min-width: 375px) and (max-width:1024px) {
 
+    .express-editor-hero-block>div>div:first-child {
+        gap: 20px;
+    }
+
     @keyframes typewrite {
         0% {
             left: calc(10%);
@@ -1503,7 +1523,7 @@ p {
     }
 
     .quick-action-hero-block>div>div:first-child>h1 {
-        width: 95% !important;
+        width: 90% !important;
         font-size: 34px;
     }
 
@@ -1678,17 +1698,13 @@ p {
     }
 
     .express-editor-hero-block>div>div:first-child>h1 {
-        width: 96%;
+        width: 90%;
         font-size: 34px;
     }
 
     .express-editor-hero-block>div>div:first-child>p {
-        width: 96%;
+        width: 93%;
         font-size: 22px;
-    }
-
-    .express-editor-hero-block>div>div:first-child {
-        gap: 20px;
     }
 
     .getting-started>p {
