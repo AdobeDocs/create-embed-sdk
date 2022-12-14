@@ -19,7 +19,7 @@ You've got a place to start discussions.
 
 ### Developer forum
 
-[Get started](https://adobe.io)
+[Get started](https://developer.adobe.com/embed-sdk/docs/guides/)
 
 Open discussion and support with community experts and Adobe staff.
 

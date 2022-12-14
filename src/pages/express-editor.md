@@ -41,7 +41,7 @@ The Adobe Express Editor unlocks Adobe’s unparalleled collection of templates,
 
 <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
-![Forge the path to customer success](./images/Express-Editor-Benefits-Blade-image-3.svg)
+![Forge the path to customer success](./images/ExpressEditor-Benefits-Blade-image-3.svg)
 
 ### Forge the path to customer success
 
@@ -61,19 +61,19 @@ How is the Adobe Express Editor improving customer experience?
 
 <Carousel slots="image,heading, text" repeat="3" delay="26000" theme="light" className="carousel" videoArr={[video1,video2,video3]} videosLenArr={[26000, 25000, 31000 ]} isVideoCarusel/>
 
-![Forge the path to customer success](./images/Express-Editor-Benefits-Blade-image-3.svg)
+![Forge the path to customer success](./images/ExpressEditor-Benefits-Blade-image-3.svg)
 
 #### Acrobat on web and desktop
 
 The Adobe Express Editor allows users to edit images and quickly create eye-catching cover and divider pages within Acrobat.
 
-![Forge the path to customer success](./images/Express-Editor-Benefits-Blade-image-3.svg)
+![Forge the path to customer success](./images/ExpressEditor-Benefits-Blade-image-3.svg)
 
 #### Breakout EDU
 
 Breakout EDU is an educational game platform for teachers and students that enables users to bring more creativity to virtual games with the Adobe Express Editor.
 
-![Forge the path to customer success](./images/Express-Editor-Benefits-Blade-image-3.svg)
+![Forge the path to customer success](./images/ExpressEditor-Benefits-Blade-image-3.svg)
 
 ### Letter
 
@@ -87,5 +87,5 @@ Letter is an email newsletter tool made for content creators, designers, and dev
 
 Embed the Adobe Express Editor on your own platform today and see how your users can start enhancing their operations.
 
-- [Get Started](/quick-action)
+- [Get started](https://developer.adobe.com/embed-sdk/docs/guides/)
 - [Try the demo](https://adobe.io) 
