@@ -5,7 +5,7 @@
 
 ### Adobe Stock
 
-Users can customize images inline with the image resize and remove background Quick Actions directly in the asset licensing experience.
+Images are customizable inline directly in the asset licensing experience thanks to the image resize and remove background Quick Actions.
 
 <TextBlock slots="image, heading, text" theme="light"  width="33%" className="deployment quick-action-block"/>
 
@@ -13,7 +13,7 @@ Users can customize images inline with the image resize and remove background Qu
 
 ### Creative Cloud on desktop
 
-Experience the full complement of image and video editing Quick Actions for use in any Adobe application with Creative Cloud on desktop.
+Experience the full suite of image and video editing Quick Actions in any Adobe application with Creative Cloud on desktop.
 
 <TextBlock slots="image, heading, text" theme="light"  width="33%" className="deployment quick-action-block"/>
 

@@ -3,17 +3,17 @@
 
 ![Help your users shine creatively](../images/Benefits-blade-image-1.svg)
 
-### Help your users shine creatively
+### Help your users make standout content
 
-Inspire users of all skills levels with templates, content, and suggestions to help them create confidently.
+Users of all skills levels can create confidently and quickly with the Adobe Express Full Editor and Quick Actions.
 
 <TextBlock slots="image, heading, text" theme="lightest"  width="33%" className="deployment why-integrate-sdk"/>
 
 ![Make your site a one-stop shop](../images/Benefits-blade-image-2.svg)
 
-### Make your site a one-stop shop
+### Make your website a one-stop shop 
 
-Create an engaged and satisfied userbase by enabling users to complete their creative tasks directly on your platform.
+Create an engaged userbase by enabling users to complete their creative tasks directly on your website.
 
 <TextBlock slots="image, heading, text" theme="lightest"  width="33%" className="deployment why-integrate-sdk go-to"/>
 

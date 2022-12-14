@@ -106,7 +106,7 @@ const SwiperContent = ({
           <h2>
             {videoArr.length ? 
             <video name="media3" loop="true" muted="true" autoPlay css={css`
-            height:500px;
+            height:auto;
             width:500px;
             `}>
               <source src={videoArr[index]} type="video/mp4" />

@@ -19,7 +19,7 @@ You've got a place to start discussions.
 
 ### Developer forum
 
-[Get started](https://adobe.io)
+[Get started](https://community.adobe.com/t5/express-embed-sdk/ct-p/ct-express-embed-sdk?page=1&sort=latest_replies&filter=all&lang=all&tabid=discussions)
 
 Open discussion and support with community experts and Adobe staff.
 

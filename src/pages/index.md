@@ -18,27 +18,27 @@ import img7 from './images/Quick action icon 4.svg'
 
 ![Adobe Express](./images/Adobe-Express-logo-RGB.png)
 
-# Embed Adobe’s world class creative tools
+# Unlock your users’ creativity 
 
-Put the right creative tools and content in the hands of your users with the Adobe Express Embed SDK.
+Put the right creative tools and content in the hands of your users with the Adobe Express Embed SDK – including the Full Editor and Quick Actions.
 
 <DCSummaryBlock slots="text, buttons" theme="dark"  buttonPositionRight btnVariant="cta" className="How-to-get-started  ms-pa-page hero-below-compo ms-pa-summary-blade tryForFree" />
 
 Bring powerful Adobe Express capabilities to any application with the Adobe Express Embed SDK, a customizable JavaScript library.
 
-- [Try the demo](https://documentservices.adobe.com/dc-integration-creation-app-cdn/main.html?api=pdf-services-api&source=pa#&sdid=6S3T74M5&mv=affiliate)
+- [Read More](https://developer-stage.adobe.com/embed-sdk/docs/)
 
 <TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability  express-editor"/>
 
-![Enhance your site with Adobe Express](./images/Product-blade-block-one-image.png)
+![Express Editor](./images/Product-blade-block-one-image.png)
     
-### Enhance your site with Adobe Express
+### Make standout content with the Adobe Express Full Editor 
 
-Allow your users to create standout content with beautiful templates and assets for social media content, logos, and more. It only takes a few lines of code.
+Users can quickly and easily create content from thousands of beautiful templates and design assets for social media content, logos, and more. It only takes a few lines of code. 
 
 - [Learn more](/express-editor)
 
-<AnimationTextBlock slots="heading,text" heading="Quick Actions speed up users"  theme="lightest"  headerElementType="h2" buttonArray={[{ label:"Learn more" , link:"/quick-action"}]} textcontent="Powered by Adobe Photoshop and Adobe Premiere, Quick Actions combine complex operations into one or two clicks, making resizing images, removing backgrounds, and merging videos easy."  variantsTypePrimary='secondary' variantStyleFill = "outline" videoSrcUrl={VideoCrop} isVideoReversed  homeZigZag className="zigzag-cta-two streamline_ability video-text-block"/>
+<AnimationTextBlock slots="heading,text" heading="One-click edits with Adobe Express Quick Actions "  theme="lightest"  headerElementType="h2" buttonArray={[{ label:"Learn more" , link:"/quick-action"}]} textcontent=" Quick Actions turn multistep design workflows into just a few clicks, making removing backgrounds, resizing images and merging videos faster than ever – all powered by Adobe Photoshop and Adobe Premiere Pro."  variantsTypePrimary='secondary' variantStyleFill = "outline" videoSrcUrl={VideoCrop} isVideoReversed  homeZigZag className="zigzag-cta-two streamline_ability video-text-block"/>
 
 <TitleBlock slots="heading" theme="lightest" className="sdk-title-block"/>
 
@@ -58,7 +58,6 @@ Why integrate the Adobe Express Embed SDK?
 
 ## Getting started
 
-Unlock Adobe Express editing capabilities for your users by embedding the SDK on your own platform. Read our developer quickstart guide or try the demo to get started.
+Unlock Adobe Express editing capabilities for your users by embedding the SDK on your platform. Read our developer quickstart guide or try the demo to get started.
 
-- [Get started](https://adobe.io)
-- [Try the demo](https://adobe.io)
+- [Get started](https://developer.adobe.com/embed-sdk/docs/guides/)

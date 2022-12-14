@@ -17,21 +17,32 @@
 }
 
 .announcement-embed-editor>div>div>a>span>span,
+.quick-action>div>div>a>span,
 .getting-started>div>div>div>div:last-child>a>span>span {
     color: #5258E4 !important;
 }
 
-.streamline_ability>div>div>div>div>div>div>a {
+.carousel{
+    padding: 2% 0!important;
+}
+
+.streamline_ability{
+    padding: 2% 0 0 0;
+}
+
+.streamline_ability>div>div{
+    gap:5%
+}
+
+.streamline_ability>div>div>div>div>div>div>a,
+.video-text-block>div>div>div:nth-child(2)>div>a>button {
     background-color: #FFFFFF !important;
     border-color: #747474 !important;
 }
 
-.streamline_ability>div>div>div>p {
-    width: 100%;
-    color: #747474;
-}
-
-.streamline_ability>div>div>div>div>div>div>a>span>span {
+.streamline_ability>div>div>div>div>div>div>a>span,
+.streamline_ability>div>div>div>p,
+.video-text-block>div>div>div:nth-child(2)>div>a>button>span {
     color: #747474 !important;
 }
 
@@ -52,11 +63,8 @@
 }
 
 .quick-action-getting {
-    margin-bottom: 20%;
-}
-
-.getting-started>div>h2 {
-    color: #000000;
+    margin-bottom: 25%;
+    height: 9%;
 }
 
 .getting-started>div>p {
@@ -95,7 +103,7 @@
 }
 
 .summary-block {
-    height: 13% !important;
+    height: 11% !important;
     margin-bottom: 3%;
 }
 
@@ -110,9 +118,7 @@
 }
 
 .embed-adobe>div>div>h1 {
-    font-size: 36px;
     color: #FFFFFF;
-    width: 35%;
 }
 
 .embed-adobe>div>div:first-child>p:last-child {
@@ -138,6 +144,7 @@
 
 .ms-pa-summary-blade>div>div {
     margin-right: 5% !important;
+    max-width: 100%;
 }
 
 .tryForFree {
@@ -150,7 +157,8 @@
     background-color: #e6e7e9 !important;
 }
 
-.tryForFree>div>div:nth-child(2)>div>div>div>a>span>span {
+.tryForFree>div>div:nth-child(2)>div>div>div>a>span>span,
+.getting-started>div>h2 {
     color: #000000 !important;
 }
 
@@ -282,10 +290,6 @@
     width: 65%;
 }
 
-.quick-action-block>div:first-child>p:last-child {
-    color: #4B4B4B !important;
-}
-
 .big-impact>div>div>p {
     background-image: url("../pages/images/Background-image.png");
     background-repeat: no-repeat;
@@ -302,7 +306,8 @@
 .bgBlue .tabView div[class^="spectrum"]>div:first-child,
 .bgBlue>div>div>div>div>div:nth-child(2)>pre>div>div>button,
 td>div>span>span,
-.mobile-view-content>div>div>table {
+.mobile-view-content>div>div>table,
+.wrapper {
     display: none !important;
 }
 
@@ -393,6 +398,7 @@ td>div>span>span,
     background-repeat: no-repeat;
     border-radius: 30px;
     transform: translateX(30%);
+    animation-fill-mode: forwards;
     animation: imagelayerOne 3s 1500ms;
 }
 
@@ -400,7 +406,6 @@ td>div>span>span,
     0% {
         transform: translateX(0%);
     }
-
     100% {
         transform: translateX(30%);
     }
@@ -414,7 +419,6 @@ td>div>span>span,
     animation-fill-mode: forwards;
     border-radius: 30px;
 }
-
 
 .bgCodeAssetAnima {
     background: url("../pages/images/Code-asset.svg") no-repeat padding-box;
@@ -447,7 +451,6 @@ td>div>span>span,
         opacity: 1;
     }
 }
-
 
 .quickActionImage1 {
     position: absolute;
@@ -706,14 +709,14 @@ td>div>span>span,
 
 .quick-action-hero-block>div>div:first-child>p,
 .express-editor-hero-block>div>div:first-child>p {
-    width: 39%;
+    width: 32%;
     font-weight: lighter;
     font-size: 18px;
 }
 
 .quick-action-hero-block>div>div:first-child>h1,
 .express-editor-hero-block>div>div:first-child>h1 {
-    width: 40%;
+    width: 33%;
     font-size: 36px;
 }
 
@@ -875,17 +878,13 @@ p {
     margin-bottom: 10% !important;
 }
 
-.customer-experience>div>div>div>h2 {
-    font-size: 28px;
-}
-
 .customer-experience>div>div>div>p {
     font-size: 18px;
-    color: #222222;
+    color: #222222 !important;
 }
 
-.why-integrate-sdk>div>p:last-child {
-    color: #4B4B4B;
+.why-integrate-sdk>div>p:last-child,.quick-action-block>div:first-child>p:last-child  {
+    color: #4B4B4B !important;
 }
 
 .carousel>div>div>div>div>div>div:nth-child(2) {
@@ -909,19 +908,21 @@ p {
     gap: 5%;
 }
 
-.customer-need>div>h3 {
-    font-size: 28px;
-}
-
 .customer-need {
     height: 8% !important;
 }
 
 .quick-action {
+    height: 3% !important;
+}
+
+.snap{
     height: 6% !important;
 }
 
-.quick-action>div>h3 {
+.quick-action>div>h3,
+.customer-need>div>h3,
+.customer-experience>div>div>div>h2 {
     font-size: 28px;
 }
 
@@ -932,61 +933,77 @@ p {
     font-family: 'adobe-clean' !important;
 }
 
-.video-text-block>div>div>div:nth-child(2)>div>a>button {
-    border-color: #747474 !important;
+.anim-typewriter {
+    width: 100% !important;
+    margin: 0 !important;
 }
 
-.video-text-block>div>div>div:nth-child(2)>div>a>button>span {
-    color: #747474 !important;
+.count-0.image-resize,
+.count-1.remove-background,
+.count-2.convert-png {
+    display: flex !important;
 }
 
-.video-text-block>div>div>div:nth-child(2)>div>a>button:hover {
-    background: white !important;
-}
-
-.wrapper {
-    display: flex;
-}
-
-.wrapper .dynamic-txts {
-    margin-left: 15px;
-    padding: 0;
-    margin: .5% 5%;
-    height: 20px;
-    line-height: 22px;
+.line-1 span {
     overflow: hidden;
-}
-
-.dynamic-txts li {
-    list-style: none;
+    padding-left: 5%;
     color: #44b57d;
+    font-size: 15px;
     position: relative;
-    top: 0;
-    /* animation: slide 14.3s steps(3) infinite; */
+    margin: 0 auto;
+    left: 0;
+    border-right: 2px solid #44b57d;
 }
 
-@keyframes slide {
-    100% {
-        top: -65px;
-    }
-}
-
-.dynamic-txts li span {
-    position: relative;
-    font-size: 13px;
-    margin: 5px 0;
-    line-height: 18px;
-}
-
-.dynamic-txts li span::after {
+.anim-typewriter span::after {
     content: "";
     position: absolute;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 90%;
     background: #fff;
     border-left: 2px solid #44b57d;
-    animation: typing 3s steps(10) infinite;
+    animation: typewrite 2s steps(15) 1s 1 normal both,
+        blinkTextCursor 500ms steps(15) infinite normal;
+}
+
+@keyframes typewrite {
+    0% {
+        left: calc(10%);
+    }
+
+    20% {
+        left: calc(25%);
+    }
+
+    40% {
+        left: calc(50%);
+    }
+
+    60% {
+        left: calc(70%);
+        width: 45%;
+    }
+
+    80% {
+        left: calc(85%);
+        width: 30%;
+    }
+
+    100% {
+        left: calc(100%);
+        width: 20%;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
 }
 
 .codeSnippetAlignment {
@@ -995,59 +1012,52 @@ p {
     width: 55%;
 }
 
-@keyframes typing {
-    0% {
-        left: calc(100%);
-    }
-    70% {
-        left: calc(50%);
-    }
-
-    80% {
-        left: calc(40%);
-    }
-
-    90% {
-        left: calc(20%);
-    }
-
-    95% {
-        left: calc(10%);
-    }
-
-    100% {
-        left:  calc(0%);
-    }
-}
-
 @media screen and (min-width:375px) and (max-width:767px) {
+
+    .snap{
+        height: 7% !important;
+    }
+
+    .customer-experience>div>div>div>p{
+        width: 100% !important;
+    }
+
+    .swiper-slide>div{
+        padding: 0 !important;
+    }
+
+    .carousel {
+        padding: 0 0 5% 0 !important;
+    }
 
     .id-p25 {
         padding-left: 45px !important;
     }
 
-    .wrapper li span {
+    .anim-typewriter>span {
         font-size: 12px !important;
     }
-    .snippet-img>div {
-        height: 60%;
-    }
-    .snippet-img>div>div {
-        top: 25px;
-        width: 85%;
-        height: 100%;
-        left: 0% !important;
-        padding: 18% 0%;
-        font-size: 8px;
-        letter-spacing: 1px;
+
+    .snippet-img>div>div>div>div {
+        margin: 1% 2%;
     }
 
     .snippet-img>div>div>div {
-        height: 110px;
+        top: 0%;
+        width: 90%;
+        box-sizing: border-box;
+        margin: auto;
+        background: white;
+        left: 0% !important;
+        padding: 18% 0%;
+        border-radius: 10px;
+        position: relative;
+        font-size: 12px;
+        letter-spacing: 1.2px;
     }
 
     .learn-more-action {
-        height: 4% !important;
+        height: 3% !important;
         padding: 0 14% !important;
     }
 
@@ -1074,12 +1084,13 @@ p {
     }
 
     .snippet-img {
-        right: 0%;
-        bottom: 120%;
+        right: 10%;
+        bottom: 58%;
     }
 
     .quick-action-hero-block>div>div:first-child>p {
         font-size: 24px;
+        width: 90% !important;
     }
 
     .tabView {
@@ -1089,16 +1100,12 @@ p {
     }
 
     .design-features-code-block>div {
-        max-width: 80% !important;
+        max-width: 85% !important;
         padding-left: 0%;
     }
 
     .go-to>div>h3 {
         margin: 20% 10% 5% 10%;
-    }
-
-    .customer-need>div>p {
-        padding: 0 !important;
     }
 
     .cropImg,
@@ -1186,16 +1193,18 @@ p {
     }
 
     .getting-started {
-        height: 20%;
+        height: 20% !important;
     }
 
     .quick-action-getting {
-        height: 9%;
-        margin-bottom: 60%;
+        height: fit-content !important;
+        margin-bottom: 70%;
     }
 
     .getting-started>div {
-        padding: 10% 17% 20% 12%;
+        width: 100%;
+        height: fit-content;
+        padding: 10% 10% 20% 12%;;
         position: relative !important;
     }
 
@@ -1213,15 +1222,12 @@ p {
         width: 100%;
     }
 
-    .big-impact>div>div>div>p,
-    .quick-action>div>h3 {
-        width: 100%;
-    }
-
     .why-integrate-sdk>div>p {
         margin: 2%;
     }
 
+    .big-impact>div>div>div>p,
+    .quick-action>div>h3,
     .editing-content>div,
     .getting-started>p:first-child>span>:first-child,
     .bgBlue .tabView0>div>div,
@@ -1252,13 +1258,13 @@ p {
 
     .express-editor-hero-block>div>div:first-child>h1 {
         font-size: 34px;
-        width: 85%;
+        width: 90%;
         padding: 0 !important;
     }
 
     .express-editor-hero-block>div>div:first-child>p {
         font-size: 22px;
-        width: 85%;
+        width: 90%;
         padding: 0 !important;
     }
 
@@ -1288,18 +1294,12 @@ p {
 
     .streamline_ability>div>div>div>p {
         font-size: 19px;
-        width: 99%;
+        width: 98%;
     }
 
     .streamline_ability>div>div>div {
-        width: 90%;
-        padding-right: 4%;
-    }
-
-    .getting-started>div {
-        padding-left: 11%;
         width: 100%;
-        height: fit-content;
+        padding-right: 4%;
     }
 
     .tryForFree>div>div>p {
@@ -1308,7 +1308,7 @@ p {
 
     .getting-started>p>span,
     .ms-pa-summary-blade>div>div {
-        margin-right: 0px !important;
+        margin-right: 0 !important;
     }
 
     .embed-adobe>div>div:first-child>p:first-child,
@@ -1328,7 +1328,7 @@ p {
     }
 
     .deployment>div {
-        padding: 2% 10%;
+        padding: 2% 8%;
     }
 
     .bgBlue .mobileTabView,
@@ -1342,7 +1342,7 @@ p {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .bgBlue {
+    .bgBlue ,.customer-need>div>p{
         padding: 0 !important;
     }
 
@@ -1382,6 +1382,7 @@ p {
     .quick-action-getting code {
         font-size: 20px;
     }
+
     .codeSnippetAlignment {
         width: 75% !important;
     }
@@ -1399,6 +1400,39 @@ p {
 }
 
 @media screen and (min-width: 375px) and (max-width:1024px) {
+
+    .express-editor-hero-block>div>div:first-child {
+        gap: 20px;
+    }
+
+    @keyframes typewrite {
+        0% {
+            left: calc(10%);
+        }
+
+        20% {
+            left: calc(25%);
+        }
+
+        40% {
+            left: calc(50%);
+        }
+
+        60% {
+            left: calc(60%);
+            width: 42%;
+        }
+
+        80% {
+            left: calc(75%);
+            width: 25%;
+        }
+
+        100% {
+            left: calc(100%);
+            width: 10%;
+        }
+    }
 
     .swiper video {
         width: 100%;
@@ -1487,7 +1521,7 @@ p {
     }
 
     .quick-action-hero-block>div>div:first-child>h1 {
-        width: 95% !important;
+        width: 90% !important;
         font-size: 34px;
     }
 
@@ -1565,6 +1599,10 @@ p {
 
 @media screen and (min-width:768px) and (max-width:1024px) {
 
+    .quick-action {
+        height: fit-content !important;
+    }
+
     .customer-need>div>p {
         width: 82% !important;
         padding: 0px 9% !important;
@@ -1582,10 +1620,6 @@ p {
 
     .ms-pa-page {
         margin: 0 !important;
-    }
-
-    .why-integrate-sdk>div>h3 {
-        margin-top: 10% !important;
     }
 
     .design-features-code-block>div {
@@ -1635,9 +1669,9 @@ p {
     }
 
     .quick-action-getting {
-        padding: 0% 0% 30% 5% !important;
+        padding: 2% 0% 8% 5% !important;
         height: 5% !important;
-        margin-bottom: 30% !important;
+        margin-bottom: 20% !important;
     }
 
     .quick-action-getting code {
@@ -1649,7 +1683,8 @@ p {
     }
 
     .summary-block {
-        height: 7% !important;
+        height: 8% !important;
+        margin-bottom: 10%;
     }
 
     .express-editor-hero-block {
@@ -1661,17 +1696,13 @@ p {
     }
 
     .express-editor-hero-block>div>div:first-child>h1 {
-        width: 96%;
+        width: 90%;
         font-size: 34px;
     }
 
     .express-editor-hero-block>div>div:first-child>p {
-        width: 96%;
+        width: 93%;
         font-size: 22px;
-    }
-
-    .express-editor-hero-block>div>div:first-child {
-        gap: 20px;
     }
 
     .getting-started>p {
@@ -1700,10 +1731,14 @@ p {
         font-size: 22px;
     }
 
+    .snippet-img>div>div>div {
+        padding: 18% 0%;
+    }
+
     .big-impact>div>div>p {
-        width: 100% !important;
+        width: 86% !important;
         background-size: 75%;
-        margin-left: 20%;
+        margin-left: 12%;
     }
 
     .customer-experience>div>div>div>h2 {
@@ -1730,7 +1765,7 @@ p {
         margin-top: 10% !important;
     }
 
-    .quick-action-block>div>h3 {
+    .quick-action-block>div>h3,.why-integrate-sdk>div>h3{
         margin-top: 10% !important;
     }
 
@@ -1813,7 +1848,7 @@ p {
         font-size: 16px !important;
     }
 
-    .id-p25{
+    .id-p25 {
         padding-left: 85px !important;
     }
 }
