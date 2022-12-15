@@ -915,6 +915,10 @@ td {
     padding: 0 !important;
 }
 
+tr>th:first-child , tr>th:nth-child(2){
+    white-space: nowrap;
+}
+
 td>div {
     display: flex;
     align-items: center;
@@ -1061,7 +1065,11 @@ td>div>span>span,
 
     .embed-adobe>div>div:first-child>h1 {
         padding-left: 0% !important;
-        width: 100%;
+        width: 100% !important;
+    }
+
+    .embed-adobe>div>div:first-child>p:first-child {
+        width: 20% !important;
     }
 
     .embed-adobe>div>div:first-child>p:last-child {
@@ -1223,7 +1231,8 @@ td>div>span>span,
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .bgBlue ,.customer-need>div>p{
+    .bgBlue,
+    .customer-need>div>p {
         padding: 0 !important;
     }
 
@@ -1246,7 +1255,7 @@ td>div>span>span,
     .getting-started>div {
         width: 100%;
         height: fit-content;
-        padding: 10% 10% 20% 12%;;
+        padding: 10% 10% 20% 12%;
         position: relative !important;
     }
 
@@ -1293,7 +1302,7 @@ td>div>span>span,
         width: 100%;
     }
 
-    .swiper-slide>div{
+    .swiper-slide>div {
         padding: 0 !important;
     }
 
@@ -1317,7 +1326,7 @@ td>div>span>span,
         font-size: 34px;
     }
 
-    .snap{
+    .snap {
         height: 7% !important;
     }
 
@@ -1427,7 +1436,7 @@ td>div>span>span,
 
 }
 
-@media screen and (min-width: 375px) and (max-width:1024px){
+@media screen and (min-width: 375px) and (max-width:1024px) {
 
     /* home page  */
 
@@ -1689,8 +1698,17 @@ td>div>span>span,
         padding: unset !important;
     }
 
-    .embed-adobe>div>div:first-child>p,
-    .embed-adobe>div>div:first-child>h1 {
+    .embed-adobe>div>div:first-child>p:first-child{
+        width: 10% !important;
+    }
+
+    .embed-adobe>div>div:first-child>h1{
+        width: 100% !important;
+    }
+
+    .embed-adobe>div>div:first-child>p:first-child,
+    .embed-adobe>div>div:first-child>h1,
+    .embed-adobe>div>div:first-child>p:last-child {
         padding-left: 2% !important;
     }
 
@@ -1788,7 +1806,7 @@ td>div>span>span,
         width: 100%;
     }
 
-        .sdk-getting-block {
+    .sdk-getting-block {
         height: 8% !important
     }
 
@@ -1861,13 +1879,18 @@ td>div>span>span,
         margin: 6% 0 0% 5%;
     }
 
+    th{
+        font-size: 22px !important;
+    }
+
     .quick-action-getting {
         padding: 2% 0% 8% 5% !important;
         height: 5% !important;
         margin-bottom: 20% !important;
     }
 
-    .quick-action-block>div>h3,.why-integrate-sdk>div>h3{
+    .quick-action-block>div>h3,
+    .why-integrate-sdk>div>h3 {
         margin-top: 10% !important;
     }
 
