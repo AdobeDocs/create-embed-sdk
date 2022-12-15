@@ -1623,15 +1623,6 @@ td>div>span>span,
     .quick-action-hero-block .quickActionVideo {
         background-position: 1% 88%, left 8% top 17%, center 111%, right 55% bottom 19%;
     }
-
-    .quick-action-hero-block>div>div:first-child>h1 {
-        width: 79%;
-    }
-
-    .quick-action-hero-block>div>div:first-child>p {
-        width: 63%;
-        padding-right: 15%;
-    }
 }
 
 @media screen and (min-width:1500px) and (max-width:1750px) {
