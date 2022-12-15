@@ -278,7 +278,6 @@
 }
 
 .tryForFree {
-    margin-bottom: 5%;
     padding: 4%;
     background-color: #000B1D !important;
 }
@@ -1041,10 +1040,6 @@ td>div>span>span,
 
     .embed-adobe>div>div:first-child>p:first-child {
         padding-left: 18% !important;
-    }
-
-    .tryForFree {
-        margin: 0 !important;
     }
 }
 
