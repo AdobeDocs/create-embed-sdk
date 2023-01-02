@@ -119,7 +119,6 @@ const HeroTexts = ({ texts, customLayout }) => {
       css: css`
         &.spectrum-Body--sizeL {
           margin-top: 0 !important;
-          color: #fff!important;
 
           &:last-of-type {
             margin-bottom: 0 !important;

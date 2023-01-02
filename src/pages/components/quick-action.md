@@ -15,13 +15,13 @@ import ImageVideoContent from "../quick-action/image-video-mobile-content.md"
 
 # Save your users time with one-click editing 
 
-Adobe Express Quick Actions turn multi-step image and video editing tasks into one-click edits made directly on your site  
+Adobe Express quick actions turn multi-step image and video editing tasks into one-click edits made directly on your site  
 
 <AnnouncementBlock slots="heading, text, button" className="announcement-embed-editor quick-action snap"/>
 
 ### Professional quality results in a snap 
 
-Frequently used design workflows, such as remove background or resize image, are turned into one-click Quick Actions powered by Adobe Photoshop and Adobe Premiere Pro.  
+Frequently used design workflows, such as remove background or resize image, are turned into one-click quick actions powered by Adobe Photoshop and Adobe Premiere Pro.  
 
 [Learn more](https://developer-stage.adobe.com/embed-sdk/docs/guides/quick_actions/)
 
@@ -31,7 +31,7 @@ Frequently used design workflows, such as remove background or resize image, are
 
 <AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor quick-action learn-more-action"/>
 
-Learn more about using embedded Quick Actions
+Learn more about embedding Adobe Express quick actions in your website
 
 [View Documentation](https://developer.adobe.com/embed-sdk/docs/guides/quick_actions/)
 
@@ -43,13 +43,13 @@ Learn more about using embedded Quick Actions
 
 <ImageVideoContent/>
 
-<AnimationTextBlock slots="heading,text,image" heading="Small code snippets, big impact" textcontent="Easily customize which Quick Action is loaded into your iframe by changing a single ID." image={img1} theme="lightest"  variantsTypePrimary="secondary" variantStyleFill = "outline" imagearray={[img1, img2, img3]}  homeZigZag className="zigzag-cta-two big-impact"/>
+<AnimationTextBlock slots="heading,text,image" heading="Small code snippets, big impact" textcontent="Easily customize which quick action is loaded into your iframe by changing a single ID." image={img1} theme="lightest"  variantsTypePrimary="secondary" variantStyleFill = "outline" imagearray={[img1, img2, img3]}  homeZigZag className="zigzag-cta-two big-impact"/>
 
 <TextBlock slots="heading,text" theme="light" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability customer-experience"/>
 
 ### See them in action 
 
-How do Quick Actions save users time? 
+How do quick actions save users time? 
 
 <WrapperComponent slots="content" repeat="1" theme="light" className="QuickActionSDKDevelop "/>
 
@@ -61,6 +61,6 @@ How do Quick Actions save users time?
 
 ## Getting started
 
-Ready to embed Adobe Express Quick Actions on your platform? Just fill out our [form](https://survey.adobe.com/jfe/form/SV_9LggYGfzm9w4Yaq) and someone will be in touch
+Ready to embed Adobe Express quick actions in your website? Just fill out our [form](https://survey.adobe.com/jfe/form/SV_9LggYGfzm9w4Yaq) and someone will be in touch
 
 - [Get started](https://developer-stage.adobe.com/embed-sdk/docs/guides/quick_actions/)

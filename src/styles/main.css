@@ -539,6 +539,7 @@
 
 .quick-action-hero-block>div>div:first-child>p,
 .express-editor-hero-block>div>div:first-child>p {
+    color: #fff !important;
     width: 45%;
     font-weight: lighter;
     font-size: 18px;
@@ -914,7 +915,8 @@ td {
     padding: 0 !important;
 }
 
-tr>th:first-child , tr>th:nth-child(2){
+tr>th:first-child,
+tr>th:nth-child(2) {
     white-space: nowrap;
 }
 
@@ -989,7 +991,10 @@ td>div>span>picture>img {
 
 .spectrum-Accordion-ChevronIcon {
     padding: 6px !important;
-    color: #1473e6;
+}
+
+.arrow-bg  {
+    color: #1473e6 !important;
 }
 
 .spectrum-Accordion-itemContent,
@@ -1684,11 +1689,11 @@ td>div>span>span,
         padding: unset !important;
     }
 
-    .embed-adobe>div>div:first-child>p:first-child{
+    .embed-adobe>div>div:first-child>p:first-child {
         width: 10% !important;
     }
 
-    .embed-adobe>div>div:first-child>h1{
+    .embed-adobe>div>div:first-child>h1 {
         width: 100% !important;
     }
 
@@ -1865,7 +1870,7 @@ td>div>span>span,
         margin: 6% 0 0% 5%;
     }
 
-    th{
+    th {
         font-size: 22px !important;
     }
 
