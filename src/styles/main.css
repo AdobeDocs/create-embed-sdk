@@ -34,7 +34,6 @@
 .embed-adobe>div>div:first-child>p:last-child,
 .embed-adobe>div>div:first-child>h1 {
     padding-left: 33% !important;
-    width: 40% !important;
 }
 
 .embed-adobe>div>div:first-child>p:first-child {
@@ -392,6 +391,7 @@
 .bgBlue pre.prism-code {
     border-radius: 20px;
     background-color: #111a35 !important;
+    padding: 12px !important
 }
 
 .bgBlue #tabView0>div,

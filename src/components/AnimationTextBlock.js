@@ -360,7 +360,7 @@ const AnimationTextBlock = ({
           `}>
               {buttonArray?.map((data) => {
                 return (
-                  <a href="https://adobe.io" rel="noreferrer" target="_blank" style={{ textDecoration: "none" }}>
+                  <a href={data.link} rel="noreferrer" target="_blank" style={{ textDecoration: "none" }}>
                     <button class="spectrum-Button spectrum-Button--sizeM spectrum-Button--outline spectrum-Button--accent" >
                       <span class="spectrum-Button-label">{data.label}</span>
                     </button>

@@ -64,3 +64,4 @@ How do quick actions save users time?
 Ready to embed Adobe Express quick actions in your website? Just fill out our [form](https://survey.adobe.com/jfe/form/SV_9LggYGfzm9w4Yaq) and someone will be in touch
 
 - [Get started](https://developer-stage.adobe.com/embed-sdk/docs/guides/quick_actions/)
+- [Try the demo](https://developer-stage.adobe.com/embed-sdk/docs/guides/quick_actions/)

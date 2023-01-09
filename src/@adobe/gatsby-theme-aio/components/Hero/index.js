@@ -1114,7 +1114,7 @@ Hero.propTypes = {
   customLayout: PropTypes.bool,
   assetsImg:PropTypes.element,
   animationVideo: PropTypes.element,
-  videoSrcUrl: PropTypes.element,
+  videoSrcUrl: PropTypes.string,
   svgEmbded: PropTypes.element,
   isQuickAction: PropTypes.bool,
   imagearray: PropTypes.array,

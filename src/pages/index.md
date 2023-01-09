@@ -36,9 +36,9 @@ Embed powerful Adobe Express capabilities into any website with Adobe Express Em
 
 Users can quickly and easily create content from thousands of beautiful templates and design assets for social media content, logos, and more. It only takes a few lines of code to embed the full editor in any website. 
 
-- [Learn more](/express-editor)
+- [Learn more](components/express-editor/)
 
-<AnimationTextBlock slots="heading,text" heading="One-click edits with Adobe Express quick actions "  theme="lightest"  headerElementType="h2" buttonArray={[{ label:"Learn more" , link:"/quick-action"}]} textcontent=" Quick actions turn multistep design workflows into just a few clicks, making removing backgrounds, resizing images and merging videos faster than ever – all powered by Adobe Photoshop and Adobe Premiere Pro. Enable these powerful shortcuts in any website in minutes. "  variantsTypePrimary='secondary' variantStyleFill = "outline" videoSrcUrl={VideoCrop} isVideoReversed  homeZigZag className="zigzag-cta-two streamline_ability video-text-block"/>
+<AnimationTextBlock slots="heading,text" heading="One-click edits with Adobe Express quick actions "  theme="lightest"  headerElementType="h2" buttonArray={[{ label:"Learn more", link:"components/quick-action/"}]} textcontent=" Quick actions turn multistep design workflows into just a few clicks, making removing backgrounds, resizing images and merging videos faster than ever – all powered by Adobe Photoshop and Adobe Premiere Pro. Enable these powerful shortcuts in any website in minutes. "  variantsTypePrimary='secondary' variantStyleFill = "outline" videoSrcUrl={VideoCrop} isVideoReversed  homeZigZag className="zigzag-cta-two streamline_ability video-text-block"/>
 
 <TitleBlock slots="heading" theme="lightest" className="sdk-title-block"/>
 
@@ -61,3 +61,4 @@ Why integrate the Adobe Express Embed SDK?
 Unlock Adobe Express editing capabilities for your users by embedding the SDK in your website. Read our developer quickstart guide or try the demo to get started.
 
 - [Get started](https://developer.adobe.com/embed-sdk/docs/guides/)
+- [Try the demo](https://developer.adobe.com/embed-sdk/docs/guides/)
