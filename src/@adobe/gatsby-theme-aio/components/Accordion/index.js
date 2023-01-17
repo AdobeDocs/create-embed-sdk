@@ -11,7 +11,6 @@
  */
 
 import React, { useEffect, useState } from 'react';
-import "../../../../../src/styles/main.css"
 import { css } from '@emotion/react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -24,7 +23,7 @@ const Accordion = ({ children, ...props }) => (
   </div>
 );
 
-const AccordionItem = ({ header, slot_id, isOpen = false, children, isChevronIcon = false, isEmbedSDk=false ,...props }) => {
+const AccordionItem = ({ header, slot_id, isOpen = false, children, isChevronIcon = false, ...props }) => {
   const [open, setOpen] = useState(isOpen);
   const onClick = () => {
     setOpen((open) => !open);
@@ -47,11 +46,10 @@ const AccordionItem = ({ header, slot_id, isOpen = false, children, isChevronIco
           css={css`
             text-transform: none;
           `}>
-          {isChevronIcon && <span className={`spectrum-Accordion-ChevronIcon`} aria-hidden="true" >{open ? <ChevronDown /> : <ChevronRight />}</span>}
+          {isChevronIcon && <span className={`spectrum-Accordion-ChevronIcon arrow-bg` } aria-hidden="true" >{open ? <ChevronDown /> : <ChevronRight />}</span>}
 
           {header}
         </button>
-        {/* <ChevronRight className="spectrum-Accordion-itemIndicator" /> */}
         {!isChevronIcon && <span className="spectrum-Accordion-itemIndicator" aria-hidden="true" onClick={onClick}>{open ? "-" : "+"}</span>}
       </h3>
       <div className="spectrum-Accordion-itemContent" role="region">

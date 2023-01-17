@@ -25,7 +25,7 @@ export const CodeSnippetSVG = ({ count }) => {
                     display: flex;
                     flex-direction: column;
                     top: 0px;
-                    margin: 1% 8%;
+                    margin: 0% 3%;
                     text-align: left;
               `}>
             <div>

@@ -5,7 +5,7 @@
 
 ### Help your users make standout content
 
-Users of all skills levels can create confidently and quickly with the Adobe Express Full Editor and Quick Actions.
+Users of all skills levels can create confidently and quickly with the Adobe Express full editor and quick actions.
 
 <TextBlock slots="image, heading, text" theme="lightest"  width="33%" className="deployment why-integrate-sdk"/>
 

@@ -6,7 +6,7 @@ import QuickActionCodeBlock from "./quick-action-code-block.md";
 
 ## Designed for developers
 
-The Adobe Express Embed SDK integrates Adobe Express editing capabilities and content in your application with just a few lines of code.
+The Adobe Express Embed SDK integrates Adobe Express editing capabilities and content in your web application with just a few lines of code.
 
 <TabsBlock orientation="vertical" slots="heading, image, content" repeat="3"  theme="dark" className='bgBlue ' />
 
