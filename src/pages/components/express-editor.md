@@ -48,7 +48,7 @@ Define where and how the Adobe Express full editor is launched to ensure users g
 
 <AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor"/>
 
-Learn more about embedding the Adobe Express Full editor in your website
+Learn more about embedding the Adobe Express full editor in your website
 
 [View Documentation](https://developer.adobe.com/embed-sdk/docs/guides/ccx_editor/)
 

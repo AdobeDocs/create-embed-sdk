@@ -33,13 +33,13 @@ module.exports = {
         title: 'Components',
         menu: [
           {
-            title: 'Full Editor',
-            description: 'Adobe Express Editor',
+            title: 'Full editor',
+            // description: 'Adobe Express Editor',
             path: 'components/express-editor/',
           },
           {
-            title: 'Quick Actions',
-            description: "Quick Actions",
+            title: 'Quick actions',
+            // description: "Quick Actions",
             path: 'components/quick-action/'
           },
         ]
@@ -47,7 +47,7 @@ module.exports = {
       {
         title: 'Documentation',
         description: "Docs",
-        path: 'https://developer-stage.adobe.com/embed-sdk/docs/'
+        path: 'https://developer.adobe.com/embed-sdk/docs/'
       },
       {
         title: 'FAQs',
