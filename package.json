@@ -15,7 +15,7 @@
     "@adobe/gatsby-theme-aio": "4.7.9",
     "gatsby": "4.22.0",
     "intersection-observer": "^0.12.2",
-    "lottie-web": "^5.9.6",
+    "lottie-web": "^5.10.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-spring": "^9.6.1"
