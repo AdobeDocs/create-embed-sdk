@@ -20,7 +20,7 @@ The Adobe Express Embed SDK’s full editor gives users everything they need to 
 
 With the Adobe Express full editor, users start from thousands of templates to create professional-looking social content, flyers, banners, ads, and more. 
 
-[Try the demo](https://developer-stage.adobe.com/embed-sdk/docs/guides/ccx_editor/)
+[Learn more](https://developer-stage.adobe.com/embed-sdk/docs/guides/ccx_editor/)
 
 <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
@@ -87,4 +87,3 @@ Letter is an email newsletter tool that helps content creators, designers, and d
 Embed the Adobe Express full editor in your website today to allow users to make standout content. 
 
 - [Get started](https://developer-stage.adobe.com/embed-sdk/docs/guides/ccx_editor/)
-- [Try the demo](https://developer-stage.adobe.com/embed-sdk/docs/guides/ccx_editor/)
