@@ -10,7 +10,7 @@ The full editor component allows you to embed Adobe Express as an iframe in thei
 
 <AccordionItem header="What are quick actions?" isChevronIcon >
 
-Adobe-powered quick actions take the most complex tasks from our flagship apps -- like remove background -- and turns them into one-click tasks. The quick actions component is embedded onto your application as an iframe. Once the desired action is complete, the SDK provides two native export buttons to surface to users: 1) download the modified asset or 2) edit further in the full editor component. Developers can also configure their own custom export button to perform tasks such as saving the asset back onto the application.
+Adobe-powered quick actions take the most complex tasks from our flagship apps -- like remove background -- and turns them into one-click tasks. The quick actions component is embedded onto your application as an iframe. Once the desired action is complete, the SDK provides two native export buttons to surface to users: 1) download the modified asset or 2) edit further in the full editor component. You can also configure your own custom export button to perform tasks such as saving the asset back into the application.
 
 </AccordionItem>
 
