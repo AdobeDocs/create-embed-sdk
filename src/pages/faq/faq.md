@@ -2,45 +2,35 @@
 
 <Accordion>
 
-<AccordionItem header="What is the Adobe Express Full Editor? " isChevronIcon >
+<AccordionItem header="What is the full editor? " isChevronIcon >
 
-It is an embeddable iframe in your website that unlocks creation and editing tools and content from Adobe Express right where your users are already working. 
+The full editor component allows developers to embed Adobe Express as an iframe in their own applications. Users can work within this modal editor as they would in Adobe Express, and their designs can be saved back to the integrating application as images.
 
 </AccordionItem>
 
-<AccordionItem header="What are Quick Actions?" isChevronIcon >
+<AccordionItem header="What are quick actions?" isChevronIcon >
 
-Adobe-powered quick actions take the most complex tasks from our flagship apps and turn them into one click tasks. 
+Adobe-powered quick actions take the most complex tasks from our flagship apps -- like remove background -- and turns them into one-click tasks. The quick actions component is embedded onto your application as an iframe. Once the desired action is complete, the SDK provides two native export buttons to surface to users: 1) download the modified asset or 2) edit further in the full editor component. Developers can also configure their own custom export button to perform tasks such as saving the asset back onto the application.
 
 </AccordionItem>
 
 <AccordionItem header="Do you have a mobile SDK?" isChevronIcon >
 
-Its an embeddable iframe in your website that unlocks creation and editing tools and content from Adobe Express right where your users are already working.
+Our efforts are currently focused on desktop and web.
 
 </AccordionItem>
 
 <AccordionItem header="Do you support video editing?" isChevronIcon >
 
-Its an embeddable iframe in your website that unlocks creation and editing tools and content from Adobe Express right where your users are already working.
+We currently have video quick actions available. As Adobe Express incorporates additional video editing capabilities, our partners and partner end-users will benefit from new features available in Adobe Express.
 
 </AccordionItem>
 
 <AccordionItem header="Do my users need an Adobe ID?" isChevronIcon >
 
-Users will need to create an Adobe ID. Creating an account for Adobe Express is free.
+Users will need to sign in using an existing Adobe ID, or create an account, in order to save projects created. Projects will be saved to the user’s Adobe Express account in a folder named after your integration. We’ve introduced a delayed login scenario for both the full editor and quick actions. This allows users to create and edit new projects before being prompted to login/create an account in order to save their project for later access.
 
-</AccordionItem>
-
-<AccordionItem header="How does the Adobe Express editor in the SDK differ from the free/paid versions of Adobe Express available on adobe.com? " isChevronIcon >
-
-Its an embeddable iframe in your website that unlocks creation and editing tools and content from Adobe Express right where your users are already working.
-
-</AccordionItem>
-
-<AccordionItem header="My user base includes minors/students. How can I be assured they get appropriate content?" isChevronIcon >
-
-Its an embeddable iframe in your website that unlocks creation and editing tools and content from Adobe Express right where your users are already working..
+Creating an account for Adobe Express is always free with premium upgrades available.  
 
 </AccordionItem>
 
@@ -50,41 +40,43 @@ Its an embeddable iframe in your website that unlocks creation and editing tools
 
 <Accordion>
 
-<AccordionItem header="Do I need to embed both the Adobe Express editor and quick actions?" isChevronIcon >
+<AccordionItem header="Do I need to embed both the full editor and quick actions?" isChevronIcon >
 
-Its an embeddable iframe in your website that unlocks creation and editing tools and content from Adobe Express right where your users are already working..
+No, the full editor and quick actions are separate components and developers can choose to only embed the editor (or vice versa) in their applications.
 
 </AccordionItem>
 
-<AccordionItem header="Is there a cost to use the embed SDK? " isChevronIcon >
+<AccordionItem header="Is there a cost to use the SDK? " isChevronIcon >
 
-Its an embeddable iframe in your website that unlocks creation and editing tools and content from Adobe Express right where your users are already working..
+There is currently no cost to access the Adobe Express Embed SDK.
 
 </AccordionItem>
 
 <AccordionItem header="What customizations are available in the SDK?" isChevronIcon >
 
-Its an embeddable iframe in your website that unlocks creation and editing tools and content from Adobe Express right where your users are already working..
+The SDK allows you to customize the language settings for users. The full editor can be launched with pre-selected templates to browse based on template types (logos, posters) and canvas sizes (Youtube thumbnails, Twitter headers).
 
 </AccordionItem>
 
 <AccordionItem header="How do I get started? Do I need to apply?" isChevronIcon >
 
-Its an embeddable iframe in your website that unlocks creation and editing tools and content from Adobe Express right where your users are already working..
+If you’re a developer ready to get started, read the [quickstart](https://developer.adobe.com/embed-sdk/docs/guides/) guide in our developer documentation. If you have any questions or would like to get in touch with our partnerships team, please fill out [this interest form](https://survey.adobe.com/jfe/form/SV_9LggYGfzm9w4Yaq) and a member of our team will get in contact.  
 
 </AccordionItem>
 
-<AccordionItem header="Are there branding guidelines and reviews?  " isChevronIcon >
+<AccordionItem header="How does the full editor component provided by the SDK differ from the free/paid versions of [Adobe Express](https://adobe.com/express)? " isChevronIcon >
 
-Its an embeddable iframe in your website that unlocks creation and editing tools and content from Adobe Express right where your users are already working..
+There are two functional differences in the embedded Adobe Express full editor compared to Adobe Express on the web:
+
+* Content sharing: In an embedded experience, we assume that a user will save the outcome of their creative project back to the host application in order to continue work in the host application. We have disabled sharing capabilities in embedded Adobe Express experiences.  
+* Content publishing: For the same reason above, a developer has the ability to pre-define the output type (file types, pixel size, etc.) of the Adobe Express project that is saved to the host application. For this reason, post scheduling and exporting multiple output types are disabled for the embedded Adobe Express editor.  
 
 </AccordionItem>
 
-<AccordionItem header="Legal considerations? " isChevronIcon >
+<AccordionItem header="My user base includes minors/students. How can I be assured they get appropriate content?" isChevronIcon >
 
-Its an embeddable iframe in your website that unlocks creation and editing tools and content from Adobe Express right where your users are already working..
+The embedded Adobe Express full editor can be setup to launch student safe content even before a student is signed into the embedded experience. More information about Adobe & Student Privacy can be found here: https://www.adobe.com/privacy/student-policy.html  
 
 </AccordionItem>
 
 </Accordion>
-
