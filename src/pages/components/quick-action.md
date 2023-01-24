@@ -27,7 +27,7 @@ Frequently used design workflows, such as remove background or resize image, are
 
 <AnimationTextBlock slots="heading,text" heading="Resize image" theme="lightest" headerElementType="h2" textcontent="Resizing images is easy thanks to a wide array of standard and custom social media image size to choose form." variantsTypePrimary='secondary' videoSrcUrl={quick_Action_Image_resize} variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
-<AnimationTextBlock slots="heading,text" heading="Remove background"  theme="lightest" headerElementType="h2" textcontent="Powered by Adobe Photoshop, this Quick Action enables users to remove backgrounds and create dynamic images in one simple click."  variantsTypePrimary='secondary' variantStyleFill = "outline" videoSrcUrl={quick_Action_Background_Remover} isVideoReversed  homeZigZag className=" zigzag-cta-two streamline_ability "/>
+<AnimationTextBlock slots="heading,text" heading="Remove background"  theme="lightest" headerElementType="h2" textcontent="Powered by Adobe Photoshop, this quick action enables users to remove backgrounds and create dynamic images in one simple click."  variantsTypePrimary='secondary' variantStyleFill = "outline" videoSrcUrl={quick_Action_Background_Remover} isVideoReversed  homeZigZag className=" zigzag-cta-two streamline_ability "/>
 
 <AnnouncementBlock slots="text, button" theme="lightest" className="announcement-embed-editor quick-action learn-more-action"/>
 
