@@ -69,7 +69,7 @@ If you’re a developer ready to get started, read the [quickstart](https://deve
 There are two functional differences in the embedded Adobe Express full editor compared to Adobe Express on the web:
 
 * Content sharing: In an embedded experience, we assume that a user will save the outcome of their creative project back to the host application in order to continue work in the host application. We have disabled sharing capabilities in embedded Adobe Express experiences.  
-* Content publishing: For the same reason above, a developer has the ability to pre-define the output type (file types, pixel size, etc.) of the Adobe Express project that is saved to the host application. For this reason, post scheduling and exporting multiple output types are disabled for the embedded Adobe Express editor.  
+* Content publishing: For the same reason above, you have the ability to pre-define the output type (file types, pixel size, etc.) of the Adobe Express project that is saved to the host application. For this reason, post scheduling and exporting multiple output types are disabled for the embedded Adobe Express editor.  
 
 </AccordionItem>
 
