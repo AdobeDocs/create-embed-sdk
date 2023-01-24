@@ -58,7 +58,7 @@ Why integrate the Adobe Express Embed SDK?
 
 ## Getting started
 
-Unlock Adobe Express editing capabilities for your users by embedding the SDK in your website. Read our developer quickstart guide or try the demo to get started.
+Unlock Adobe Express editing capabilities for your users by embedding the SDK in your website. Read our developer quickstart guide or try the sample to get started.
 
 - [Get started](https://developer.adobe.com/embed-sdk/docs/guides/)
-- [Try the demo](https://developer.adobe.com/embed-sdk/docs/guides/)
+<!-- - [Sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample) -->

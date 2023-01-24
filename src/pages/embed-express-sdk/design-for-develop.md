@@ -16,13 +16,13 @@ The Adobe Express Embed SDK integrates Adobe Express editing capabilities and co
 
 <InitialSDK/>
 
-### Express Editor
+### Full editor
 
 ![EMPTY_ALT](../images/Express-Editor-icon.svg)
 
 <ExpressEditorCodeBlock/>
 
-### Quick Actions
+### Quick actions
 
 ![EMPTY_ALT](../images/quick-actions-icon.svg)
 

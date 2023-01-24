@@ -34,7 +34,7 @@ With one-click, allow users to create and edit creative projects within iframes 
 
 ### Save your users time with templates 
 
-The Adobe Express full editor unlocks an unparalleled collection of professionally designed templates, Adobe Stock* images, Adobe Fonts, and an array of creative assets for every need.
+The Adobe Express full editor unlocks an unparalleled collection of professionally designed templates, Adobe Stock images, Adobe Fonts, and an array of creative assets for every need.
 
 ![Inspire confident creators](../images/Express-Editor-Benefits-Blade-image-two.png)
 
@@ -87,4 +87,4 @@ Letter is an email newsletter tool that helps content creators, designers, and d
 Embed the Adobe Express full editor in your website today to allow users to make standout content. 
 
 - [Get started](https://developer-stage.adobe.com/embed-sdk/docs/guides/ccx_editor/)
-- [Try the demo](https://developer-stage.adobe.com/embed-sdk/docs/guides/ccx_editor/)
+<!-- - [Sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample) -->
