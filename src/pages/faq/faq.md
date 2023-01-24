@@ -22,7 +22,7 @@ Our efforts are currently focused on desktop apps and web.
 
 <AccordionItem header="Do you support video editing?" isChevronIcon >
 
-We currently have video quick actions available. As Adobe Express incorporates additional video editing capabilities, our partners and partner end-users will benefit from new features available in Adobe Express.
+We currently have video quick actions available. As Adobe Express incorporates additional video editing capabilities, you and your end-users will benefit from new features available in Adobe Express.
 
 </AccordionItem>
 
