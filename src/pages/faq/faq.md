@@ -16,7 +16,7 @@ Adobe-powered quick actions take the most complex tasks from our flagship apps -
 
 <AccordionItem header="Do you have a mobile SDK?" isChevronIcon >
 
-Our efforts are currently focused on desktop and web.
+Our efforts are currently focused on desktop apps and web.
 
 </AccordionItem>
 
