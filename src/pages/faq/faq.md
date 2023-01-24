@@ -75,7 +75,7 @@ There are two functional differences in the embedded Adobe Express full editor c
 
 <AccordionItem header="My user base includes minors/students. How can I be assured they get appropriate content?" isChevronIcon >
 
-The embedded Adobe Express full editor can be setup to launch student safe content even before a student is signed into the embedded experience. More information about Adobe & Student Privacy can be found here: https://www.adobe.com/privacy/student-policy.html  
+The embedded Adobe Express full editor can be setup to launch student safe content even before a student is signed into the embedded experience. [More information about Adobe & Student Privacy](https://www.adobe.com/privacy/student-policy.html)  
 
 </AccordionItem>
 
