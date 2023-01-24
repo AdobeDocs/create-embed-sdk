@@ -4,7 +4,7 @@
 
 <AccordionItem header="What is the full editor? " isChevronIcon >
 
-The full editor component allows developers to embed Adobe Express as an iframe in their own applications. Users can work within this modal editor as they would in Adobe Express, and their designs can be saved back to the integrating application as images.
+The full editor component allows you to embed Adobe Express as an iframe in their own applications. Users can work within this modal editor as they would in Adobe Express, and their designs can be saved back to the integrating application as images.
 
 </AccordionItem>
 
