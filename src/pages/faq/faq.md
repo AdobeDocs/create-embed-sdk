@@ -42,7 +42,7 @@ Creating an account for Adobe Express is always free with premium upgrades avail
 
 <AccordionItem header="Do I need to embed both the full editor and quick actions?" isChevronIcon >
 
-No, the full editor and quick actions are separate components and developers can choose to only embed the editor (or vice versa) in their applications.
+No, the full editor and quick actions are separate components and you can choose to only embed the editor (or vice versa) in your applications.
 
 </AccordionItem>
 
