@@ -87,4 +87,4 @@ Letter is an email newsletter tool that helps content creators, designers, and d
 Embed the Adobe Express full editor in your website today to allow users to make standout content. 
 
 - [Get started](https://developer-stage.adobe.com/embed-sdk/docs/guides/ccx_editor/)
-- [Try the demo](https://developer-stage.adobe.com/embed-sdk/docs/guides/ccx_editor/)
+- [Sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample)
