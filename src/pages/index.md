@@ -18,7 +18,7 @@ import img7 from './images/Quick action icon 4.svg'
 
 ![Adobe Express](./images/Adobe-Express-logo-RGB.png)
 
-# Unlock your users’ creativity 
+# Unlock your users’ creativity
 
 Put the right creative tools and content in the hands of your users with the Adobe Express Embed SDK – including the full editor and quick actions.
 

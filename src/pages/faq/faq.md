@@ -64,7 +64,7 @@ If you’re a developer ready to get started, read the [quickstart](https://deve
 
 </AccordionItem>
 
-<AccordionItem header="How does the full editor component provided by the SDK differ from the free/paid versions of [Adobe Express](https://adobe.com/express)? " isChevronIcon >
+<AccordionItem header="How does the full editor component provided by the SDK differ from the free/paid versions of Adobe Express on the web? " isChevronIcon >
 
 There are two functional differences in the embedded Adobe Express full editor compared to Adobe Express on the web:
 
