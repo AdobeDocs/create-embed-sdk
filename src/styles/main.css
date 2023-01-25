@@ -389,9 +389,9 @@
 }
 
 .bgBlue pre.prism-code {
-    border-radius: 20px;
+    overflow: hidden;
     background-color: #111a35 !important;
-    padding: 12px !important
+    padding: 12px !important;
 }
 
 .bgBlue #tabView0>div,
@@ -430,6 +430,29 @@
 .prism-code>div:first-child>span:nth-child(2)>span {
     color: #CA9FFC !important;
 }
+
+.tabItem>span>b {
+    line-height: 44px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#tabView0,
+#tabView1,
+#tabView2 {
+    height: 100% !important;
+    background: #111a35;
+    border-radius: 20px !important;
+}
+
+.prism-code {
+    overflow: auto !important;
+}
+
+.prism-code::-webkit-scrollbar {
+    display: none !important;
+}
+
 
 .getting-started {
     background: transparent conic-gradient(from 90deg at 0% -24%, #F8F8F8 0.00%, #081D31 100.00%) 0% 0% no-repeat padding-box;
@@ -993,7 +1016,7 @@ td>div>span>picture>img {
     padding: 6px !important;
 }
 
-.arrow-bg  {
+.arrow-bg {
     color: #1473e6 !important;
 }
 
@@ -1248,6 +1271,33 @@ td>div>span>span,
         justify-content: center;
     }
 
+    .bgBlue {
+        overflow: hidden;
+    }
+
+    #tabView0,
+    #tabView1,
+    #tabView2 {
+        height: 40vh !important;
+    }
+
+    #tabItem_2 {
+        margin-bottom: 7% !important;
+    }
+
+    #tabView0,
+    #tabView1,
+    #tabView2 {
+        width: 90% !important;
+        margin: 0% 5% 5% !important;
+    }
+
+    .bgBlue #tabView0>div,
+    .bgBlue #tabView1>div,
+    .bgBlue #tabView2>div {
+        background: #111a35 !important;
+    }
+
     .getting-started {
         height: 20% !important;
     }
@@ -1461,10 +1511,6 @@ td>div>span>span,
 
     .announcement-embed-editor>div>p {
         font-size: 22px !important;
-    }
-
-    .prism-code {
-        overflow: auto !important;
     }
 
     .design-features-code-block>div>div>p {
