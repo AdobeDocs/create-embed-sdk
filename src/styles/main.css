@@ -394,10 +394,6 @@
     padding: 30px 12px 12px 25px !important;
 }
 
-#tabView2 .prism-code , #tabView1 .prism-code{
-    font-size: 17px ;
-}
-
 .bgBlue #tabView0>div,
 .bgBlue #tabView1>div,
 .bgBlue #tabView2>div {
