@@ -389,9 +389,13 @@
 }
 
 .bgBlue pre.prism-code {
-    overflow: hidden;
+    overflow: hidden ;
     background-color: #111a35 !important;
-    padding: 12px !important;
+    padding: 30px 12px 12px 25px !important;
+}
+
+#tabView2 .prism-code , #tabView1 .prism-code{
+    font-size: 17px ;
 }
 
 .bgBlue #tabView0>div,
@@ -1298,6 +1302,10 @@ td>div>span>span,
         background: #111a35 !important;
     }
 
+    #tabView0 {
+        overflow-y: hidden !important;
+    }
+
     .getting-started {
         height: 20% !important;
     }
@@ -1803,6 +1811,14 @@ td>div>span>span,
 
     .bgBlue>div {
         width: 90% !important;
+    }
+
+    .bgBlue pre.prism-code { 
+        padding: 5% !important;
+    }
+
+    #tabView2 .prism-code , #tabView1 .prism-code{
+        font-size: 20px !important;
     }
 
     .design-features-code-block {
