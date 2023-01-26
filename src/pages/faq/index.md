@@ -7,5 +7,3 @@ import "../../styles/main.css"
 
 <FAQContent/>
 
-
-

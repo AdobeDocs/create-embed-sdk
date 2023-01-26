@@ -21,7 +21,7 @@ module.exports = {
     pageImage: process.env.PAGE_IMAGE || 'dcsdk-main.jpg',
     docs: {
       title: 'Get started',
-      path: 'https://developer-stage.adobe.com/embed-sdk/docs/guides/'
+      path: 'https://developer.adobe.com/embed-sdk/docs/guides/'
     },
     pages: [
       {
