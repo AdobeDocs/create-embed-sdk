@@ -105,7 +105,7 @@ const SwiperContent = ({
         >
           <h2>
             {videoArr.length ? 
-            <video name="media3" loop="true" muted="true" autoPlay css={css`
+            <video name="media3" loop="true" muted="true" autoPlay playsInline css={css`
             height:auto;
             width:500px;
             `}>

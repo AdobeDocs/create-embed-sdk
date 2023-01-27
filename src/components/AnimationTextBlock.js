@@ -288,7 +288,7 @@ const AnimationTextBlock = ({
 
           {videoSrcUrl !== "" &&
             <div className="reizeQuickActionVideo">
-              <video name="media_resize" id="resize_Quick_Action_Id" loop className="resizeQuickActionViedo" type="video/mp4" preload="auto" autoPlay muted>
+              <video name="media_resize" id="resize_Quick_Action_Id" loop className="resizeQuickActionViedo" type="video/mp4" preload="auto" autoPlay muted playsInline>
                 <source src={videoSrcUrl} type="video/mp4" />
               </video>
             </div>
