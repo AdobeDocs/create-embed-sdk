@@ -11,7 +11,7 @@
  * governing permissions and limitations under the License.
  */
 
-import React, { cloneElement, Children, useContext,useEffect, useState } from "react";
+import React, { cloneElement, Children, useContext, useEffect, useState } from "react";
 import { withPrefix } from "gatsby";
 import { css } from "@emotion/react";
 import { AnchorButton } from "@adobe/gatsby-theme-aio/src/components/AnchorButton";
@@ -45,12 +45,12 @@ const setImageLoading = (child) => {
   return child;
 };
 
-const getAriaLabel = (label, heading='') => {
-  const labelVal = label === 'Learn more' && heading !=='' ? `${label} about ${heading}` : `${label}`;
+const getAriaLabel = (label, heading = '') => {
+  const labelVal = label === 'Learn more' && heading !== '' ? `${label} about ${heading}` : `${label}`;
   return labelVal;
 }
 
-const HeroButtons = ({ buttons, styles = ['fill', 'outline'], variants = ['accent', 'secondary'], heading='', className }) =>
+const HeroButtons = ({ buttons, styles = ['fill', 'outline'], variants = ['accent', 'secondary'], heading = '', className }) =>
 
   buttons ? (
     <div>
@@ -166,27 +166,27 @@ const Hero = ({
   width = DESKTOP_SCREEN_WIDTH,
   customLayout = false,
   primaryOutline = false,
-  isPrimaryBtn=false,
-  variantsTypePrimary='accent',
-  variantsTypeSecondary='secondary',
-  animationVideo="",
-  videoSrcUrl="",
-  svgEmbded="",
-  isQuickAction=false,
-  imagearray=[],
-  isCustomAnimation=false,
+  isPrimaryBtn = false,
+  variantsTypePrimary = 'accent',
+  variantsTypeSecondary = 'secondary',
+  animationVideo = "",
+  videoSrcUrl = "",
+  svgEmbded = "",
+  isQuickAction = false,
+  imagearray = [],
+  isCustomAnimation = false,
   ...props
 }) => {
   const { siteMetadata, location } = useContext(Context);
   const [showVideo, setShowVideo] = useState(false);
-  
 
 
-  useEffect(()=>{
-    
-    if ( animationVideo ) {
+
+  useEffect(() => {
+
+    if (animationVideo) {
       lottie.loadAnimation({
-        container: document.querySelector("#svgContainer"), 
+        container: document.querySelector("#svgContainer"),
         renderer: "svg",
         loop: true,
         autoplay: true,
@@ -194,11 +194,11 @@ const Hero = ({
       });
     }
 
-    if( videoSrcUrl ) {
-    
+    if (videoSrcUrl) {
+
       let timer1 = setTimeout(() => {
         setShowVideo(true)
-      } ,  4200);
+      }, 4200);
 
       // this will clear Timeout
       // when component unmount like in willComponentUnmount
@@ -207,22 +207,22 @@ const Hero = ({
         clearTimeout(timer1);
       };
     }
-  },[animationVideo, videoSrcUrl])
+  }, [animationVideo, videoSrcUrl])
   useEffect(() => {
-    
+
     const videoPlayer = document.getElementById("playAnimatedVideo");
     if (!videoPlayer) return
-    if( showVideo) {
+    if (showVideo) {
       videoPlayer.play()
       setTimeout(() => {
         setShowVideo(false)
-      } ,  21000);
+      }, 21000);
     }
     else {
       videoPlayer.pause()
       setTimeout(() => {
         setShowVideo(true)
-      } ,  3500);
+      }, 3500);
     }
 
   }, [showVideo])
@@ -373,7 +373,7 @@ const Hero = ({
               <HeroButtons
                 buttons={buttons}
                 styles={['fill', 'outline']}
-                variants={[variantsTypePrimary,variantsTypeSecondary]}
+                variants={[variantsTypePrimary, variantsTypeSecondary]}
                 css={css`
                   margin-top: var(--spectrum-global-dimension-size-200);
                   margin-bottom: var(--spectrum-global-dimension-size-200);
@@ -386,11 +386,11 @@ const Hero = ({
                 `}
               />
             )}
-            <div className={assetsImg?.props?.children}/>
+            <div className={assetsImg?.props?.children} />
           </div>
         </section>
       )
-    } else if(variant === 'video' && animationVideo){
+    } else if (variant === 'video' && animationVideo) {
       return (
         <section
           className={classNames(className, `spectrum--${theme}`)}
@@ -410,23 +410,23 @@ const Hero = ({
               box-sizing: border-box;
             }
           `}>
-            <div css={css`
+          <div css={css`
               @media screen and (min-width: ${DESKTOP_SCREEN_WIDTH}) {
                 position: relative;
                 max-width:${DESKTOP_SCREEN_WIDTH}
                 margin:auto;
               }
             `}>
-              <div css={css`
+            <div css={css`
                 @media screen and (max-width: ${TABLET_SCREEN_WIDTH}) {
                   display: none;
                 }
               `}>
               <div id="svgContainer"></div>
-              </div>
+            </div>
 
-              <div
-                css={css`
+            <div
+              css={css`
                   display: flex;
                   height: 100%;
                   max-width: ${width};
@@ -435,8 +435,8 @@ const Hero = ({
                     display: inline;
                   }
               `}>
-                <div
-                  css={css`
+              <div
+                css={css`
                     display: flex;
                     flex-direction: column;
                     justify-content: center !important;
@@ -467,27 +467,27 @@ const Hero = ({
                     }
                 `}>
 
-                  {heading && (
-                    <HeroHeading
-                      heading={heading}
-                      variant={variant}
-                      customLayout={customLayout}
-                    />
-                  )}
+                {heading && (
+                  <HeroHeading
+                    heading={heading}
+                    variant={variant}
+                    customLayout={customLayout}
+                  />
+                )}
 
-                  <HeroTexts texts={props} />
+                <HeroTexts texts={props} />
 
-                  <HeroButtons
-                    buttons={buttons}
-                    quiets={[false]}
-                    variants={["primary", "overBackground"]}
-                    css={css`
+                <HeroButtons
+                  buttons={buttons}
+                  quiets={[false]}
+                  variants={["primary", "overBackground"]}
+                  css={css`
                       margin-top: var(--spectrum-global-dimension-size-400);
                     `}
-                  />
-                </div>
-                <div
-                  css={css`
+                />
+              </div>
+              <div
+                css={css`
                     max-width: ${width};
                     margin: auto;
                     display: none;
@@ -498,13 +498,13 @@ const Hero = ({
                       display: inline;
                     }
                 `}>
-                <div className={assetsImg?.props?.children}/>
+                <div className={assetsImg?.props?.children} />
               </div>
             </div>
           </div>
         </section>
       );
-    } else if (variant === 'halfwidth' && customLayout ) {
+    } else if (variant === 'halfwidth' && customLayout) {
       return (
         <section
           className={classNames(className, `spectrum--${theme}`)}
@@ -532,7 +532,7 @@ const Hero = ({
               max-width:${DESKTOP_SCREEN_WIDTH};
               margin:auto;
             }
-          `}>            
+          `}>
             <div
               css={css`
                 display: flex;
@@ -563,11 +563,11 @@ const Hero = ({
                     font-size: var(--spectrum-heading-l-text-size, var(--spectrum-alias-heading-l-text-size))
                   }
                 }
-            `}>                    
-            {icon &&
-              cloneElement(icon, {
-                children: cloneChildren(icon.props.children, setImageLoading),
-                css: css`
+            `}>
+              {icon &&
+                cloneElement(icon, {
+                  children: cloneChildren(icon.props.children, setImageLoading),
+                  css: css`
                   height: var(--spectrum-global-dimension-size-400);
                   width: var(--spectrum-global-dimension-size-3600);
                   margin-top: 0 !important;
@@ -586,17 +586,17 @@ const Hero = ({
                     object-fit: contain;
                   }
                 `
-              })}
+                })}
 
-              
 
-                {heading && (
-                  <HeroHeading
-                    heading={heading}
-                    variant={variant}
-                    customLayout={customLayout}
-                  />
-                )}
+
+              {heading && (
+                <HeroHeading
+                  heading={heading}
+                  variant={variant}
+                  customLayout={customLayout}
+                />
+              )}
 
               <HeroTexts texts={props} />
 
@@ -609,8 +609,8 @@ const Hero = ({
                 style={["outine"]}
               />
             </div>
-            </div>
-          
+          </div>
+
         </section>
       );
     } else if (variant === 'fullwidth' && !videoSrcUrl) {
@@ -664,10 +664,10 @@ const Hero = ({
                 margin-top: var(--spectrum-global-dimension-size-400);
               `}
             />
-            <div className={assetsImg?.props?.children}/>
+            <div className={assetsImg?.props?.children} />
           </div>
         </section>
-      );    
+      );
     } else if (variant === 'halfwidth' && isCustomAnimation) {
       return (
         <section
@@ -725,7 +725,7 @@ const Hero = ({
                     }
                   `
                 })}
-             
+
               <HeroHeading heading={heading} isVariant />
 
               <HeroTexts texts={props} />
@@ -757,11 +757,11 @@ const Hero = ({
                 </div>
               </div>
               <div className="resizeCropImage">
-                <div style={{opacity: 0}}>
+                <div style={{ opacity: 0 }}>
                   <img alt="imgnotfound" src={imagearray[3]}></img>
                 </div>
-                <div style={{opacity: 0}}>
-                    <img alt="imgnotfound" src={imagearray[3]}></img>
+                <div style={{ opacity: 0 }}>
+                  <img alt="imgnotfound" src={imagearray[3]}></img>
                 </div>
                 <div>
                   <img alt="imgnotfound" src={imagearray[3]}></img>
@@ -769,15 +769,15 @@ const Hero = ({
                 <div>
                   <img class="cropImg" alt="imgnotfound" src={imagearray[4]}></img>
                   <div className="quickActionImage3">
-                      <img alt="imgnotfound" src={imagearray[1]}></img>
-                    </div>
-                    <div className="quickActionImage4">
-                      <img alt="imgnotfound" src={imagearray[5]}></img>
+                    <img alt="imgnotfound" src={imagearray[1]}></img>
+                  </div>
+                  <div className="quickActionImage4">
+                    <img alt="imgnotfound" src={imagearray[5]}></img>
                   </div>
                 </div>
               </div>
-              </div>
             </div>
+          </div>
         </section>
       );
     } else if (variant === 'halfwidth') {
@@ -837,7 +837,7 @@ const Hero = ({
                     }
                   `
                 })}
-             
+
               <HeroHeading heading={heading} isVariant />
 
               <HeroTexts texts={props} />
@@ -862,7 +862,7 @@ const Hero = ({
           </div>
         </section>
       );
-    } else if ( variant === 'fullwidth' && videoSrcUrl && !isQuickAction) {
+    } else if (variant === 'fullwidth' && videoSrcUrl && !isQuickAction) {
       return (
         <section
           className={classNames(className, `spectrum--${theme}`)}
@@ -890,7 +890,7 @@ const Hero = ({
               max-width:${DESKTOP_SCREEN_WIDTH};
               margin:auto;
             }
-          `}>            
+          `}>
             <div
               css={css`
                 display: flex;
@@ -921,11 +921,11 @@ const Hero = ({
                     font-size: var(--spectrum-heading-l-text-size, var(--spectrum-alias-heading-l-text-size))
                   }
                 }
-            `}>                    
-            {icon &&
-              cloneElement(icon, {
-                children: cloneChildren(icon.props.children, setImageLoading),
-                css: css`
+            `}>
+              {icon &&
+                cloneElement(icon, {
+                  children: cloneChildren(icon.props.children, setImageLoading),
+                  css: css`
                   height: var(--spectrum-global-dimension-size-400);
                   width: var(--spectrum-global-dimension-size-3600);
                   margin-top: 0 !important;
@@ -944,17 +944,17 @@ const Hero = ({
                     object-fit: contain;
                   }
                 `
-              })}
+                })}
 
-              
 
-                {heading && (
-                  <HeroHeading
-                    heading={heading}
-                    variant={variant}
-                    customLayout={customLayout}
-                  />
-                )}
+
+              {heading && (
+                <HeroHeading
+                  heading={heading}
+                  variant={variant}
+                  customLayout={customLayout}
+                />
+              )}
 
               <HeroTexts texts={props} />
 
@@ -967,24 +967,24 @@ const Hero = ({
                 style={["outine"]}
               />
             </div>
-            {videoSrcUrl && 
+            {videoSrcUrl &&
               <div>
-                <div className="video" style={showVideo ? {opacity:0.4} :  {opacity:1} } >
+                <div className="video" style={showVideo ? { opacity: 0.4 } : { opacity: 1 }} >
                   <div className="arrow" >
-                    { !showVideo && svgEmbded}
-                    { showVideo && <div style={{opacity:0}}>{svgEmbded}</div>}
+                    {!showVideo && svgEmbded}
+                    {showVideo && <div style={{ opacity: 0 }}>{svgEmbded}</div>}
                   </div>
 
                 </div>
-                <video className="autoPlayVideo" id="playAnimatedVideo" style={!showVideo ? {opacity:0} :  {opacity:1} } name="media" muted="true" autoplay  playsinline>
-                    <source src={videoSrcUrl} type="video/mp4" />
+                <video className="autoPlayVideo" id="playAnimatedVideo" style={!showVideo ? { opacity: 0 } : { opacity: 1 }} name="media" preload="auto" muted="true" autoplay playsinline>
+                  <source src={videoSrcUrl} type="video/mp4" />
                 </video>
               </div>
             }
-            </div>
+          </div>
         </section>
       );
-    }  else if ( variant === 'fullwidth' && videoSrcUrl && isQuickAction ) {
+    } else if (variant === 'fullwidth' && videoSrcUrl && isQuickAction) {
       return (
         <section
           className={classNames(className, `spectrum--${theme}`)}
@@ -1012,7 +1012,7 @@ const Hero = ({
               max-width:${DESKTOP_SCREEN_WIDTH};
               margin:auto;
             }
-          `}>            
+          `}>
             <div
               css={css`
                 display: flex;
@@ -1043,11 +1043,11 @@ const Hero = ({
                     font-size: var(--spectrum-heading-l-text-size, var(--spectrum-alias-heading-l-text-size))
                   }
                 }
-            `}>                    
-            {icon &&
-              cloneElement(icon, {
-                children: cloneChildren(icon.props.children, setImageLoading),
-                css: css`
+            `}>
+              {icon &&
+                cloneElement(icon, {
+                  children: cloneChildren(icon.props.children, setImageLoading),
+                  css: css`
                   height: var(--spectrum-global-dimension-size-400);
                   width: var(--spectrum-global-dimension-size-3600);
                   margin-top: 0 !important;
@@ -1066,17 +1066,17 @@ const Hero = ({
                     object-fit: contain;
                   }
                 `
-              })}
+                })}
 
-              
 
-                {heading && (
-                  <HeroHeading
-                    heading={heading}
-                    variant={variant}
-                    customLayout={customLayout}
-                  />
-                )}
+
+              {heading && (
+                <HeroHeading
+                  heading={heading}
+                  variant={variant}
+                  customLayout={customLayout}
+                />
+              )}
 
               <HeroTexts texts={props} />
 
@@ -1089,9 +1089,9 @@ const Hero = ({
                 style={["outine"]}
               />
             </div>
-            <div className="quickActionVideo">  
-              <video className="autoQuickPlayVideo" id="playAnimatedVideo" loop name="media2" muted="true" autoPlay playsinline  >
-                  <source src={videoSrcUrl} type="video/mp4" />
+            <div className="quickActionVideo">
+              <video className="autoQuickPlayVideo" id="playAnimatedVideo" loop name="media2" muted="true" autoPlay playsinline preload="auto" >
+                <source src={videoSrcUrl} type="video/mp4" />
               </video>
             </div>
           </div>
@@ -1112,13 +1112,13 @@ Hero.propTypes = {
   width: PropTypes.string,
   theme: PropTypes.string,
   customLayout: PropTypes.bool,
-  assetsImg:PropTypes.element,
+  assetsImg: PropTypes.element,
   animationVideo: PropTypes.element,
   videoSrcUrl: PropTypes.string,
   svgEmbded: PropTypes.element,
   isQuickAction: PropTypes.bool,
   imagearray: PropTypes.array,
-  isCustomAnimation:  PropTypes.bool
+  isCustomAnimation: PropTypes.bool
 };
 
 HeroButtons.propTypes = {

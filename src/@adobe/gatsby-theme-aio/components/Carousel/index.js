@@ -105,7 +105,7 @@ const SwiperContent = ({
         >
           <h2>
             {videoArr.length ? 
-            <video name="media3" loop="true" muted="true" autoPlay css={css`
+            <video name="media3" loop="true" muted="true" preload="auto" autoplay playsinline css={css`
             height:auto;
             width:500px;
             `}>
@@ -259,7 +259,6 @@ const Carousel = ({
             slidesPerView={"auto"}
             autoplay={{
               delay,
-              disableOnInteraction: false,
             }} 
             pagination={{
               bulletActiveClass,
