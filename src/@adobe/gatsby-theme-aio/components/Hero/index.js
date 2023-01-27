@@ -1090,7 +1090,7 @@ const Hero = ({
               />
             </div>
             <div className="quickActionVideo">
-              <video className="autoQuickPlayVideo" id="playAnimatedVideo" loop name="media2" muted="true" autoPlay playsinline preload="auto" autobuffer  >
+              <video className="autoQuickPlayVideo" id="QuickActionplayAnimatedVideo" loop name="media2" muted="true" autoPlay playsinline preload="auto" autobuffer  >
                 <source src={videoSrcUrl} type="video/mp4" />
               </video>
             </div>
