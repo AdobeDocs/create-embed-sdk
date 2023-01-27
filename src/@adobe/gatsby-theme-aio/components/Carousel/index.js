@@ -259,7 +259,8 @@ const Carousel = ({
             slidesPerView={"auto"}
             autoplay={{
               delay,
-            }}
+              disableOnInteraction: false,
+            }} 
             pagination={{
               bulletActiveClass,
               bulletClass,
