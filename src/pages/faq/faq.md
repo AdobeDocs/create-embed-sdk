@@ -48,7 +48,7 @@ No, the full editor and quick actions are separate components and you can choose
 
 <AccordionItem header="Is there a cost to use the SDK? " isChevronIcon >
 
-There is currently no cost to access the Adobe Express Embed SDK.
+While there is currently no cost to access the Adobe Express Embed SDK, this may change over time. We look forward to working with our partners and developer community to better understand your users’ needs as we continue to evolve our strategy.  
 
 </AccordionItem>
 

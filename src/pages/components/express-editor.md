@@ -10,7 +10,7 @@ import video3 from "../videos/Letter-Animation-v3.mp4"
 
 # Empower your users to create standout content 
 
-The Adobe Express Embed SDK’s full editor gives users everything they need to create content quickly and easily, without leaving your site.
+The Adobe Express Embed SDK’s full editor gives users the tools they need to create content quickly and easily, without leaving your site.
 
 ![EMPTY_ALT](../images/express_editor_bg.png)
 
@@ -20,7 +20,8 @@ The Adobe Express Embed SDK’s full editor gives users everything they need to 
 
 With the Adobe Express full editor, users start from thousands of templates to create professional-looking social content, flyers, banners, ads, and more. 
 
-[Try the demo](https://developer-stage.adobe.com/embed-sdk/docs/guides/ccx_editor/)
+<!-- [Try the demo](https://developer-stage.adobe.com/embed-sdk/docs/guides/ccx_editor/) -->
+[Learn more](https://developer.adobe.com/embed-sdk/docs/guides/full_editor/)
 
 <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
 
@@ -84,7 +85,7 @@ Letter is an email newsletter tool that helps content creators, designers, and d
 
 ## Getting started 
 
-Embed the Adobe Express full editor in your website today to allow users to make standout content. 
+Embed the full editor in your website today to allow users to make standout content.
 
-- [Get started](https://developer-stage.adobe.com/embed-sdk/docs/guides/ccx_editor/)
-<!-- - [Sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample) -->
+- [Quickstart guide](https://developer.adobe.com/embed-sdk/docs/guides/full_editor/)
+- [Try the sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample)

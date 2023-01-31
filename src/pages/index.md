@@ -26,7 +26,7 @@ Put the right creative tools and content in the hands of your users with the Ado
 
 Embed powerful Adobe Express capabilities into any website with Adobe Express Embed SDK, a customizable JavaScript library.
 
-- [Read More](https://developer-stage.adobe.com/embed-sdk/docs/)
+- [Read More](https://developer.adobe.com/embed-sdk/docs/)
 
 <TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability  express-editor"/>
 
@@ -60,5 +60,5 @@ Why integrate the Adobe Express Embed SDK?
 
 Unlock Adobe Express editing capabilities for your users by embedding the SDK in your website. Read our developer quickstart guide or try the sample to get started.
 
-- [Get started](https://developer.adobe.com/embed-sdk/docs/guides/)
-<!-- - [Sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample) -->
+- [Quickstart guide](https://developer.adobe.com/embed-sdk/docs/guides/)
+- [Try the sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample)
