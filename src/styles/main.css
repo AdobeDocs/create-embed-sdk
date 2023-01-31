@@ -389,7 +389,7 @@
 }
 
 .bgBlue pre.prism-code {
-    overflow: hidden ;
+    overflow: hidden;
     background-color: #111a35 !important;
     padding: 30px 12px 12px 25px !important;
 }
@@ -1047,6 +1047,11 @@ td>div>span>span,
 .bgBlue>div>div,
 .customer-need>div>h3 {
     width: 100% !important;
+}
+
+.checked_arrow_mark {
+    height: 10px !important;
+    color : #116ede !important;
 }
 
 @media screen and (min-width:2000px) {
@@ -1809,11 +1814,12 @@ td>div>span>span,
         width: 90% !important;
     }
 
-    .bgBlue pre.prism-code { 
+    .bgBlue pre.prism-code {
         padding: 5% !important;
     }
 
-    #tabView2 .prism-code , #tabView1 .prism-code{
+    #tabView2 .prism-code,
+    #tabView1 .prism-code {
         font-size: 20px !important;
     }
 
