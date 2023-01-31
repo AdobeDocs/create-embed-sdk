@@ -59,7 +59,7 @@ const getSelectedTabIndex = (location, pages) => {
   if (selectedIndex === -1 && inx > -1) {
     tempArr[inx + 1] = 'agreements-and-contracts';
     tempArr[inx + 2] = 'sales-proposals-and-contracts';
-    if (tempArr[inx + 3] == undefined) {
+    if (tempArr[inx + 3] === undefined) {
       tempArr.push("");
     }
     let tempPathName = tempArr.join('/')
@@ -215,6 +215,8 @@ const GlobalHeader = ({
         if (page?.menuRef?.current && !page.menuRef.current.contains(event.target)) {
           setOpenMenuIndex(-1);
         }
+        return null
+
       });
     };
 
@@ -228,10 +230,10 @@ const GlobalHeader = ({
       setOpenVersion(false);
       setOpenMenuIndex(-1);
     };
+    const tabsContainerRefCurrent = tabsContainerRef.current
+    tabsContainerRefCurrent.addEventListener('scroll', onScroll, { passive: true });
 
-    tabsContainerRef.current.addEventListener('scroll', onScroll, { passive: true });
-
-    return () => tabsContainerRef.current.removeEventListener('scroll', onScroll);
+    return () => tabsContainerRefCurrent.removeEventListener('scroll', onScroll);
   }, []);
 
   const openDropDown = (data) => {
@@ -597,6 +599,13 @@ const GlobalHeader = ({
                         />
                         <div
                           onClick={(event) => {
+                            event.stopImmediatePropagation();
+
+                            setOpenVersion(false);
+                            setOpenProfile(false);
+                            setOpenMenuIndex(openMenuIndex === i ? -1 : i);
+                          }}
+                          onKeyDown={(event) => {
                             event.stopImmediatePropagation();
 
                             setOpenVersion(false);
