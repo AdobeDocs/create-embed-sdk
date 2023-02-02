@@ -18,9 +18,8 @@ The Adobe Express Embed SDK’s full editor gives users the tools they need to c
 
 ### No design experience required 
 
-With the Adobe Express full editor, users start from thousands of templates to create professional-looking social content, flyers, banners, ads, and more. 
+With the Adobe Express full editor, users start from thousands of templates to create professional-looking social content, flyers, banners, ads, and more.
 
-<!-- [Try the demo](https://developer-stage.adobe.com/embed-sdk/docs/guides/ccx_editor/) -->
 [Learn more](https://developer.adobe.com/embed-sdk/docs/guides/full_editor/)
 
 <TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
