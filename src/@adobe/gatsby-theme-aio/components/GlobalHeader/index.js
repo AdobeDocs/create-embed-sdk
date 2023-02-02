@@ -753,7 +753,7 @@ const GlobalHeader = ({
                                           justify-content: space-between;
                                 `}>
                                         <div>{menu.title}</div>
-                                        {`/${menu.path}` === location.pathname &&
+                                        {location.pathname.endsWith(`/${menu.path}`) &&
                                           iconSVG()
                                         }
                                       </div>
