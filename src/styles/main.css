@@ -1051,7 +1051,8 @@ td>div>span>span,
 
 .checked_arrow_mark {
     height: 10px !important;
-    color : #116ede !important;
+    color: #116ede !important;
+    padding: 0 !important;
 }
 
 @media screen and (min-width:2000px) {

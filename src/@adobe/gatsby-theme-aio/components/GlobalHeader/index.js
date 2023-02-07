@@ -120,10 +120,10 @@ const GlobalHeader = ({
   const profilePopoverId = nextId();
   const hasHome = home?.hidden !== true;
 
-  const iconSVG = () => {
+  const CheckMark = () => {
     return (
       <>
-        <svg aria-hidden="true" role="img" class="spectrum-Menu-checkmark spectrum-Menu-itemIcon css-eivff4 spectrum-Icon spectrum-UIIcon-Checkmark100 checked_arrow_mark"><path d="M5.125 12.625a1.25 1.25 0 01-.96-.45L1.04 8.425a1.25 1.25 0 011.92-1.6l2.136 2.563 5.922-7.536a1.25 1.25 0 111.964 1.545l-6.874 8.75a1.25 1.25 0 01-.965.478z" class="spectrum-UIIcon--large"></path>
+        <svg aria-hidden="true" role="img" class="spectrum-Menu-checkmark spectrum-Menu-itemIcon spectrum-Icon spectrum-UIIcon-Checkmark100 checked_arrow_mark"><path d="M5.125 12.625a1.25 1.25 0 01-.96-.45L1.04 8.425a1.25 1.25 0 011.92-1.6l2.136 2.563 5.922-7.536a1.25 1.25 0 111.964 1.545l-6.874 8.75a1.25 1.25 0 01-.965.478z" class="spectrum-UIIcon--large"></path>
           <path d="M3.5 9.5a.999.999 0 01-.774-.368l-2.45-3a1 1 0 111.548-1.264l1.657 2.028 4.68-6.01A1 1 0 019.74 2.114l-5.45 7a1 1 0 01-.777.386z" class="spectrum-UIIcon--medium"></path></svg></>
     )
   }
@@ -724,40 +724,62 @@ const GlobalHeader = ({
                                       }
                                     }}
                                   >
-                                    {menu.description ? (
-                                      <div
-                                        css={css`
+                                  {menu.description ? (
+                                  <div
+                                    css={css`
                                       margin: var(--spectrum-global-dimension-size-100) 0;
                                     `}>
-                                        <div
-                                          css={css`
-                                        color: var(--spectrum-global-color-gray-900);
-                                      `}>
-                                          {menu.title}
-                                        </div>
-                                        <div
-                                          className="spectrum-Body spectrum-Body--sizeXS"
-                                          css={css`
-                                        white-space: normal;
-                                        margin-top: var(--spectrum-global-dimension-size-50);
-                                      `}>
-                                          {menu.description}
-                                        </div>
-                                      </div>
-                                    ) : (
+                                        <div css={css`
+                                      margin-top: var(--spectrum-global-dimension-size-50);
+                                      margin-bottom: var(--spectrum-global-dimension-size-50);
+                                      display: flex;
+                                      flex-direction: row;
+                                      justify-content :flex-start ;
+                                      overflow : hidden;
+                                      gap:6px;`}>
+
                                       <div css={css`
-                                          margin-top: var(--spectrum-global-dimension-size-50);
-                                          margin-bottom: var(--spectrum-global-dimension-size-50);
-                                          display: flex;
-                                          flex-direction: row;
-                                          justify-content: space-between;
-                                `}>
-                                        <div>{menu.title}</div>
-                                        {location.pathname.endsWith(`/${menu.path}`) &&
-                                          iconSVG()
-                                        }
+                                      width: var(--spectrum-global-dimension-size-100) !important;
+                                      height: var(--spectrum-global-dimension-size-100) !important;
+                                      `}>
+                                            {menu.pathname && location.pathname === menu.pathname  &&   <CheckMark css={css` width: var(--spectrum-global-dimension-size-150) !important;
+                                                height: var(--spectrum-global-dimension-size-150) !important; 
+                                                color: #116ede !important; `} 
+                                                />}
                                       </div>
-                                    )}
+                                    <div>{menu.title}</div>
+                                  </div>
+                                    <div
+                                        className="spectrum-Body spectrum-Body--sizeXS"
+                                        css={css`
+                                          white-space: normal;
+                                          margin-top: var(--spectrum-global-dimension-size-50);
+                                          margin-left: var(--spectrum-global-dimension-size-150);
+                                        `}>
+                                        {menu.description}
+                                    </div>
+                                  </div>
+                                ) : (
+                                  <div css={css`
+                                  margin-top: var(--spectrum-global-dimension-size-50);
+                                  margin-bottom: var(--spectrum-global-dimension-size-50);
+                                  display: flex;
+                                  flex-direction: row;
+                                  justify-content :flex-start ;
+                                  overflow : hidden;
+                                  gap:6px;`}>
+                                  <div css={css`
+                                      width: var(--spectrum-global-dimension-size-100) !important;
+                                      height: var(--spectrum-global-dimension-size-100) !important;
+                                  `}>
+                                    {menu.pathname && location.pathname === menu.pathname  &&   <CheckMark css={css` width: var(--spectrum-global-dimension-size-150) !important;
+                                                height: var(--spectrum-global-dimension-size-150) !important; 
+                                                color: #116ede !important; `} 
+                                                />}
+                                  </div>
+                                  <div>{menu.title}</div>
+                                </div>
+                                )}
                                   </MenuItem>
                                 );
                               })}
