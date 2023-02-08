@@ -78,7 +78,7 @@ Breakout EDU is an educational game platform for teachers and students that enab
 
 Letter is an email newsletter tool that helps content creators, designers, and developers make standout communications with the Adobe Express full editor.
 
-<SummaryBlock slots=" image , heading, text, buttons" className="getting-started summary-block" />
+<TextBlock slots="image , heading,text,buttons" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className="getStarted "/>
 
 ![Getting started](../images/Summary-Block-image.svg)
 
@@ -88,3 +88,4 @@ Embed the full editor in your website today to allow users to make standout cont
 
 - [Quickstart guide](https://developer.adobe.com/embed-sdk/docs/guides/full_editor/)
 - [Try the sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample)
+ 
