@@ -496,6 +496,14 @@
     padding: 0 !important;
 }
 
+.getStarted>div>div>div>h2 {
+    font-size: 29px !important;
+}
+
+.getStarted>div>div>div>p {
+    font-size: 19px !important;
+}
+
 /* express editor page  */
 
 .express-editor-hero-block {
