@@ -55,7 +55,7 @@ How do quick actions save users time?
 
 <QuickActionSDKDevelop/>
 
-<SummaryBlock slots=" image , heading, text, buttons" className="getting-started quick-action-getting" />
+<TextBlock slots="image,heading,text,buttons" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className="getStarted quick-action-getstart"/>
 
 ![Getting Started](../images/Summary-Block-image.svg)
 
@@ -65,3 +65,4 @@ Embed quick actions in your website today to give your users access to powerful 
 
 - [Quickstart guide](https://developer.adobe.com/embed-sdk/docs/guides/quick_actions/)
 - [Try the sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample)
+ 

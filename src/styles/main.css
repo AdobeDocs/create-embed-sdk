@@ -14,7 +14,6 @@
     width: 35%;
     color: #FFFFFF !important;
     font-size: 18px;
-    font-weight: lighter;
 }
 
 .embed-adobe>div>div:nth-child(2)>p>span>picture>img {
@@ -283,15 +282,13 @@
 
 .tryForFree>div>div>p {
     font-size: 16px;
-    font-weight: lighter;
 }
 
 .tryForFree>div>div:nth-child(2)>div>div>div>a {
     background-color: #e6e7e9 !important;
 }
 
-.tryForFree>div>div:nth-child(2)>div>div>div>a>span>span,
-.getting-started>div>h2 {
+.tryForFree>div>div:nth-child(2)>div>div>div>a>span>span {
     color: #000000 !important;
 }
 
@@ -366,7 +363,6 @@
 .design-features-code-block>div>div>p {
     font-size: 16px;
     letter-spacing: 0.7px;
-    font-weight: lighter;
 }
 
 .design-features-code-block>div>div:first-child {
@@ -453,43 +449,51 @@
     display: none !important;
 }
 
-
-.getting-started {
-    background: transparent conic-gradient(from 90deg at 0% -24%, #F8F8F8 0.00%, #081D31 100.00%) 0% 0% no-repeat padding-box;
+.getStarted {
+    background: transparent conic-gradient(from 90deg at 0% -24%, #F8F8F8 0.00%, #081D31 100.00%) 0% 0% no-repeat padding-box !important;
 }
 
-.getting-started>div {
-    padding-left: 17%;
-    width: 52%;
+.getStarted>div {
+    padding: 0 !important;
+    width: 70% !important;
 }
 
-.getting-started>div>p {
-    color: #222222;
-    font-size: 18px;
+.getStarted>div>div {
+    width: 100% !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    gap: 10% !important
 }
 
-.getting-started>p>span>img {
+.getStarted>div>div>p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.getStarted>div>div>p:first-child>span:first-child>img {
     opacity: 0.7 !important;
-    height: 100%;
+    width: 75% !important;
 }
 
-.getting-started>p:first-child>span:first-child {
-    width: 22% !important;
-    margin-right: 12%;
-}
-
-.getting-started>div>div>div>div:first-child>a {
-    background-color: #5258E4 !important;
-    border: none;
-}
-
-.getting-started>div>div>div>div:last-child>a {
+.getStarted>div>div>div>div>div>div>a {
     background-color: transparent !important;
     border: 2px solid #5258E4 !important;
 }
 
-.sdk-getting-block {
-    height: 12% !important
+.getStarted>div>div>div>div>div>div>a>span>span {
+    color: #5258E4 !important;
+}
+
+.getStarted>div>div>div>div>div:first-child>div:first-child>a {
+    background: #5258E4 !important;
+}
+
+.getStarted>div>div>div>div>div:first-child>div:first-child>a>span>span {
+    color: #fff !important;
+}
+
+.getStarted>div>div>div {
+    padding: 0 !important;
 }
 
 /* express editor page  */
@@ -564,7 +568,6 @@
 .express-editor-hero-block>div>div:first-child>p {
     color: #fff !important;
     width: 45%;
-    font-weight: lighter;
     font-size: 18px;
 }
 
@@ -617,13 +620,8 @@
 }
 
 .announcement-embed-editor>div>div>a>span>span,
-.quick-action>div>div>a>span,
-.getting-started>div>div>div>div:last-child>a>span>span {
+.quick-action>div>div>a>span {
     color: #5258E4 !important;
-}
-
-.customer-need {
-    height: 8% !important;
 }
 
 .customer-need>div>p {
@@ -683,11 +681,6 @@
     margin-top: 3%;
 }
 
-.summary-block {
-    height: 11% !important;
-    margin-bottom: 3%;
-}
-
 /* quick action page  */
 
 .quick-action-hero-block .autoQuickPlayVideo {
@@ -727,18 +720,10 @@
     width: 300px;
 }
 
-.quick-action {
-    height: 3% !important;
-}
-
 .quick-action>div>p {
     width: 65%;
     padding-left: 20%;
     font-size: 18px;
-}
-
-.snap {
-    height: 6% !important;
 }
 
 .learn-more-action>div>p,
@@ -755,7 +740,7 @@
     display: flex;
     align-items: center;
     margin-top: 5%;
-    height: 13%;
+    padding: 3% 0;
     background: #202947 0% 0% no-repeat padding-box !important;
     opacity: 1;
 }
@@ -784,7 +769,6 @@
 }
 
 .big-impact>div>div>div>p {
-    font-weight: lighter;
     letter-spacing: 0.3px;
     font-size: 18px;
     color: #FFFFFF;
@@ -970,16 +954,6 @@ td>div>span>picture>img {
     height: auto !important;
     width: auto !important;
     position: unset !important;
-}
-
-.quick-action-getting {
-    margin-bottom: 15%;
-    height: 9%;
-}
-
-.quick-action-getting>p:first-child>span:first-child {
-    width: 24% !important;
-    margin-right: 12%;
 }
 
 /* faq page  */
@@ -1190,7 +1164,6 @@ td>div>span>span,
         gap: 20px;
     }
 
-    .getting-started>p>span,
     .ms-pa-summary-blade>div>div {
         margin-right: 0 !important;
     }
@@ -1266,7 +1239,6 @@ td>div>span>span,
     }
 
     .bgBlue .mobileTabView,
-    .getting-started>p,
     .image-video-editing>div>div>table {
         display: none;
     }
@@ -1308,21 +1280,13 @@ td>div>span>span,
         overflow-y: hidden !important;
     }
 
-    .getting-started {
-        height: 20% !important;
-    }
-
-    .getting-started>div {
-        width: 100%;
-        height: fit-content;
-        padding: 10% 10% 20% 12%;
-        position: relative !important;
+    .quick-action-getstart {
+        margin-bottom: 50% !important;
     }
 
     /* express editor page  */
 
-    .express-editor-hero-block>div,
-    .getting-started>div>div>div {
+    .express-editor-hero-block>div {
         flex-direction: column !important;
     }
 
@@ -1458,15 +1422,9 @@ td>div>span>span,
         width: 75% !important;
     }
 
-    .quick-action-getting {
-        height: fit-content !important;
-        margin-bottom: 70%;
-    }
-
     .big-impact>div>div>div>p,
     .quick-action>div>h3,
     .editing-content>div,
-    .getting-started>p:first-child>span>:first-child,
     .bgBlue .tabView0>div>div,
     .bgBlue .tabView0>div>div:nth-child(2),
     .bgBlue .tabView0>div>div:nth-child(2)>pre>div,
@@ -1541,8 +1499,12 @@ td>div>span>span,
         height: 100%;
     }
 
-    .getting-started>div>p {
-        font-size: 22px;
+    .getStarted>div>div {
+        flex-direction: column !important;
+    }
+
+    .getStarted>div>div>p {
+        display: none !important;
     }
 
     /* express editor page  */
@@ -1852,20 +1814,6 @@ td>div>span>span,
         padding: 0 24% !important;
     }
 
-    .getting-started>p {
-        display: none !important;
-    }
-
-    .getting-started>div {
-        position: relative;
-        padding-left: 5%;
-        width: 100%;
-    }
-
-    .sdk-getting-block {
-        height: 8% !important
-    }
-
     /* express editor page  */
 
     .express-editor-hero-block {
@@ -1893,11 +1841,6 @@ td>div>span>span,
 
     .customer-experience>div>div>div>h2 {
         font-size: 34px;
-    }
-
-    .summary-block {
-        height: 8% !important;
-        margin-bottom: 10%;
     }
 
     /* quick action page  */
@@ -1937,12 +1880,6 @@ td>div>span>span,
 
     th {
         font-size: 22px !important;
-    }
-
-    .quick-action-getting {
-        padding: 2% 0% 8% 5% !important;
-        height: 5% !important;
-        margin-bottom: 20% !important;
     }
 
     .quick-action-block>div>h3,

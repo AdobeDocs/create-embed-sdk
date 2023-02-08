@@ -52,7 +52,7 @@ Why integrate the Adobe Express Embed SDK?
 
 <DesignForDeveloper/>
 
-<SummaryBlock slots=" image , heading, text, buttons" className="getting-started sdk-getting-block" />
+<TextBlock slots="image,heading,text,buttons" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="getStarted "/>
 
 ![Getting Started](./images/Summary-Block-image.svg)
 
@@ -62,3 +62,4 @@ Unlock Adobe Express editing capabilities for your users by embedding the SDK in
 
 - [Quickstart guide](https://developer.adobe.com/embed-sdk/docs/guides/)
 - [Try the sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample)
+ 
