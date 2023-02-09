@@ -724,9 +724,9 @@ const GlobalHeader = ({
                                       }
                                     }}
                                   >
-                                  {menu.description ? (
-                                  <div
-                                    css={css`
+                                    {menu.description ? (
+                                      <div
+                                        css={css`
                                       margin: var(--spectrum-global-dimension-size-100) 0;
                                     `}>
                                         <div css={css`
@@ -738,29 +738,29 @@ const GlobalHeader = ({
                                       overflow : hidden;
                                       gap:6px;`}>
 
-                                      <div css={css`
+                                          <div css={css`
                                       width: var(--spectrum-global-dimension-size-100) !important;
                                       height: var(--spectrum-global-dimension-size-100) !important;
                                       `}>
-                                            {menu.pathname && location.pathname === menu.pathname  &&   <CheckMark css={css` width: var(--spectrum-global-dimension-size-150) !important;
+                                            {menu.pathname && location.pathname === menu.pathname && <CheckMark css={css` width: var(--spectrum-global-dimension-size-150) !important;
                                                 height: var(--spectrum-global-dimension-size-150) !important; 
-                                                color: #116ede !important; `} 
-                                                />}
-                                      </div>
-                                    <div>{menu.title}</div>
-                                  </div>
-                                    <div
-                                        className="spectrum-Body spectrum-Body--sizeXS"
-                                        css={css`
+                                                color: #116ede !important; `}
+                                            />}
+                                          </div>
+                                          <div>{menu.title}</div>
+                                        </div>
+                                        <div
+                                          className="spectrum-Body spectrum-Body--sizeXS"
+                                          css={css`
                                           white-space: normal;
                                           margin-top: var(--spectrum-global-dimension-size-50);
                                           margin-left: var(--spectrum-global-dimension-size-150);
                                         `}>
-                                        {menu.description}
-                                    </div>
-                                  </div>
-                                ) : (
-                                  <div css={css`
+                                          {menu.description}
+                                        </div>
+                                      </div>
+                                    ) : (
+                                      <div css={css`
                                   margin-top: var(--spectrum-global-dimension-size-50);
                                   margin-bottom: var(--spectrum-global-dimension-size-50);
                                   display: flex;
@@ -768,18 +768,18 @@ const GlobalHeader = ({
                                   justify-content :flex-start ;
                                   overflow : hidden;
                                   gap:6px;`}>
-                                  <div css={css`
+                                        <div css={css`
                                       width: var(--spectrum-global-dimension-size-100) !important;
                                       height: var(--spectrum-global-dimension-size-100) !important;
                                   `}>
-                                    {menu.pathname && location.pathname === menu.pathname  &&   <CheckMark css={css` width: var(--spectrum-global-dimension-size-150) !important;
+                                          {menu.pathname && location.pathname === menu.pathname && <CheckMark css={css` width: var(--spectrum-global-dimension-size-150) !important;
                                                 height: var(--spectrum-global-dimension-size-150) !important; 
-                                                color: #116ede !important; `} 
-                                                />}
-                                  </div>
-                                  <div>{menu.title}</div>
-                                </div>
-                                )}
+                                                color: #116ede !important; `}
+                                          />}
+                                        </div>
+                                        <div>{menu.title}</div>
+                                      </div>
+                                    )}
                                   </MenuItem>
                                 );
                               })}
@@ -860,7 +860,7 @@ const GlobalHeader = ({
                         document.getElementById("tabindex5").focus();
                       }
                     }}
-                    id={"getCredentialID"} variant="accent" href={withPrefix(docs.href)}>
+                    id={"getCredentialID"} variant="accent" href={withPrefix(docs.href)} style="fill">
                     {docs.title ?? 'View Docs'}
                   </AnchorButton>
                 </div>
