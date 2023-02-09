@@ -860,7 +860,7 @@ const GlobalHeader = ({
                         document.getElementById("tabindex5").focus();
                       }
                     }}
-                    id={"getCredentialID"} variant="primary" href={withPrefix(docs.href)}>
+                    id={"getCredentialID"} variant="accent" href={withPrefix(docs.href)}>
                     {docs.title ?? 'View Docs'}
                   </AnchorButton>
                 </div>

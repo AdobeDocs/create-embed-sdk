@@ -387,7 +387,22 @@
 .bgBlue pre.prism-code {
     overflow: hidden;
     background-color: #111a35 !important;
-    padding: 30px 12px 12px 25px !important;
+}
+
+#tabView0 pre {
+    margin: 0 !important;
+}
+
+#tabView0 pre.prism-code {
+    padding: 10px 12px 12px 25px !important
+}
+
+#tabView1 pre.prism-code {
+    padding: 30px 12px 50px 25px !important
+}
+
+#tabView2 pre.prism-code {
+    padding: 30px 12px 122px 25px !important
 }
 
 .bgBlue #tabView0>div,
@@ -1785,8 +1800,12 @@ td>div>span>span,
         width: 90% !important;
     }
 
-    .bgBlue pre.prism-code {
-        padding: 5% !important;
+    #tabView1 pre.prism-code {
+        padding: 30px 12px 65px 25px !important;
+    }
+
+    #tabView2 pre.prism-code {
+        padding: 30px 12px 155px 25px !important
     }
 
     #tabView2 .prism-code,
