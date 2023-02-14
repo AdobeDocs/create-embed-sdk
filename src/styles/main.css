@@ -852,10 +852,6 @@
     height: 100%;
 }
 
-.snippet-img>div>div>div>div {
-    padding: 2% !important;
-}
-
 .count-0.image-resize,
 .count-1.remove-background,
 .count-2.convert-png {
