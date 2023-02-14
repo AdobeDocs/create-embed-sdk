@@ -32,9 +32,9 @@ export default function SpringImage({ slides }) {
       {isViewed &&
         <AnimatedImageFrame count={count} setCount={setCount} imageRef={imageRef} slides={slides} />
       }
-      <img src='' alt='animeImages' ref={imageRef} className='image-bg' style={{ width: '100%', backgroundRepeat: 'no-repeat', marginLeft: '0', marginBottom: '1%' }} />
+      <img src='' alt='animeImages' ref={imageRef} className='image-bg' style={{ width: '100%', backgroundRepeat: 'no-repeat', marginLeft: '0', marginBottom: '11%', marginTop: '11%' }} />
       <div className='snippet-img'>
-        <CodeSnippetSVG  count={count}  />
+        <CodeSnippetSVG count={count} />
       </div>
     </div>
   )
