@@ -865,13 +865,12 @@
 
 .line-1 span {
     overflow: hidden;
-    padding-left: 5%;
+    padding: 3px 2% 0 4%;
     color: #44b57d;
     font-size: 15px;
     position: relative;
     margin: 0 auto;
     left: 0;
-    border-right: 2px solid #44b57d;
 }
 
 .anim-typewriter span::after {
@@ -879,7 +878,7 @@
     position: absolute;
     left: 0;
     height: 100%;
-    width: 90%;
+    width: 100%;
     background: #fff;
     border-left: 2px solid #44b57d;
     animation: typewrite 2s steps(15) 1s 1 normal both,
@@ -1417,6 +1416,7 @@ td>div>span>span,
 
     .id-p25 {
         padding-left: 45px !important;
+        font-size: 12px !important;
     }
 
     .anim-typewriter>span {
@@ -1649,6 +1649,9 @@ td>div>span>span,
         font-size: 15px !important;
     }
 
+    .line-1 span {
+        padding: 2px 2% 0 0;
+    }
 }
 
 @media screen and (min-width:1025px) and (max-width:1300px) {
@@ -1728,12 +1731,7 @@ td>div>span>span,
         padding-left: 85px !important;
     }
 
-    .snippet-img {
-        top: -8% !important;
-    }
-
     .line-1 span {
-        padding: 0 !important;
         font-size: 14px !important;
     }
 
