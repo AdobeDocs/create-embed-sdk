@@ -908,17 +908,17 @@
 
     60% {
         left: calc(70%);
-        width: 45%;
+        width: 40%;
     }
 
     80% {
         left: calc(85%);
-        width: 30%;
+        width: 20%;
     }
 
     100% {
         left: calc(100%);
-        width: 20%;
+        width: 10%;
     }
 }
 
@@ -984,6 +984,14 @@ td>div>span>picture>img {
     height: auto !important;
     width: auto !important;
     position: unset !important;
+}
+
+tr:hover {
+    background-color: white !important;
+}
+
+td>div {
+    cursor: pointer !important;
 }
 
 /* faq page  */
@@ -1448,7 +1456,7 @@ td>div>span>span,
         margin: auto;
         background: white;
         left: 0% !important;
-        padding: 18% 0%;
+        padding: 18% 0% !important;
         border-radius: 10px;
         position: relative;
         font-size: 12px;
