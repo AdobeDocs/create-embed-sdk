@@ -18,7 +18,7 @@
     "lottie-web": "^5.9.6",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-spring": "^9.6.1"
+    "react-spring": "^9.7.0"
   },
   "scripts": {
     "start": "gatsby build && gatsby serve",
