@@ -387,7 +387,22 @@
 .bgBlue pre.prism-code {
     overflow: hidden;
     background-color: #111a35 !important;
-    padding: 30px 12px 12px 25px !important;
+}
+
+#tabView0 pre {
+    margin: 0 !important;
+}
+
+#tabView0 pre.prism-code {
+    padding: 10px 12px 12px 25px !important
+}
+
+#tabView1 pre.prism-code {
+    padding: 30px 12px 50px 25px !important
+}
+
+#tabView2 pre.prism-code {
+    padding: 30px 12px 122px 25px !important
 }
 
 .bgBlue #tabView0>div,
@@ -826,8 +841,8 @@
 
 .snippet-img {
     position: absolute;
-    right: 75%;
-    bottom: 30%;
+    right: 77%;
+    bottom: 19%;
     width: 100%;
     height: 100%;
 }
@@ -835,6 +850,14 @@
 .snippet-img svg {
     width: 100%;
     height: 100%;
+}
+
+.snippet-img>div>div>div {
+    padding: 16% 0% !important;
+}
+
+.snippet-img>div>div>div>div {
+    padding: 2% !important;
 }
 
 .count-0.image-resize,
@@ -850,13 +873,12 @@
 
 .line-1 span {
     overflow: hidden;
-    padding-left: 5%;
+    padding: 3px 2% 0 4%;
     color: #44b57d;
     font-size: 15px;
     position: relative;
     margin: 0 auto;
     left: 0;
-    border-right: 2px solid #44b57d;
 }
 
 .anim-typewriter span::after {
@@ -864,7 +886,7 @@
     position: absolute;
     left: 0;
     height: 100%;
-    width: 90%;
+    width: 100%;
     background: #fff;
     border-left: 2px solid #44b57d;
     animation: typewrite 2s steps(15) 1s 1 normal both,
@@ -886,17 +908,17 @@
 
     60% {
         left: calc(70%);
-        width: 45%;
+        width: 40%;
     }
 
     80% {
         left: calc(85%);
-        width: 30%;
+        width: 20%;
     }
 
     100% {
         left: calc(100%);
-        width: 20%;
+        width: 10%;
     }
 }
 
@@ -962,6 +984,14 @@ td>div>span>picture>img {
     height: auto !important;
     width: auto !important;
     position: unset !important;
+}
+
+tr:hover {
+    background-color: white !important;
+}
+
+td>div {
+    cursor: pointer !important;
 }
 
 /* faq page  */
@@ -1057,6 +1087,16 @@ td>div>span>span,
     .embed-adobe>div>div:first-child>p:first-child {
         padding-left: 18% !important;
     }
+
+    .line-1 span {
+        padding: 1px 2% 0 0 !important;
+        font-size: 15px !important;
+    }
+
+    .id-p25 {
+        padding-left: 120px !important;
+    }
+
 }
 
 @media screen and (min-width: 2500px) {
@@ -1065,6 +1105,7 @@ td>div>span>span,
     .quick-action-hero-block>div>div:first-child>p {
         width: 33% !important;
     }
+
 }
 
 @media screen and (min-width:375px) and (max-width:767px) {
@@ -1397,6 +1438,7 @@ td>div>span>span,
 
     .id-p25 {
         padding-left: 45px !important;
+        font-size: 12px !important;
     }
 
     .anim-typewriter>span {
@@ -1414,7 +1456,7 @@ td>div>span>span,
         margin: auto;
         background: white;
         left: 0% !important;
-        padding: 18% 0%;
+        padding: 18% 0% !important;
         border-radius: 10px;
         position: relative;
         font-size: 12px;
@@ -1422,8 +1464,8 @@ td>div>span>span,
     }
 
     .snippet-img {
-        right: 10%;
-        bottom: 58%;
+        right: 13% !important;
+        bottom: 34% !important;
     }
 
     .codeSnippetAlignment {
@@ -1620,13 +1662,17 @@ td>div>span>span,
         }
 
         100% {
-            left: calc(100%);
+            left: calc(98%);
             width: 10%;
         }
     }
 
     td>div>p {
         font-size: 15px !important;
+    }
+
+    .line-1 span {
+        padding: 2px 2% 0 0;
     }
 }
 
@@ -1648,6 +1694,10 @@ td>div>span>span,
 @media screen and (min-width:1300px) and (max-width:1500px) {
     .quick-action-hero-block .quickActionVideo {
         background-position: 1% 88%, left 8% top 17%, center 111%, right 55% bottom 19%;
+    }
+
+    .snippet-img>div>div>div {
+        padding: 18% 0% !important;
     }
 }
 
@@ -1703,9 +1753,10 @@ td>div>span>span,
         font-size: 16px !important;
     }
 
-    .id-p25 {
-        padding-left: 85px !important;
+    .line-1 span {
+        font-size: 14px !important;
     }
+
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -1785,8 +1836,12 @@ td>div>span>span,
         width: 90% !important;
     }
 
-    .bgBlue pre.prism-code {
-        padding: 5% !important;
+    #tabView1 pre.prism-code {
+        padding: 30px 12px 65px 25px !important;
+    }
+
+    #tabView2 pre.prism-code {
+        padding: 30px 12px 155px 25px !important
     }
 
     #tabView2 .prism-code,
@@ -1871,9 +1926,9 @@ td>div>span>span,
 
     .snippet-img {
         position: absolute;
-        right: 75%;
-        bottom: 30%;
-        width: 80%;
+        right: 77%;
+        bottom: 14%;
+        width: 95%;
         height: 100%;
     }
 
@@ -1893,6 +1948,11 @@ td>div>span>span,
     .quick-action-block>div>h3,
     .why-integrate-sdk>div>h3 {
         margin-top: 10% !important;
+    }
+
+    .reizeQuickActionVideo {
+        width: 100% !important;
+        height: 100% !important;
     }
 
     .streamline_ability>div>div>p>span>picture>img,
