@@ -997,12 +997,27 @@ td>div {
 /* faq page  */
 
 .faq-editor-page {
-    height: 10% !important;
+    height: 100px !important;
 }
 
-.faq-editor-page>div>div {
-    position: relative !important;
+.faq-editor-page>div {
+    justify-content: center !important;
+    align-items: flex-start !important;
+    padding-left: 15% !important;
+}
+
+.faqContent {
+    width: 70% !important;
+    margin: auto !important;
+}
+
+.faqContent>div {
     width: 100% !important;
+}
+
+.faqContent>div>h2,
+.spectrum-Accordion-itemContent>p {
+    text-align: initial !important;
 }
 
 .spectrum-Accordion {
@@ -1470,6 +1485,10 @@ td>div>span>span,
 
     .codeSnippetAlignment {
         width: 75% !important;
+    }
+
+    .faq-editor-page {
+        height: 30vh !important;
     }
 
     .big-impact>div>div>div>p,
