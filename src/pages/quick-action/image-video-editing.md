@@ -1,4 +1,4 @@
-| More for image editing  | More for video editing  |   |
+| |  |   |
 | ------- | ------- | ------- |
 | <div>![Resize image](../images/S_AniResizeImage.png)<p>Resize image</p></div> |  <div>![Trim video](../images/S_AniTrimVideo.png)<p>Trim video</p></div> | <div>![Convert to MP4](../images/S_AniChangeSpeed.png)<p>Convert to MP4</p></div> |
 | <div>![Remove background](../images/S_AniChangeBackground.png)<p>Remove background</p></div> |  <div>![Resize video](../images/S_AniResizeVedio.png)<p>Resize video</p></div> | <div>![Convert to MP4](../images/S_AniConvertToMP4.png)<p>Convert to MP4</p></div> |
