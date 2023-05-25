@@ -1,5 +1,4 @@
 /* home page */
-
 .embed-adobe {
     background: url('../pages/images/Hero-Background-Gradient-image-2x.png') !important;
     background-repeat: no-repeat;
@@ -79,8 +78,7 @@
 
 .imgRemoveLayer1 {
     position: relative;
-    background: url("../pages/images/background-remove-layer-1-pexels-thyrone-paas-transparent.png") no-repeat padding-box,
-        url("../pages/images/background-remove-layer-3-Transparency-grid.png") no-repeat padding-box;
+    background: url("../pages/images/background-remove-layer-1-pexels-thyrone-paas-transparent.png") no-repeat padding-box, url("../pages/images/background-remove-layer-3-Transparency-grid.png") no-repeat padding-box;
     background-position: 0% 0%, 0% 100.3%;
     background-repeat: no-repeat;
     border-radius: 30px;
@@ -300,7 +298,8 @@
     padding: 0 !important;
 }
 
-.streamline_ability>div>div {
+.streamline_ability>div>div,
+.swiper-slide>div {
     gap: 5%
 }
 
@@ -319,10 +318,6 @@
 .streamline_ability>div>div>div>p,
 .video-text-block>div>div>div:nth-child(2)>div>a>button>span {
     color: #747474 !important;
-}
-
-.express-editor>div {
-    padding-top: 5% !important;
 }
 
 .sdk-title-block {
@@ -460,10 +455,6 @@
     overflow: auto !important;
 }
 
-.prism-code::-webkit-scrollbar {
-    display: none !important;
-}
-
 .getStarted {
     background: transparent conic-gradient(from 90deg at 0% -24%, #F8F8F8 0.00%, #081D31 100.00%) 0% 0% no-repeat padding-box !important;
 }
@@ -507,7 +498,8 @@
     color: #fff !important;
 }
 
-.getStarted>div>div>div {
+.getStarted>div>div>div,
+.workflow>div>div>div>div>div>div>div:nth-child(2) {
     padding: 0 !important;
 }
 
@@ -519,8 +511,7 @@
     font-size: 19px !important;
 }
 
-/* express editor page  */
-
+/* express editor page  */
 .express-editor-hero-block {
     padding: 4% 0;
 }
@@ -685,11 +676,7 @@
     justify-content: center;
 }
 
-.swiper-slide>div {
-    gap: 5%;
-}
-
-.swiper-slide>div>div:nth-child(2)>h3 {
+.swiper-slide h3 {
     font-size: 22px !important;
 }
 
@@ -704,8 +691,7 @@
     margin-top: 3%;
 }
 
-/* quick action page  */
-
+/* quick action page  */
 .quick-action-hero-block .autoQuickPlayVideo {
     border-radius: 20px;
     margin-right: 34%;
@@ -716,11 +702,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background:
-        url('../pages/images/Background image 1.png'),
-        url('../pages/images/Background image 3.svg'),
-        url('../pages/images/Background image 4.png'),
-        url('../pages/images/Background image 2.svg');
+    background: url('../pages/images/Background image 1.png'), url('../pages/images/Background image 3.svg'), url('../pages/images/Background image 4.png'), url('../pages/images/Background image 2.svg');
     background-repeat: no-repeat;
     background-size: 29%, 15%, 27%, 16%;
     background-position: 1% 88%, left 7% top 16%, center 111%, right 55% bottom 27%;
@@ -889,8 +871,7 @@
     width: 100%;
     background: #fff;
     border-left: 2px solid #44b57d;
-    animation: typewrite 2s steps(15) 1s 1 normal both,
-        blinkTextCursor 500ms steps(15) infinite normal;
+    animation: typewrite 2s steps(15) 1s 1 normal both, blinkTextCursor 500ms steps(15) infinite normal;
 }
 
 @keyframes typewrite {
@@ -937,19 +918,18 @@ table {
     margin: 6% 0 0% 17%;
 }
 
-.show {
-    display: block;
-}
-
 th {
     text-transform: none !important;
     font-size: 25px !important;
     letter-spacing: 0px !important;
+    text-align: start !important;
+    padding-left: 1%;
 }
 
 td {
     border: none !important;
     padding: 0 !important;
+    overflow: hidden !important;
 }
 
 tr>th:first-child,
@@ -994,8 +974,7 @@ td>div {
     cursor: pointer !important;
 }
 
-/* faq page  */
-
+/* faq page  */
 .faq-editor-page {
     height: 100px !important;
 }
@@ -1063,13 +1042,14 @@ p {
 .bgBlue>div>div>div>div>div:nth-child(2)>pre>div>div>button,
 td>div>span>span,
 .mobile-view-content>div>div>table,
+.prism-code::-webkit-scrollbar,
+.mobile-view-content,
 .wrapper {
     display: none !important;
 }
 
 .image-video-editing>div,
 .embed-adobe>div,
-.QuickActionSDKDevelop>div,
 .resource-card>div,
 .bgBlue>div>div,
 .customer-need>div>h3 {
@@ -1081,6 +1061,56 @@ td>div>span>span,
     color: #116ede !important;
     padding: 0 !important;
 }
+
+.workflow>div>div>div>div>div>div {
+    gap: 0 !important;
+}
+
+.textWrapper {
+    width: 65% !important
+}
+
+.workflow video {
+    width: 500px !important;
+}
+
+.quickaction-video>div>div {
+    width: 67% !important;
+    margin: auto !important;
+    gap: 8% !important;
+}
+
+.quickaction-video p {
+    color: #747474 !important;
+}
+
+.quickaction-video a {
+    background-color: #FFFFFF !important;
+    border-color: #747474 !important;
+}
+
+.quickaction-video a>span {
+    color: #747474 !important;
+}
+
+.why-integrate-sdk>div {
+    max-width: var(--spectrum-global-dimension-size-4600) !important;
+}
+
+.QuickActionSDKDevelop>div {
+    width: 80% !important;
+    margin: auto !important;
+}
+
+.fullEditor {
+    width: 67% !important;
+    margin: auto !important;
+}
+
+.faqContent button {
+    text-transform: none !important;
+}
+
 
 @media screen and (min-width:2000px) {
 
@@ -1128,6 +1158,7 @@ td>div>span>span,
     /* home page  */
     .embed-adobe {
         padding: 8% !important;
+        margin-top: 10% !important;
     }
 
     .embed-adobe>div>div:first-child>h1 {
@@ -1262,6 +1293,19 @@ td>div>span>span,
         padding: 2% 8%;
     }
 
+    .quickaction-video>div>div>div,
+    .quickaction-video video,
+    .bgBlue,
+    .customer-need>div>p,
+    .quickaction-video>div,
+    .swiper-slide>div {
+        padding: 0 !important;
+    }
+
+    .quickaction-video>div>div {
+        width: 80% !important;
+    }
+
     .deployment>div>p:first-child>span,
     .quick-action-block {
         padding: 10% 0 !important;
@@ -1297,14 +1341,11 @@ td>div>span>span,
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .bgBlue,
-    .customer-need>div>p {
-        padding: 0 !important;
-    }
-
     .bgBlue .mobileTabView,
-    .image-video-editing>div>div>table {
-        display: none;
+    .image-video-editing>div>div>table,
+    tr>td:nth-child(2),
+    .image-video-editing {
+        display: none !important;
     }
 
     .tabView {
@@ -1344,11 +1385,21 @@ td>div>span>span,
         overflow-y: hidden !important;
     }
 
+    .QuickActionSDKDevelop>div {
+        width: 100% !important;
+    }
+
     .quick-action-getstart {
-        margin-bottom: 50% !important;
+        margin-bottom: 20% !important;
     }
 
     /* express editor page  */
+
+    .express-editor-hero-block,
+    .quick-action-hero-block,
+    .faq-editor-page {
+        margin-top: 10% !important;
+    }
 
     .express-editor-hero-block>div {
         flex-direction: column !important;
@@ -1390,12 +1441,13 @@ td>div>span>span,
         width: 100%;
     }
 
-    .swiper-slide>div {
-        padding: 0 !important;
-    }
-
     .swiper-slide>div>div:nth-child(2)>h3 {
         font-size: 25px !important;
+    }
+
+    .wrapperforWorkflow>div {
+        width: 280px !important;
+        margin: auto !important;
     }
 
     /* quick action page  */
@@ -1491,6 +1543,39 @@ td>div>span>span,
         height: 30vh !important;
     }
 
+    .mobile-view-content {
+        display: block !important;
+    }
+
+    .mobile-view-content td>div {
+        max-width: fit-content !important;
+    }
+
+    td {
+        padding: 3% 0 !important;
+        width: fit-content !important;
+    }
+
+    tr,
+    tbody {
+        width: 200px !important;
+    }
+
+    th {
+        padding-left: 3% !important;
+    }
+
+    .mobile-view-content tr:nth-child(6)>td>div {
+        font-size: 25px !important;
+        letter-spacing: 0px !important;
+        color: #474747 !important;
+        font-weight: 700 !important;
+    }
+
+    table {
+        margin: auto !important;
+    }
+
     .big-impact>div>div>div>p,
     .quick-action>div>h3,
     .editing-content>div,
@@ -1555,21 +1640,19 @@ td>div>span>span,
         letter-spacing: 0;
     }
 
-    .quick-action>div>p {
+    .quick-action>div>p,
+    .customer-need>div>p {
         font-size: 19px !important;
     }
 
-    .quick-action>div>h3 {
+    .quick-action>div>h3,
+    .customer-need>div>h3 {
         font-size: 34px;
     }
 
     .swiper video {
         width: 100%;
         height: 100%;
-    }
-
-    .getStarted>div>div {
-        flex-direction: column !important;
     }
 
     .getStarted>div>div>p {
@@ -1597,17 +1680,20 @@ td>div>span>span,
         width: 70% !important;
     }
 
-    .customer-need>div>p {
-        font-size: 19px !important;
+    .fullEditor {
+        width: 95% !important;
     }
 
-    .customer-need>div>h3 {
-        font-size: 34px;
+    .textWrapper,
+    .workflow video,
+    .QuickActionSDKDevelop>div {
+        width: 100% !important
     }
 
     /* quick action page  */
 
-    .quick-action-hero-block>div {
+    .quick-action-hero-block>div,
+    .getStarted>div>div {
         flex-direction: column;
     }
 
@@ -1708,6 +1794,12 @@ td>div>span>span,
         width: 63%;
         padding-right: 11%;
     }
+
+    .quickaction-video>div>div,
+    .QuickActionSDKDevelop>div {
+        width: 100% !important;
+    }
+
 }
 
 @media screen and (min-width:1300px) and (max-width:1500px) {
@@ -1718,12 +1810,30 @@ td>div>span>span,
     .snippet-img>div>div>div {
         padding: 18% 0% !important;
     }
+
+    .quickaction-video>div>div {
+        width: 70% !important;
+    }
+
+    .quickaction-video video {
+        width: calc(4 * var(--spectrum-global-dimension-static-grid-fixed-max-width) / var(--spectrum-global-dimension-static-grid-columns)) !important;
+    }
 }
 
 @media screen and (min-width:1500px) and (max-width:1750px) {
     .quick-action-hero-block>div>div:first-child {
         width: 50%;
     }
+
+    .quickaction-video>div>div {
+        width: 80% !important;
+    }
+
+    .fullEditor {
+        width: 80% !important;
+        margin: auto !important;
+    }
+
 }
 
 @media screen and (min-width:500px) and (max-width:767px) {
@@ -1783,14 +1893,11 @@ td>div>span>span,
 
     .embed-adobe {
         padding: unset !important;
+        margin-top: 5% !important;
     }
 
     .embed-adobe>div>div:first-child>p:first-child {
         width: 10% !important;
-    }
-
-    .embed-adobe>div>div:first-child>h1 {
-        width: 100% !important;
     }
 
     .embed-adobe>div>div:first-child>p:first-child,
@@ -1872,10 +1979,6 @@ td>div>span>span,
         padding: 7% 4% 5% 8% !important;
     }
 
-    .design-features-code-block>div {
-        padding: 0;
-    }
-
     .swiper-slide>div>div:nth-child(2)>h3 {
         font-size: 32px !important;
     }
@@ -1886,14 +1989,13 @@ td>div>span>span,
         margin: 2% 0;
     }
 
-    .go-to>div>h3 {
-        padding: 0 25%;
-        margin-top: 10% !important;
-    }
-
-    .why-integrate-sdk>div>p:last-child,
     .quick-action-block>div>p:last-child {
         padding: 0 24% !important;
+    }
+
+    .quickaction-video>div,
+    .design-features-code-block>div {
+        padding: 0 !important;
     }
 
     /* express editor page  */
@@ -1926,6 +2028,11 @@ td>div>span>span,
     }
 
     /* quick action page  */
+
+    .express-editor-hero-block,
+    .quick-action-hero-block {
+        margin-top: 5% !important;
+    }
 
     .quick-action-hero-block>div>div>p {
         font-size: 22px;
@@ -1974,6 +2081,10 @@ td>div>span>span,
         height: 100% !important;
     }
 
+    .faq-editor-page {
+        margin-top: 5% !important;
+    }
+
     .streamline_ability>div>div>p>span>picture>img,
     .resource-card>div,
     .embed-adobe>div>div>h1,
@@ -1985,7 +2096,9 @@ td>div>span>span,
     .embed-adobe>div>div>p:last-child,
     .bgBlue>div>div>div:nth-child(2),
     .bgBlue>div>div>div:nth-child(3),
-    .bgBlue>div>div>div:nth-child(4) {
+    .bgBlue>div>div>div:nth-child(4),
+    .quickaction-video>div>div,
+    .embed-adobe>div>div:first-child>h1 {
         max-width: 100%;
         width: 100% !important;
     }

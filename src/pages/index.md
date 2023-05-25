@@ -12,7 +12,7 @@ import img5 from './images/Crop-objects.svg'
 import img6 from './images/Quick action icon 3.svg'
 import img7 from './images/Quick action icon 4.svg'
 
-<Hero slots="image, icon, heading, text" variant="halfwidth" imagearray={[img1, img2, img3, img4, img5, img6, img7]} isCustomAnimation className="embed-adobe "/>
+<Hero slots="image, icon, heading, text" variant="halfwidth" imagearray={[img1, img2, img3, img4, img5, img6, img7]} isCustomAnimation className="embed-adobe"/>
 
 ![Adobe Express](./images/background-remove-layer-1-pexels-thyrone-paas-transparent.png)
 
@@ -28,7 +28,7 @@ Embed powerful Adobe Express capabilities into any website with Adobe Express Em
 
 - [Read More](https://developer.adobe.com/embed-sdk/docs/)
 
-<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability  express-editor"/>
+<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability express-editor fullEditor" />
 
 ![Express Editor](./images/Product-blade-block-one-image.png)
     
@@ -38,13 +38,19 @@ Users can quickly and easily create content from thousands of beautiful template
 
 - [Learn more](components/express-editor/)
 
-<AnimationTextBlock slots="heading,text" heading="One-click edits with Adobe Express quick actions "  theme="lightest"  headerElementType="h2" buttonArray={[{ label:"Learn more", link:"components/quick-action/"}]} textcontent=" Quick actions turn multistep design workflows into just a few clicks, making removing backgrounds, resizing images and merging videos faster than ever – all powered by Adobe Photoshop and Adobe Premiere Pro. Enable these powerful shortcuts in any website in minutes. "  variantsTypePrimary='secondary' variantStyleFill = "outline" videoSrcUrl={VideoCrop} isVideoReversed  homeZigZag className="zigzag-cta-two streamline_ability video-text-block"/>
+<TextBlock slots="heading,text,buttons" videoUrl={VideoCrop} variantsTypePrimary='accent' variantStyleFill = "fill" homeZigZag position="right" className="quickaction-video"/>
+
+### One-click edits with Adobe Express quick actions
+
+Quick actions turn multistep design workflows into just a few clicks, making removing backgrounds, resizing images and merging videos faster than ever – all powered by Adobe Photoshop and Adobe Premiere Pro. Enable these powerful shortcuts in any website in minutes.
+
+- [Learn more](components/quick-action/)
 
 <TitleBlock slots="heading" theme="lightest" className="sdk-title-block"/>
 
 Why integrate the Adobe Express Embed SDK?
 
-<WrapperComponent slots="content" repeat="1" theme="light" className="QuickActionSDKDevelop "/>
+<WrapperComponent slots="content" repeat="1" theme="lightest" className="QuickActionSDKDevelop "/>
 
 <WhyIntegrateSDK/>
 

@@ -2,9 +2,7 @@ import "../../styles/main.css"
 import AnimationVideo from "../videos/Adobe_full_seq.json";
 import fullSeq from '../videos/Full_Sequence.mp4'
 import { ArrowCodeSnippetSVG } from '../../components/arrow_asset.js'
-import video1 from '../videos/Adobe-Acrobat-animation-v2.mp4'
-import video2 from "../videos/Breakout-EDU-Animation v2.mp4"
-import video3 from "../videos/Letter-Animation-v3.mp4"
+import Workflow from "../embed-express-sdk/workflow.md"
 
 <Hero slots="heading, text, image" variant="fullwidth"  videoSrcUrl={fullSeq}   className="express-editor-hero-block" svgEmbded= <ArrowCodeSnippetSVG /> />
 
@@ -22,7 +20,7 @@ With the Adobe Express full editor, users start from thousands of templates to c
 
 [Learn more](https://developer.adobe.com/embed-sdk/docs/guides/full_editor/)
 
-<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
+<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability fullEditor"/>
 
 ![Streamline your users’ workflows](../images/Express-Editor-Benefits-Blade-image.png)
 
@@ -30,7 +28,7 @@ With the Adobe Express full editor, users start from thousands of templates to c
 
 With one-click, allow users to create and edit creative projects within iframes on your site. All of the tools and content they need are in one place.
 
-<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className=" zigzag-cta-two streamline_ability"/>
+<TextBlock slots="heading,text,image" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" position="right" homeZigZag className="streamline_ability fullEditor"/>
 
 ### Save your users time with templates 
 
@@ -38,7 +36,7 @@ The Adobe Express full editor unlocks an unparalleled collection of professional
 
 ![Inspire confident creators](../images/Express-Editor-Benefits-Blade-image-two.png)
 
-<TextBlock slots="image, heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability"/>
+<TextBlock slots="image,heading,text" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability fullEditor"/>
 
 ![Forge the path to customer success](../images/ExpressEditor-Benefits-Blade-image-3.svg)
 
@@ -58,27 +56,11 @@ Learn more about embedding the Adobe Express full editor in your website
 
 How does the Adobe Express full editor enhance user workflows? 
 
-<Carousel slots="image,heading, text" repeat="3" theme="light" className="carousel" videoArr={[video1,video2,video3]} videosLenArr={[26000, 25000, 31000 ]} isVideoCarusel/>
+<WrapperComponent slots="content" repeat="1" theme="light" className="wrapperforWorkflow" />
 
-![Forge the path to customer success](../images/ExpressEditor-Benefits-Blade-image-3.svg)
+<Workflow />
 
-#### Acrobat on web and desktop 
-
-The Adobe Express full editor allows users to edit images and quickly create eye-catching cover and divider pages within Acrobat.
-
-![Forge the path to customer success](./images/ExpressEditor-Benefits-Blade-image-3.svg)
-
-#### Breakout EDU 
-
-Breakout EDU is an educational game platform for teachers and students that enables users to bring more creativity to virtual games with the Adobe Express full editor.
-
-![Forge the path to customer success](../images/ExpressEditor-Benefits-Blade-image-3.svg)
-
-### Letter 
-
-Letter is an email newsletter tool that helps content creators, designers, and developers make standout communications with the Adobe Express full editor.
-
-<TextBlock slots="image , heading,text,buttons" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline"   homeZigZag className="getStarted "/>
+<TextBlock slots="image , heading,text,buttons" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="getStarted "/>
 
 ![Getting started](../images/Summary-Block-image.svg)
 
