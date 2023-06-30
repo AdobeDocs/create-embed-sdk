@@ -16,7 +16,7 @@ import ImageVideoContent from "../quick-action/image-video-mobile-content.md"
 
 Adobe Express quick actions turn multi-step image and video editing tasks into one-click edits made directly on your site  
 
-<AnnouncementBlock slots="heading, text, button" className="announcement-embed-editor quick-action snap"/>
+<AnnouncementBlock slots="heading, text, button" className="announcement-embed-editor"/>
 
 ### Professional quality results in a snap 
 
@@ -24,13 +24,13 @@ Frequently used design workflows, such as remove background or resize image, are
 
 [Learn more](https://developer.adobe.com/embed-sdk/docs/guides/quick_actions/)
 
-<TextBlock slots="heading,text" videoUrl={quick_Action_Image_resize} variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag position="left" className="quickaction-video resize-video"/>
+<TextBlock slots="heading,text" theme="lightest" className="streamline_ability  express-editor" videoUrl= {quick_Action_Image_resize} position="left"/>
 
 ### Resize image
 
 Resizing images is easy thanks to a wide array of standard and custom social media image size to choose form.
 
-<TextBlock slots="heading,text" videoUrl={quick_Action_Background_Remover} variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag position="right" className="quickaction-video resize-video streamline_ability "/>
+<TextBlock slots="heading , text  " theme="lightest" className="streamline_ability  express-editor" videoUrl={quick_Action_Background_Remover} position="right"/>
 
 ### Remove background
 
@@ -72,4 +72,4 @@ Embed quick actions in your website today to give your users access to powerful 
 
 - [Quickstart guide](https://developer.adobe.com/embed-sdk/docs/guides/quick_actions/)
 - [Try the sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample)
- 
+

@@ -28,7 +28,7 @@ Embed powerful Adobe Express capabilities into any website with Adobe Express Em
 
 - [Read More](https://developer.adobe.com/embed-sdk/docs/)
 
-<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability express-editor fullEditor" />
+<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability  express-editor"/>
 
 ![Express Editor](./images/Product-blade-block-one-image.png)
     
@@ -38,7 +38,7 @@ Users can quickly and easily create content from thousands of beautiful template
 
 - [Learn more](components/express-editor/)
 
-<TextBlock slots="heading,text,buttons" videoUrl={VideoCrop} variantsTypePrimary='accent' variantStyleFill = "fill" homeZigZag position="right" className="quickaction-video"/>
+<TextBlock slots="heading,text,buttons " theme="lightest" className="streamline_ability  express-editor" videoUrl= {VideoCrop} position="right"/>
 
 ### One-click edits with Adobe Express quick actions
 
@@ -50,7 +50,7 @@ Quick actions turn multistep design workflows into just a few clicks, making rem
 
 Why integrate the Adobe Express Embed SDK?
 
-<WrapperComponent slots="content" repeat="1" theme="lightest" className="QuickActionSDKDevelop "/>
+<WrapperComponent slots="content" repeat="1" theme="light" className="QuickActionSDKDevelop "/>
 
 <WhyIntegrateSDK/>
 
