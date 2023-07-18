@@ -25,9 +25,18 @@ module.exports = {
     },
     pages: [
       {
-        title: 'Adobe Express Embed SDK',
-        description: "Adobe Express Embed SDK",
-        path: '/'
+        title: 'Adobe Express',
+        path: 'https://developer-stage.com/express/'
+      },
+      {
+        title: 'Add-ons',
+        path: 'https://developer-stage.adobe.com/express/add-ons'
+        // path: 'https://developer.adobe.com/express-add-ons'
+      },
+      {
+        title: 'Embed SDK',
+        path: 'https://developer-stage.adobe.com/express/embed-sdk'
+        // path: 'https://developer.adobe.com/embed-sdk'
       },
       {
         title: 'Components',
@@ -46,8 +55,16 @@ module.exports = {
       },
       {
         title: 'Documentation',
-        description: "Docs",
-        path: 'https://developer.adobe.com/express/embed-sdk/docs/'
+        menu: [
+          {
+            title: 'Add-ons',
+            path: 'https://developer.adobe.com/express/add-ons/docs/guides/'
+          },
+          {
+            title: 'Embed SDK',
+            path: 'https://developer.adobe.com/express/embed-sdk/docs/guides/'
+          },
+        ]
       },
       {
         title: 'FAQs',
@@ -55,25 +72,6 @@ module.exports = {
         path: '/faq'
       },
     ],
-    subMenuPages: [{
-      title: '',
-      path: '',
-      icon:'',
-      pages: [
-        {
-          title: '',
-          path: ''
-        }
-      ]
-    }],
-    salesFAQMenus: [{
-      title: '',
-      path: '',
-    }],
-    techSupportFAQMenus: [{
-        title: '',
-        path: '',
-    }]
   },
   plugins: [`@adobe/gatsby-theme-aio`],
   pathPrefix: process.env.PATH_PREFIX || '/embed-sdk/'
