@@ -42,7 +42,7 @@ The Adobe Express full editor unlocks an unparalleled collection of professional
 
 ![Forge the path to customer success](../images/ExpressEditor-Benefits-Blade-image-3.svg)
 
-### Customize for your users’ needs 
+### Customize for your users’ needs
 
 Define where and how the Adobe Express full editor is launched to ensure users get to the right tools and templates when they need them.
 
@@ -58,21 +58,15 @@ Learn more about embedding the Adobe Express full editor in your website
 
 How does the Adobe Express full editor enhance user workflows? 
 
-<Carousel slots="image,heading, text" repeat="3" theme="light" className="carousel" videoArr={[video1,video2,video3]} videosLenArr={[26000, 25000, 31000 ]} isVideoCarusel/>
-
-![Forge the path to customer success](../images/ExpressEditor-Benefits-Blade-image-3.svg)
+<VideoCarousel slots="heading, text" repeat="3" theme="light" videos={[video1,video2,video3]} className="videoCarousel" isCenter variant="halfWidth" />
 
 #### Acrobat on web and desktop 
 
 The Adobe Express full editor allows users to edit images and quickly create eye-catching cover and divider pages within Acrobat.
 
-![Forge the path to customer success](./images/ExpressEditor-Benefits-Blade-image-3.svg)
-
 #### Breakout EDU 
 
 Breakout EDU is an educational game platform for teachers and students that enables users to bring more creativity to virtual games with the Adobe Express full editor.
-
-![Forge the path to customer success](../images/ExpressEditor-Benefits-Blade-image-3.svg)
 
 ### Letter 
 
