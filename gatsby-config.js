@@ -21,12 +21,12 @@ module.exports = {
     pageImage: process.env.PAGE_IMAGE || 'dcsdk-main.jpg',
     docs: {
       title: 'Get started',
-      path: 'https://developer.adobe.com/embed-sdk/docs/guides/'
+      path: 'https://developer.adobe.com/express/embed-sdk/docs/guides/'
     },
     pages: [
       {
         title: 'Adobe Express Embed SDK',
-        description: "Express Embed SDK",
+        description: "Adobe Express Embed SDK",
         path: '/'
       },
       {
@@ -47,7 +47,7 @@ module.exports = {
       {
         title: 'Documentation',
         description: "Docs",
-        path: 'https://developer.adobe.com/embed-sdk/docs/'
+        path: 'https://developer.adobe.com/express/embed-sdk/docs/'
       },
       {
         title: 'FAQs',
