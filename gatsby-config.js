@@ -26,32 +26,15 @@ module.exports = {
     pages: [
       {
         title: 'Adobe Express',
-        path: 'https://developer-stage.com/express/'
+        path: 'https://developer-stage.adobe.com/express/'
       },
       {
         title: 'Add-ons',
         path: 'https://developer-stage.adobe.com/express/add-ons'
-        // path: 'https://developer.adobe.com/express-add-ons'
       },
       {
         title: 'Embed SDK',
         path: 'https://developer-stage.adobe.com/express/embed-sdk'
-        // path: 'https://developer.adobe.com/embed-sdk'
-      },
-      {
-        title: 'Components',
-        menu: [
-          {
-            title: 'Full editor',
-            // description: 'Adobe Express Editor',
-            path: 'components/express-editor/',
-          },
-          {
-            title: 'Quick actions',
-            // description: "Quick Actions",
-            path: 'components/quick-action/'
-          },
-        ]
       },
       {
         title: 'Documentation',
