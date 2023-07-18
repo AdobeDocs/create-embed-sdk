@@ -21,7 +21,7 @@ module.exports = {
     pageImage: process.env.PAGE_IMAGE || 'dcsdk-main.jpg',
     docs: {
       title: 'Get started',
-      path: 'https://developer.adobe.com/express/embed-sdk/docs/guides/'
+      path: 'https://developer-stage.adobe.com/express/embed-sdk/docs/guides/'
     },
     pages: [
       {
@@ -58,11 +58,11 @@ module.exports = {
         menu: [
           {
             title: 'Add-ons',
-            path: 'https://developer.adobe.com/express/add-ons/docs/guides/'
+            path: 'https://developer-stage.adobe.com/express/add-ons/docs/guides/'
           },
           {
             title: 'Embed SDK',
-            path: 'https://developer.adobe.com/express/embed-sdk/docs/guides/'
+            path: 'https://developer-stage.adobe.com/express/embed-sdk/docs/guides/'
           },
         ]
       },
