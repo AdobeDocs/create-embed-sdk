@@ -34,7 +34,7 @@ module.exports = {
       },
       {
         title: 'Embed SDK',
-        path: 'https://developer-stage.adobe.com/express/embed-sdk'
+        path: '/'
       },
       {
         title: 'Documentation',
