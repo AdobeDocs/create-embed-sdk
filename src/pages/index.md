@@ -1,12 +1,13 @@
 import "../styles/main.css"
-import bgImg from './images/Summary-background.svg'
 import TrytheDemo from "./express-embed-sdk/trydemo.md"
 import EditingTool from "./express-embed-sdk/editing-tools.md"
 import LearnMore from "./express-embed-sdk/learn-more.md"
-import DesignForDeveloper from "./express-embed-sdk/design-for-develop.md"
 import EditImageTable from "./express-embed-sdk/edit-photo.md"
 import EditVideoTable from "./express-embed-sdk/edit-video.md"
-
+import bgImg from "./images/Summary_BgImage.jpg"
+import DesignForDeveloper from "./express-embed-sdk/design-for-develop.md"
+import MobileEditPhoto from "./express-embed-sdk/mobile-edit-photo.md"
+import MobileEditVideo from "./express-embed-sdk/mobile-edit-video.md"
 
 <Hero slots="heading, text, buttons, assetsImg" customLayout variant="halfwidth" className="express-sdk-hero"/>
 
@@ -15,7 +16,7 @@ import EditVideoTable from "./express-embed-sdk/edit-video.md"
 Add powerful Adobe Express capabilities to your web application with Adobe Express Embed SDK, a customizable Javascript Library
 
 - [Get started](https://developer.adobe.com/express-add-ons)
-- [Try the demo ](https://developer.adobe.com/embed-sdk)
+- [Try the demo ](https://demo.expressembed.com/)
 
 homeExpressLandingPage
 
@@ -25,13 +26,13 @@ homeExpressLandingPage
 
 <ImageTextBlock slots="image,heading,text" repeat="2" theme="lightest" className="editor-options" isCenter variantsTypePrimary='secondary'/>
 
-![Customize within Adobe Acrobat](./images/AcrobatEmbed.png)
+![Customize within Adobe Acrobat](./images/Embed_FullEditor.png)
 
 ## Have it all with the full editor.
 
 Unlock access to thousands of templates, fonts, stock images, and videos right within your web application.
 
-![Creative Cloud desktop](./images/CCEmbed.png)
+![Creative Cloud desktop](./images/Embed_IntegratedQuickActions.png)
 
 ## Pick only what users need with quick actions.
 
@@ -57,9 +58,9 @@ Provide users with contextual and streamlined editing tools that match the ways 
 
 After you embed the full editor, users can quickly and easily edit existing files or create new content like social media graphics, flyers, and ads from thousands of creative templates and design assets.
 
-![Adobe Express functionality](./images/AcrobatEmbed.png)
+![Adobe Express functionality](./images/Embed_Templates.png)
 
-- [Learn more](https://demo.expressembed.com)
+- [Learn more](https://developer.adobe.com/embed-sdk/docs/guides/full_editor/)
 
 <TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power viewDocs" position="right" />
 
@@ -67,9 +68,9 @@ After you embed the full editor, users can quickly and easily edit existing file
 
 Embed image and video editing capabilities with quick actions like Remove Background, Crop Image, and Merge Videos -- all powered by Adobe Express
 
-![Adobe Express functionality](./images/AcrobatEmbed.png)
+![Adobe Express functionality](./images/Embed_QuickActions.png)
 
-- [View documentation](https://developer.adobe.com/embed-sdk/docs)
+- [View documentation](https://developer.adobe.com/embed-sdk/docs/guides/quick_actions/)
 
 <TitleBlock slots="heading" theme="light" className="users-work" />
 
@@ -81,40 +82,42 @@ Embed image and video editing capabilities with quick actions like Remove Backgr
 
 <EditVideoTable/>
 
-<WrapperComponent slots="content" repeat="1" theme="dark" className="code-block bgBlue"/>
+<WrapperComponent slots="content" repeat="1" theme="light" className="mobileEdit"/>
+
+<MobileEditPhoto />
+
+<WrapperComponent slots="content" repeat="1" theme="light" className="mobileEdit"/>
+
+<MobileEditVideo />
+ 
+<WrapperComponent slots="content" repeat="1" theme="lightest" className="code-block"/>
 
 <DesignForDeveloper/>
 
-<TextBlock slots="heading" className="announcement resourceHeader" theme="lightest"/>
+<TitleBlock slots="heading" theme="lightest" className="users-work" />
 
 ### We've got your resources covered.
 
 
-<MiniResourceCard slots="image,heading,link" repeat="3" theme="lightest" inRow="3" className="mini-card" />
+<MiniResourceCard slots="image,heading" repeat="3" theme="lightest" inRow="3" className="mini-card support-tools" />
 
-![Adobe Express logo over a gradient background](./images/code.jpg)
+![Community forum](./images/Embed-forums.png)
 
 ### Community forum
 
-[Link to blog post](https://adobe.ly/expressaddons)
-
-![Icon showing a code block](./images/code.jpg)
+![Partner with us](./images/Blog.svg)
 
 ### Partner with us
 
-[Link to code samples](https://developer.adobe.com/express-add-ons/docs/samples/)
+![Code samples](./images/code-samples.svg)
 
-![Icon showing a changelog](./images/code.jpg)
-
-### Code sample
-
-[Link to changelog](https://developer.adobe.com/express-add-ons/docs/references/changelog//)
+### Code samples
 
 <TeaserBlock  slots="heading,text,buttons" textColor="white" bgURL={bgImg} className="viewAddOn" variant="fullwidth"/>
 
-### Let's do this.
+<p className="teaserBlockCustomHeading">Let's do this.</p>
 
-view our developer quickstart guide to embedding Adobe Express capabilities into your web application, or reach out to partner with Adobe.
+View our developer quickstart guide to start embedding Adobe Express capabilities into your web application, or reach out to the partner with Adobe.
 
-- [View quickstart guide](https://developer-stage.adobe.com/express/add-ons)
-- [Partner with us](https://developer-stage.adobe.com/express/embed-sdk)
+- [View quickstart guide](https://developer.adobe.com/embed-sdk/docs/guides/)
+- [Partner with us](https://new.express.adobe.com/) 
