@@ -327,10 +327,6 @@ tr {
     background-color: #1f2a49 !important;
 }
 
-.design-features-code-block {
-    padding: 5% 0 2% 2%;
-}
-
 .design-features-code-block>div {
     display: flex;
     flex-direction: column;
@@ -344,10 +340,6 @@ tr {
     letter-spacing: 0.7px;
 }
 
-.design-features-code-block>div>div:first-child {
-    max-width: 60%;
-}
-
 .bgBlue {
     padding: 0 !important;
     background-color: #202947 !important;
@@ -356,7 +348,7 @@ tr {
 }
 
 .bgBlue>div>div {
-    grid-template-columns: 300px calc(100% - 750px);
+    grid-template-columns: 300px calc(100% - 650px);
 }
 
 .bgBlue .tabItem:hover,
@@ -742,6 +734,18 @@ pre>div>button,
 
     .viewAddOn>div>div {
         width: 70% !important
+    }
+
+}
+
+@media screen and (min-width:1441px) and (max-width : 1500px) {
+
+    .editingDescription>div {
+        width: 80% !important;
+    }
+
+    td div>div>p {
+        margin: 0 0 0 10px !important;
     }
 
 }
