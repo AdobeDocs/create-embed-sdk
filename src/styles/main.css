@@ -115,7 +115,7 @@
 }
 
 .editingDescription>div {
-    width: 60% !important;
+    width: 90% !important;
 }
 
 .context>div {
@@ -202,7 +202,6 @@ td {
 
 td div>div {
     display: flex;
-    gap: 10px;
     align-items: center;
 }
 
@@ -327,10 +326,6 @@ tr {
     background-color: #1f2a49 !important;
 }
 
-.design-features-code-block {
-    padding: 5% 0 2% 2%;
-}
-
 .design-features-code-block>div {
     display: flex;
     flex-direction: column;
@@ -344,19 +339,16 @@ tr {
     letter-spacing: 0.7px;
 }
 
-.design-features-code-block>div>div:first-child {
-    max-width: 60%;
-}
-
 .bgBlue {
     padding: 0 !important;
     background-color: #202947 !important;
-    width: 50%;
+    width: 60%;
+    overflow-x: auto !important;
     margin: auto auto 5% auto !important;
 }
 
 .bgBlue>div>div {
-    grid-template-columns: 300px calc(100% - 750px);
+    grid-template-columns: 300px calc(100% - 650px);
 }
 
 .bgBlue .tabItem:hover,
@@ -576,6 +568,7 @@ pre>div>button,
     .bgBlue {
         padding: 0 !important;
         overflow: hidden;
+
     }
 
     .bgBlue .mobileTabView {
@@ -742,6 +735,18 @@ pre>div>button,
 
     .viewAddOn>div>div {
         width: 70% !important
+    }
+
+}
+
+@media screen and (min-width:1441px) and (max-width : 1500px) {
+
+    .editingDescription>div {
+        width: 80% !important;
+    }
+
+    td div>div>p {
+        margin: 0 0 0 10px !important;
     }
 
 }
