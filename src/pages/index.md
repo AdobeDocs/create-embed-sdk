@@ -11,12 +11,12 @@ import MobileEditVideo from "./express-embed-sdk/mobile-edit-video.md"
 
 <Hero slots="heading, text, buttons, assetsImg" customLayout variant="halfwidth" className="express-sdk-hero"/>
 
-## Bring the best of Adobe express to your web application. 
+## Bring the best of Adobe express to your web application.
 
-Add powerful Adobe Express capabilities to your web application with Adobe Express Embed SDK, a customizable Javascript Library
+Add powerful Adobe Express capabilities to your web application with Adobe Express Embed SDK, a customizable Javascript library.
 
-- [Get started](https://developer.adobe.com/express-add-ons)
-- [Try the demo ](https://demo.expressembed.com/)
+- [Get started](https://developer-stage.adobe.com/express/add-ons)
+- [Try the demo ](https://demo-stage.expressembed.com/)
 
 homeExpressLandingPage
 
@@ -60,7 +60,7 @@ After you embed the full editor, users can quickly and easily edit existing file
 
 ![Adobe Express functionality](./images/Embed_Templates.png)
 
-- [Learn more](https://developer.adobe.com/embed-sdk/docs/guides/full_editor/)
+- [Learn more](https://developer-stage.adobe.com/express/embed-sdk/docs/guides/full_editor/)
 
 <TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power viewDocs" position="right" />
 
@@ -70,7 +70,7 @@ Embed image and video editing capabilities with quick actions like Remove Backgr
 
 ![Adobe Express functionality](./images/Embed_QuickActions.png)
 
-- [View documentation](https://developer.adobe.com/embed-sdk/docs/guides/quick_actions/)
+- [View documentation](https://developer-stage.adobe.com/express/embed-sdk/docs/guides/quick_actions/)
 
 <TitleBlock slots="heading" theme="light" className="users-work" />
 
@@ -119,5 +119,5 @@ Embed image and video editing capabilities with quick actions like Remove Backgr
 
 View our developer quickstart guide to start embedding Adobe Express capabilities into your web application, or reach out to the partner with Adobe.
 
-- [View quickstart guide](https://developer.adobe.com/embed-sdk/docs/guides/)
-- [Partner with us](https://new.express.adobe.com/) 
+- [View quickstart guide](https://developer-stage.adobe.com/express/embed-sdk/docs/guides/)
+- [Partner with us](https://new.express.adobe.com/)
