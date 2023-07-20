@@ -1,71 +1,123 @@
 import "../styles/main.css"
-import AnimationVideo from "./videos/Adobe_DCP_Marquee_Animation.json";
-import {AnimationTextBlock} from "../components/AnimationTextBlock"
-import WhyIntegrateSDK from "./embed-express-sdk/why-integrate-express-embed-sdk.md";
-import DesignForDeveloper from "./embed-express-sdk/design-for-develop.md"
-import VideoCrop from './videos/home_page_text_crop.mp4'
-import img1 from './images/background-remove-layer-2-pexels-thyrone.png'
-import img2 from './images/Quick action icon 1.svg'
-import img3 from './images/Quick action icon 2.svg'
-import img4 from './images/Video-Crop-still-frame.png'
-import img5 from './images/Crop-objects.svg'
-import img6 from './images/Quick action icon 3.svg'
-import img7 from './images/Quick action icon 4.svg'
+import TrytheDemo from "./express-embed-sdk/trydemo.md"
+import EditingTool from "./express-embed-sdk/editing-tools.md"
+import LearnMore from "./express-embed-sdk/learn-more.md"
+import EditImageTable from "./express-embed-sdk/edit-photo.md"
+import EditVideoTable from "./express-embed-sdk/edit-video.md"
+import bgImg from "./images/Summary_BgImage.jpg"
+import DesignForDeveloper from "./express-embed-sdk/design-for-develop.md"
+import MobileEditPhoto from "./express-embed-sdk/mobile-edit-photo.md"
+import MobileEditVideo from "./express-embed-sdk/mobile-edit-video.md"
 
-<Hero slots="image, icon, heading, text" variant="halfwidth" imagearray={[img1, img2, img3, img4, img5, img6, img7]} isCustomAnimation className="embed-adobe"/>
+<Hero slots="heading, text, buttons, assetsImg" customLayout variant="halfwidth" className="express-sdk-hero"/>
 
-![Adobe Express](./images/background-remove-layer-1-pexels-thyrone-paas-transparent.png)
+## Bring the best of Adobe express to your web application. 
 
-![Adobe Express](./images/Adobe-Express-logo-RGB.png)
+Add powerful Adobe Express capabilities to your web application with Adobe Express Embed SDK, a customizable Javascript Library
 
-# Unlock your users’ creativity
+- [Get started](https://developer.adobe.com/express-add-ons)
+- [Try the demo ](https://demo.expressembed.com/)
 
-Put the right creative tools and content in the hands of your users with the Adobe Express Embed SDK – including the full editor and quick actions.
+homeExpressLandingPage
 
-<DCSummaryBlock slots="text, buttons" theme="dark"  buttonPositionRight btnVariant="cta" className="How-to-get-started  ms-pa-page hero-below-compo ms-pa-summary-blade tryForFree" />
+<TitleBlock slots="heading" theme="lightest" className="right-capabilities" />
 
-Embed powerful Adobe Express capabilities into any website with Adobe Express Embed SDK, a customizable JavaScript library.
+### Put the right capabilities forward.
 
-- [Read More](https://developer.adobe.com/embed-sdk/docs/)
+<ImageTextBlock slots="image,heading,text" repeat="2" theme="lightest" className="editor-options" isCenter variantsTypePrimary='secondary'/>
 
-<TextBlock slots="image, heading,text,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="streamline_ability  express-editor"/>
+![Customize within Adobe Acrobat](./images/Embed_FullEditor.png)
 
-![Express Editor](./images/Product-blade-block-one-image.png)
-    
-### Make standout content with the Adobe Express full editor 
+## Have it all with the full editor.
 
-Users can quickly and easily create content from thousands of beautiful templates and design assets for social media content, logos, and more. It only takes a few lines of code to embed the full editor in any website. 
+Unlock access to thousands of templates, fonts, stock images, and videos right within your web application.
 
-- [Learn more](components/express-editor/)
+![Creative Cloud desktop](./images/Embed_IntegratedQuickActions.png)
 
-<TextBlock slots="heading,text,buttons " theme="lightest" className="streamline_ability  express-editor" videoUrl= {VideoCrop} position="right"/>
+## Pick only what users need with quick actions.
 
-### One-click edits with Adobe Express quick actions
+Provide users with contextual and streamlined editing tools that match the ways they create.
 
-Quick actions turn multistep design workflows into just a few clicks, making removing backgrounds, resizing images and merging videos faster than ever – all powered by Adobe Photoshop and Adobe Premiere Pro. Enable these powerful shortcuts in any website in minutes.
+<TrytheDemo />
 
-- [Learn more](components/quick-action/)
+<TitleBlock slots="heading" theme="light" className="users-work" />
 
-<TitleBlock slots="heading" theme="lightest" className="sdk-title-block"/>
+### Create. Edit. Wherever your users work.
 
-Why integrate the Adobe Express Embed SDK?
+<WrapperComponent slots="content" repeat="1" theme="light" className="editingDescription" />
 
-<WrapperComponent slots="content" repeat="1" theme="light" className="QuickActionSDKDevelop "/>
+<EditingTool /> 
 
-<WhyIntegrateSDK/>
+<WrapperComponent slots="content" repeat="1" theme="light" className="learnmoreBtn" />
 
-<WrapperComponent slots="content" repeat="1" theme="lightest" className="resource-card "/>
+<LearnMore />
+
+<TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power createTemplate" position="left" />
+
+### Enable users to edit existing files, create from scratch, or create from templates.
+
+After you embed the full editor, users can quickly and easily edit existing files or create new content like social media graphics, flyers, and ads from thousands of creative templates and design assets.
+
+![Adobe Express functionality](./images/Embed_Templates.png)
+
+- [Learn more](https://developer.adobe.com/embed-sdk/docs/guides/full_editor/)
+
+<TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power viewDocs" position="right" />
+
+### Save your users time with specific one-click editing tools.
+
+Embed image and video editing capabilities with quick actions like Remove Background, Crop Image, and Merge Videos -- all powered by Adobe Express
+
+![Adobe Express functionality](./images/Embed_QuickActions.png)
+
+- [View documentation](https://developer.adobe.com/embed-sdk/docs/guides/quick_actions/)
+
+<TitleBlock slots="heading" theme="light" className="users-work" />
+
+### Quick actions
+
+<FormWrapperComponent slots="content" repeat="2" theme="light" className="editTable"/>
+
+<EditImageTable/>
+
+<EditVideoTable/>
+
+<WrapperComponent slots="content" repeat="1" theme="light" className="mobileEdit"/>
+
+<MobileEditPhoto />
+
+<WrapperComponent slots="content" repeat="1" theme="light" className="mobileEdit"/>
+
+<MobileEditVideo />
+ 
+<WrapperComponent slots="content" repeat="1" theme="lightest" className="code-block"/>
 
 <DesignForDeveloper/>
 
-<TextBlock slots="image,heading,text,buttons" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="getStarted "/>
+<TitleBlock slots="heading" theme="lightest" className="users-work" />
 
-![Getting Started](./images/Summary-Block-image.svg)
+### We've got your resources covered.
 
-## Getting started
 
-Unlock Adobe Express editing capabilities for your users by embedding the SDK in your website. Read our developer quickstart guide or try the sample to get started.
+<MiniResourceCard slots="image,heading" repeat="3" theme="lightest" inRow="3" className="mini-card support-tools" />
 
-- [Quickstart guide](https://developer.adobe.com/embed-sdk/docs/guides/)
-- [Try the sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample)
- 
+![Community forum](./images/Embed-forums.png)
+
+### Community forum
+
+![Partner with us](./images/Blog.svg)
+
+### Partner with us
+
+![Code samples](./images/code-samples.svg)
+
+### Code samples
+
+<TeaserBlock  slots="heading,text,buttons" textColor="white" bgURL={bgImg} className="viewAddOn" variant="fullwidth"/>
+
+<p className="teaserBlockCustomHeading">Let's do this.</p>
+
+View our developer quickstart guide to start embedding Adobe Express capabilities into your web application, or reach out to the partner with Adobe.
+
+- [View quickstart guide](https://developer.adobe.com/embed-sdk/docs/guides/)
+- [Partner with us](https://new.express.adobe.com/) 
