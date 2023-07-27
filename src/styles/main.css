@@ -115,7 +115,7 @@
 }
 
 .editingDescription>div {
-    width: 90% !important;
+    width: 80% !important;
 }
 
 .context>div {
@@ -232,7 +232,7 @@ tr {
 }
 
 .editTable>div {
-    width: 60%;
+    width: 70%;
     margin: auto;
     gap: 10%;
 }
@@ -255,16 +255,15 @@ tr {
 }
 
 .mini-card>div>div {
-    display: flex !important;
-    justify-content: center !important;
-}
-
-.mini-card>div>div>div {
-    box-shadow: 0 9px 15px 5px #e6e6e6;
     width: 100% !important;
     margin: 0 !important;
+    box-shadow: 0 9px 15px 5px #e6e6e6 !important;
 }
 
+.mini-card a>div:last-child{
+    border: none !important;
+    height: 67px !important;
+}
 
 .mini-card>div>div>div>div {
     height: 100px !important;
@@ -476,6 +475,11 @@ pre>div>button,
 
     .mini-card>div>div>div>div:nth-child(2) {
         padding: 0 0 0 2% !important;
+    }
+
+    .mini-card a>div:last-child {
+        height: 60px !important;
+        padding: var(--spectrum-global-dimension-size-200) var(--spectrum-global-dimension-size-100) var(--spectrum-global-dimension-size-200) var(--spectrum-global-dimension-size-50);
     }
 }
 
