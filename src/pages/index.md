@@ -99,19 +99,24 @@ Embed image and video editing capabilities with quick actions like Remove Backgr
 ### We've got your resources covered.
 
 
-<MiniResourceCard slots="image,heading" repeat="3" theme="lightest" inRow="3" className="mini-card support-tools" />
+<MiniResourceCard slots="image,heading,link" repeat="3" theme="lightest" inRow="3" className="mini-card support-tools" />
 
 ![Community forum](./images/Embed-forums.png)
 
 ### Community forum
 
+[Link to community forum](https://adobe.ly/expressaddons)
+
 ![Partner with us](./images/Blog.svg)
 
 ### Partner with us
 
-![Code samples](./images/code-samples.svg)
+[Link to partner](https://adobe.ly/expressaddons)
 
+![Code samples](./images/code-samples.svg)
 ### Code samples
+
+[Link to code samples](https://adobe.ly/expressaddons)
 
 <TeaserBlock  slots="heading,text,buttons" textColor="white" bgURL={bgImg} className="viewAddOn" variant="fullwidth"/>
 
