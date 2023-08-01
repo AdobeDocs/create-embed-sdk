@@ -138,10 +138,15 @@
     padding: 3% 5% 0% 5% !important;
 }
 
-
-.context>div>h3 {
-    padding: 10% 0% 0% 0% !important;
+.context>div>p>span>img,
+.context>div>p:first-of-type {
+    height: 150px !important;
 }
+
+.context>div>p:last-of-type {
+    height: auto !important;
+}
+
 
 .learnmoreBtn>div>div,
 #tabView0 pre,
@@ -739,7 +744,7 @@ pre>div>button,
 
 @media screen and (min-width:1300px) and (max-width:1500px) {
     .editingDescription>div {
-        width: 90% !important;
+        width: 80% !important;
     }
 
     .explore>div {
