@@ -8,25 +8,25 @@ import QuickActionCodeBlock from "./quick-action-code-block.md";
 
 The Adobe Express Embed SDK integrates Adobe Express editing capabilities and content in your web application with just a few lines of code.
 
-- [View documentation](https://developer.adobe.com/embed-sdk/docs/)
+- [View documentation](https://developer.adobe.com/express/embed-sdk/docs/guides/)
 - [Try the demo](https://demo.expressembed.com/)
 
 <TabsBlock orientation="vertical" slots="heading, image, content" repeat="3"  theme="dark" className='bgBlue ' />
 
 ## Initialize SDK
 
-![EMPTY_ALT](../images/initialize-SDK.svg)
+![Code for initializing SDK](../images/initialize-SDK.svg)
 
 <InitialSDK/>
 
 ### Full editor
 
-![EMPTY_ALT](../images/Express-Editor.svg)
+![Code to invoke full editor](../images/Express-Editor.svg)
 
 <ExpressEditorCodeBlock/>
 
 ### Quick actions
 
-![EMPTY_ALT](../images/quick-actions.svg)
+![Code to invoke quick actions](../images/quick-actions.svg)
 
 <QuickActionCodeBlock/>

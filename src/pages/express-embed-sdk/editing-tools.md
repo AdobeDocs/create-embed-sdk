@@ -5,7 +5,7 @@
 
 ### Empower any user to make unique content.
 
-Users of all skill levels can create confidently and quickly with the Adobe Express full editor and quick actions.
+Users of all skill levels can create with the Adobe Express full editor and quick actions.
 
 <TextBlock slots="image, heading, text" width="33%" theme="light" className="context" />
 
@@ -13,7 +13,7 @@ Users of all skill levels can create confidently and quickly with the Adobe Expr
 
 ### Keep users in context.
 
-Supply users with everything they need to complete their creative tasks without leaving your job web application.
+Supply users with the tools to complete creative tasks without leaving your web application.
 
 <TextBlock slots="image, heading, text" width="33%" theme="light" className="context" />
 
@@ -21,4 +21,4 @@ Supply users with everything they need to complete their creative tasks without 
 
 ### Bring users the right tools, right out of the box.
 
-Seamlessly integrate new Adobe features in no time, without the fuss of custom development.
+Seamlessly integrate editing capabilities, without custom development.
