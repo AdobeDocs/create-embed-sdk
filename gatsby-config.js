@@ -12,25 +12,14 @@
 
 module.exports = {
   siteMetadata: {
-    siteTitle: 'Adobe Developers',
-    author: process.env.AUTHOR || 'Adobe I/O — Adobe Developers',
-    creator: process.env.CREATOR || '@adobedevs',
-    siteUrl: process.env.SITE_URL || 'https://developer.adobe.com/',
-    baseUrl: process.env.BASEURL || '',
-    productionDomain: process.env.PRODUCTION_DOMAIN || 'https://www.adobe.io',
-    pageImage: process.env.PAGE_IMAGE || 'dcsdk-main.jpg',
-    docs: {
-      title: 'Get started',
-      path: 'https://developer-stage.adobe.com/express/embed-sdk/docs/guides/'
-    },
     pages: [
       {
         title: 'Adobe Express',
-        path: 'https://developer-stage.adobe.com/express/'
+        path: 'https://developer.adobe.com/express/'
       },
       {
         title: 'Add-ons',
-        path: 'https://developer-stage.adobe.com/express/add-ons'
+        path: 'https://developer.adobe.com/express/add-ons'
       },
       {
         title: 'Embed SDK',
@@ -41,19 +30,14 @@ module.exports = {
         menu: [
           {
             title: 'Add-ons',
-            path: 'https://developer-stage.adobe.com/express/add-ons/docs/guides/'
+            path: 'https://developer.adobe.com/express/add-ons/docs/guides/'
           },
           {
             title: 'Embed SDK',
-            path: 'https://developer-stage.adobe.com/express/embed-sdk/docs/guides/'
+            path: 'https://developer.adobe.com/express/embed-sdk/docs/guides/'
           },
         ]
-      },
-      {
-        title: 'FAQs',
-        description: "FAQ",
-        path: '/faq'
-      },
+      }
     ],
   },
   plugins: [`@adobe/gatsby-theme-aio`],

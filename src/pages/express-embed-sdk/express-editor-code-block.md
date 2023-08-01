@@ -1,6 +1,6 @@
 <CodeBlock slots="heading, code" repeat="1" languages=" js" />
 
-#### Node js
+#### Node.js
 
 ```js
 embedSDK.createDesign({
