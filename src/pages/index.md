@@ -1,3 +1,31 @@
+---
+keywords:
+  - Adobe Express Embed SDK
+  - Adobe Express
+  - Adobe Express embedded editor
+  - Embed editor
+  - Quick actions
+  - Templates
+  - Generative AI
+  - Remove background
+  - Resize image
+  - Resize video
+  - Crop image
+  - Crop video
+  - Trim video
+  - Merge videos
+  - Convert to GIF
+  - Convert to MP4
+  - Animate from audio
+  - Convert to JPG
+  - Convert to PNG
+  - Convert to SVG
+title: Adobe Express Embed SDK
+description: Adobe Express Embed SDK is a customizable JavaScript library that allows you to embed powerful editing capabilities in your own web application.
+contributors:
+  - https://github.com/amandahuarng
+---
+
 import "../styles/main.css"
 import TrytheDemo from "./express-embed-sdk/trydemo.md"
 import EditingTool from "./express-embed-sdk/editing-tools.md"
@@ -13,7 +41,7 @@ import MobileEditVideo from "./express-embed-sdk/mobile-edit-video.md"
 
 ## Bring the best of Adobe Express to your web application.
 
-Add powerful [Adobe Express](https://adobe.com/express) capabilities to your web application with Adobe Express Embed SDK, a customizable Javascript library.
+Add powerful [Adobe Express](https://adobe.com/express) capabilities to your web application with Adobe Express Embed SDK, a customizable JavaScript library.
 
 - [Get started](https://developer.adobe.com/express/embed-sdk/docs/guides)
 - [Try the demo](https://demo.expressembed.com/)
@@ -116,7 +144,7 @@ Embed image and video editing capabilities with quick actions like Remove Backgr
 
 ### Code samples
 
-[Github repo with Embed SDK sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/sample)
+[Github repo with Embed SDK sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/v3-sample)
 
 <TeaserBlock  slots="heading,text,buttons" textColor="white" bgURL={bgImg} className="viewAddOn" variant="fullwidth"/>
 
