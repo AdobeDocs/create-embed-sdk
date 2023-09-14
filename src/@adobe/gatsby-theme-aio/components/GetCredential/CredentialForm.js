@@ -115,10 +115,6 @@ const CredentialForm = ({ formProps, credentialType, service }) => {
   useEffect(() => {
 
     const requiredFields = Array.from(credentialForm?.children || []).filter(child => child?.props?.required || child.type.name === "CredentialName")?.map(child => child.type.name);
-
-    if (requiredFields.includes("Downloads") || formData['Downloads']) {
-      requiredFields.push("Download");
-    };
     const isValidCredentialName = credentialNameRegex.test(formData.CredentialName);
     const validateAllowedOrigins = formData['AllowedOrigins']?.split(',').map((data) => hostnameRegex.test(data.trim()));
     const isAllowedOriginsValid = requiredFields.includes("AllowedOrigins") ? validateAllowedOrigins?.every((value) => value === true) && validateAllowedOrigins.length <= 5 : true;
