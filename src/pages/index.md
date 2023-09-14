@@ -8,6 +8,7 @@ import bgImg from "./images/Summary_BgImage.jpg"
 import DesignForDeveloper from "./express-embed-sdk/design-for-develop.md"
 import MobileEditPhoto from "./express-embed-sdk/mobile-edit-photo.md"
 import MobileEditVideo from "./express-embed-sdk/mobile-edit-video.md"
+import {GetCredentialExternal} from "../components/GetCredentialExternal.js"
 
 <Hero slots="heading, text, buttons, assetsImg" customLayout variant="halfwidth" className="express-sdk-hero"/>
 
@@ -19,6 +20,8 @@ Add powerful Adobe Express capabilities to your web application with Adobe Expre
 - [Try the demo ](https://demo-stage.expressembed.com/)
 
 homeExpressLandingPage
+
+<GetCredentialExternal />
 
 <TitleBlock slots="heading" theme="lightest" className="right-capabilities" />
 

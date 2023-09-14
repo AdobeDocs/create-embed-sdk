@@ -10,6 +10,8 @@
  * governing permissions and limitations under the License.
  */
 
+const { createProxyMiddleware } = require("http-proxy-middleware");
+
 module.exports = {
   siteMetadata: {
     siteTitle: 'Adobe Developers',
@@ -57,5 +59,15 @@ module.exports = {
     ],
   },
   plugins: [`@adobe/gatsby-theme-aio`],
-  pathPrefix: process.env.PATH_PREFIX || '/express/embed-sdk/'
+  pathPrefix: process.env.PATH_PREFIX || '/express/embed-sdk/',
+  developMiddleware: app => {
+    app.use(
+      "/console/api",
+      createProxyMiddleware({
+        target: "https://developer-stage.adobe.com",
+        secure: false,
+        changeOrigin: true,
+      })
+    )
+  },
 };
