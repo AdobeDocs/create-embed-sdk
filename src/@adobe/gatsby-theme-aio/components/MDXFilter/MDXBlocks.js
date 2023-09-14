@@ -46,6 +46,8 @@ import { TeaserBlock } from "@adobe/gatsby-theme-aio/src/components/TeaserBlock"
 import { VideoCarousel } from '@adobe/gatsby-theme-aio/src/components/VideoCarousel';
 import { MiniResourceCard } from '@adobe/gatsby-theme-aio/src/components/MiniResourceCard';
 import { ImageTextBlock } from '@adobe/gatsby-theme-aio/src/components/ImageTextBlock';
+import { Toast } from '../Toast';
+import { GetCredential } from "../GetCredential";
 
 export const MDXBlocks = {
   Hero,
@@ -83,5 +85,7 @@ export const MDXBlocks = {
   DCSummaryBlock,
   VideoCarousel,
   MiniResourceCard,
-  ImageTextBlock
+  ImageTextBlock,
+  Toast,
+  GetCredential
 };
