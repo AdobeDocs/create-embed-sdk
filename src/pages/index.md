@@ -36,7 +36,6 @@ import bgImg from "./images/Summary_BgImage.jpg"
 import DesignForDeveloper from "./express-embed-sdk/design-for-develop.md"
 import MobileEditPhoto from "./express-embed-sdk/mobile-edit-photo.md"
 import MobileEditVideo from "./express-embed-sdk/mobile-edit-video.md"
-import {CreateCredential} from "../components/CreateCredential"
 
 <Hero slots="heading, text, buttons, assetsImg" customLayout variant="halfwidth" className="express-sdk-hero"/>
 
@@ -155,5 +154,3 @@ View our developer quickstart guide to start embedding Adobe Express capabilitie
 
 - [View quickstart guide](https://developer.adobe.com/express/embed-sdk/docs/guides/)
 - [Try the demo](https://demo.expressembed.com)
-
-<CreateCredential />
