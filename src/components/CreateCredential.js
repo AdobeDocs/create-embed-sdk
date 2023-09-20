@@ -1,5 +1,6 @@
 import { GetCredential } from '@adobe/gatsby-theme-aio/src/components/GetCredential';
 import React from 'react';
+import "./Credential.css";
 
 const CreateCredential = () => {
   return (
@@ -19,12 +20,12 @@ const CreateCredential = () => {
         </GetCredential.Form.Downloads>
 
         <GetCredential.Form.Side>
-          <div className='conatiner'>
-            <h3 className="spectrum-Heading spectrum-Heading--sizeS header" >API key credential</h3>
+          <div className='side-container'>
+            <h3 className="spectrum-Heading spectrum-Heading--sizeS side-header" >API key credential</h3>
             <p className="spectrum-Body spectrum-Body--sizeM">Submitting this form created an API Key credential. The API key credential identifies your application to Adobe servers and can help accept or reject requests originating from certian domains.</p>
-            <h3 className="spectrum-Heading spectrum-Heading--sizeS header" >Learn more</h3>
-            <a className="documentation" href='https://some_help_link'>Authentication documentation</a>
-            <a className='documentation' href='https://some_help_link'>Adobe Express Embed SDK documentation</a>
+            <h3 className="spectrum-Heading spectrum-Heading--sizeS side-header" >Learn more</h3>
+            <a className="side-documentation" href='https://some_help_link'>Authentication documentation</a>
+            <a className='side-documentation' href='https://some_help_link'>Adobe Express Embed SDK documentation</a>
           </div>
         </GetCredential.Form.Side>
 
