@@ -14,7 +14,7 @@ module.exports = {
   siteMetadata: {
     docs: {
       title: 'Get credentials',
-      path: '/docs/get-credential/'
+      path: '/express/embed-sdk/docs/get-credential/'
     },
     pages: [
       {
