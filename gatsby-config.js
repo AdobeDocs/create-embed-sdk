@@ -12,6 +12,10 @@
 
 module.exports = {
   siteMetadata: {
+    docs: {
+      title: 'Get credentials',
+      path: 'https://developer.adobe.com/express/embed-sdk/docs/get-credential/'
+    },
     pages: [
       {
         title: 'Adobe Express',
@@ -37,7 +41,7 @@ module.exports = {
             path: 'https://developer.adobe.com/express/embed-sdk/docs/guides/'
           },
         ]
-      }
+      },
     ],
   },
   plugins: [`@adobe/gatsby-theme-aio`],
