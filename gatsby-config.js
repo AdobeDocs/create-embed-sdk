@@ -42,6 +42,10 @@ module.exports = {
           },
         ]
       },
+      {
+        title: 'Community',
+        path: 'https://developer.adobe.com/express/community/'
+      }
     ],
   },
   plugins: [`@adobe/gatsby-theme-aio`],
