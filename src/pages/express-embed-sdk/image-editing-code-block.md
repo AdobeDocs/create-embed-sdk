@@ -11,5 +11,5 @@ let docConfig = {
     }
 }
 
-quickAction.resizeImage(docConfig);
+module.editImage(docConfig);
 ```

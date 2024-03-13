@@ -10,8 +10,8 @@
     /* padding: 5% 0; */
     width: 75% !important;
     margin: 3% auto;
-     gap: 2%;
-     display: flex;
+    gap: 2%;
+    display: flex;
 }
 
 .express-sdk-hero>div>div {
@@ -38,10 +38,10 @@
 }
 
 .homeExpressLandingPage {
-    background-image: url('../pages/images/Embed.png');
+    background-image: url('../pages/images/ValueProp_01_Embed_FullEditor.png');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 500px;
+    width: 1200px;
     height: 400px;
     background-position: center !important;
 }
@@ -402,9 +402,19 @@ tr {
     padding: 30px 12px 122px 25px !important
 }
 
+#tabView3 pre.prism-code {
+    padding: 30px 12px 122px 25px !important
+}
+
+#tabView4 pre.prism-code {
+    padding: 30px 12px 122px 25px !important
+}
+
 .bgBlue #tabView0>div,
 .bgBlue #tabView1>div,
-.bgBlue #tabView2>div {
+.bgBlue #tabView2>div,
+.bgBlue #tabView3>div,
+.bgBlue #tabView4>div {
     margin: 0;
     background-color: #202947;
 }
@@ -420,13 +430,17 @@ tr {
 
 .bgBlue #tabItem_0>div,
 .bgBlue #tabItem_1>div,
-.bgBlue #tabItem_2>div {
+.bgBlue #tabItem_2>div,
+.bgBlue #tabItem_3>div,
+.bgBlue #tabItem_4>div {
     margin-top: 5%;
 }
 
 .bgBlue #tabItem_0,
 .bgBlue #tabItem_1,
-.bgBlue #tabItem_2 {
+.bgBlue #tabItem_2,
+.bgBlue #tabItem_3,
+.bgBlue #tabItem_4  {
     border-radius: 10px;
     padding: 2% !important;
 }
@@ -447,7 +461,9 @@ tr {
 
 #tabView0,
 #tabView1,
-#tabView2 {
+#tabView2,
+#tabView3,
+#tabView4 {
     background: #111a35;
     border-radius: 20px !important;
 }
@@ -460,6 +476,8 @@ tr {
 #tabView0>div>div:first-child,
 #tabView1>div>div:first-child,
 #tabView2>div>div:first-child,
+#tabView3>div>div:first-child,
+#tabView4>div>div:first-child,
 pre>div>button,
 .mobile-view-content,
 .mobileEdit {
@@ -473,6 +491,22 @@ pre>div>button,
 .design-features-code-block>div>div:last-child>div>div>div>a {
     border-color: white !important;
     background-color: transparent !important;
+}
+
+.accordion>div {
+    width: 100% !important;
+}
+
+.accordion button {
+    text-transform: var(--spectrum-body-m-text-transform, none) !important;
+    font-size: var(--spectrum-body-m-text-size, var(--spectrum-global-dimension-font-size-200)) !important;
+    color: var(--spectrum-listitem-m-text-color-hover, var(--spectrum-alias-text-color));
+    font-weight: var(--spectrum-global-font-weight-bold) !important;
+}
+
+.accordion>div>div>div>div>p{
+    text-align: initial !important;
+    padding-left: 20px !important;
 }
 
 
@@ -510,7 +544,7 @@ pre>div>button,
 @media screen and (min-width:320px) and (max-width:767px) {
 
     .homeExpressLandingPage {
-        background-image: url('../pages/images/Embed.png');
+        background-image: url('../pages/images/ValueProp_01_Embed_FullEditor.png');
         background-repeat: no-repeat;
         background-size: contain;
         height: 250px !important;
@@ -573,6 +607,8 @@ pre>div>button,
     #tabView0,
     #tabView1,
     #tabView2,
+    #tabView3,
+    #tabView4,
     .design-features-code-block>div>div:first-child,
     .express-sdk-hero>div>div,
     .express-sdk-hero>div>div>h1,
@@ -611,7 +647,9 @@ pre>div>button,
 
     #tabView0,
     #tabView1,
-    #tabView2 {
+    #tabView2,
+    #tabView3,
+    #tabView4 {
         height: 40vh !important;
     }
 
@@ -626,7 +664,9 @@ pre>div>button,
 
     .bgBlue #tabView0>div,
     .bgBlue #tabView1>div,
-    .bgBlue #tabView2>div {
+    .bgBlue #tabView2>div,
+    .bgBlue #tabView3>div,
+    .bgBlue #tabView4>div {
         background: #111a35 !important;
     }
 
@@ -736,7 +776,9 @@ pre>div>button,
 
     #tabView0,
     #tabView1,
-    #tabView2 {
+    #tabView2,
+    #tabView3,
+    #tabView4 {
         width: 65vh !important;
     }
 
