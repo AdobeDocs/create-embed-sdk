@@ -39,34 +39,14 @@ import MobileEditVideo from "./express-embed-sdk/mobile-edit-video.md"
 
 <Hero slots="heading, text, buttons, assetsImg" customLayout variant="halfwidth" className="express-sdk-hero"/>
 
-## Bring the best of Adobe Express to your web application.
+## Design, create, personalize - right inside your web app.
 
-Add powerful [Adobe Express](https://adobe.com/express) capabilities to your web application with Adobe Express Embed SDK, a customizable JavaScript library.
+Empower your users to create with [Adobe Express](https://adobe.com/express) editing and AI capabilities for a more intuitive design experience.
 
 - [Get started](https://developer.adobe.com/express/embed-sdk/docs/guides)
 - [Try the demo](https://demo.expressembed.com/)
 
 homeExpressLandingPage
-
-<TitleBlock slots="heading" theme="lightest" className="right-capabilities" />
-
-### Put the right capabilities forward.
-
-<ImageTextBlock slots="image,heading,text" repeat="2" theme="lightest" className="editor-options" isCenter variantsTypePrimary='secondary'/>
-
-![Customize within Adobe Acrobat](./images/Embed_FullEditor.png)
-
-## Have it all with the full editor.
-
-Unlock access to thousands of templates, fonts, stock images, and videos right within your web application.
-
-![Creative Cloud desktop](./images/Embed_IntegratedQuickActions.png)
-
-## Pick only what users need with quick actions.
-
-Provide users with contextual and streamlined editing tools that match the ways they create.
-
-<TrytheDemo />
 
 <TitleBlock slots="heading" theme="light" className="users-work" />
 
@@ -82,23 +62,33 @@ Provide users with contextual and streamlined editing tools that match the ways 
 
 <TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power createTemplate" position="left" />
 
-### Enable users to edit existing files or create with templates, generative AI, or from scratch.
+### A focused mode for content creation
 
-After you embed the full editor, users can quickly and easily edit existing files or create new content like social media graphics, flyers, and ads using Adobe Firefly capabilities such as text-to-image and text effects alongside thousands of creative templates and design assets.
+Modules are task-oriented tools focused on what creators need, when they need it. Choose from Text to Image or Edit Image, with Text to Template module on the way.
 
-![Adobe Express functionality](./images/Embed_Templates.png)
+![Adobe Express functionality](./images/1x/ValueProp_TexttoImage.png)
 
-- [Learn more](https://developer.adobe.com/express/embed-sdk/docs/guides/full_editor/)
+- [Learn more](https://developer.adobe.com/express/embed-sdk/docs/guides/modules/)
 
 <TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power viewDocs" position="right" />
 
-### Save your users time with specific one-click editing tools.
+### Get instant results with one-click editing tools
 
-Embed image and video editing capabilities with quick actions like Remove Background, Crop Image, and Merge Videos -- all powered by Adobe Express.
+Embed image and video editing capabilities with quick actions like Remove Background, Crop Image, and Caption Video -- all powered by Adobe Express.
 
 ![Adobe Express functionality](./images/Embed_QuickActions.png)
 
-- [View documentation](https://developer.adobe.com/express/embed-sdk/docs/guides/quick_actions/)
+- [Learn more](https://developer.adobe.com/express/embed-sdk/docs/guides/quick_actions/)
+
+<TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power createTemplate" position="left" />
+
+### Bring the full set of Adobe Express capabilities to your users
+
+The full Adobe Express editor lets users take advantage of Adobe’s professionally designed templates, stock images, fonts, text effects and add-ons.
+
+![Adobe Express functionality](./images/1x/ValueProp_AllInOneEditor.png)
+
+- [Learn more](https://developer.adobe.com/express/embed-sdk/docs/guides/full_editor/)
 
 <TitleBlock slots="heading" theme="light" className="users-work" />
 
@@ -122,6 +112,28 @@ Embed image and video editing capabilities with quick actions like Remove Backgr
 
 <DesignForDeveloper/>
 
+<Accordion>
+
+<AccordionItem header="What is the Adobe Express Embed SDK?" isChevronIcon  position="right" iconColor="#1473E6">
+
+The Adobe Express Embed SDK is a customizable JavaScript library that lets partners integrate Adobe Express content editing and AI tools inside of their web app. 
+
+</AccordionItem>
+
+<AccordionItem header="How much does it cost to use the Embed SDK?" isChevronIcon  position="right" iconColor="#1473E6">
+
+For developers, there is no cost to use the Embed SDK. For users, access to Adobe Express features are based on the user’s entitlements.
+
+</AccordionItem>
+
+<AccordionItem header="How much time does it take to integrate the Embed SDK?" isChevronIcon  position="right" iconColor="#1473E6">
+
+Development time varies, however we have seen  small teams finish integrations in a week.
+
+</AccordionItem>
+
+</Accordion>
+
 <TitleBlock slots="heading" theme="lightest" className="users-work" />
 
 ### We've got your resources covered.
@@ -136,9 +148,9 @@ Embed image and video editing capabilities with quick actions like Remove Backgr
 
 ![Partner with us](./images/Blog.svg)
 
-### Join the beta
+### FAQ
 
-[Join beta link](https://adobe.ly/embed-sdk-signup)
+[FAQ](https://developer.adobe.com/express/embed-sdk/docs/guides/support/)
 
 ![Code samples](./images/code-samples.png)
 

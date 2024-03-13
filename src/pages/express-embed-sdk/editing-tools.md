@@ -3,22 +3,22 @@
 
 ![MSFT Teams logo](../images/benefit-blade-1.svg)
 
-### Empower any user to make unique content.
+### Enable users to make unique content.
 
-Users of all skill levels can create with the full editor and quick actions.
+Users of all skill levels can create standout content leveraging Adobe’s world class editing and AI tools.
 
 <TextBlock slots="image, heading, text" width="33%" theme="light" className="context" />
 
 ![JIRA Cloud logo](../images/benefit-blade-2.svg)
 
-### Keep users in context.
+### Keep your users in context.
 
-Supply users with the tools to complete creative tasks without leaving your web application.
+Supply your users with the tools to complete creative tasks without leaving your web app.
 
 <TextBlock slots="image, heading, text" width="33%" theme="light" className="context" />
 
 ![Slack logo](../images/benefit-blade-3.svg)
 
-### Bring users the right tools, right out of the box.
+### Get powerful tools, right out of the box.
 
-Seamlessly integrate editing capabilities, without custom development.
+Save valuable development time using our prebuilt editing modules, taking days not months to integrate.
