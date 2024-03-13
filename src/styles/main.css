@@ -10,8 +10,8 @@
     /* padding: 5% 0; */
     width: 75% !important;
     margin: 3% auto;
-     gap: 2%;
-     display: flex;
+    gap: 2%;
+    display: flex;
 }
 
 .express-sdk-hero>div>div {
@@ -473,6 +473,22 @@ pre>div>button,
 .design-features-code-block>div>div:last-child>div>div>div>a {
     border-color: white !important;
     background-color: transparent !important;
+}
+
+.accordion>div {
+    width: 100% !important;
+}
+
+.accordion button {
+    text-transform: var(--spectrum-body-m-text-transform, none) !important;
+    font-size: var(--spectrum-body-m-text-size, var(--spectrum-global-dimension-font-size-200)) !important;
+    color: var(--spectrum-listitem-m-text-color-hover, var(--spectrum-alias-text-color));
+    font-weight: var(--spectrum-global-font-weight-bold) !important;
+}
+
+.accordion>div>div>div>div>p{
+    text-align: initial !important;
+    padding-left: 20px !important;
 }
 
 

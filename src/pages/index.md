@@ -112,6 +112,8 @@ The full Adobe Express editor lets users take advantage of Adobe’s professiona
 
 <DesignForDeveloper/>
 
+<WrapperComponent slots="content" repeat="1" theme="lightest" className="accordion" />
+
 <Accordion>
 
 <AccordionItem header="What is the Adobe Express Embed SDK?" isChevronIcon  position="right" iconColor="#1473E6">
