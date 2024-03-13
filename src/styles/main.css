@@ -402,9 +402,19 @@ tr {
     padding: 30px 12px 122px 25px !important
 }
 
+#tabView3 pre.prism-code {
+    padding: 30px 12px 122px 25px !important
+}
+
+#tabView4 pre.prism-code {
+    padding: 30px 12px 122px 25px !important
+}
+
 .bgBlue #tabView0>div,
 .bgBlue #tabView1>div,
-.bgBlue #tabView2>div {
+.bgBlue #tabView2>div,
+.bgBlue #tabView3>div,
+.bgBlue #tabView4>div {
     margin: 0;
     background-color: #202947;
 }
@@ -420,13 +430,17 @@ tr {
 
 .bgBlue #tabItem_0>div,
 .bgBlue #tabItem_1>div,
-.bgBlue #tabItem_2>div {
+.bgBlue #tabItem_2>div,
+.bgBlue #tabItem_3>div,
+.bgBlue #tabItem_4>div {
     margin-top: 5%;
 }
 
 .bgBlue #tabItem_0,
 .bgBlue #tabItem_1,
-.bgBlue #tabItem_2 {
+.bgBlue #tabItem_2,
+.bgBlue #tabItem_3,
+.bgBlue #tabItem_4  {
     border-radius: 10px;
     padding: 2% !important;
 }
@@ -447,7 +461,9 @@ tr {
 
 #tabView0,
 #tabView1,
-#tabView2 {
+#tabView2,
+#tabView3,
+#tabView4 {
     background: #111a35;
     border-radius: 20px !important;
 }
@@ -460,6 +476,8 @@ tr {
 #tabView0>div>div:first-child,
 #tabView1>div>div:first-child,
 #tabView2>div>div:first-child,
+#tabView3>div>div:first-child,
+#tabView4>div>div:first-child,
 pre>div>button,
 .mobile-view-content,
 .mobileEdit {
@@ -589,6 +607,8 @@ pre>div>button,
     #tabView0,
     #tabView1,
     #tabView2,
+    #tabView3,
+    #tabView4,
     .design-features-code-block>div>div:first-child,
     .express-sdk-hero>div>div,
     .express-sdk-hero>div>div>h1,
@@ -627,7 +647,9 @@ pre>div>button,
 
     #tabView0,
     #tabView1,
-    #tabView2 {
+    #tabView2,
+    #tabView3,
+    #tabView4 {
         height: 40vh !important;
     }
 
@@ -642,7 +664,9 @@ pre>div>button,
 
     .bgBlue #tabView0>div,
     .bgBlue #tabView1>div,
-    .bgBlue #tabView2>div {
+    .bgBlue #tabView2>div,
+    .bgBlue #tabView3>div,
+    .bgBlue #tabView4>div {
         background: #111a35 !important;
     }
 
@@ -752,7 +776,9 @@ pre>div>button,
 
     #tabView0,
     #tabView1,
-    #tabView2 {
+    #tabView2,
+    #tabView3,
+    #tabView4 {
         width: 65vh !important;
     }
 

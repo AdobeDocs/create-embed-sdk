@@ -3,12 +3,12 @@
 #### Node.js
 
 ```js
-await import(“https://sdk.cc-embed.adobe.com/v3/CCEverywhere.js”);
+await import(https://cc-embed.adobe.com/sdk/v4/CCEverywhere.js);
 
 (async () => {
-    const embedSDK = await window.CCEverywhere.initialize({ 
-    clientId: ‘<YOUR_CLIENT_ID>’, 
-    appName: ‘<YOUR_APP_NAME>’
-    });
+    const { module }  = await window.CCEverywhere.initialize({ 
+        clientId: ‘<YOUR_CLIENT_ID>’, 
+        appName: ‘<YOUR_APP_NAME>’
+    }, callbacks);
 })();
 ```
