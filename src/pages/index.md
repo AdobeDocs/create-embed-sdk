@@ -112,6 +112,10 @@ The full Adobe Express editor lets users take advantage of Adobe’s professiona
 
 <DesignForDeveloper/>
 
+<TitleBlock slots="heading" theme="lightest" className="users-work faq" />
+
+### Frequently Asked Questions
+
 <WrapperComponent slots="content" repeat="1" theme="lightest" className="accordion" />
 
 <Accordion>
