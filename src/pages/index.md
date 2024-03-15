@@ -43,8 +43,8 @@ import MobileEditVideo from "./express-embed-sdk/mobile-edit-video.md"
 
 Empower your users to create with [Adobe Express](https://adobe.com/express) editing and AI capabilities for a more intuitive design experience.
 
-- [Get started](https://developer.adobe.com/express/embed-sdk/docs/guides)
 - [Try the demo](https://demo.expressembed.com/)
+- [Get started](https://developer.adobe.com/express/embed-sdk/docs/guides)
 
 homeExpressLandingPage
 
@@ -60,6 +60,10 @@ homeExpressLandingPage
 
 <LearnMore />
 
+<TitleBlock slots="heading" theme="light" className="chooseEdit" />
+
+### Choose the editing experience you want.
+
 <TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power createTemplate" position="left" />
 
 ### A focused mode for content creation
@@ -70,13 +74,13 @@ Modules are task-oriented tools focused on what creators need, when they need it
 
 - [Learn more](https://developer.adobe.com/express/embed-sdk/docs/guides/modules/)
 
-<TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power viewDocs" position="right" />
+<TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="qaImage" position="right" />
 
 ### Get instant results with one-click editing tools
 
 Embed image and video editing capabilities with quick actions like Remove Background, Crop Image, and Caption Video -- all powered by Adobe Express.
 
-![Adobe Express functionality](./images/Embed_QuickActions.png)
+![Adobe Express functionality](./images/Embed_QuickActions.png) 
 
 - [Learn more](https://developer.adobe.com/express/embed-sdk/docs/guides/quick_actions/)
 
@@ -112,7 +116,7 @@ The full Adobe Express editor lets users take advantage of Adobe’s professiona
 
 <DesignForDeveloper/>
 
-<WrapperComponent slots="content" repeat="1" theme="lightest" className="accordion" />
+<!-- <WrapperComponent slots="content" repeat="1" theme="lightest" className="accordion" />
 
 <Accordion>
 
@@ -134,7 +138,7 @@ Development time varies, however we have seen  small teams finish integrations i
 
 </AccordionItem>
 
-</Accordion>
+</Accordion> -->
 
 <TitleBlock slots="heading" theme="lightest" className="users-work" />
 
