@@ -62,7 +62,7 @@ homeExpressLandingPage
 
 <TitleBlock slots="heading" theme="light" className="chooseEdit" />
 
-### Choose the editing experience you want.
+### Choose the editing experience that works for you.
 
 <TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power createTemplate" position="left" />
 
