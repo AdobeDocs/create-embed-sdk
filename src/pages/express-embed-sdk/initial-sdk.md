@@ -9,6 +9,6 @@ await import(https://cc-embed.adobe.com/sdk/v4/CCEverywhere.js);
     const { module }  = await window.CCEverywhere.initialize({ 
         clientId: ‘<YOUR_CLIENT_ID>’, 
         appName: ‘<YOUR_APP_NAME>’
-    }, callbacks);
+    });
 })();
 ```
