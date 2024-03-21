@@ -184,7 +184,8 @@ td div>div>span {
 .explore p {
     color: #424242 !important;
 }
-.qaImage p>span>picture>img{
+
+.qaImage p>span>picture>img {
     height: 120% !important;
 }
 
@@ -194,10 +195,14 @@ td div>div>span {
     margin: auto !important;
 }
 
-.qaImage>div>div{
-    width: 120% !important;
+.qaImage>div>div {
+    width: 100% !important;
     gap: 5%;
     margin: auto !important;
+}
+
+.qaImage img{
+    width: 700px !important;
 }
 
 .qaImage>div>div>div>h2,
@@ -219,8 +224,7 @@ td div>div>span {
     color: #00A1C7 !important;
 }
 
-.qaImage>div>div>div>div>div>div:nth-child(2)>a:hover
-.unleash-power>div>div>div>div>div>div:nth-child(2)>a:hover,
+.qaImage>div>div>div>div>div>div:nth-child(2)>a:hover .unleash-power>div>div>div>div>div>div:nth-child(2)>a:hover,
 .express-sdk-hero>div>div>div>div>div:last-child>a:hover,
 .tryDemo {
     background-color: transparent !important;
@@ -468,7 +472,7 @@ tr {
 .bgBlue #tabItem_1,
 .bgBlue #tabItem_2,
 .bgBlue #tabItem_3,
-.bgBlue #tabItem_4  {
+.bgBlue #tabItem_4 {
     border-radius: 10px;
     padding: 2% !important;
 }
@@ -532,7 +536,7 @@ pre>div>button,
     font-weight: var(--spectrum-global-font-weight-bold) !important;
 }
 
-.accordion>div>div>div>div>p{
+.accordion>div>div>div>div>p {
     text-align: initial !important;
     padding-left: 20px !important;
 }
@@ -613,7 +617,8 @@ pre>div>button,
         margin-bottom: 0 !important;
     }
 
-    .users-work, .chooseEdit {
+    .users-work,
+    .chooseEdit {
         padding: 10% 0 !important;
     }
 
