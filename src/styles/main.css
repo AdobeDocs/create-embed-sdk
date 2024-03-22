@@ -63,15 +63,24 @@
 
 .right-capabilities,
 .users-work,
+.chooseEdit,
 .editor-options {
     padding: 4% 0 0 !important;
 }
 
+.chooseEdit {
+    background: white !important;
+}
+
+
+
 .right-capabilities h2,
+.chooseEdit h2,
 .users-work h2 {
     font-size: 37px !important;
 }
 
+.chooseEdit h2,
 .users-work h2 {
     margin-bottom: 0 !important;
 }
@@ -154,22 +163,30 @@ td div>div>span {
     margin: 0 !important;
 }
 
+.qaImage>div,
 .explore>div {
     width: 70% !important;
     margin: auto !important;
     padding: 3% 0 !important;
 }
 
+.qaImage a,
 .explore a {
     border-color: #626262 !important;
 }
 
+.qaImage a>span,
 .explore a>span {
     color: #525252 !important;
 }
 
+.qaImage p,
 .explore p {
     color: #424242 !important;
+}
+
+.qaImage p>span>picture>img {
+    height: 120% !important;
 }
 
 .explore>div>div {
@@ -178,34 +195,49 @@ td div>div>span {
     margin: auto !important;
 }
 
+.qaImage>div>div {
+    width: 100% !important;
+    gap: 5%;
+    margin: auto !important;
+}
+
+.qaImage img{
+    width: 700px !important;
+}
+
+.qaImage>div>div>div>h2,
 .unleash-power>div>div>div>h2 {
     padding: 2% 1% !important;
     width: 32rem !important;
 }
 
+.qaImage>div>div>div>p,
 .unleash-power>div>div>div>p {
     padding: 0% 1% 1% 0 !important;
     width: 35rem !important;
 }
 
+.qaImage>div>div>div>div>div>div:nth-child(2)>a,
 .unleash-power>div>div>div>div>div>div:nth-child(2)>a {
     border: none !important;
     text-decoration: underline !important;
     color: #00A1C7 !important;
 }
 
-.unleash-power>div>div>div>div>div>div:nth-child(2)>a:hover,
+.qaImage>div>div>div>div>div>div:nth-child(2)>a:hover .unleash-power>div>div>div>div>div>div:nth-child(2)>a:hover,
 .express-sdk-hero>div>div>div>div>div:last-child>a:hover,
 .tryDemo {
     background-color: transparent !important;
 }
 
+.qaImage>div>div>div>div>div>div:nth-child(2)>a>span>span,
 .unleash-power>div>div>div>div>div>div:nth-child(2)>a>span>span {
     color: #00A1C7 !important;
     font-size: 18px !important;
     font-weight: 400;
 }
 
+.qaImage h2,
 .unleash-power h2 {
     font-size: 35px !important;
 }
@@ -615,7 +647,8 @@ pre>div>button,
         margin-bottom: 0 !important;
     }
 
-    .users-work {
+    .users-work,
+    .chooseEdit {
         padding: 10% 0 !important;
     }
 
