@@ -142,7 +142,7 @@ Development time varies, but we have seen  small teams finish integrations in a 
 
 </AccordionItem>
 
-</Accordion> -->
+</Accordion>
 
 <TitleBlock slots="heading" theme="lightest" className="users-work" />
 
