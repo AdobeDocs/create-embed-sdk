@@ -403,7 +403,7 @@ tr {
     padding: 0 !important;
     background-color: #202947 !important;
     width: 60%;
-    overflow-x: auto !important;
+    /* overflow-x: auto !important; */
     margin: auto auto 5% auto !important;
 }
 
