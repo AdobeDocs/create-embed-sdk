@@ -134,7 +134,7 @@ For developers, there is no cost to use the Embed SDK. For users, access to Adob
 
 <AccordionItem header="How much time does it take to integrate the Embed SDK?" isChevronIcon  position="right" iconColor="#1473E6">
 
-Development time varies, however we have seen  small teams finish integrations in a week.
+Development time varies, but we have seen  small teams finish integrations in a week.
 
 </AccordionItem>
 
