@@ -116,7 +116,11 @@ The full Adobe Express editor lets users take advantage of Adobe’s professiona
 
 <DesignForDeveloper/>
 
-<!-- <WrapperComponent slots="content" repeat="1" theme="lightest" className="accordion" />
+<TitleBlock slots="heading" theme="lightest" className="users-work faq" />
+
+### Frequently Asked Questions
+
+<WrapperComponent slots="content" repeat="1" theme="lightest" className="accordion" />
 
 <Accordion>
 
@@ -134,7 +138,7 @@ For developers, there is no cost to use the Embed SDK. For users, access to Adob
 
 <AccordionItem header="How much time does it take to integrate the Embed SDK?" isChevronIcon  position="right" iconColor="#1473E6">
 
-Development time varies, however we have seen  small teams finish integrations in a week.
+Development time varies, but we have seen  small teams finish integrations in a week.
 
 </AccordionItem>
 

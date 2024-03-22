@@ -525,13 +525,9 @@ pre>div>button,
     background-color: transparent !important;
 }
 
-.accordion>div {
-    width: 100% !important;
-}
-
 .accordion button {
     text-transform: var(--spectrum-body-m-text-transform, none) !important;
-    font-size: var(--spectrum-body-m-text-size, var(--spectrum-global-dimension-font-size-200)) !important;
+    font-size: var(--spectrum-body-m-text-size, var(--spectrum-global-dimension-font-size-400)) !important;
     color: var(--spectrum-listitem-m-text-color-hover, var(--spectrum-alias-text-color));
     font-weight: var(--spectrum-global-font-weight-bold) !important;
 }
@@ -541,6 +537,13 @@ pre>div>button,
     padding-left: 20px !important;
 }
 
+.faq {
+    padding-bottom: 2% !important;
+}
+
+.accordion>div>div>div.is-open .spectrum-Accordion-itemHeader {
+    background: #E2EAFE;
+}
 
 /* responsive  */
 
@@ -573,19 +576,46 @@ pre>div>button,
     }
 }
 
+@media screen and (min-width: 768px) and (max-width:1024px) {
+
+    .homeExpressLandingPage {
+        background-image: url('../pages/images/ValueProp_01_Embed_FullEditor.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 300px !important;
+        width: 500px !important;
+        background-position: bottom center !important;
+    }
+
+    .users-work h2{
+        width: 75% !important;
+        margin: auto !important;
+    }
+
+}
+
 @media screen and (min-width:320px) and (max-width:767px) {
 
     .homeExpressLandingPage {
         background-image: url('../pages/images/ValueProp_01_Embed_FullEditor.png');
         background-repeat: no-repeat;
         background-size: contain;
-        height: 250px !important;
-        width: 325px !important;
+        height: 200px !important;
+        width: 300px !important;
         background-position: bottom center !important;
+    }
+
+    .users-work h2{
+        width: 75% !important;
+        margin: auto !important;
     }
 
     .express-sdk-hero {
         margin-top: 10% !important;
+    }
+
+    .express-sdk-hero>div {
+        flex-direction: column !important;
     }
 
     .right-capabilities {
@@ -737,6 +767,10 @@ pre>div>button,
 
     .express-sdk-hero {
         margin-top: 5% !important;
+    }
+
+    .express-sdk-hero>div {
+        flex-direction: column !important;
     }
 
     .express-sdk-hero>div>div>h1,
