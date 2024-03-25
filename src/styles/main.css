@@ -72,8 +72,6 @@
     background: white !important;
 }
 
-
-
 .right-capabilities h2,
 .chooseEdit h2,
 .users-work h2 {
@@ -408,7 +406,7 @@ tr {
 }
 
 .bgBlue>div>div {
-    grid-template-columns: 300px calc(100% - 650px);
+    grid-template-columns: 300px 80vh;
 }
 
 .bgBlue .tabItem:hover,
@@ -423,23 +421,15 @@ tr {
 }
 
 #tabView0 pre.prism-code {
-    padding: 10px 12px 12px 25px !important
-}
-
-#tabView1 pre.prism-code {
     padding: 30px 12px 50px 25px !important
 }
 
+#tabView1 pre.prism-code {
+    padding: 30px 12px 60px 25px !important
+}
+
 #tabView2 pre.prism-code {
-    padding: 30px 12px 122px 25px !important
-}
-
-#tabView3 pre.prism-code {
-    padding: 30px 12px 122px 25px !important
-}
-
-#tabView4 pre.prism-code {
-    padding: 30px 12px 122px 25px !important
+    padding: 30px 12px 12px 25px !important
 }
 
 .bgBlue #tabView0>div,
@@ -497,7 +487,7 @@ tr {
 #tabView3,
 #tabView4 {
     background: #111a35;
-    border-radius: 20px !important;
+    border-radius: 2vh !important;
 }
 
 .prism-code {
@@ -541,6 +531,13 @@ pre>div>button,
     padding-left: 20px !important;
 }
 
+.faq {
+    padding-bottom: 2% !important;
+}
+
+.accordion>div>div>div.is-open .spectrum-Accordion-itemHeader {
+    background: #E2EAFE;
+}
 
 /* responsive  */
 
@@ -548,6 +545,11 @@ pre>div>button,
 
     .explore>div {
         padding: 5% 0 !important;
+    }
+
+    .express-sdk-hero>div {
+        width: 100% !important;
+        margin: 3% !important;
     }
 
     .express-sdk-hero a {
@@ -571,6 +573,45 @@ pre>div>button,
     .mini-card>div>div>div>div:nth-child(2) {
         padding: 0 0 0 2% !important;
     }
+
+    .qaImage>div>div>div>p,
+    .unleash-power>div>div>div>p,
+    .qaImage>div>div>div>h2,
+    .unleash-power>div>div>div>h2 {
+        width: 100% !important;
+    }
+
+    .qaImage img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .qaImage>div {
+        width: 90% !important;
+    }
+
+    .users-work {
+        padding: 4% 0 !important;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+
+    .homeExpressLandingPage {
+        background-image: url('../pages/images/ValueProp_01_Embed_FullEditor.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 300px !important;
+        width: 500px !important;
+        background-position: bottom center !important;
+    }
+
+    .users-work h2 {
+        width: 75% !important;
+        margin: auto !important;
+    }
+
 }
 
 @media screen and (min-width:320px) and (max-width:767px) {
@@ -579,13 +620,22 @@ pre>div>button,
         background-image: url('../pages/images/ValueProp_01_Embed_FullEditor.png');
         background-repeat: no-repeat;
         background-size: contain;
-        height: 250px !important;
-        width: 325px !important;
+        height: 200px !important;
+        width: 300px !important;
         background-position: bottom center !important;
+    }
+
+    .users-work h2 {
+        width: 75% !important;
+        margin: auto !important;
     }
 
     .express-sdk-hero {
         margin-top: 10% !important;
+    }
+
+    .express-sdk-hero>div {
+        flex-direction: column !important;
     }
 
     .right-capabilities {
@@ -597,7 +647,7 @@ pre>div>button,
     }
 
     .mini-card {
-        padding: 0 0 15% 0 !important;
+        padding: 0 0 70% 0 !important;
     }
 
     .mini-card>div {
@@ -737,6 +787,10 @@ pre>div>button,
 
     .express-sdk-hero {
         margin-top: 5% !important;
+    }
+
+    .express-sdk-hero>div {
+        flex-direction: column !important;
     }
 
     .express-sdk-hero>div>div>h1,
