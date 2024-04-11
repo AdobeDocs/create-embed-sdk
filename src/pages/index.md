@@ -166,7 +166,7 @@ Development time varies, but we have seen  small teams finish integrations in a 
 
 ### Code samples
 
-[Github repo with Embed SDK sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/v3-sample)
+[Github repo with Embed SDK sample](https://github.com/AdobeDocs/cc-everywhere/tree/main/v4-sample/sample.md)
 
 <TeaserBlock  slots="heading,text,buttons" textColor="white" bgURL={bgImg} className="viewAddOn" variant="fullwidth"/>
 
