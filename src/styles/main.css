@@ -406,7 +406,7 @@ tr {
 }
 
 .bgBlue>div>div {
-    grid-template-columns: 300px 80vh;
+	grid-template-columns: 300px 600px;
 }
 
 .bgBlue .tabItem:hover,
@@ -857,12 +857,21 @@ pre>div>button,
         flex-wrap: wrap !important;
     }
 
-    #tabView0,
-    #tabView1,
-    #tabView2,
-    #tabView3,
-    #tabView4 {
-        width: 65vh !important;
+	#tabView0,
+	#tabView1,
+	#tabView2,
+	#tabView3,
+	#tabView4 {
+			width: 410px !important;
+	}
+
+}
+
+@media screen and (min-width: 1025px) and (max-width:1400px) {
+
+		.bgBlue>div>div {
+        grid-template-columns: 300px 460px !important;
+
     }
 
 }
