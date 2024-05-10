@@ -14,6 +14,11 @@
     display: flex;
 }
 
+.express-sdk-hero video {
+    width: 700px !important;
+    padding: 0;
+  }
+
 .express-sdk-hero>div>div {
     width: 50% !important;
 }

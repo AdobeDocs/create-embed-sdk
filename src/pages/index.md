@@ -26,19 +26,19 @@ contributors:
   - https://github.com/amandahuarng
 ---
 
-import "../styles/main.css"
-import TrytheDemo from "./express-embed-sdk/trydemo.md"
-import EditingTool from "./express-embed-sdk/editing-tools.md"
-import LearnMore from "./express-embed-sdk/learn-more.md"
-import EditImageTable from "./express-embed-sdk/edit-photo.md"
-import EditVideoTable from "./express-embed-sdk/edit-video.md"
-import bgImg from "./images/Summary_BgImage.jpg"
-import DesignForDeveloper from "./express-embed-sdk/design-for-develop.md"
-import MobileEditPhoto from "./express-embed-sdk/mobile-edit-photo.md"
-import MobileEditVideo from "./express-embed-sdk/mobile-edit-video.md"
-import heroVideo from "../videos/R2_SDK.mp4";
+import "../styles/main.css";
+import TrytheDemo from "./express-embed-sdk/trydemo.md";
+import EditingTool from "./express-embed-sdk/editing-tools.md";
+import LearnMore from "./express-embed-sdk/learn-more.md";
+import EditImageTable from "./express-embed-sdk/edit-photo.md";
+import EditVideoTable from "./express-embed-sdk/edit-video.md";
+import bgImg from "./images/Summary_BgImage.jpg";
+import DesignForDeveloper from "./express-embed-sdk/design-for-develop.md";
+import MobileEditPhoto from "./express-embed-sdk/mobile-edit-photo.md";
+import MobileEditVideo from "./express-embed-sdk/mobile-edit-video.md";
+import heroVideo from "./videos/R2_SDK.mp4";
 
-<Hero slots="heading, text, buttons" customLayout variant="halfwidth" className="express-sdk-hero"  videoUrl={heroVideo} />
+<Hero slots="heading, text, buttons" videoUrl={heroVideo} customLayout variant="halfwidth" />
 
 ## Design, create, personalize - right inside your web app.
 
