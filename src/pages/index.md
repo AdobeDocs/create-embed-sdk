@@ -36,8 +36,9 @@ import bgImg from "./images/Summary_BgImage.jpg"
 import DesignForDeveloper from "./express-embed-sdk/design-for-develop.md"
 import MobileEditPhoto from "./express-embed-sdk/mobile-edit-photo.md"
 import MobileEditVideo from "./express-embed-sdk/mobile-edit-video.md"
+import heroVideo from "../videos/R2_SDK.mp4";
 
-<Hero slots="heading, text, buttons, assetsImg" customLayout variant="halfwidth" className="express-sdk-hero"/>
+<Hero slots="heading, text, buttons" customLayout variant="halfwidth" className="express-sdk-hero"  videoUrl={heroVideo} />
 
 ## Design, create, personalize - right inside your web app.
 
@@ -46,7 +47,7 @@ Empower your users to create with [Adobe Express](https://adobe.com/express) edi
 - [Try the demo](https://demo.expressembed.com/)
 - [Get started](https://developer.adobe.com/express/embed-sdk/docs/guides)
 
-homeExpressLandingPage
+<!-- homeExpressLandingPage -->
 
 <TitleBlock slots="heading" theme="light" className="users-work" />
 
