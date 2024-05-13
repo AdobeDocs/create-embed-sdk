@@ -38,7 +38,7 @@ import MobileEditPhoto from "./express-embed-sdk/mobile-edit-photo.md";
 import MobileEditVideo from "./express-embed-sdk/mobile-edit-video.md";
 import heroVideo from "./videos/R2_SDK.mp4";
 
-<Hero slots="heading, text, buttons" videoUrl={heroVideo} customLayout variant="halfwidth" />
+<Hero slots="heading, text, buttons" videoUrl={heroVideo} variant="halfwidth" />
 
 ## Design, create, personalize - right inside your web app.
 
