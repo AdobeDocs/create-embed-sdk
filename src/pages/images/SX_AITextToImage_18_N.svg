@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="ICONS" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+<svg id="ICONS" xmlns="http://www.w3.org/2000/svg" width="25.882" height="22" viewBox="0 0 25.882 22">
   <defs>
     <style>
       .fill {
-        fill: #222;
+        fill: #5c5ce0;
         stroke-width: 0px;
       }
     </style>
