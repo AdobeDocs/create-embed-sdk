@@ -33,9 +33,9 @@ The Adobe Express Embed SDK integrates Adobe Express editing capabilities and co
 
 <QuickActionCodeBlock/>
 
-### Text to image module
+### Generate image module
 
-![Code to invoke Text to image module](../images/SX_AITextToImage_18_N.svg)
+![Code to invoke generate image module](../images/SX_AITextToImage_18_N.svg)
 
 <TextToImageCodeBlock/>
 
