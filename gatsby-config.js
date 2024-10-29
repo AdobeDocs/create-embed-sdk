@@ -44,7 +44,7 @@ module.exports = {
       },
       {
         title: 'Community',
-        path: 'https://developer.adobe.com/express/community/'
+        path: '/express/community/'
       }
     ],
   },
