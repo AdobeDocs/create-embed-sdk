@@ -19,11 +19,11 @@ module.exports = {
     pages: [
       {
         title: 'Adobe Express',
-        path: 'https://developer.adobe.com/express/'
+        path: '/express/'
       },
       {
         title: 'Add-ons',
-        path: 'https://developer.adobe.com/express/add-ons'
+        path: '/express/add-ons'
       },
       {
         title: 'Embed SDK',
@@ -44,7 +44,7 @@ module.exports = {
       },
       {
         title: 'Community',
-        path: 'https://developer.adobe.com/express/community/'
+        path: '/express/community/'
       }
     ],
   },
