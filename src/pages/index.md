@@ -160,7 +160,7 @@ Development time varies, but we have seen  small teams finish integrations in a 
 
 ### FAQ
 
-[FAQ](https://developer.adobe.com/express/embed-sdk/docs/guides/support/)
+[FAQ](https://developer.adobe.com/express/embed-sdk/docs/guides/troubleshooting/faq/)
 
 ![Code samples](./images/code-samples.png)
 
