@@ -13,7 +13,7 @@ The Adobe Express Embed SDK integrates Adobe Express editing capabilities and co
 - [View documentation](https://developer.adobe.com/express/embed-sdk/docs/guides/)
 - [Try the demo](https://demo.expressembed.com/)
 
-<TabsBlock orientation="vertical" slots="heading, image, content" repeat="3"  theme="dark" className='bgBlue ' />
+<TabsBlock orientation="vertical" slots="heading, image, content" repeat="4"  theme="dark" className='bgBlue' />
 
 ## Initialize SDK
 
@@ -33,14 +33,14 @@ The Adobe Express Embed SDK integrates Adobe Express editing capabilities and co
 
 <QuickActionCodeBlock/>
 
-<!-- ### Text to image module
+### Generate image module
 
-![Code to invoke full editor](../images/SX_AITextToImage_18_N.svg)
+![Code to invoke generate image module](../images/SX_AITextToImage_18_N.svg)
 
 <TextToImageCodeBlock/>
 
-### Image editing module
+<!-- ### Image editing module
 
-![Code to invoke quick actions](../images/SX_MediaFileEdit_18_N.svg)
+![Code to invoke Image editing module](../images/SX_MediaFileEdit_18_N.svg)
 
 <ImageEditingCodeBlock/> -->

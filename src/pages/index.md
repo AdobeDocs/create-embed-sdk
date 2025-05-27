@@ -68,7 +68,7 @@ homeExpressLandingPage
 
 ### A focus mode for content creation
 
-Modules are task-oriented tools focused on what creators need, when they need it. Choose from Text to Image or Edit Image, with Text to Template module on the way.
+Modules are task-oriented tools focused on what creators need, when they need it. Choose from Generate Image or Edit Image, with Generate Template module on the way.
 
 ![Adobe Express functionality](./images/1x/ValueProp_TexttoImage.png)
 
