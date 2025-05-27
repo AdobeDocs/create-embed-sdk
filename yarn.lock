@@ -34,8 +34,8 @@ __metadata:
   linkType: hard
 
 "@adobe/gatsby-theme-aio@npm:^4.14.14":
-  version: 4.14.14
-  resolution: "@adobe/gatsby-theme-aio@npm:4.14.14"
+  version: 4.15.1
+  resolution: "@adobe/gatsby-theme-aio@npm:4.15.1"
   dependencies:
     "@adobe/focus-ring-polyfill": "npm:^0.1.5"
     "@adobe/gatsby-source-github-file-contributors": "npm:^0.3.1"
@@ -131,7 +131,7 @@ __metadata:
     gatsby: ^4.22.0
     react: ^17.0.2
     react-dom: ^17.0.2
-  checksum: 10/1a482272885341bb8a187e5005072d3225d7766f5775c8ba8ba75770adc1bb32141e905422c5ae206ec7bc6bdab7552461f5da6e83c14343637217cb9536ee3a
+  checksum: 10/ec141cef98f654991d74beadeaad6b087d668b97d7e422cde3bdd13f23dba9c560934b370fdf3a8b1429ecbc1a476d2f375a8c3c357fa0a758b6d7ccddbbb685
   languageName: node
   linkType: hard
 

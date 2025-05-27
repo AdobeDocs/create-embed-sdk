@@ -54,7 +54,7 @@ homeExpressLandingPage
 
 <WrapperComponent slots="content" repeat="1" theme="light" className="editingDescription" />
 
-<EditingTool /> 
+<EditingTool />
 
 <WrapperComponent slots="content" repeat="1" theme="light" className="learnmoreBtn" />
 
@@ -66,7 +66,7 @@ homeExpressLandingPage
 
 <TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power createTemplate" position="left" />
 
-### A focused mode for content creation
+### A focus mode for content creation
 
 Modules are task-oriented tools focused on what creators need, when they need it. Choose from Generate Image or Edit Image, with Generate Template module on the way.
 
@@ -78,9 +78,9 @@ Modules are task-oriented tools focused on what creators need, when they need it
 
 ### Get instant results with one-click editing tools
 
-Embed image and video editing capabilities with quick actions like Remove Background, Crop Image, and Caption Video -- all powered by Adobe Express.
+Quick actions let you embed image and video editing capabilities like Remove Background, Crop Image, and Caption Video – all powered by Adobe Express.
 
-![Adobe Express functionality](./images/Embed_QuickActions.png) 
+![Adobe Express functionality](./images/Embed_QuickActions.png)
 
 - [Learn more](https://developer.adobe.com/express/embed-sdk/docs/guides/quick_actions/)
 
@@ -126,7 +126,7 @@ The full Adobe Express editor lets users take advantage of Adobe’s professiona
 
 <AccordionItem header="What is the Adobe Express Embed SDK?" isChevronIcon  position="right" iconColor="#1473E6">
 
-The Adobe Express Embed SDK is a customizable JavaScript library that lets partners integrate Adobe Express content editing and AI tools inside of their web app. 
+The Adobe Express Embed SDK is a customizable JavaScript library that lets partners integrate Adobe Express content editing and AI tools inside of their web app.
 
 </AccordionItem>
 
@@ -138,7 +138,7 @@ For developers, there is no cost to use the Embed SDK. For users, access to Adob
 
 <AccordionItem header="How much time does it take to integrate the Embed SDK?" isChevronIcon  position="right" iconColor="#1473E6">
 
-Development time varies, but we have seen  small teams finish integrations in a week.
+Development time varies, but we have seen small teams finish integrations in a week.
 
 </AccordionItem>
 
