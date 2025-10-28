@@ -52,11 +52,11 @@ homeExpressLandingPage
 
 ### Request to Integrate the Embed SDK
 
-Submitting Adobe Express Embed SDK integrations for review now follows a request-based process. <br /> To begin, you’ll need to apply through the access request form. Once Adobe reviews and approves your application, you’ll be invited to submit your integration for final review and approval.
+To begin, you’ll need to apply through the access request form. Once Adobe reviews and approves your request, you’ll be invited to submit your integration for final review and approval.
 
 ![Integrate the Embed SDK](./images/Embed_QuickActions.png)
 
-- [Apply Now](https://developer.adobe.com/express/embed-sdk/docs/guides/modules/)
+- [Apply now](https://airtable.com/appeOKpNHqIwfqVlt/pag84fSYGqWAsC0xJ/form)
 
 <TitleBlock slots="heading" theme="light" className="users-work" />
 
