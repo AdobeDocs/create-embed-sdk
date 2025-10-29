@@ -50,13 +50,13 @@ homeExpressLandingPage
 
 <TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power createTemplate" position="left" />
 
-### Request to Integrate the Embed SDK
+### Request to Integrate
 
 To begin, you’ll need to apply through the access request form. Once Adobe reviews and approves your request, you’ll be invited to submit your integration for final review and approval.
 
 ![Integrate the Embed SDK](./images/Embed_QuickActions.png)
 
-- [Apply now](https://airtable.com/appeOKpNHqIwfqVlt/pag84fSYGqWAsC0xJ/form)
+- [Apply now](https://www.adobe.com/go/embed-access)
 
 <TitleBlock slots="heading" theme="light" className="users-work" />
 
