@@ -54,7 +54,7 @@ homeExpressLandingPage
 
 To begin, you’ll need to apply through the access request form. Once Adobe reviews and approves your request, you’ll be invited to submit your integration for final review and approval.
 
-![Integrate the Embed SDK](./images/Embed_QuickActions.png)
+![Integrate the Embed SDK](./images/gated-access.png)
 
 - [Apply now](https://www.adobe.com/go/embed-access)
 
