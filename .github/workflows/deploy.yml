@@ -34,5 +34,3 @@
         clean: ${{ inputs.clean }}
         excludeSubfolder: ${{ inputs.excludeSubfolder }}
         index-mode: ${{ inputs.index-mode }}
-        DESKTOP_SCREEN_WIDTH: ${{ secrets.DESKTOP_SCREEN_WIDTH }}
-        DESKTOP_FOOTER_SCREEN_WIDTH_MAX: ${{ secrets.DESKTOP_FOOTER_SCREEN_WIDTH_MAX }}
