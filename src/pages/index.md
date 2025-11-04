@@ -116,7 +116,7 @@ The full Adobe Express editor lets users take advantage of Adobe’s professiona
 
 <DesignForDeveloper/>
 
-<TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power createTemplate" position="left" />
+<TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power createTemplate request-access" position="left" />
 
 ### Request access
 

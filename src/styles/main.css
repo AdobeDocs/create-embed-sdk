@@ -529,10 +529,15 @@ pre>div>button,
 
 .faq {
     padding-bottom: 2% !important;
+    padding-top: 0 !important;
 }
 
 .accordion>div>div>div.is-open .spectrum-Accordion-itemHeader {
     background: #E2EAFE;
+}
+
+.request-access > div{
+    padding: 0 !important;
 }
 
 /* responsive  */
