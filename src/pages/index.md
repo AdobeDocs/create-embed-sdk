@@ -48,16 +48,6 @@ Empower your users to create with [Adobe Express](https://adobe.com/express) edi
 
 homeExpressLandingPage
 
-<TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power createTemplate" position="left" />
-
-### Request to Integrate
-
-To begin, you’ll need to apply through the access request form. Once Adobe reviews and approves your request, you’ll be invited to submit your integration for final review and approval.
-
-![Integrate the Embed SDK](./images/gated-access.png)
-
-- [Apply now](https://www.adobe.com/go/embed-access)
-
 <TitleBlock slots="heading" theme="light" className="users-work" />
 
 ### Give your users more to work with, in no time.
@@ -126,6 +116,16 @@ The full Adobe Express editor lets users take advantage of Adobe’s professiona
 
 <DesignForDeveloper/>
 
+<TextBlock slots="heading,text,image,buttons" theme="lightest" headerElementType="h2" variantsTypePrimary='secondary' variantStyleFill = "outline" homeZigZag className="explore unleash-power createTemplate" position="left" />
+
+### Request access
+
+To begin, you’ll need to apply through the access request form. Once Adobe reviews and approves your request, you’ll be invited to submit your integration for final review and approval.
+
+![Integrate the Embed SDK](./images/gated-access.png)
+
+- [Apply now](https://www.adobe.com/go/embed-access)
+
 <TitleBlock slots="heading" theme="lightest" className="users-work faq" />
 
 ### Frequently Asked Questions
@@ -140,9 +140,9 @@ The Adobe Express Embed SDK is a customizable JavaScript library that lets partn
 
 </AccordionItem>
 
-<AccordionItem header="How much does it cost to use the Embed SDK?" isChevronIcon  position="right" iconColor="#1473E6">
+<AccordionItem header="Is there a cost to use the SDK?" isChevronIcon  position="right" iconColor="#1473E6">
 
-For developers, there is no cost to use the Embed SDK. For users, access to Adobe Express features are based on the user’s entitlements.
+Access to the Adobe Express Embed SDK now requires a business approval process. While there is currently no cost to use the SDK once approved, access is focused on use cases with clear business or user impact. [Request access](https://www.adobe.com/go/embed-access) to submit your use case for evaluation. For more details, see [SDK Access & Approval](https://developer.adobe.com/express/embed-sdk/docs/guides/troubleshooting/faq/#sdk-access--approval-1).
 
 </AccordionItem>
 
@@ -182,7 +182,7 @@ Development time varies, but we have seen small teams finish integrations in a w
 
 <p className="teaserBlockCustomHeading">Let's do this.</p>
 
-View our developer quickstart guide to start embedding Adobe Express capabilities into your web application, or try the demo.
+View our developer quickstart guide to learn more about Adobe Express embed capabilities, or try the demo.
 
 - [View quickstart guide](https://developer.adobe.com/express/embed-sdk/docs/guides/)
 - [Try the demo](https://demo.expressembed.com)
