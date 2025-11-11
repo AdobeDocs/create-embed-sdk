@@ -218,6 +218,8 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
         const id = nextId();
         let pageHref = page.href ? page.href : `#${page.title.toLowerCase()}`;
         
+        console.log('Mobile Nav - Original:', { title: page.title, path: page.path, href: page.href, pageHref });
+        
         // Convert relative paths to absolute and apply pathPrefix
         if (pageHref && !isExternalLink(pageHref) && !pageHref.startsWith('#')) {
           // If path doesn't start with /, make it absolute first
@@ -225,6 +227,8 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
             pageHref = `/${pageHref}`;
           }
         }
+        
+        console.log('Mobile Nav - After fix:', { title: page.title, finalHref: pageHref });
 
         if (isSelected && !sideNavClick && !expandedMenus.includes(pageHref)) {
           setExpandedMenus(pages => [...pages, pageHref]);
