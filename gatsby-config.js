@@ -23,7 +23,7 @@ module.exports = {
       },
       {
         title: 'Add-ons',
-        path: '/express/add-ons'
+        path: '/express/add-ons/'
       },
       {
         title: 'Embed SDK',
