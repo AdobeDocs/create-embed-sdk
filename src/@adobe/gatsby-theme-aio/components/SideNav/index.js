@@ -12,7 +12,8 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Link as GatsbyLink, withPrefix } from 'gatsby';
+import { withPrefix } from 'gatsby';
+import { GatsbyLink } from '@adobe/gatsby-theme-aio/src/components/GatsbyLink';
 import {
   isBrowser, findSelectedTopPage,
   findSelectedTopPageMenu,
