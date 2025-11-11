@@ -101,7 +101,6 @@ const GlobalHeader = ({
   setShowSearch,
   searchButtonId,
 }) => {
-  console.log('pages', pages);
   const [selectedTabIndex, setSelectedTabIndex] = useState(getSelectedTabIndex(location, pages));
   const tabsRef = useRef(null);
   const tabsContainerRef = useRef(null);

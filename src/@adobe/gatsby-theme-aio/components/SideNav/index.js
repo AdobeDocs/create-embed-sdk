@@ -54,15 +54,6 @@ const getSelectedTabIndex = (location, pages) => {
 };
 
 const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setShowSideNav, location }) => {
-  // Debug logging - matches GlobalHeader pattern line 104-105
-  console.log('[SideNav] Component mounted/updated', {
-    mainNavPages,
-    selectedPages,
-    selectedSubPages,
-    location: location.pathname,
-    versions
-  });
-
   const [expandedPages, setExpandedPages] = useState([]);
   const [expandedMenus, setExpandedMenus] = useState([]);
   const [sideNavClick, setSideNavClick] = useState(false);
@@ -92,16 +83,6 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
     const index = getSelectedTabIndex(location, mainNavPages);
     const pathWithRootFix = rootFix(location.pathname);
     const selectedMenu = findSelectedTopPageMenu(pathWithRootFix, mainNavPages[index]);
-    
-    // Debug logging - matches GlobalHeader pattern line 134-140
-    console.log('[SideNav] Selected menu updated', {
-      pathname: location.pathname,
-      pathWithRootFix,
-      selectedTabIndex: index,
-      selectedMenu,
-      currentPage: mainNavPages[index]?.title
-    });
-    
     setSelectedMenuItem(selectedMenu);
   }, [location.pathname])
 
@@ -132,12 +113,6 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
         // Debug logging - same pattern as GlobalHeader
         if (pageHref) {
           const prefixedHref = withPrefix(pageHref);
-          console.log('[SideNav renderSubtree]', {
-            title: page.title,
-            originalHref: pageHref,
-            withPrefix: prefixedHref,
-            isExternal: isExternalLink(pageHref)
-          });
         }
 
         if (isSelected && !sideNavClick && !expandedPages.includes(pageHref)) {
@@ -180,15 +155,7 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
               <GatsbyLink
                 onClick={() => {
                   try {
-                    setSideNavClick(true);
-                    const prefixedPath = withPrefix(pageHref);
-                    console.log('[SideNav] Link clicked', {
-                      title: page.title,
-                      originalHref: pageHref,
-                      prefixedHref: prefixedPath,
-                      hasSubPages: !!page?.pages?.length
-                    });
-                    
+                    setSideNavClick(true);                    
                     if (page?.pages?.length && !page.header) {
                       if (expandedPages.includes(pageHref)) {
                         setExpandedPages(pages => pages.filter(href => href !== pageHref));
@@ -251,19 +218,6 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
         const isSelected = selectedPages.find(selectedItem => selectedItem === page);
         const id = nextId();
         const pageHref = page.href ? page.href : `#${page.title.toLowerCase()}`;
-
-        // Debug logging - matches GlobalHeader pattern line 670
-        if (pageHref && !pageHref.startsWith('#')) {
-          const prefixedHref = withPrefix(pageHref);
-          console.log('[SideNav renderMenuTree]', {
-            title: page.title,
-            originalHref: pageHref,
-            withPrefix: prefixedHref,
-            isExternal: isExternalLink(pageHref),
-            hasMenu: !!page.menu
-          });
-        }
-
         if (isSelected && !sideNavClick && !expandedMenus.includes(pageHref)) {
           setExpandedMenus(pages => [...pages, pageHref]);
         }
@@ -306,13 +260,6 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
                 onClick={() => {
                   try {
                     setSideNavClick(true);
-                    const prefixedPath = withPrefix(pageHref);
-                    console.log('[SideNav Menu] Link clicked', {
-                      title: page.title,
-                      originalHref: pageHref,
-                      prefixedHref: prefixedPath,
-                      hasMenu: !!page?.menu?.length
-                    });
                     
                     if (page?.menu?.length && !page.header) {
                       if (expandedMenus.includes(pageHref)) {
