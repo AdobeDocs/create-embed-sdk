@@ -30,10 +30,6 @@ module.exports = {
         path: '/'
       },
       {
-        title: 'API Reference',
-        path: 'express-embed-sdk/design-for-develop.md'
-      },
-      {
         title: 'Documentation',
         menu: [
           {
