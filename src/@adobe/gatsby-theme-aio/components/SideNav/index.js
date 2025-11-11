@@ -53,18 +53,24 @@ const getSelectedTabIndex = (location, pages) => {
 };
 
 const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setShowSideNav, location }) => {
-  console.log('mainNavPages', mainNavPages);
-
   const [expandedPages, setExpandedPages] = useState([]);
   const [expandedMenus, setExpandedMenus] = useState([]);
   const [sideNavClick, setSideNavClick] = useState(false);
   const [mobileView, setMobileView] = useState(false);
   const [selectedMenuItem, setSelectedMenuItem] = useState({});
 
+  console.log('🧭 SideNav Props:', {
+    currentPath: location.pathname,
+    mainNavPages: mainNavPages.map(p => ({ title: p.title, href: p.href, path: p.path })),
+    pathPrefix: withPrefix('/'),
+    mobileView
+  });
+
   // If one page has header enabled, use header navigation type for all navigation items
   const hasHeader = selectedSubPages.some(page => page.header);
   const isMultiLevel = selectedSubPages.some(page => page?.pages?.length > 0);
   const ref = useRef(null);
+  
   const handleClickOutside = event => {
     if (ref.current && !ref.current.contains(event.target)) {
       // reset it when user did not click on the side nav.
@@ -108,15 +114,18 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
       .map((page, index) => {
         const isSelected = selectedPages.find(selectedItem => selectedItem === page);
         const id = nextId();
-        let pageHref = page.href ? page.href : page.menu[0].href;
+        const pageHref = page.href ? page.href : page.menu[0].href;
         
-        // Convert relative paths to absolute and apply pathPrefix
-        if (pageHref && !isExternalLink(pageHref) && !pageHref.startsWith('#')) {
-          // If path doesn't start with /, make it absolute first
-          if (!pageHref.startsWith('/')) {
-            pageHref = `/${pageHref}`;
-          }
-        }
+        // Apply withPrefix like GlobalHeader MenuItem does (line 670)
+        const docHref = withPrefix(pageHref);
+        
+        console.log('📄 renderSubtree:', {
+          title: page.title,
+          originalHref: pageHref,
+          withPrefixHref: docHref,
+          isExternal: isExternalLink(pageHref),
+          externalProps: getExternalLinkProps(docHref)
+        });
 
         if (isSelected && !sideNavClick && !expandedPages.includes(pageHref)) {
           setExpandedPages(pages => [...pages, pageHref]);
@@ -146,19 +155,16 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
               <h2 className="spectrum-SideNav-heading" id={id}>
                 {page.title}
               </h2>
-            ) : isExternalLink(pageHref) ? (
-              <a
-                {...getExternalLinkProps(pageHref)}
-                href={pageHref}
-                className="spectrum-SideNav-itemLink"
-                daa-ll={page.title}>
-                {page.title}
-              </a>
             ) : (
-              <GatsbyLink
-                onClick={() => {
-                  setSideNavClick(true);
+              <a
+                href={docHref}
+                {...getExternalLinkProps(docHref)}
+                className="spectrum-SideNav-itemLink"
+                daa-ll={page.title}
+                onClick={(e) => {
                   if (page?.pages?.length && !page.header) {
+                    e.preventDefault();
+                    setSideNavClick(true);
                     if (expandedPages.includes(pageHref)) {
                       setExpandedPages(pages => pages.filter(href => href !== pageHref));
                     } else {
@@ -167,10 +173,7 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
                   } else {
                     setShowSideNav(false);
                   }
-                }}
-                to={pageHref}
-                className="spectrum-SideNav-itemLink"
-                daa-ll={page.title}>
+                }}>
                 {page.title}
                 {page.pages && page.pages.length > 0 ? (
                   <ChevronRight
@@ -186,7 +189,7 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
                     `}
                   />
                 ) : null}
-              </GatsbyLink>
+              </a>
             )}
             {page.pages && (
               <ul
@@ -216,19 +219,18 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
       .map((page, index) => {
         const isSelected = selectedPages.find(selectedItem => selectedItem === page);
         const id = nextId();
-        let pageHref = page.href ? page.href : `#${page.title.toLowerCase()}`;
+        const pageHref = page.href ? page.href : `#${page.title.toLowerCase()}`;
         
-        console.log('Mobile Nav - Original:', { title: page.title, path: page.path, href: page.href, pageHref });
+        // Apply withPrefix like GlobalHeader MenuItem does (line 670)
+        const menuHref = withPrefix(pageHref);
         
-        // Convert relative paths to absolute and apply pathPrefix
-        if (pageHref && !isExternalLink(pageHref) && !pageHref.startsWith('#')) {
-          // If path doesn't start with /, make it absolute first
-          if (!pageHref.startsWith('/')) {
-            pageHref = `/${pageHref}`;
-          }
-        }
-        
-        console.log('Mobile Nav - After fix:', { title: page.title, finalHref: pageHref });
+        console.log('📱 renderMenuTree (Mobile Nav):', {
+          title: page.title,
+          originalHref: pageHref,
+          withPrefixHref: menuHref,
+          isExternal: isExternalLink(pageHref),
+          externalProps: getExternalLinkProps(menuHref)
+        });
 
         if (isSelected && !sideNavClick && !expandedMenus.includes(pageHref)) {
           setExpandedMenus(pages => [...pages, pageHref]);
@@ -258,20 +260,16 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
               <h2 className="spectrum-SideNav-heading" id={id}>
                 {page.title}
               </h2>
-            ) : isExternalLink(pageHref) ? (
-              <a
-                {...getExternalLinkProps(pageHref)}
-                href={pageHref}
-                className="spectrum-SideNav-itemLink"
-                daa-ll={page.title}>
-
-                {page.title}
-              </a>
             ) : (
-              <GatsbyLink
-                onClick={() => {
-                  setSideNavClick(true);
+              <a
+                href={menuHref}
+                {...getExternalLinkProps(menuHref)}
+                className="spectrum-SideNav-itemLink"
+                daa-ll={page.title}
+                onClick={(e) => {
                   if (page?.menu?.length && !page.header) {
+                    e.preventDefault();
+                    setSideNavClick(true);
                     if (expandedMenus.includes(pageHref)) {
                       setExpandedMenus(pages => pages.filter(href => href !== pageHref));
                     } else {
@@ -280,10 +278,7 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
                   } else {
                     setShowSideNav(false);
                   }
-                }}
-                to={pageHref}
-                className="spectrum-SideNav-itemLink"
-                daa-ll={page.title}>
+                }}>
                 {selectedMenuItem === page && <CheckMark />}
                 {page.title}
                 {page.menu && page.menu.length > 0 ? (
@@ -300,7 +295,7 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
                     `}
                   />
                 ) : null}
-              </GatsbyLink>
+              </a>
             )}
             {page.menu && (
               <ul
