@@ -19,11 +19,11 @@ module.exports = {
     pages: [
       {
         title: 'Adobe Express',
-        path: '/express/'
+        path: 'express/'
       },
       {
         title: 'Add-ons',
-        path: '/express/add-ons'
+        path: 'express/add-ons/'
       },
       {
         title: 'Embed SDK',
