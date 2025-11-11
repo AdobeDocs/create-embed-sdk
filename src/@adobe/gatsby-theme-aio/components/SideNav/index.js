@@ -12,7 +12,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Link as GatsbyLink } from 'gatsby';
+import { Link as GatsbyLink, withPrefix } from 'gatsby';
 import {
   isBrowser, findSelectedTopPage,
   findSelectedTopPageMenu,
@@ -108,7 +108,15 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
       .map((page, index) => {
         const isSelected = selectedPages.find(selectedItem => selectedItem === page);
         const id = nextId();
-        const pageHref = page.href ? page.href : page.menu[0].href;
+        let pageHref = page.href ? page.href : page.menu[0].href;
+        
+        // Convert relative paths to absolute and apply pathPrefix
+        if (pageHref && !isExternalLink(pageHref) && !pageHref.startsWith('#')) {
+          // If path doesn't start with /, make it absolute first
+          if (!pageHref.startsWith('/')) {
+            pageHref = `/${pageHref}`;
+          }
+        }
 
         if (isSelected && !sideNavClick && !expandedPages.includes(pageHref)) {
           setExpandedPages(pages => [...pages, pageHref]);
@@ -208,7 +216,15 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
       .map((page, index) => {
         const isSelected = selectedPages.find(selectedItem => selectedItem === page);
         const id = nextId();
-        const pageHref = page.href ? page.href : `#${page.title.toLowerCase()}`;
+        let pageHref = page.href ? page.href : `#${page.title.toLowerCase()}`;
+        
+        // Convert relative paths to absolute and apply pathPrefix
+        if (pageHref && !isExternalLink(pageHref) && !pageHref.startsWith('#')) {
+          // If path doesn't start with /, make it absolute first
+          if (!pageHref.startsWith('/')) {
+            pageHref = `/${pageHref}`;
+          }
+        }
 
         if (isSelected && !sideNavClick && !expandedMenus.includes(pageHref)) {
           setExpandedMenus(pages => [...pages, pageHref]);
