@@ -53,24 +53,25 @@ const getSelectedTabIndex = (location, pages) => {
 };
 
 const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setShowSideNav, location }) => {
+  // Debug logging - matches GlobalHeader pattern line 104-105
+  console.log('[SideNav] Component mounted/updated', {
+    mainNavPages,
+    selectedPages,
+    selectedSubPages,
+    location: location.pathname,
+    versions
+  });
+
   const [expandedPages, setExpandedPages] = useState([]);
   const [expandedMenus, setExpandedMenus] = useState([]);
   const [sideNavClick, setSideNavClick] = useState(false);
   const [mobileView, setMobileView] = useState(false);
   const [selectedMenuItem, setSelectedMenuItem] = useState({});
 
-  console.log('🧭 SideNav Props:', {
-    currentPath: location.pathname,
-    mainNavPages: mainNavPages.map(p => ({ title: p.title, href: p.href, path: p.path })),
-    pathPrefix: withPrefix('/'),
-    mobileView
-  });
-
   // If one page has header enabled, use header navigation type for all navigation items
   const hasHeader = selectedSubPages.some(page => page.header);
   const isMultiLevel = selectedSubPages.some(page => page?.pages?.length > 0);
   const ref = useRef(null);
-  
   const handleClickOutside = event => {
     if (ref.current && !ref.current.contains(event.target)) {
       // reset it when user did not click on the side nav.
@@ -89,7 +90,18 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
   useEffect(() => {
     const index = getSelectedTabIndex(location, mainNavPages);
     const pathWithRootFix = rootFix(location.pathname);
-    setSelectedMenuItem(findSelectedTopPageMenu(pathWithRootFix, mainNavPages[index]));
+    const selectedMenu = findSelectedTopPageMenu(pathWithRootFix, mainNavPages[index]);
+    
+    // Debug logging - matches GlobalHeader pattern line 134-140
+    console.log('[SideNav] Selected menu updated', {
+      pathname: location.pathname,
+      pathWithRootFix,
+      selectedTabIndex: index,
+      selectedMenu,
+      currentPage: mainNavPages[index]?.title
+    });
+    
+    setSelectedMenuItem(selectedMenu);
   }, [location.pathname])
 
   useEffect(() => {
@@ -114,18 +126,18 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
       .map((page, index) => {
         const isSelected = selectedPages.find(selectedItem => selectedItem === page);
         const id = nextId();
-        const pageHref = page.href ? page.href : page.menu[0].href;
-        
-        // Apply withPrefix like GlobalHeader MenuItem does (line 670)
-        const docHref = withPrefix(pageHref);
-        
-        console.log('📄 renderSubtree:', {
-          title: page.title,
-          originalHref: pageHref,
-          withPrefixHref: docHref,
-          isExternal: isExternalLink(pageHref),
-          externalProps: getExternalLinkProps(docHref)
-        });
+        const pageHref = page.href ? page.href : page.menu?.[0]?.href;
+
+        // Debug logging - same pattern as GlobalHeader
+        if (pageHref) {
+          const prefixedHref = withPrefix(pageHref);
+          console.log('[SideNav renderSubtree]', {
+            title: page.title,
+            originalHref: pageHref,
+            withPrefix: prefixedHref,
+            isExternal: isExternalLink(pageHref)
+          });
+        }
 
         if (isSelected && !sideNavClick && !expandedPages.includes(pageHref)) {
           setExpandedPages(pages => [...pages, pageHref]);
@@ -155,25 +167,43 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
               <h2 className="spectrum-SideNav-heading" id={id}>
                 {page.title}
               </h2>
-            ) : (
+            ) : isExternalLink(pageHref) ? (
               <a
-                href={docHref}
-                {...getExternalLinkProps(docHref)}
+                {...getExternalLinkProps(pageHref)}
+                href={pageHref}
                 className="spectrum-SideNav-itemLink"
-                daa-ll={page.title}
-                onClick={(e) => {
-                  if (page?.pages?.length && !page.header) {
-                    e.preventDefault();
+                daa-ll={page.title}>
+                {page.title}
+              </a>
+            ) : (
+              <GatsbyLink
+                onClick={() => {
+                  try {
                     setSideNavClick(true);
-                    if (expandedPages.includes(pageHref)) {
-                      setExpandedPages(pages => pages.filter(href => href !== pageHref));
+                    const prefixedPath = withPrefix(pageHref);
+                    console.log('[SideNav] Link clicked', {
+                      title: page.title,
+                      originalHref: pageHref,
+                      prefixedHref: prefixedPath,
+                      hasSubPages: !!page?.pages?.length
+                    });
+                    
+                    if (page?.pages?.length && !page.header) {
+                      if (expandedPages.includes(pageHref)) {
+                        setExpandedPages(pages => pages.filter(href => href !== pageHref));
+                      } else {
+                        setExpandedPages([...expandedPages, pageHref]);
+                      }
                     } else {
-                      setExpandedPages([...expandedPages, pageHref]);
+                      setShowSideNav(false);
                     }
-                  } else {
-                    setShowSideNav(false);
+                  } catch (error) {
+                    console.error('[SideNav] Error in link click handler:', error);
                   }
-                }}>
+                }}
+                to={withPrefix(pageHref)}
+                className="spectrum-SideNav-itemLink"
+                daa-ll={page.title}>
                 {page.title}
                 {page.pages && page.pages.length > 0 ? (
                   <ChevronRight
@@ -189,7 +219,7 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
                     `}
                   />
                 ) : null}
-              </a>
+              </GatsbyLink>
             )}
             {page.pages && (
               <ul
@@ -220,17 +250,18 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
         const isSelected = selectedPages.find(selectedItem => selectedItem === page);
         const id = nextId();
         const pageHref = page.href ? page.href : `#${page.title.toLowerCase()}`;
-        
-        // Apply withPrefix like GlobalHeader MenuItem does (line 670)
-        const menuHref = withPrefix(pageHref);
-        
-        console.log('📱 renderMenuTree (Mobile Nav):', {
-          title: page.title,
-          originalHref: pageHref,
-          withPrefixHref: menuHref,
-          isExternal: isExternalLink(pageHref),
-          externalProps: getExternalLinkProps(menuHref)
-        });
+
+        // Debug logging - matches GlobalHeader pattern line 670
+        if (pageHref && !pageHref.startsWith('#')) {
+          const prefixedHref = withPrefix(pageHref);
+          console.log('[SideNav renderMenuTree]', {
+            title: page.title,
+            originalHref: pageHref,
+            withPrefix: prefixedHref,
+            isExternal: isExternalLink(pageHref),
+            hasMenu: !!page.menu
+          });
+        }
 
         if (isSelected && !sideNavClick && !expandedMenus.includes(pageHref)) {
           setExpandedMenus(pages => [...pages, pageHref]);
@@ -260,25 +291,44 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
               <h2 className="spectrum-SideNav-heading" id={id}>
                 {page.title}
               </h2>
-            ) : (
+            ) : isExternalLink(pageHref) ? (
               <a
-                href={menuHref}
-                {...getExternalLinkProps(menuHref)}
+                {...getExternalLinkProps(pageHref)}
+                href={pageHref}
                 className="spectrum-SideNav-itemLink"
-                daa-ll={page.title}
-                onClick={(e) => {
-                  if (page?.menu?.length && !page.header) {
-                    e.preventDefault();
+                daa-ll={page.title}>
+
+                {page.title}
+              </a>
+            ) : (
+              <GatsbyLink
+                onClick={() => {
+                  try {
                     setSideNavClick(true);
-                    if (expandedMenus.includes(pageHref)) {
-                      setExpandedMenus(pages => pages.filter(href => href !== pageHref));
+                    const prefixedPath = withPrefix(pageHref);
+                    console.log('[SideNav Menu] Link clicked', {
+                      title: page.title,
+                      originalHref: pageHref,
+                      prefixedHref: prefixedPath,
+                      hasMenu: !!page?.menu?.length
+                    });
+                    
+                    if (page?.menu?.length && !page.header) {
+                      if (expandedMenus.includes(pageHref)) {
+                        setExpandedMenus(pages => pages.filter(href => href !== pageHref));
+                      } else {
+                        setExpandedMenus([...expandedMenus, pageHref]);
+                      }
                     } else {
-                      setExpandedMenus([...expandedMenus, pageHref]);
+                      setShowSideNav(false);
                     }
-                  } else {
-                    setShowSideNav(false);
+                  } catch (error) {
+                    console.error('[SideNav Menu] Error in link click handler:', error);
                   }
-                }}>
+                }}
+                to={withPrefix(pageHref)}
+                className="spectrum-SideNav-itemLink"
+                daa-ll={page.title}>
                 {selectedMenuItem === page && <CheckMark />}
                 {page.title}
                 {page.menu && page.menu.length > 0 ? (
@@ -295,7 +345,7 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
                     `}
                   />
                 ) : null}
-              </a>
+              </GatsbyLink>
             )}
             {page.menu && (
               <ul
