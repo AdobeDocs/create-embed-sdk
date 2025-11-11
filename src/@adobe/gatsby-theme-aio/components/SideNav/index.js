@@ -14,12 +14,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { withPrefix } from 'gatsby';
 import { GatsbyLink } from '@adobe/gatsby-theme-aio/src/components/GatsbyLink';
-import {
-  isBrowser, findSelectedTopPage,
+import { isBrowser, findSelectedTopPage,
   findSelectedTopPageMenu,
   rootFix,
-  rootFixPages, isExternalLink, getExternalLinkProps, MOBILE_SCREEN_WIDTH
-} from '@adobe/gatsby-theme-aio/src/utils';
+  rootFixPages, isExternalLink, getExternalLinkProps, MOBILE_SCREEN_WIDTH } from '@adobe/gatsby-theme-aio/src/utils';
 import { css } from '@emotion/react';
 import classNames from 'classnames';
 import '@spectrum-css/sidenav';
@@ -53,7 +51,7 @@ const getSelectedTabIndex = (location, pages) => {
   return selectedIndex;
 };
 
-const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setShowSideNav, location }) => {
+const SideNav = ({versions, mainNavPages, selectedPages, selectedSubPages, setShowSideNav, location }) => {
   const [expandedPages, setExpandedPages] = useState([]);
   const [expandedMenus, setExpandedMenus] = useState([]);
   const [sideNavClick, setSideNavClick] = useState(false);
@@ -82,8 +80,7 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
   useEffect(() => {
     const index = getSelectedTabIndex(location, mainNavPages);
     const pathWithRootFix = rootFix(location.pathname);
-    const selectedMenu = findSelectedTopPageMenu(pathWithRootFix, mainNavPages[index]);
-    setSelectedMenuItem(selectedMenu);
+    setSelectedMenuItem(findSelectedTopPageMenu(pathWithRootFix, mainNavPages[index]));
   }, [location.pathname])
 
   useEffect(() => {
@@ -108,12 +105,7 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
       .map((page, index) => {
         const isSelected = selectedPages.find(selectedItem => selectedItem === page);
         const id = nextId();
-        const pageHref = page.href ? page.href : page.menu?.[0]?.href;
-
-        // Debug logging - same pattern as GlobalHeader
-        if (pageHref) {
-          const prefixedHref = withPrefix(pageHref);
-        }
+        const pageHref = page.href ? page.href : page.menu[0].href;
 
         if (isSelected && !sideNavClick && !expandedPages.includes(pageHref)) {
           setExpandedPages(pages => [...pages, pageHref]);
@@ -154,19 +146,15 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
             ) : (
               <GatsbyLink
                 onClick={() => {
-                  try {
-                    setSideNavClick(true);                    
-                    if (page?.pages?.length && !page.header) {
-                      if (expandedPages.includes(pageHref)) {
-                        setExpandedPages(pages => pages.filter(href => href !== pageHref));
-                      } else {
-                        setExpandedPages([...expandedPages, pageHref]);
-                      }
+                  setSideNavClick(true);
+                  if (page?.pages?.length && !page.header) {
+                    if (expandedPages.includes(pageHref)) {
+                      setExpandedPages(pages => pages.filter(href => href !== pageHref));
                     } else {
-                      setShowSideNav(false);
+                      setExpandedPages([...expandedPages, pageHref]);
                     }
-                  } catch (error) {
-                    console.error('[SideNav] Error in link click handler:', error);
+                  } else {
+                    setShowSideNav(false);
                   }
                 }}
                 to={withPrefix(pageHref)}
@@ -197,8 +185,9 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
                   ${level > 1
                     ? `
                     & > li > a {
-                      padding-left: calc(${level + 1
-                    } * var(--spectrum-global-dimension-size-150)) !important;
+                      padding-left: calc(${
+                        level + 1
+                      } * var(--spectrum-global-dimension-size-150)) !important;
                     }
                   `
                     : ''}
@@ -218,6 +207,7 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
         const isSelected = selectedPages.find(selectedItem => selectedItem === page);
         const id = nextId();
         const pageHref = page.href ? page.href : `#${page.title.toLowerCase()}`;
+
         if (isSelected && !sideNavClick && !expandedMenus.includes(pageHref)) {
           setExpandedMenus(pages => [...pages, pageHref]);
         }
@@ -258,26 +248,21 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
             ) : (
               <GatsbyLink
                 onClick={() => {
-                  try {
-                    setSideNavClick(true);
-                    
-                    if (page?.menu?.length && !page.header) {
-                      if (expandedMenus.includes(pageHref)) {
-                        setExpandedMenus(pages => pages.filter(href => href !== pageHref));
-                      } else {
-                        setExpandedMenus([...expandedMenus, pageHref]);
-                      }
+                  setSideNavClick(true);
+                  if (page?.menu?.length && !page.header) {
+                    if (expandedMenus.includes(pageHref)) {
+                      setExpandedMenus(pages => pages.filter(href => href !== pageHref));
                     } else {
-                      setShowSideNav(false);
+                      setExpandedMenus([...expandedMenus, pageHref]);
                     }
-                  } catch (error) {
-                    console.error('[SideNav Menu] Error in link click handler:', error);
+                  } else {
+                    setShowSideNav(false);
                   }
                 }}
                 to={withPrefix(pageHref)}
                 className="spectrum-SideNav-itemLink"
                 daa-ll={page.title}>
-                {selectedMenuItem === page && <CheckMark />}
+                { selectedMenuItem === page  && <CheckMark /> }
                 {page.title}
                 {page.menu && page.menu.length > 0 ? (
                   <ChevronRight
@@ -303,8 +288,9 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
                   ${level > 1
                     ? `
                     & > li > a {
-                      padding-left: calc(${level + 1
-                    } * var(--spectrum-global-dimension-size-150)) !important;
+                      padding-left: calc(${
+                        level + 1
+                      } * var(--spectrum-global-dimension-size-150)) !important;
                     }
                   `
                     : ''}
@@ -347,7 +333,7 @@ const SideNav = ({ versions, mainNavPages, selectedPages, selectedSubPages, setS
               aria-label="Global Navigation"
               daa-lh="sideNav"
               className={classNames('spectrum-SideNav', 'spectrum-SideNav--multiLevel')}>
-              {versions && renderMenuTree([{ title: 'Versions', menu: versions }], 1)}
+              {versions && renderMenuTree([{title: 'Versions', menu: versions}], 1)}
               {renderMenuTree(mainNavPages, 1)}
               <AnchorButton variant="primary" href="/console" id={'consoleId'} tabIndex="0" daa-ll="console">
                 Console
